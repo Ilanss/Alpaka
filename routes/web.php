@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Inscription
+Route::view('/registration', 'register');
+Route::post('/registration/store', 'Register@store');
+
+// Login
+Route::get('/auth', 'Login@auth');
+
+// Logout
+Route::get('/logout', 'Login@logout');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
