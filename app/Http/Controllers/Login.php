@@ -22,7 +22,6 @@ class Login extends Controller
             echo 'Erreur <br/>';
             dd($data);
         }
-
     }
 
     public function logout()
