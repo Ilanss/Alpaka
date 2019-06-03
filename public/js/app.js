@@ -33812,7 +33812,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "/* @import \"../../../sass/variables.scss\"; */\n.navbar[data-v-d3be5158] {\r\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\r\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\r\n{\r\n background-color: red;\r\n color:white;\r\n border-radius: 50%;\r\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\r\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: \"Montserrat\";\n}\n.navbar-brand[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: 'Arial';\n}", ""]);
+exports.push([module.i, " /*@import \"../../../sass/_variables.scss\"; */\n.navbar[data-v-d3be5158] {\r\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\r\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\r\n{\r\n background-color: red;\r\n color:white;\r\n border-radius: 50%;\r\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\r\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: \"Montserrat\";\n}\n.navbar-brand[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: 'Arial';\n}", ""]);
 
 // exports
 
@@ -66014,12 +66014,7 @@ var render = function() {
         "b-navbar",
         {
           staticClass: "navbar",
-          attrs: {
-            toggleable: "lg",
-            type: "dark",
-            variant: "info",
-            fixed: "bottom"
-          }
+          attrs: { toggleable: "lg", type: "dark", variant: "info", fixed: "" }
         },
         [
           _c("b-navbar-brand", { attrs: { href: "" } }, [_vm._v("Gazzard")]),

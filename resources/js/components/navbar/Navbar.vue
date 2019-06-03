@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info" class="navbar" fixed="bottom">
+    <b-navbar toggleable="lg" type="dark" variant="info" class="navbar" fixed="">
       <b-navbar-brand href>Gazzard</b-navbar-brand>
       <!-- Center aligned nav items -->
       <b-collapse id="nav-collapse" is-nav>
