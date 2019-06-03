@@ -8,6 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //appel de tous les composants
 Vue.component('navbar-section', require('./components/navbar/Navbar.vue').default);
+Vue.component('slider-section', require('./components/slider/Slider.vue').default);
  
 
 const app = new Vue({

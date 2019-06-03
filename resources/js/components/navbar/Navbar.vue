@@ -27,6 +27,6 @@
     </b-navbar>
   </div>
 </template>
-<script src="./navbar.js"></script>
+<script src="./Navbar.js"></script>
 <style src="./Navbar.css" scoped></style>
 

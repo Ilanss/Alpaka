@@ -46,11 +46,4 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "slider-section",
-  mounted() {
-    console.log("slider-section Component mounted.");
-  }
-};
-</script>
+<script src="./Slider.js"></script>
