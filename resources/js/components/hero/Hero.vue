@@ -21,14 +21,5 @@
   </div>
 </template>
  
-<script>
-import sliderSection from "./Slider.vue";
-
-export default {
-  name: "hero-section",
-
-  mounted() {
-    console.log("Component mounted.");
-  }
-};
-</script>
+<script src="./Hero.js"></script>
+<style src="./Hero.css" scoped></style>
