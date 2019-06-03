@@ -14,13 +14,13 @@ class Login extends Controller
     {
         print_r($request->input());
 
-        $data = ['email' => $request->input('email'), 'password' => Hash::make($request->input('password'))];
+        $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
         if(Auth::attempt($data)){
-            echo 'Réussi';
+            return redirect('/');
         } else{
-            echo 'Erreur';
-            var_dump($data);
+            echo 'Erreur <br/>';
+            dd($data);
         }
 
     }
