@@ -8,11 +8,11 @@ class Winery extends Model
 {
     public function Wine()
     {
-        return $this->hasMany('App\Wine', 'winery_fk', 'winery_id');
+        return $this->hasMany('App\Wine');
     }
 
     public function Country()
     {
-        return $this->hasOne('App\Country');
+        return $this->belongsTo('App\Country');
     }
 }
