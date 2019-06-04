@@ -15,6 +15,8 @@ Vue.component('footer-section', require('./components/footer/Footer.vue').defaul
 Vue.component('product-card', require('./components/productcard/Productcard.vue').default);
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
 Vue.component('story-section', require('./components/story/Story.vue').default);
+Vue.component('brand-section', require('./components/brand/Brand.vue').default);
+ 
 
 new Vue({
     el: '#app',
