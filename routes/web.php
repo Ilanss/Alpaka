@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('app');
 });
 
+
 // Inscription
 Route::view('/registration', 'register');
 Route::post('/registration/store', 'Register@store');
@@ -25,6 +26,18 @@ Route::get('/auth', 'Login@auth');
 // Logout
 Route::get('/logout', 'Login@logout');
 
-Auth::routes();
+// Update user
+Route::get('/modify', 'UpdateUser@display');
+Route::get('update', 'UpdateUser@update');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/product/create', 'ProductsController@create');
+
+Route::get('/product/{slug}', 'ProductsController@view');
+
+Route::get('/product/{id}', 'ProductsController@update');
+
+Route::get('/products/promotions', 'ProductsController@promotions');
+
+Route::resource('/products', 'ProductsController');
+
+Auth::routes();

@@ -6,7 +6,6 @@
             <div class="top-right links">
                 <form method="GET" action="{{URL::to('auth')}}">
                     @csrf
-
                     <div class="form-group row">
                         <label for="email"
                                class="col-md-4 col-form-label text-md-right">{{ __('Adresse email') }}</label>
@@ -40,7 +39,6 @@
                             @enderror
                         </div>
                     </div>
-
                     <div class="form-group row mb-0">
                         <div class="col-md-6 offset-md-4">
                             <button type="submit" class="btn btn-primary">
@@ -59,14 +57,22 @@
             </div>
         </div>
     @else
-        <form method="GET" action="{{URL::to('/logout')}}">
-            <div class="form-group row mb-0">
-                <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        <a href="{{URL::to('/logout') }}">{{ __('Déconnexion') }}</a>
-                    </button>
+        <div class="col-md-6 offset-md-4">
+            <form method="GET" action="{{URL::to('/logout')}}">
+                <div class="form-group row mb-0">
+                    <div class="col-md-6 offset-md-4">
+                        <button type="submit" class="btn btn-primary">
+                            <a href="{{URL::to('/logout') }}">{{ __('Déconnexion') }}</a>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
+        <div class="col-md-6 offset-md-4">
+            <button type="submit" class="btn btn-primary">
+                <a href="{{URL::to('/modify') }}">{{ __('Modifier mes informations') }}</a>
+            </button>
+        </div>
     @endguest
 @endsection
+>>>>>>> backend_modInfos
