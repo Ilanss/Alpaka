@@ -1,6 +1,6 @@
  @extends('layouts.app')
-@section('content')
-<navbar-section></navbar-section>
-<cover-section></cover-section>
-<slider-section></slider-section>
-@endsection 
+ @section('content')
+ <navbar-section></navbar-section>
+ <cover-section></cover-section>
+ <story-section></story-section>
+ @endsection
