@@ -12,6 +12,5 @@
     </section>
 </template>
  
-<style src="./Story.css" scoped></style> 
-<style src="./Normalize.css" scoped></style> 
+<style src="./Story.css" scoped></style>
 <script src="./Story.js"></script>
