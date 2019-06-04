@@ -3,7 +3,6 @@
 <h1>{{$product->name}}</h1>
 
 <p>{{$product->winery->name}}</p>
-<p>{{$product->winery->country->name}}</p>
 
 <p>{{$product->country->name}}</p>
 
@@ -19,3 +18,10 @@
 @foreach($product->foods as $food)
     <p>{{$food->name}}</p>
 @endforeach
+
+<p><a href="{{ URL::route('products.edit', $product->id) }}">Modifier le produit</a></p>
+<form action="{{ route('products.destroy', $product->id)}}" method="post">
+    @csrf
+    @method('DELETE')
+    <button class="btn btn-danger" type="submit">Delete</button>
+</form>
