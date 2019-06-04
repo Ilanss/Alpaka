@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+}
+body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cover__caption__button {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    animation-delay: 0.8s;
+}
+.cover__caption__button:hover {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+.cover {
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+ 
+    background-position: center center;
+    position: relative;
+    transform-style: inherit;
+  
+    
+    
+    
+ 
+}

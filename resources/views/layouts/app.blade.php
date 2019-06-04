@@ -6,7 +6,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7173614f471e981556965297436b16acfec633c5
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
@@ -18,6 +21,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
 </head>
 <body>
     <div id="app">
@@ -78,3 +82,19 @@
     </div>
 </body>
 </html>
+=======
+
+</head>
+<body>
+    <div id="app">
+      <!-- include('includes.navbar')
+      include('includes.secondary-navbar') -->
+      <main class="py-4">
+          @yield('content')
+      </main>
+      @include('includes.footer')
+    </div>
+     
+</body>
+</html>
+>>>>>>> 7173614f471e981556965297436b16acfec633c5
