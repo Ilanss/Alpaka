@@ -1,5 +1,4 @@
 
-
 require('./bootstrap');
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
@@ -16,6 +15,6 @@ Vue.component('slider-section', require('./components/slider/Slider.vue').defaul
 Vue.component('footer-section', require('./components/footer/Footer.vue').default);
  
 
-const app = new Vue({
+new Vue({
     el: '#app',
 });

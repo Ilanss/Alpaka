@@ -1,6 +1,4 @@
-<!-- extends('layouts.app')
-section('content')
-<navbar-section></navbar-section>
+ @extends('layouts.app')
+@section('content')
 <slider-section></slider-section>
-<footer-section></footer-section>
-endsection -->
+@endsection 

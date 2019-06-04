@@ -5,10 +5,10 @@
       <!-- Center aligned nav items -->
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#Home">HomePage</b-nav-item>
-          <b-nav-item href="#Catalog">Catalog</b-nav-item>
-          <b-nav-item href="#Blog">Blog</b-nav-item>
-          <b-nav-item href="#AboutUs">AboutUs</b-nav-item>
+          <b-nav-item href="Home">HomePage</b-nav-item>
+          <b-nav-item href="Catalog">Catalog</b-nav-item>
+          <b-nav-item href="Blog">Blog</b-nav-item>
+          <b-nav-item href="about">AboutUs</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

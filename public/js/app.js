@@ -66190,19 +66190,19 @@ var render = function() {
                 "b-navbar-nav",
                 { staticClass: "ml-auto" },
                 [
-                  _c("b-nav-item", { attrs: { href: "#Home" } }, [
+                  _c("b-nav-item", { attrs: { href: "Home" } }, [
                     _vm._v("HomePage")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#Catalog" } }, [
+                  _c("b-nav-item", { attrs: { href: "Catalog" } }, [
                     _vm._v("Catalog")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#Blog" } }, [
+                  _c("b-nav-item", { attrs: { href: "Blog" } }, [
                     _vm._v("Blog")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#AboutUs" } }, [
+                  _c("b-nav-item", { attrs: { href: "about" } }, [
                     _vm._v("AboutUs")
                   ])
                 ],
@@ -78521,7 +78521,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_r
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('slider-section', __webpack_require__(/*! ./components/slider/Slider.vue */ "./resources/js/components/slider/Slider.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('footer-section', __webpack_require__(/*! ./components/footer/Footer.vue */ "./resources/js/components/footer/Footer.vue")["default"]);
-var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app'
 });
 
