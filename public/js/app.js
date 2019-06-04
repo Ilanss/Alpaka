@@ -66707,7 +66707,7 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
+              _c("a", { attrs: { href: "about" } }, [_vm._v("Contact")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col" }, [

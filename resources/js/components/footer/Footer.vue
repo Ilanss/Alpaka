@@ -52,7 +52,7 @@
                         <a href="#">Blog</a>
                     </div>
                     <div class="col">
-                        <a href="#">Contact</a>
+                        <a href="about">Contact</a>
                     </div>
                     <div class="col">
                         <a href="#">Instagram</a>
