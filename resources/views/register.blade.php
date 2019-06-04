@@ -56,16 +56,12 @@
                             <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Genre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="gender" type="text" class="form-control @error('gender') is-invalid @enderror" name="gender" value="{{ old('gender') }}" required autocomplete="gender" autofocus>
-
-                                @error('gender')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                <select class="form-control" name="gender">
+                                    <option value="Homme">Homme</option>
+                                    <option value="Femme">Femme</option>
+                                </select>
                             </div>
                         </div>
-
 
                         <div class="form-group row">
                             <label for="birth_date" class="col-md-4 col-form-label text-md-right">{{ __('Date de naissance') }}</label>
