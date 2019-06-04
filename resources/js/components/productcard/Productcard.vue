@@ -17,5 +17,5 @@
     </div>
   </div>
 </template>
-<script src="./Product_card.js"></script>
-<style src="./Product_card.css" scoped></style>
+<script src="./Productcard.js"></script>
+<style src="./Productcard.css" scoped></style>
