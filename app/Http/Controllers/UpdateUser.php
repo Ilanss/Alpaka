@@ -17,6 +17,20 @@ class UpdateUser extends Controller
 
     public function update(Request $request)
     {
+        // Validation des input
+        $validatedData = $request->validate([
+            'username' => 'required|max:20',
+            'lastname' => 'required|max:45',
+            'firstname' => 'required|max:45',
+            'gender' => 'required',
+            'birth_date' => 'required|date',
+            'email' => 'required|max:45',
+            'password' => 'required|max:255'
+        ]);
+
+//        print_r($request->input());
+//        dd($validatedData);
+
         $user = auth()->user();
 
         $user->username = $request->input('username');
@@ -35,12 +49,11 @@ class UpdateUser extends Controller
         $years = Carbon::parse($age)->age;
 
         // Verify
-        if($years < 18){
+        if ($years < 18) {
             $error = "Certaines conditions ne sont pas respectées (doit être majeur)";
             return Redirect::back()->withErrors($error);
-        }
-        else{
-            $user->save();
+        } else {
+            $user->save($validatedData);
 
             return redirect('/');
         }

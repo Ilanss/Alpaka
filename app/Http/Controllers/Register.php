@@ -14,7 +14,20 @@ class Register extends Controller
 {
     public function store(Request $request)
     {
-        //print_r($request->input());
+        // Validation des input
+        $validatedData = $request->validate([
+            'username' => 'required|max:20',
+            'lastname' => 'required|max:45',
+            'firstname' => 'required|max:45',
+            'gender' => 'required',
+            'birth_date' => 'required|date',
+            'email' => 'required|max:45',
+            'password' => 'required|max:255',
+            'password-confirm' => 'required|max:255'
+        ]);
+
+//        print_r($request->input());
+//        dd($validatedData);
 
         $user = new User();
 
@@ -22,7 +35,7 @@ class Register extends Controller
         $user->lastname = $request->input('lastname');
         $user->firstname = $request->input('firstname');
         $user->gender = $request->input('gender');
-        $user->birth_date = date("Y-m-d", strtotime($request->input('birth_date')));
+        $user->birth_date = $request->input('birth_date');
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
         $createDate = Carbon::now();
@@ -39,7 +52,7 @@ class Register extends Controller
             return Redirect::back()->withErrors($error);
         }
         else{
-            $user->save();
+            $user->save($validatedData);
 
             Auth::login($user, true);
 
