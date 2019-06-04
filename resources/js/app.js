@@ -1,4 +1,3 @@
-
 require('./bootstrap');
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
@@ -15,6 +14,7 @@ Vue.component('slider-section', require('./components/slider/Slider.vue').defaul
 Vue.component('footer-section', require('./components/footer/Footer.vue').default);
 Vue.component('product-card', require('./components/productcard/Productcard.vue').default);
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
+Vue.component('story-section', require('./components/story/Story.vue').default);
 Vue.component('brand-section', require('./components/brand/Brand.vue').default);
  
 
