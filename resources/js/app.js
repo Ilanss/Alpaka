@@ -13,6 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.component('hero-section', require('./components/hero/Hero.vue').default);
 Vue.component('navbar-section', require('./components/navbar/Navbar.vue').default);
 Vue.component('slider-section', require('./components/slider/Slider.vue').default);
+Vue.component('footer-section', require('./components/footer/Footer.vue').default);
  
 
 const app = new Vue({

@@ -21,12 +21,12 @@
 </head>
 <body>
     <div id="app">
-      <!-- include('includes.main-navbar')
+     <!-- include('includes.main-navbar')
       include('includes.secondary-navbar') -->
       <main class="py-4">
           @yield('content')
       </main>
     </div>
-     <!-- @include('includes.footer') -->
+     @include('includes.footer')
 </body>
 </html>

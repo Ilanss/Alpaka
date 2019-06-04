@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-</template>
+   </template>
  
 <script src="./Hero.js"></script>
 <style src="./Hero.css" scoped></style>

@@ -1,0 +1,48 @@
+#footer {
+    background-color: #5b022e;
+}
+.container {
+    font-family: Montserrat;
+    font-size: 1rem;
+    color:white;
+    line-height: 2.5rem;
+}
+
+.titleFooter {
+    font-size: 1.5rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-bottom: 115px;
+}
+
+.col > a {
+    color: #FFFFFF;
+}
+
+.socialMedia > a {
+    margin-right: 20px;
+    color: #5b022e;
+}
+
+#copyright {
+    color: #5b022e;
+    background-color: #FFFFFF; 
+    text-align: center;
+}
+
+.far {
+    color: #5b022e;
+}
+
+.alpaka {
+    color: #5b022e;
+}
+
+#newsletter {
+    color: #5b022e;
+}
