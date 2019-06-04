@@ -13,6 +13,10 @@ Vue.component('navbar-section', require('./components/navbar/Navbar.vue').defaul
 Vue.component('slider-section', require('./components/slider/Slider.vue').default);
 Vue.component('footer-section', require('./components/footer/Footer.vue').default);
 Vue.component('product-card', require('./components/productcard/Productcard.vue').default);
+Vue.component('product-list', require('./components/productslist/Productlist.vue').default);
+Vue.component('order-list', require('./components/orderProductsBy/OrderProductsBy.vue').default);
+Vue.component('filter-list-1', require('./components/filterProducts_1/FilterProducts_1.vue').default);
+Vue.component('filter-list-2', require('./components/filterProducts_2/FilterProducts_2.vue').default);
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
 Vue.component('contact-section', require('./components/contact/Contact.vue').default);
 Vue.component('story-section', require('./components/story/Story.vue').default);
