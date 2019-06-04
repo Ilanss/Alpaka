@@ -28,10 +28,18 @@ Route::get('/home', function () {
     return view('pages.home');
 });
 
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
+
 Route::get('/products', function () {
     return view('pages.products');
 });
 
 Route::get('/admin', function () {
     return view('pages.admin');
+});
+
+Route::get('/cgv', function () {
+    return view('pages.cgv');
 });
