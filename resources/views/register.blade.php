@@ -6,6 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Inscription') }}</div>
+
                 <div class="card-body">
                     <form method="POST" action="{{URL::to('/registration/store') }}">
                         @csrf
@@ -125,9 +126,6 @@
                             </div>
                         </div>
                     </form>
-                    @foreach ($errors->all(':message') as $error)
-                        {{ $error }}
-                    @endforeach
                 </div>
             </div>
         </div>
