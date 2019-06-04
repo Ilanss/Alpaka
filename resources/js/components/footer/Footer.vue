@@ -46,7 +46,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a href="#">CGV</a>
+                        <a href="cgv">CGV</a>
                     </div>
                     <div class="col">
                         <a href="#">Blog</a>

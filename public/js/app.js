@@ -66699,7 +66699,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("CGV")])
+              _c("a", { attrs: { href: "cgv" } }, [_vm._v("CGV")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col" }, [

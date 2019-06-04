@@ -39,3 +39,7 @@ Route::get('/products', function () {
 Route::get('/admin', function () {
     return view('pages.admin');
 });
+
+Route::get('/cgv', function () {
+    return view('pages.cgv');
+});
