@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>FILTRER PAS</h1>
+    <h1>FILTRER PAR</h1>
     <div class="filter__2">
       <b-list-group class="filter__2__couleur">
         <h2>Couleur</h2>
@@ -33,7 +33,6 @@
           unchecked-value="not_accepted"
         >Rosé</b-form-checkbox>
       </b-list-group>
-      <hr></hr>
 
       <div role="tablist">
         <b-card no-body class="mb-1">

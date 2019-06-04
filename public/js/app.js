@@ -67051,7 +67051,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("FILTRER PAS")]),
+    _c("h1", [_vm._v("FILTRER PAR")]),
     _vm._v(" "),
     _c(
       "div",
@@ -67145,8 +67145,6 @@ var render = function() {
           ],
           1
         ),
-        _vm._v(" "),
-        _c("hr"),
         _vm._v(" "),
         _c(
           "div",
