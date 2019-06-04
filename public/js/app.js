@@ -66363,20 +66363,20 @@ var render = function() {
                 "b-navbar-nav",
                 { staticClass: "ml-auto" },
                 [
-                  _c("b-nav-item", { attrs: { href: "Home" } }, [
-                    _vm._v("HomePage")
+                  _c("b-nav-item", { attrs: { href: "home" } }, [
+                    _vm._v("Accueil")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "Catalog" } }, [
-                    _vm._v("Catalog")
+                  _c("b-nav-item", { attrs: { href: "products" } }, [
+                    _vm._v("Catalogue")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "Blog" } }, [
+                  _c("b-nav-item", { attrs: { href: "blog" } }, [
                     _vm._v("Blog")
                   ]),
                   _vm._v(" "),
                   _c("b-nav-item", { attrs: { href: "about" } }, [
-                    _vm._v("AboutUs")
+                    _vm._v("À propos")
                   ])
                 ],
                 1

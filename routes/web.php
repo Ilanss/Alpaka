@@ -24,6 +24,14 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+Route::get('/home', function () {
+    return view('pages.home');
+});
+
+Route::get('/products', function () {
+    return view('pages.products');
+});
+
 Route::get('/admin', function () {
     return view('pages.admin');
 });
