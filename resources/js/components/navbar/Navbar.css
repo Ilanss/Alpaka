@@ -1,4 +1,4 @@
- /*@import "../../../sass/_variables.scss"; */
+ @import "/public/fonts/Montserrat/";
 .navbar {
     background-color: white !important;
 }
@@ -19,7 +19,7 @@
 }
 .nav-link {
   color: red !important;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
 }
 .navbar-brand {
   color: red !important;

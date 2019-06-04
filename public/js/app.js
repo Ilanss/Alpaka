@@ -33782,7 +33782,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#footer[data-v-22837618] {\r\n    background-color: #5b022e;\n}\n.container[data-v-22837618] {\r\n    font-family: Montserrat;\r\n    font-size: 1rem;\r\n    color:white;\r\n    line-height: 2.5rem;\n}\n.titleFooter[data-v-22837618] {\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 60px;\r\n    padding-bottom: 115px;\n}\n.col > a[data-v-22837618] {\r\n    color: #FFFFFF;\n}\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\n#copyright[data-v-22837618] {\r\n    color: #5b022e;\r\n    background-color: #FFFFFF; \r\n    text-align: center;\n}\n.far[data-v-22837618] {\r\n    color: #5b022e;\n}\n.alpaka[data-v-22837618] {\r\n    color: #5b022e;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}", ""]);
+exports.push([module.i, "#footer[data-v-22837618] {\r\n    background-color: #5b022e;\n}\n.container[data-v-22837618] {\r\n    font-family: \"Montserrat\";\r\n    font-size: 1rem;\r\n    color:white;\r\n    line-height: 2.5rem;\n}\n.titleFooter[data-v-22837618] {\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 60px;\r\n    padding-bottom: 115px;\n}\n.col > a[data-v-22837618] {\r\n    color: #FFFFFF;\n}\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\n#copyright[data-v-22837618] {\r\n    color: #5b022e;\r\n    background-color: #FFFFFF; \r\n    text-align: center;\n}\n.far[data-v-22837618] {\r\n    color: #5b022e;\n}\n.alpaka[data-v-22837618] {\r\n    color: #5b022e;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}", ""]);
 
 // exports
 
@@ -33817,10 +33817,10 @@ exports.push([module.i, "html[data-v-3da30bd4], body[data-v-3da30bd4] {\r\n    h
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
-
+exports.push([module.i, "@import url(/public/fonts/Montserrat/);", ""]);
 
 // module
-exports.push([module.i, " /*@import \"../../../sass/_variables.scss\"; */\n.navbar[data-v-d3be5158] {\r\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\r\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\r\n{\r\n background-color: red;\r\n color:white;\r\n border-radius: 50%;\r\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\r\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: \"Montserrat\";\n}\n.navbar-brand[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: 'Arial';\n}", ""]);
+exports.push([module.i, "\n.navbar[data-v-d3be5158] {\r\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\r\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\r\n{\r\n background-color: red;\r\n color:white;\r\n border-radius: 50%;\r\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\r\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: \"Montserrat\" !important;\n}\n.navbar-brand[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: 'Arial';\n}", ""]);
 
 // exports
 
