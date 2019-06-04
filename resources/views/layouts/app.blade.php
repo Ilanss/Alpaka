@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-     <!-- include('includes.main-navbar')
+      <!-- include('includes.navbar')
       include('includes.secondary-navbar') -->
       <main class="py-4">
           @yield('content')
