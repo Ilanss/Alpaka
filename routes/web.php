@@ -26,22 +26,6 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-<<<<<<< HEAD
-// Inscription
-Route::view('/registration', 'register');
-Route::post('/registration/store', 'Register@store');
-
-// Login
-Route::get('/auth', 'Login@auth');
-
-// Logout
-Route::get('/logout', 'Login@logout');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-=======
-Route::get('/', function () {
+Route::get('/admin', function () {
     return view('pages.admin');
 });
->>>>>>> 7173614f471e981556965297436b16acfec633c5
