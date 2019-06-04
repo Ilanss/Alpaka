@@ -25,6 +25,8 @@ Route::get('/auth', 'Login@auth');
 // Logout
 Route::get('/logout', 'Login@logout');
 
-Auth::routes();
+// Update user
+Route::get('/modify', 'UpdateUser@display');
+Route::get('update', 'UpdateUser@update');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
