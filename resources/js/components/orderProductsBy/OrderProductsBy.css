@@ -1,0 +1,15 @@
+.order__by {
+    background-color: white;
+    padding: 10px;
+}
+
+.fas {
+    color: black;
+    padding-left: 20px;
+}
+.fa-th{
+    padding-left: 0px !important;
+}
+.fas:hover {
+    color: red;
+}
