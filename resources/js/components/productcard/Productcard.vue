@@ -2,17 +2,19 @@
   <div>
     <div>
       <b-card
-        title="Card Title"
-        img-src="https://picsum.photos/600/300/?image=25"
-        img-alt="Image"
+        v-on:click="winePreview"
+        v-bind:title="wineName"
+        v-bind:img-src="wineImage"
+        img-alt="Cover"
         img-top
         tag="article"
         style="max-width: 20rem;"
-        class="mb-2"
+        class="mb-2 text-center"
+        v-bind:id="wineId"
       >
-        <b-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita nobis perspiciatis ex libero et?</b-card-text>
+        <b-card-text class="text-left"> CHF:{{ winePrix }}</b-card-text>
 
-        <b-button href="#" variant="primary">Ajouter au panier</b-button>
+        <b-button v-on:click="wineAdd" v-bind:href="wineId" variant="" class="product__add">Ajouter au panier</b-button>
       </b-card>
     </div>
   </div>
