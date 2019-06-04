@@ -1,6 +1,6 @@
- @extends('layouts.app')
+@extends('layouts.app')
 @section('content')
 <navbar-section></navbar-section>
 <cover-section></cover-section>
-<slider-section></slider-section>
+<product-card></product-card>
 @endsection 
