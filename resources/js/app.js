@@ -14,6 +14,7 @@ Vue.component('navbar-section', require('./components/navbar/Navbar.vue').defaul
 Vue.component('slider-section', require('./components/slider/Slider.vue').default);
 Vue.component('footer-section', require('./components/footer/Footer.vue').default);
 Vue.component('product-card', require('./components/productcard/Productcard.vue').default);
+Vue.component('cover-section', require('./components/cover/Cover.vue').default);
  
 
 new Vue({
