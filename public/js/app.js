@@ -1880,6 +1880,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("filter-list-2 componenet mounted");
+  },
+  data: function data() {
+    return {
+      text: "\n          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry\n          richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor\n          brunch. \n        "
+    };
   }
 });
 
@@ -66508,15 +66513,409 @@ var render = function() {
       "div",
       { staticClass: "filter__2" },
       [
-        _c("b-list-group", { staticClass: "filter__2__couleur" }),
+        _c(
+          "b-list-group",
+          { staticClass: "filter__2__couleur" },
+          [
+            _c("h2", [_vm._v("Couleur")]),
+            _vm._v(" "),
+            _c(
+              "b-form-checkbox",
+              {
+                attrs: {
+                  id: "checkbox-1",
+                  name: "Mousseaux",
+                  value: "accepted",
+                  "unchecked-value": "not_accepted"
+                },
+                model: {
+                  value: _vm.status,
+                  callback: function($$v) {
+                    _vm.status = $$v
+                  },
+                  expression: "status"
+                }
+              },
+              [_vm._v("Mousseaux")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-form-checkbox",
+              {
+                attrs: {
+                  id: "checkbox-2",
+                  name: "Rouge",
+                  value: "accepted",
+                  "unchecked-value": "not_accepted"
+                },
+                model: {
+                  value: _vm.status,
+                  callback: function($$v) {
+                    _vm.status = $$v
+                  },
+                  expression: "status"
+                }
+              },
+              [_vm._v("Rouge")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-form-checkbox",
+              {
+                attrs: {
+                  id: "checkbox-3",
+                  name: "Blanc",
+                  value: "accepted",
+                  "unchecked-value": "not_accepted"
+                },
+                model: {
+                  value: _vm.status,
+                  callback: function($$v) {
+                    _vm.status = $$v
+                  },
+                  expression: "status"
+                }
+              },
+              [_vm._v("Blanc")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-form-checkbox",
+              {
+                attrs: {
+                  id: "checkbox-4",
+                  name: "Rosé",
+                  value: "accepted",
+                  "unchecked-value": "not_accepted"
+                },
+                model: {
+                  value: _vm.status,
+                  callback: function($$v) {
+                    _vm.status = $$v
+                  },
+                  expression: "status"
+                }
+              },
+              [_vm._v("Rosé")]
+            )
+          ],
+          1
+        ),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
-        _c("b-list-group", { staticClass: "filter__2__prix" }),
-        _vm._v(" "),
-        _c("hr"),
-        _vm._v(" "),
-        _c("b-list-group", { staticClass: "filter__2__Région" })
+        _c(
+          "div",
+          { attrs: { role: "tablist" } },
+          [
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-1",
+                            modifiers: { "accordion-1": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Région")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-1",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-2",
+                            modifiers: { "accordion-2": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Appellation")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-2",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-3",
+                            modifiers: { "accordion-3": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Format")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-3",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-3",
+                            modifiers: { "accordion-3": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Millesimé")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-4",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-3",
+                            modifiers: { "accordion-3": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Dégré d'alcool")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-5",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-card",
+              { staticClass: "mb-1", attrs: { "no-body": "" } },
+              [
+                _c(
+                  "b-card-header",
+                  {
+                    staticClass: "p-0",
+                    attrs: { "header-tag": "header", role: "tab" }
+                  },
+                  [
+                    _c(
+                      "b-button",
+                      {
+                        directives: [
+                          {
+                            name: "b-toggle",
+                            rawName: "v-b-toggle.accordion-3",
+                            modifiers: { "accordion-3": true }
+                          }
+                        ],
+                        attrs: { block: "", href: "#", variant: "" }
+                      },
+                      [_vm._v("Actuellement")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "b-collapse",
+                  {
+                    attrs: {
+                      id: "accordion-6",
+                      accordion: "my-accordion",
+                      role: "tabpanel"
+                    }
+                  },
+                  [
+                    _c(
+                      "b-card-body",
+                      [_c("b-card-text", [_vm._v(_vm._s(_vm.text))])],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
       ],
       1
     )
@@ -79814,7 +80213,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/orderProductsBy/OrderProductsBy.js?vue&type=script&lang=js& ***!
   \*********************************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -79828,15 +80227,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************!*\
   !*** ./resources/js/components/orderProductsBy/OrderProductsBy.vue ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _OrderProductsBy_vue_vue_type_template_id_9b7b0f30_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OrderProductsBy.vue?vue&type=template&id=9b7b0f30&scoped=true& */ "./resources/js/components/orderProductsBy/OrderProductsBy.vue?vue&type=template&id=9b7b0f30&scoped=true&");
 /* harmony import */ var _OrderProductsBy_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OrderProductsBy.js?vue&type=script&lang=js& */ "./resources/js/components/orderProductsBy/OrderProductsBy.js?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _OrderProductsBy_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _OrderProductsBy_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _OrderProductsBy_css_vue_type_style_index_0_id_9b7b0f30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrderProductsBy.css?vue&type=style&index=0&id=9b7b0f30&scoped=true&lang=css& */ "./resources/js/components/orderProductsBy/OrderProductsBy.css?vue&type=style&index=0&id=9b7b0f30&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _OrderProductsBy_css_vue_type_style_index_0_id_9b7b0f30_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./OrderProductsBy.css?vue&type=style&index=0&id=9b7b0f30&scoped=true&lang=css& */ "./resources/js/components/orderProductsBy/OrderProductsBy.css?vue&type=style&index=0&id=9b7b0f30&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
