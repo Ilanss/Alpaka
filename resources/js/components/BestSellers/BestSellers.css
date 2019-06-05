@@ -1,8 +1,8 @@
 .bestSeller {
-    background-color: red;
-    padding: 20px;
+    background-color: white;
+    padding: 0px;
+}
+.col-sm-3 {
+    padding: 0px 5px !important;
 }
 
-.b-card-group{
-    
-}
