@@ -18,8 +18,10 @@ Vue.component('order-list', require('./components/orderProductsBy/OrderProductsB
 Vue.component('filter-list-1', require('./components/filterProducts_1/FilterProducts_1.vue').default);
 Vue.component('filter-list-2', require('./components/filterProducts_2/FilterProducts_2.vue').default);
 Vue.component('best-sellers', require('./components/bestSellers/bestSellers.vue').default);
-Vue.component('modal-popup', require('./components/Modal/Modal.vue').default);
+Vue.component('modal-popup', require('./components/modal/Modal.vue').default);
 Vue.component('modal', { template: '#modal-template' })
+Vue.component('login-form', require('./components/login/Login.vue').default);
+
 
 new Vue({
     el: '#app',
