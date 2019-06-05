@@ -27,5 +27,4 @@ Vue.component('blog-section', require('./components/blog/Blog.vue').default);
 
 new Vue({
     el: '#app',
-    
 });

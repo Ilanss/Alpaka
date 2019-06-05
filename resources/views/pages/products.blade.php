@@ -16,9 +16,8 @@
 
         <div class="row">
         <order-list class="col-sm-12 offset-sm-2"></order-list>
-        @foreach($products as $product)
-        <product-list products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
-        @endforeach
+        <product-list v-bind:products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
+
         </div>
         <!-- /.row -->
 
