@@ -4,10 +4,10 @@
             <div class="logo">
                 <img src="images/logo-vertical-fond-clair.png" alt="Logo Gazzar">
                 <p class="btnHero">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Découvrez nos vins</a>
+                    <a class="btn btn-primary btn-lg" href="#promo" v-smooth-scroll role="button">Découvrez nos vins</a>
                 </p>
             </div>
-            <div class="arrow"></div>
+            <a href="#nav-collapse" v-smooth-scroll><div class="arrow"></div></a>
         </div>
     </section>
 </template>
