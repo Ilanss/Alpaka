@@ -13659,11 +13659,21 @@ var components = {
   BPagination: _pagination__WEBPACK_IMPORTED_MODULE_0__["default"]
 };
 
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ({
   install: Object(_utils_plugins__WEBPACK_IMPORTED_MODULE_1__["installFactory"])({
     components: components
   })
 });
+=======
+	// Registration the controller as a special universal handler for all event namespaces
+	dataPriv.set( el, type, false );
+	jQuery.event.add( el, type, {
+		namespace: false,
+		handler: function( event ) {
+			var notAsync, result,
+				saved = dataPriv.get( this, type );
+>>>>>>> backend
 
 /***/ }),
 
@@ -20396,12 +20406,22 @@ var removeScrollspy = function removeScrollspy(el)
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./node_modules/bootstrap-vue/esm/directives/toggle/index.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/directives/toggle/index.js ***!
   \*******************************************************************/
 /*! exports provided: VBToggle, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
+=======
+// Registration as a named AMD module, since jQuery can be concatenated with other
+// files that may use define, but not via a proper concatenation script that
+// understands anonymous AMD modules. A named AMD is safest and most robust
+// way to register. Lowercase jquery is used because AMD module names are
+// derived from file names, and jQuery is normally delivered in a lowercase
+// file name. Do this after creating the global so that if an AMD module wants
+// to call noConflict to hide this version of jQuery, it will work.
+>>>>>>> backend
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);

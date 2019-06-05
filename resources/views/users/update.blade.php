@@ -8,7 +8,7 @@
                     <div class="card-header">{{ __('Modifier mes informations') }}</div>
 
                     <div class="card-body">
-                        <form method="GET" action="{{URL::to('/update') }}">
+                        <form method="GET" action="{{URL::to('/auth/update') }}">
                             @csrf
                             <div class="form-group row">
                                 <label for="username" class="col-md-4 col-form-label text-md-right">{{ __('Pseudo') }}</label>
