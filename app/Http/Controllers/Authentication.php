@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class Auhtentification extends Controller
+class Authentication extends Controller
 {
     // Show form registration
-    public function index(){
+    public function form(){
         return view('users.authentication');
     }
 

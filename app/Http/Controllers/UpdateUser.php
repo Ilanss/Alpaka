@@ -8,13 +8,15 @@ use Illuminate\Support\Facades\Hash;
 
 class UpdateUser extends Controller
 {
-    public function display()
+    // SHow form modification
+    public function form()
     {
         $user = auth()->user();
 
-        return view('updateUser')->with('user', $user);
+        return view('users.update')->with('user', $user);
     }
 
+    // Update user
     public function update(Request $request)
     {
         // Validation des input
@@ -40,9 +42,6 @@ class UpdateUser extends Controller
         $user->birth_date = date("Y-m-d", strtotime($request->input('birth_date')));
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
-        $createDate = Carbon::now();
-        $user->created_at = date("Y-m-d", strtotime($createDate));
-        $user->state = "client";
 
         // Age
         $age = date("Y-m-d", strtotime($request->input('birth_date')));
