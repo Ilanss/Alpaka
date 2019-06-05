@@ -16,28 +16,27 @@ Route::get('/', function () {
 });
 
 
-// Inscription
-Route::view('/registration', 'register');
-Route::post('/registration/store', 'Register@store');
+// Registration
+Route::get('/registration', 'Registration@form');
+Route::post('/registration/store', 'Registration@store');
 
-// Login
-Route::get('/auth', 'Login@auth');
+// Authentication
+Route::get('/auth', 'authentication@form');
+Route::get('/auth/login', 'Authentication@login');
 
 // Logout
-Route::get('/logout', 'Login@logout');
+Route::get('/auth/logout', 'Authentication@logout');
 
 // Update user
-Route::get('/modify', 'UpdateUser@display');
-Route::get('update', 'UpdateUser@update');
+Route::get('/auth/modify', 'UpdateUser@form');
+Route::get('/auth/update', 'UpdateUser@update');
 
+// Products
 Route::get('/product/create', 'ProductsController@create');
-
 Route::get('/product/{slug}', 'ProductsController@view');
-
 Route::get('/product/{id}', 'ProductsController@update');
-
 Route::get('/products/promotions', 'ProductsController@promotions');
-
 Route::resource('/products', 'ProductsController');
 
+// Auth (create with 'php artisan make:auth')
 Auth::routes();

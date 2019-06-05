@@ -8,8 +8,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class Register extends Controller
+class Registration extends Controller
 {
+    // Show form registration
+    public function form(){
+        return view('users.registration');
+    }
+
+    // Registration
     public function store(Request $request)
     {
 
@@ -39,7 +45,7 @@ class Register extends Controller
         $user->password = Hash::make($request->input('password'));
         $createDate = Carbon::now();
         $user->created_at = date("Y-m-d", strtotime($createDate));
-        $user->state = "client";
+        $user->state = User::CLIENT_STATE;
 
         // Age
         $age = date("Y-m-d", strtotime($request->input('birth_date')));

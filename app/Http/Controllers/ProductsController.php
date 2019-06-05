@@ -176,7 +176,7 @@ class ProductsController extends Controller
         $product = Wine::findOrFail($id);
 
         $link = $product->image;
-        unlink(public_path('images/products'.$link));
+        unlink(public_path('images/products/'.$link));
 
         $product->promotions()->delete();
         //$product->ratings()->delete();
