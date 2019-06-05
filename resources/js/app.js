@@ -23,7 +23,7 @@ Vue.component('story-section', require('./components/story/Story.vue').default);
 Vue.component('brand-section', require('./components/brand/Brand.vue').default);
 Vue.component('map-section', require('./components/map/Map.vue').default);
 Vue.component('blog-section', require('./components/blog/Blog.vue').default);
-
+Vue.component('promo-section', require('./components/promo/Promo.vue').default);
 
 new Vue({
     el: '#app',
