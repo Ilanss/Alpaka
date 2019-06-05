@@ -32,11 +32,14 @@ class ProductsController extends Controller
         return view('products.edit', compact('product', 'countries', 'categories', 'wineries'));
     }
 
+    public function search(Request $name) {
+        $name = $name->input('search');
+        $products = Wine::where('name', 'like', "%".$name."%")->get();
+        return view('products.index', compact('products'));
+    }
+
     public function promotions() {
         $products = Wine::join('promotions', 'wines.id', '=', 'promotions.wine_id')->get();
-
-        //dd($products);
-
         return view('products.index', compact('products'));
 
     }

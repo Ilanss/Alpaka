@@ -34,7 +34,7 @@ Route::get('/auth/update', 'UpdateUser@update');
 // Products
 Route::get('/product/create', 'ProductsController@create');
 Route::get('/product/{slug}', 'ProductsController@view');
-Route::get('/product/{id}', 'ProductsController@update');
+Route::get('/products/search', 'ProductsController@search')->name('products.search');
 Route::get('/products/promotions', 'ProductsController@promotions');
 Route::resource('/products', 'ProductsController');
 
