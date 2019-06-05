@@ -1,7 +1,5 @@
 export default {
-    name: "hero-section",
-  
     mounted() {
-      console.log("Component mounted.");
+        console.log('Hero component mounted.')
     }
-  };
+}

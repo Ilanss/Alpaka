@@ -1984,9 +1984,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "hero-section",
   mounted: function mounted() {
-    console.log("Component mounted.");
+    console.log('Hero component mounted.');
   }
 });
 
@@ -34183,7 +34182,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "html[data-v-3da30bd4], body[data-v-3da30bd4] {\r\n    height: 100%;\n}\nbody[data-v-3da30bd4] {\r\n    -webkit-perspective: 1px;\r\n            perspective: 1px;\r\n    -webkit-transform-style: preserve-3d;\r\n            transform-style: preserve-3d;\r\n    overflow-y: scroll;\r\n    overflow-x: hidden;\n}\n.cover__caption__button[data-v-3da30bd4] {\r\n    display: inline-block;\r\n    border-radius: 25px;\r\n    background-color: white;\r\n    color: red;\r\n    padding: 10px 20px;\r\n    text-decoration: none;\r\n    transition-duration: 0.4s;\r\n    -webkit-animation-delay: 0.8s;\r\n            animation-delay: 0.8s;\n}\n.cover__caption__button[data-v-3da30bd4]:hover {\r\n    background-color: red;\r\n    color: white;\r\n    text-decoration: none;\n}\n.cover[data-v-3da30bd4] {\r\n    height: 100%;\r\n    background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');\r\n \r\n    background-position: center center;\r\n    position: relative;\r\n    -webkit-transform-style: inherit;\r\n            transform-style: inherit;\n}", ""]);
+exports.push([module.i, "body[data-v-3da30bd4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\n.hero[data-v-3da30bd4] {\r\n    padding-top: 5%;\r\n    height: 100vh;\r\n    background-color: #FFFFFF;\n}\n.logo[data-v-3da30bd4] {\r\n    text-align: center;\n}\n.btn[data-v-3da30bd4]:active:focus {\r\n    background-color: #5B022E;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin: 60px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\n@-webkit-keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n@keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n.in-down[data-v-3da30bd4] {\r\n    -webkit-animation-name: fadeInDown-data-v-3da30bd4;\r\n    animation-name: fadeInDown-data-v-3da30bd4;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n    -webkit-animation-duration: 2s;\r\n    animation-duration: 2s;\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin-top: 30px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\r\n", ""]);
 
 // exports
 
@@ -67999,40 +67998,29 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container", attrs: { id: "hero" } }, [
-      _c("div", { staticClass: "cover" }, [
-        _c("div", { staticClass: "cover__filter" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "cover__filter__2" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "cover__caption" }, [
-          _c("div", { staticClass: "cover__caption__copy" }, [
-            _c("img", {
-              staticClass: "animated fadeInUp",
-              attrs: {
-                src: "images/logo-vertical-fond-clair.png",
-                alt: "HeroSection__Cover"
-              }
-            }),
-            _vm._v(" "),
-            _c("h1", { staticClass: "animated fadeInUp" }, [_vm._v("Gazzar")]),
-            _vm._v(" "),
+    return _c("section", [
+      _c("div", { staticClass: "hero in-down" }, [
+        _c("div", { staticClass: "logo" }, [
+          _c("img", {
+            attrs: {
+              src: "images/logo-vertical-fond-clair.png",
+              alt: "Logo Gazzar"
+            }
+          }),
+          _vm._v(" "),
+          _c("p", { staticClass: "btnHero" }, [
             _c(
               "a",
               {
-                staticClass: "cover__caption__button animated fadeIn",
-                attrs: { href: "" }
+                staticClass: "btn btn-primary btn-lg",
+                attrs: { href: "#", role: "button" }
               },
-              [_vm._v("Decouvrez nos vins")]
+              [_vm._v("Découvrez nos vins")]
             )
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "cover__icon animated fadeIn" }, [
-          _c("i", {
-            staticClass: "fas fa-angle-down fa-3x animated infinite bounce"
-          })
-        ])
+        _c("div", { staticClass: "arrow" })
       ])
     ])
   }
@@ -82233,8 +82221,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
