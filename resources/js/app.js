@@ -1,11 +1,14 @@
 require('./bootstrap');
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
+import vueSmoothScroll from 'vue2-smooth-scroll'
+Vue.use(vueSmoothScroll)
 
 Vue.use(BootstrapVue)
 window.Vue = require('vue');
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 
 //appel de tous les composants
 Vue.component('hero-section', require('./components/hero/Hero.vue').default);
