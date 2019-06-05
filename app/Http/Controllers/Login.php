@@ -16,13 +16,12 @@ class Login extends Controller
 
         $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
-        if(Auth::attempt($data)){
+        if (Auth::attempt($data)) {
             return redirect('/');
-        } else{
+        } else {
             echo 'Erreur <br/>';
             dd($data);
         }
-
     }
 
     public function logout()

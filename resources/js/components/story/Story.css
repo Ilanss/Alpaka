@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #5B022E;
+    font-family: "Montserrat", sans-serif !important ;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif !important ;
+    font-size: 1rem;
+    color: #1d1d1d;
+    line-height: 2.5rem;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    /*********** START ABOUT US ***********/
+    #aboutUs {
+        padding-bottom: 100px;
+    }
+
+    /*********** START CONTACT US ***********/
+    #contactUs {
+        background-color: #D8D4D3;
+        height: 500px;
+        width: 100%;
+    }
+
+    form {
+        padding-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    #envoyerForm {
+        background-color: #5B022E;
+    }
+
+
+    img {
+        position: relative;
+        z-index: 1;
+        height: 40em;
+        transform: rotate(-15deg);
+        left: 700px;
+        top: -500px;
+    }
+}
