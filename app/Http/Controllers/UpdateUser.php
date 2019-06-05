@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class Register extends Controller
+class UpdateUser extends Controller
 {
-    public function store(Request $request)
+    public function display()
     {
+        $user = auth()->user();
 
+        return view('updateUser')->with('user', $user);
+    }
+
+    public function update(Request $request)
+    {
         // Validation des input
         $validatedData = $request->validate([
             'username' => 'required|max:20',
@@ -21,20 +25,19 @@ class Register extends Controller
             'gender' => 'required',
             'birth_date' => 'required|date',
             'email' => 'required|max:45',
-            'password' => 'required|max:255',
-            'password-confirm' => 'required|max:255'
+            'password' => 'required|max:255'
         ]);
 
 //        print_r($request->input());
 //        dd($validatedData);
 
-        $user = new User();
+        $user = auth()->user();
 
         $user->username = $request->input('username');
         $user->lastname = $request->input('lastname');
         $user->firstname = $request->input('firstname');
         $user->gender = $request->input('gender');
-        $user->birth_date = $request->input('birth_date');
+        $user->birth_date = date("Y-m-d", strtotime($request->input('birth_date')));
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
         $createDate = Carbon::now();
@@ -46,14 +49,11 @@ class Register extends Controller
         $years = Carbon::parse($age)->age;
 
         // Verify
-        if($years < 18){
+        if ($years < 18) {
             $error = "Certaines conditions ne sont pas respectées (doit être majeur)";
             return Redirect::back()->withErrors($error);
-        }
-        else{
+        } else {
             $user->save($validatedData);
-
-            Auth::login($user, true);
 
             return redirect('/');
         }
