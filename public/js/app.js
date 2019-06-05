@@ -1876,6 +1876,9 @@ __webpack_require__.r(__webpack_exports__);
     console.log("brand-section Component mounted.");
   }
 });
+$('.carousel').carousel({
+  interval: false
+});
 
 /***/ }),
 
@@ -34066,7 +34069,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "body {\r\n    font-family: 'Montserrat', sans-serif;\r\n    color: #5B002E;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1 {\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np {\r\n    line-height: 2.5rem;\n}\nh2 {\r\n    margin: 0;\r\n    padding: 0;\n}\r\n\r\n/* Carousel */\n#carousel-example {\r\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\r\n    background: #FFFFFF;\r\n    padding: 40px 0;\r\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\r\n    padding: 0 0 35px;\r\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\r\n    margin: 0 auto;\r\n    position: static;\r\n    width: 100%;\r\n    font-size: 1rem;\n}\nol span {\r\n    border: 1px solid transparent;\r\n    cursor: pointer;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    text-align: center;\r\n    transition: border 0.3s, color 0.3s;\r\n    width: auto;\n}\nol .active {\r\n    background: none;\r\n    border: 1px solid #5B002E;\r\n    color: #5B002E;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    width: auto;\n}\n.item {\r\n    transition: opacity 1s;\n}\n.img-wrapper {\r\n    height: 400px;\r\n    margin: 0 -15px 0 0;\r\n    overflow: hidden;\r\n    position: relative;\n}\n.img-wrapper img {\r\n    left: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    width: auto;\n}\n.carousel-caption {\r\n    background: #E8D2AC;\r\n    color: #5B002E;\r\n    height: 400px;\r\n    margin: 0 0 0 -15px;\r\n    padding: 30px;\r\n    position: static;\r\n    text-align: left;\r\n    text-shadow: none;\n}\n.carousel-caption h2 {\r\n    padding: 0 0 20px;\r\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\r\n        height: auto;\n}\n.img-wrapper img {\r\n        -webkit-transform: none;\r\n        transform: none;\r\n        position: static;\r\n        width: 100%;\n}\n.carousel-caption {\r\n        height: auto;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34161,7 +34164,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#footer[data-v-22837618] {\r\n    background-color: #5b022e;\n}\n.container[data-v-22837618] {\r\n    font-family: \"Montserrat\";\r\n    font-size: 1rem;\r\n    color:white;\r\n    line-height: 2.5rem;\n}\n.titleFooter[data-v-22837618] {\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-top: 60px;\r\n    padding-bottom: 115px;\n}\n.col > a[data-v-22837618] {\r\n    color: #FFFFFF;\n}\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\n#copyright[data-v-22837618] {\r\n    color: #5b022e;\r\n    background-color: #FFFFFF; \r\n    text-align: center;\n}\n.far[data-v-22837618] {\r\n    color: #5b022e;\n}\n.alpaka[data-v-22837618] {\r\n    color: #5b022e;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}", ""]);
+exports.push([module.i, "body[data-v-22837618] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\n}\np[data-v-22837618] {\r\n    font-size: 1rem;\n}\nfooter[data-v-22837618] {\r\n    background-color: #5b022e;\r\n    color: #FFFFFF;\r\n    padding-top: 60px;\n}\n.mini-footer[data-v-22837618] {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\n}\r\n\r\n/* big footer */\nul[data-v-22837618] {\r\n    padding: 0;\r\n    margin: 0\n}\nli[data-v-22837618] {\r\n    list-style: none\n}\n.footer-widget-title[data-v-22837618] {\r\n    margin-bottom: 10px;\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    max-width: 100%;\r\n    margin-top: 50px;\r\n    margin-bottom: 115px;\n}\na[data-v-22837618] {\r\n    color: #FFFFFF;\n}\na[data-v-22837618]:hover {\r\n    color: #FFFFFF;\n}\n.mini-footer[data-v-22837618] {\r\n    background-color: #FFFFFF;\n}\r\n\r\n/* Mini footer */\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\ninstagram[data-v-22837618] {\r\n    margin: 0;\n}\n.copyright-text[data-v-22837618] {\r\n    color: #5b022e;\r\n    text-align: center;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}\n@media (min-width:992px) {\nhr[data-v-22837618] {\r\n        display: none;\n}\n}\n@media (max-width:991px) {\n.footer-big[data-v-22837618] {\r\n        padding-bottom: 60px;\n}\n.footer-menu[data-v-22837618] {\r\n        padding-left: 0\n}\n.footer-widget-title[data-v-22837618] {\r\n        margin-bottom: 10px;\r\n        font-size: 1.5rem;\r\n        padding-top: 20px;\n}\nhr[data-v-22837618] {\r\n        background-color: white;\n}\nimg[data-v-22837618] {\r\n        display: none;\n}\n.socialMedia[data-v-22837618] {\r\n        text-align: center;\n}\ninstagram[data-v-22837618] {\r\n        margin: 0;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -66964,97 +66967,142 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid p-0" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-4" }, [
-          _c("h2", [_vm._v("Nos valeurs")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\net accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam e\n\n\n       "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8" }, [
-          _c(
-            "div",
-            {
-              staticClass: "carousel slide ",
-              attrs: { id: "brand-slider", "data-ride": "carousel" }
-            },
-            [
-              _c("ol", { staticClass: "carousel-indicators" }, [
-                _c("li", {
-                  staticClass: "active",
-                  attrs: { "data-target": "#brand", "data-slide-to": "0" }
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  attrs: { "data-target": "#brand", "data-slide-to": "1" }
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  attrs: { "data-target": "#brand", "data-slide-to": "2" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-inner h-50" }, [
-                _c("div", { staticClass: "carousel-item active " }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 1"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-item" }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 2"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-item" }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 3"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
+    return _c("section", [
+      _c(
+        "div",
+        {
+          staticClass: "carousel slide",
+          attrs: { id: "carousel-example", "data-ride": "carousel" }
+        },
+        [
+          _c("div", { staticClass: "carousel-wrapper" }, [
+            _c("h1", [_vm._v("Nos valeurs")]),
+            _vm._v(" "),
+            _c("ol", { staticClass: "carousel-indicators" }, [
               _c(
-                "a",
+                "span",
                 {
-                  staticClass: "carousel-control-prev",
-                  attrs: { href: "#brand-slider", "data-slide": "prev" }
+                  staticClass: "active",
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "0"
+                  }
                 },
-                [_c("span", { staticClass: "carousel-control-prev-icon" })]
+                [_vm._v("Engagement")]
               ),
               _vm._v(" "),
               _c(
-                "a",
+                "span",
                 {
-                  staticClass: "carousel-control-next",
-                  attrs: { href: "#brand-slider", "data-slide": "next" }
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "1"
+                  }
                 },
-                [_c("span", { staticClass: "carousel-control-next-icon" })]
+                [_vm._v("Confiance")]
+              ),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "2"
+                  }
+                },
+                [_vm._v("Ambition")]
               )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "carousel-inner", attrs: { role: "button" } },
+            [
+              _c("div", { staticClass: "active carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Engagement")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            Valeur fondatrice de Gazzar S.A., l'engagement est au cœur de l'entreprise. Faire preuve d’engagement, c'est chercher à comprendre les besoins et attentes de nos clients, collègues ou partenaires. C'est aussi mobiliser notre expérience et nos compétences, décider et agir, pour livrer à notre client un résultat visant l'excellence.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1516600164266-f3b8166ae679?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Confiance")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            Composante forte de notre histoire, la confiance est un élément fondamental pour des rapports humains sains et durables. Elle est basée sur l'intégrité, la transparence, le respect et se traduit au quotidien chez Gazzar S.A. par la simplicité, la sincérité et la convivialité dans les échanges.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1529877612930-6e7df7e2b02f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Ambition")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            État d'esprit, l'ambition est la capacité à repousser sans cesse les limites, à voir plus loin et à vouloir se dépasser pour atteindre le but recherché. C'est pourquoi nous nous fixons des objectifs élevés et nous nous mobilisons avec enthousiasme dans le challenge avec un fort esprit d'équipe.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
             ]
           )
-        ])
-      ])
+        ]
+      )
     ])
   }
 ]
@@ -67740,131 +67788,181 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("div", { attrs: { id: "footer" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row titleFooter" }, [
-            _c("div", { staticClass: "col" }, [
-              _vm._v("\n                    Boutique\n                ")
+      _c("footer", { staticClass: "footer-area footer--light" }, [
+        _c("div", { staticClass: "footer-big" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                _c("div", { staticClass: "footer-widget" }, [
+                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+                    _c("h4", { staticClass: "footer-widget-title" }, [
+                      _vm._v("Boutique")
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("CGV")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Connextez-vous")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Inscrivez-vous")
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                _c("div", { staticClass: "footer-widget" }, [
+                  _c("div", { staticClass: "footer-menu" }, [
+                    _c("h4", { staticClass: "footer-widget-title" }, [
+                      _vm._v("Gazzar")
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("À propos")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Blog")])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                _c("div", { staticClass: "footer-widget" }, [
+                  _c("div", { staticClass: "footer-menu no-padding" }, [
+                    _c("h4", { staticClass: "footer-widget-title" }, [
+                      _vm._v("Aide")
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Service d'aide")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Droits d'auteur")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+                _c("div", { staticClass: "footer-widget" }, [
+                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+                    _c("h4", { staticClass: "footer-widget-title" }, [
+                      _vm._v("Réseaux sociaux")
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _vm._v("\n                    Gazzar\n                ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _vm._v("\n                    Aide\n                ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _vm._v("\n                    Réseaux sociaux\n                ")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("À propos")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Service d'aide")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Droits d'ateur")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "cgv" } }, [_vm._v("CGV")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Blog")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "about" } }, [_vm._v("Contact")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Connectez-vous")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Inscrivez-vous")])
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12 text-center" }, [
+                _c("img", {
+                  attrs: {
+                    src: "images/logo-horizontal-fond-clair.png",
+                    alt: "Logo Gazzar"
+                  }
+                })
+              ])
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", [
-          _c("img", {
-            attrs: {
-              src: "images/logo-horizontal-fond-clair.png",
-              alt: "Logo Gazzar"
-            }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "copyright" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col alpaka" }, [
-              _vm._v("\n                    Copyright "),
-              _c("i", { staticClass: "far fa-copyright" }),
-              _vm._v(" Alpaka 2019\n                ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col" }, [
-              _c("i", { staticClass: "far fa-envelope" }),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#", id: "newsletter" } }, [
-                _vm._v("Inscription à la newsletter")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col socialMedia" }, [
-              _c("a", { attrs: { href: "#" } }, [
-                _c("i", { staticClass: "fab fa-facebook-f" })
+        _c("div", { staticClass: "mini-footer" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "copyright-text" }, [
+                  _c("p", [
+                    _vm._v("Copyright "),
+                    _c("i", { staticClass: "far fa-copyright" }),
+                    _vm._v(" Alpaka 2019\n                        ")
+                  ])
+                ])
               ]),
               _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _c("i", { staticClass: "fab fa-twitter" })
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "copyright-text" }, [
+                  _c("i", { staticClass: "far fa-envelope" }),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#", id: "newsletter" } }, [
+                    _vm._v("Inscription à la newsletter")
+                  ])
+                ])
               ]),
               _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _c("i", { staticClass: "fab fa-instagram" })
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "col socialMedia" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-facebook-f" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram instagram" })
+                  ])
+                ])
               ])
             ])
           ])
@@ -82135,8 +82233,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
