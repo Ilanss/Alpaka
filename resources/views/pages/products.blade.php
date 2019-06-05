@@ -16,7 +16,9 @@
 
         <div class="row">
         <order-list class="col-sm-12 offset-sm-2"></order-list>
-        <product-list class="col-sm-12 offset-sm-2"></product-list>
+        @foreach($products as $product)
+        <product-list products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
+        @endforeach
         </div>
         <!-- /.row -->
 
@@ -27,3 +29,4 @@
 </div>
 
 @endsection
+

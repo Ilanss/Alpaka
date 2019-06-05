@@ -13,8 +13,9 @@ use Illuminate\Http\Request;
 class ProductsController extends Controller
 {
     public function index() {
-        $products = Wine::paginate(30);
-        return view('products.index', compact('products'));
+        $products = Wine::paginate(30);      
+        //$product = $products->toJson();
+        return view('pages.products')->with('products', $products);
     }
 
     public function view($slug) {

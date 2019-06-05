@@ -1996,53 +1996,10 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['products'],
   mounted: function mounted() {
+    console.log("hello" + this.products);
     console.log("productlist mounted");
-  },
-  data: function data() {
-    return {
-      products: [{
-        wineId: "#01",
-        wineName: "Test title vin 1",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#02",
-        wineName: "Test title vin 2",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }, {
-        wineId: "#03",
-        wineName: "Test title vin 3",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#04",
-        wineName: "Test title vin 4",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }, {
-        wineId: "#01",
-        wineName: "Test title vin 1",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#02",
-        wineName: "Test title vin 2",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }, {
-        wineId: "#03",
-        wineName: "Test title vin 3",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#04",
-        wineName: "Test title vin 4",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }]
-    };
   }
 });
 
@@ -68201,7 +68158,7 @@ var render = function() {
         { staticClass: "row" },
         _vm._l(_vm.products, function(product) {
           return _c("product-card", {
-            key: product.wineId,
+            key: product.id,
             staticClass: "col-sm-4",
             attrs: { item: product }
           })
@@ -81684,7 +81641,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************************************************************!*\
   !*** ./resources/js/components/productslist/Productlist.js?vue&type=script&lang=js& ***!
   \**************************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -81698,14 +81655,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************************************!*\
   !*** ./resources/js/components/productslist/Productlist.vue ***!
   \**************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Productlist_vue_vue_type_template_id_7545faab_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Productlist.vue?vue&type=template&id=7545faab&scoped=true& */ "./resources/js/components/productslist/Productlist.vue?vue&type=template&id=7545faab&scoped=true&");
 /* harmony import */ var _Productlist_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Productlist.js?vue&type=script&lang=js& */ "./resources/js/components/productslist/Productlist.js?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Productlist_css_vue_type_style_index_0_id_7545faab_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Productlist.css?vue&type=style&index=0&id=7545faab&scoped=true&lang=css& */ "./resources/js/components/productslist/Productlist.css?vue&type=style&index=0&id=7545faab&scoped=true&lang=css&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Productlist_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Productlist_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _Productlist_css_vue_type_style_index_0_id_7545faab_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Productlist.css?vue&type=style&index=0&id=7545faab&scoped=true&lang=css& */ "./resources/js/components/productslist/Productlist.css?vue&type=style&index=0&id=7545faab&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
