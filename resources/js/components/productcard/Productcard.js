@@ -8,10 +8,10 @@ export default {
     },
     methods: {
         winePreview: function(id){
-            console.log("winePreveiw"+ id);
+            console.log("winePreview"+ id);
         },
         wineAdd: function(event){
-            console.log("added in car");
+            console.log("added in cart");
         }
     },
     props: [ 'item']

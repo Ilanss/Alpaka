@@ -6,28 +6,28 @@
         <h2>Couleur</h2>
         <b-form-checkbox
           id="checkbox-1"
-          v-model="status"
+         
           name="Mousseaux"
           value="accepted"
           unchecked-value="not_accepted"
         >Mousseaux</b-form-checkbox>
         <b-form-checkbox
           id="checkbox-2"
-          v-model="status"
+          
           name="Rouge"
           value="accepted"
           unchecked-value="not_accepted"
         >Rouge</b-form-checkbox>
         <b-form-checkbox
           id="checkbox-3"
-          v-model="status"
+          
           name="Blanc"
           value="accepted"
           unchecked-value="not_accepted"
         >Blanc</b-form-checkbox>
         <b-form-checkbox
           id="checkbox-4"
-          v-model="status"
+          
           name="Rosé"
           value="accepted"
           unchecked-value="not_accepted"
