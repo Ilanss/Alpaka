@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "bootstrap-vue": "^2.0.0-rc.22",
-        "vue-bootstrap-slider": "^2.1.8"
+        "vue-bootstrap-slider": "^2.1.8",
+        "vue2-smooth-scroll": "^1.0.5"
     }
 }

@@ -1,0 +1,25 @@
+.form {
+    width: 30%;
+}
+
+.form__content {
+    font-family: 'Montserrat';
+    text-align: center !important;
+}
+
+.form__submit {
+    border-radius: 25px;
+    background-color: #5b022e;
+    margin: 15px;
+}
+
+.fab {
+    color: white;
+    background-color: #5b022e;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.b-form-input {
+    text-align: center !important;
+}
