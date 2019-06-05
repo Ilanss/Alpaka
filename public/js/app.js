@@ -1876,6 +1876,9 @@ __webpack_require__.r(__webpack_exports__);
     console.log("brand-section Component mounted.");
   }
 });
+$('.carousel').carousel({
+  interval: false
+});
 
 /***/ }),
 
@@ -34049,7 +34052,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "body {\r\n    font-family: 'Montserrat', sans-serif;\r\n    color: #5B002E;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1 {\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np {\r\n    line-height: 2.5rem;\n}\nh2 {\r\n    margin: 0;\r\n    padding: 0;\n}\r\n\r\n/* Carousel */\n#carousel-example {\r\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\r\n    background: #FFFFFF;\r\n    padding: 40px 0;\r\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\r\n    padding: 0 0 35px;\r\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\r\n    margin: 0 auto;\r\n    position: static;\r\n    width: 100%;\r\n    font-size: 1rem;\n}\nol span {\r\n    border: 1px solid transparent;\r\n    cursor: pointer;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    text-align: center;\r\n    transition: border 0.3s, color 0.3s;\r\n    width: auto;\n}\nol .active {\r\n    background: none;\r\n    border: 1px solid #5B002E;\r\n    color: #5B002E;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    width: auto;\n}\n.item {\r\n    transition: opacity 1s;\n}\n.img-wrapper {\r\n    height: 400px;\r\n    margin: 0 -15px 0 0;\r\n    overflow: hidden;\r\n    position: relative;\n}\n.img-wrapper img {\r\n    left: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    width: auto;\n}\n.carousel-caption {\r\n    background: #E8D2AC;\r\n    color: #5B002E;\r\n    height: 400px;\r\n    margin: 0 0 0 -15px;\r\n    padding: 30px;\r\n    position: static;\r\n    text-align: left;\r\n    text-shadow: none;\n}\n.carousel-caption h2 {\r\n    padding: 0 0 20px;\r\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\r\n        height: auto;\n}\n.img-wrapper img {\r\n        -webkit-transform: none;\r\n        transform: none;\r\n        position: static;\r\n        width: 100%;\n}\n.carousel-caption {\r\n        height: auto;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -66898,97 +66901,142 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid p-0" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-4" }, [
-          _c("h2", [_vm._v("Nos valeurs")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\net accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam e\n\n\n       "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8" }, [
-          _c(
-            "div",
-            {
-              staticClass: "carousel slide ",
-              attrs: { id: "brand-slider", "data-ride": "carousel" }
-            },
-            [
-              _c("ol", { staticClass: "carousel-indicators" }, [
-                _c("li", {
-                  staticClass: "active",
-                  attrs: { "data-target": "#brand", "data-slide-to": "0" }
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  attrs: { "data-target": "#brand", "data-slide-to": "1" }
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  attrs: { "data-target": "#brand", "data-slide-to": "2" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "carousel-inner h-50" }, [
-                _c("div", { staticClass: "carousel-item active " }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 1"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-item" }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 2"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "carousel-item" }, [
-                  _c("img", {
-                    staticStyle: { width: "100%" },
-                    attrs: {
-                      src:
-                        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
-                      alt: "brand 3"
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
+    return _c("section", [
+      _c(
+        "div",
+        {
+          staticClass: "carousel slide",
+          attrs: { id: "carousel-example", "data-ride": "carousel" }
+        },
+        [
+          _c("div", { staticClass: "carousel-wrapper" }, [
+            _c("h1", [_vm._v("Nos valeurs")]),
+            _vm._v(" "),
+            _c("ol", { staticClass: "carousel-indicators" }, [
               _c(
-                "a",
+                "span",
                 {
-                  staticClass: "carousel-control-prev",
-                  attrs: { href: "#brand-slider", "data-slide": "prev" }
+                  staticClass: "active",
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "0"
+                  }
                 },
-                [_c("span", { staticClass: "carousel-control-prev-icon" })]
+                [_vm._v("Engagement")]
               ),
               _vm._v(" "),
               _c(
-                "a",
+                "span",
                 {
-                  staticClass: "carousel-control-next",
-                  attrs: { href: "#brand-slider", "data-slide": "next" }
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "1"
+                  }
                 },
-                [_c("span", { staticClass: "carousel-control-next-icon" })]
+                [_vm._v("Confiance")]
+              ),
+              _vm._v(" "),
+              _c(
+                "span",
+                {
+                  attrs: {
+                    "data-target": "#carousel-example",
+                    "data-slide-to": "2"
+                  }
+                },
+                [_vm._v("Ambition")]
               )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "carousel-inner", attrs: { role: "button" } },
+            [
+              _c("div", { staticClass: "active carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1423483641154-5411ec9c0ddf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Engagement")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            Valeur fondatrice de Gazzar S.A., l'engagement est au cœur de l'entreprise. Faire preuve d’engagement, c'est chercher à comprendre les besoins et attentes de nos clients, collègues ou partenaires. C'est aussi mobiliser notre expérience et nos compétences, décider et agir, pour livrer à notre client un résultat visant l'excellence.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1516600164266-f3b8166ae679?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Confiance")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            Composante forte de notre histoire, la confiance est un élément fondamental pour des rapports humains sains et durables. Elle est basée sur l'intégrité, la transparence, le respect et se traduit au quotidien chez Gazzar S.A. par la simplicité, la sincérité et la convivialité dans les échanges.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "carousel-item" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "img-wrapper" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "https://images.unsplash.com/photo-1529877612930-6e7df7e2b02f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-6" }, [
+                    _c("div", { staticClass: "carousel-caption" }, [
+                      _c("h2", [_vm._v("Ambition")]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                            État d'esprit, l'ambition est la capacité à repousser sans cesse les limites, à voir plus loin et à vouloir se dépasser pour atteindre le but recherché. C'est pourquoi nous nous fixons des objectifs élevés et nous nous mobilisons avec enthousiasme dans le challenge avec un fort esprit d'équipe.\n                        "
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
             ]
           )
-        ])
-      ])
+        ]
+      )
     ])
   }
 ]
