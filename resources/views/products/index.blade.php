@@ -2,5 +2,6 @@
 
 @foreach($products as $product)
     <h2><a href="{{ URL::action("ProductsController@view", $product->slug) }}"> {{$product->name}} </a></h2>
+    <img src="{{ url("/images/products") }}/{{$product->image}}" />
 
 @endforeach

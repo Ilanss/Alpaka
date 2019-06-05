@@ -7,12 +7,17 @@
         </ul>
     </div><br />
 @endif
-<form method="post" action="{{ route('products.update', $product->id) }}">
+<form method="post" action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data">
     <div class="form-group">
         @csrf
         @method('PATCH')
         <label for="name">Name:</label>
         <input type="text" class="form-control" name="name" value="{{$product->name}}"/>
+    </div>
+    <img src="{{ url("/images/products") }}/{{$product->image}}" />
+    <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image" multiple="multiple">
     </div>
     <div class="form-group">
         <label for="brand">Brand :</label>
@@ -89,10 +94,6 @@
     <div class="form-group">
         <label for="alcohol_level">Alcohol level :</label>
         <input type="text" class="form-control" name="alcohol_level" value="{{$product->alcohol_level}}"/>
-    </div>
-    <div class="form-group">
-        <label for="slug">Slug :</label>
-        <input type="text" class="form-control" name="slug" value="{{$product->slug}}"/>
     </div>
     <div class="form-group">
         <label for="delivery_delay">Delivery delay :</label>

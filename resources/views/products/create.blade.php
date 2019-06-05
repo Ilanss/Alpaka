@@ -7,11 +7,15 @@
         </ul>
     </div><br />
 @endif
-<form method="post" action="{{ route('products.store') }}">
+<form method="post" action="{{ route('products.store') }}" enctype="multipart/form-data">
     <div class="form-group">
         @csrf
         <label for="name">Name:</label>
         <input type="text" class="form-control" name="name"/>
+    </div>
+    <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" name="image" id="image">
     </div>
     <div class="form-group">
         <label for="brand">Brand :</label>
@@ -88,10 +92,6 @@
     <div class="form-group">
         <label for="alcohol_level">Alcohol level :</label>
         <input type="text" class="form-control" name="alcohol_level"/>
-    </div>
-    <div class="form-group">
-        <label for="slug">Slug :</label>
-        <input type="text" class="form-control" name="slug"/>
     </div>
     <div class="form-group">
         <label for="delivery_delay">Delivery delay :</label>
