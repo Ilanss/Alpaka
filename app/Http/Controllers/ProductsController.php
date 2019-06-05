@@ -12,10 +12,16 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
+
     public function index() {
-        $products = Wine::paginate(30);
-        return view('products.index', compact('products'));
+        $products = Wine::all();
+        return view('pages.products',compact('products'));
     }
+   /*public function index() {
+        $products = Wine::all();
+        return view('pages.products')->with('products', $products);
+    }
+    */
 
     public function view($slug) {
         $product = Wine::where('slug', $slug)->firstOrFail();
