@@ -1,7 +1,6 @@
 require('./bootstrap');
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
-
+import Vue from 'vue';
+import BootstrapVue from 'bootstrap-vue';
 Vue.use(BootstrapVue)
 window.Vue = require('vue');
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,6 +20,7 @@ Vue.component('best-sellers', require('./components/bestSellers/bestSellers.vue'
 Vue.component('modal-popup', require('./components/modal/Modal.vue').default);
 Vue.component('modal', { template: '#modal-template' })
 Vue.component('login-form', require('./components/login/Login.vue').default);
+Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 
 
 new Vue({
