@@ -24,6 +24,7 @@ Vue.component('best-sellers', require('./components/bestSellers/bestSellers.vue'
 Vue.component('modal-popup', require('./components/modal/Modal.vue').default);
 Vue.component('modal', { template: '#modal-template' })
 Vue.component('login-form', require('./components/login/Login.vue').default);
+Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
 Vue.component('contact-section', require('./components/contact/Contact.vue').default);
