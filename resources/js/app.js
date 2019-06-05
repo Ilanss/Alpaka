@@ -21,6 +21,7 @@ Vue.component('modal-popup', require('./components/modal/Modal.vue').default);
 Vue.component('modal', { template: '#modal-template' })
 Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
+Vue.component('cart-list', require('./components/cart/Cart.vue').default);
 
 
 new Vue({
