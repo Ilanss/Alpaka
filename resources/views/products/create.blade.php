@@ -1,6 +1,6 @@
-@extends('template')
+{{--@extends('template')--}}
 
-@section('content')
+{{--@section('content')--}}
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
@@ -12,7 +12,7 @@
                     </ul>
                 </div><br/>
             @endif
-            <form method="post" action="{{ route('products.store') }}">
+            <form method="post" action="{{ route('products.store') }}" enctype="multipart/form-data">
                 <div class="form-group">
                     @csrf
                     <label for="name">Name:</label>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price_wine">Wine price :</label>
-                    <input type="text" class="form-control" name="price_wine"/>
+                    <input type="number" class="form-control" name="price_wine"/>
                 </div>
                 <div class="form-group">
                     <label for="origin">Origin :</label>
@@ -68,23 +68,23 @@
                 </div>
                 <div class="form-group">
                     <label for="good_year">Good Year :</label>
-                    <input type="text" class="form-control" name="good_year"/>
+                    <input type="checkbox" class="form-control" name="good_year" value="1"/>
                 </div>
                 <div class="form-group">
                     <label for="date_production">Date production :</label>
-                    <input type="text" class="form-control" name="date_production"/>
+                    <input type="date" class="form-control" name="date_production"/>
                 </div>
                 <div class="form-group">
                     <label for="serv_temp">Serving temperature :</label>
-                    <input type="text" class="form-control" name="serv_temp"/>
+                    <input type="number" class="form-control" name="serv_temp"/>
                 </div>
                 <div class="form-group">
                     <label for="description">Description :</label>
-                    <input type="text" class="form-control" name="description"/>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="stock_status">Stock status :</label>
-                    <input type="text" class="form-control" name="stock_status"/>
+                    <input type="checkbox" class="form-control" name="stock_status" value="1" checked/>
                 </div>
                 <div class="form-group">
                     <label for="conditioning">Conditioning :</label>
@@ -92,19 +92,17 @@
                 </div>
                 <div class="form-group">
                     <label for="ranking">Ranking :</label>
-                    <input type="text" class="form-control" name="ranking"/>
+                    <input type="number" class="form-control" name="ranking"/>
                 </div>
                 <div class="form-group">
                     <label for="alcohol_level">Alcohol level :</label>
-                    <input type="text" class="form-control" name="alcohol_level"/>
+                    <input type="number" class="form-control" name="alcohol_level"/>
                 </div>
                 <div class="form-group">
-                    <label for="slug">Slug :</label>
-                    <input type="text" class="form-control" name="slug"/>
-                </div>
-                <div class="form-group">
-                    <label for="delivery_delay">Delivery delay :</label>
-                    <input type="text" class="form-control" name="delivery_delay"/>
+                    <label for="delivery_delay_from">Delivery delay from:</label>
+                    <input type="number" class="form-control" name="delivery_delay_from"/>
+                    <label for="delivery_delay_to">to :</label>
+                    <input type="number" class="form-control" name="delivery_delay_to"/>
                 </div>
                 <button type="submit" class="btn btn-primary">Create Wine</button>
             </form>
@@ -112,4 +110,5 @@
             <h2>Accès refusé</h2>
         @endif
     @endif
-@endsection
+{{--@endsection
+--}}

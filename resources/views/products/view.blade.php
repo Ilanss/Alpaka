@@ -1,6 +1,6 @@
-@extends('template')
+{{--@extends('template')--}}
 
-@section('content')
+{{--@section('content')--}}
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             <p><a href="{{ URL::route('products.index') }}">Retour</a></p>
@@ -53,4 +53,4 @@
             @endforeach
         @endif
     @endif
-@endsection
+{{--@endsection--}}
