@@ -16,16 +16,20 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/products', function () {
-    return view('pages.products');
-});
-
 Route::get('/', function () {
     return view('pages.home');
 });
 
 Route::get('/home', function () {
     return view('pages.home');
+});
+
+// Inscription
+Route::view('/registration', 'register');
+Route::post('/registration/store', 'Register@store');
+
+Route::get('/blog', function () {
+    return view('pages.blog');
 });
 
 Route::get('/products', function () {
@@ -35,3 +39,22 @@ Route::get('/products', function () {
 Route::get('/admin', function () {
     return view('pages.admin');
 });
+
+Route::get('/cgv', function () {
+    return view('pages.cgv');
+});
+// Update user
+Route::get('/modify', 'UpdateUser@display');
+Route::get('update', 'UpdateUser@update');
+
+Route::get('/product/create', 'ProductsController@create');
+
+Route::get('/product/{slug}', 'ProductsController@view');
+
+Route::get('/product/{id}', 'ProductsController@update');
+
+Route::get('/products/promotions', 'ProductsController@promotions');
+
+Route::resource('/products', 'ProductsController');
+
+Auth::routes();

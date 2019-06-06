@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: #5B022E;
+}
+
+p {
+    font-size: 1rem;
+}
+
+#promo {
+    background-color: #E8D2AC;
+    color: #FFFFFF;
+}
+
+.promo-title {
+    color: #5B022E;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn,
+.btn:hover,
+.btn:active {
+    color: #FFFFFF;
+    background-color: #5B022E;
+    border: 1px solid #5B022E;
+    margin: 20px;
+}
+
+.promo-text {
+    color: #5B022E;
+    text-align: center;
+}
+
+#newsletter {
+    color: #5b022e;
+}
+
+@media (min-width:992px) {
+    #promo {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width:991px) {
+    #promo {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
