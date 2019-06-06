@@ -22,11 +22,12 @@ Vue.component('modal', { template: '#modal-template' })
 Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 Vue.component('cart-list', require('./components/cart/Cart.vue').default);
+Vue.component('product-info', require('./components/productInfo/ProductInfo.vue').default);
 
 
 new Vue({
     el: '#app',
     data: {
-        showModal: false
+        showModal: false,
     }
 });

@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-<cart-list></cart-list>
+<product-info></product-info>
 @endsection
