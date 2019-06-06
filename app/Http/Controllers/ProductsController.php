@@ -108,17 +108,19 @@ class ProductsController extends Controller
         $products['origin'] = $request->input('origin');
         $products['size'] = $request->input('size');
         $products['varietal'] = $request->input('varietal');
-        $products['good_year'] = $request->input('good_year');
+        $products['good_year'] = ($request->input('good_year')) ? 1 : 0;
         $products['date_production'] = $request->input('date_production');
         $products['serv_temp'] = $request->input('serv_temp');
         $products['description'] = $request->input('description');
-        $products['stock_status'] = $request->input('stock_status');
+        $products['stock_status'] = ($request->input('stock_status')) ? 1 : 0;
         $products['conditioning'] = $request->input('conditioning');
         $products['ranking'] = $request->input('ranking');
         $products['alcohol_level'] = $request->input('alcohol_level');
         $products['slug'] = str_slug($request->input('name'));
         $products['delivery_delay'] = $request->input('delivery_delay_from')." à ".$request->input('delivery_delay_to');
 
+        dd($products);
+        return;
 
         Wine::create($products);
 
@@ -174,11 +176,11 @@ class ProductsController extends Controller
         $products['origin'] = $request->input('origin');
         $products['size'] = $request->input('size');
         $products['varietal'] = $request->input('varietal');
-        $products['good_year'] = $request->input('good_year');
+        $products['good_year'] = ($request->input('good_year')) ? 1 : 0;
         $products['date_production'] = $request->input('date_production');
         $products['serv_temp'] = $request->input('serv_temp');
         $products['description'] = $request->input('description');
-        $products['stock_status'] = $request->input('stock_status');
+        $products['stock_status'] = ($request->input('stock_status')) ? 1 : 0;
         $products['conditioning'] = $request->input('conditioning');
         $products['ranking'] = $request->input('ranking');
         $products['alcohol_level'] = $request->input('alcohol_level');
