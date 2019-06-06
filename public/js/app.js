@@ -1934,10 +1934,9 @@ __webpack_require__.r(__webpack_exports__);
       perPage: 3,
       currentPage: 1,
       promo: "",
-      totalHorsTVA: "",
       tva: "7.7",
-      total: "",
-      fields: [//A regular column
+      image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
+      fields: ['id', //A regular column
       'image', // A column that needs custom formatting
       {
         key: 'name',
@@ -1953,27 +1952,32 @@ __webpack_require__.r(__webpack_exports__);
           var number = item.quantity * item.prix;
           return number.toFixed(2);
         }
-      }],
+      }, //delate button
+      'delate me'],
       //Wine structure --> put here Wine data .json
       items: [{
+        id: "1",
         name: "Wine 1",
         quantity: "1",
         prix: "10.00",
         description: "Wine description",
         image: ""
       }, {
+        id: "2",
         name: "Wine 2",
         quantity: "2",
         prix: "10.00",
         description: "Wine description",
         image: ""
       }, {
+        id: "3",
         name: "Wine 3",
         quantity: "1",
         prix: "20.00",
         description: "Wine description",
         image: ""
       }, {
+        id: "4",
         name: "Wine 4",
         quantity: "2",
         prix: "20.00",
@@ -1990,14 +1994,23 @@ __webpack_require__.r(__webpack_exports__);
       var total = this.items.reduce(function (a, c) {
         return a + Number(c.quantity * c.prix || 0);
       }, 0);
-      return total; //return console.log("teo test totale");
+      return total;
+    },
+    tvaTotal: function tvaTotal() {
+      var total = this.totalHorsTVA / this.tva;
+      return total;
+    },
+    totalSum: function totalSum() {
+      var total = this.totalHorsTVA + this.tvaTotal;
+      return total;
     }
   },
   methods: {
     onSubmit: function onSubmit(evt) {
       evt.preventDefault();
       alert(JSON.stringify(this.form));
-    }
+    },
+    delateEvent: function delateEvent(item) {}
   }
 });
 
@@ -67035,6 +67048,12 @@ var render = function() {
               },
               scopedSlots: _vm._u([
                 {
+                  key: "index",
+                  fn: function(data) {
+                    return [_vm._v(_vm._s(data.index + 1))]
+                  }
+                },
+                {
                   key: "image",
                   fn: function(props) {
                     return [
@@ -67043,10 +67062,28 @@ var render = function() {
                           alt: "",
                           width: "50",
                           height: "50",
-                          src:
-                            "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80"
+                          src: _vm.image
                         }
                       })
+                    ]
+                  }
+                },
+                {
+                  key: "delate me",
+                  fn: function(data) {
+                    return [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "item__delate",
+                          on: {
+                            click: function($event) {
+                              return _vm.delateEvent(this.item)
+                            }
+                          }
+                        },
+                        [_vm._v("Delate")]
+                      )
                     ]
                   }
                 }
@@ -67136,14 +67173,16 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "cart__sum col-sm-6 offset-6" }, [
         _c("h2", [
-          _vm._v("Sous-total hors TVA CHF " + _vm._s(_vm.totalHorsTVA))
+          _vm._v(
+            "Sous-total hors TVA CHF: " + _vm._s(_vm.totalHorsTVA.toFixed(2))
+          )
         ]),
         _vm._v(" "),
-        _c("h2", [_vm._v("TVA - 7.7% " + _vm._s(_vm.tva))]),
+        _c("h2", [_vm._v("TVA - 7.7%: " + _vm._s(_vm.tvaTotal.toFixed(2)))]),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
-        _c("h3", [_vm._v("TOTAL " + _vm._s(_vm.total))])
+        _c("h3", [_vm._v("TOTAL: " + _vm._s(_vm.totalSum.toFixed(2)))])
       ]),
       _vm._v(" "),
       _c(

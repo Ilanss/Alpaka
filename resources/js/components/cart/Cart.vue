@@ -19,16 +19,22 @@
           striped
           hover
         >
+          <!-- INDEX -->
+          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+          <!-- IMAGE doesn't works -->
           <template slot="image" slot-scope="props">
             <img
               alt
               width="50"
               height="50"
-              src="https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80"
+              :src= "image"
             >
-          </template>
+          </template> 
 
- 
+          <template slot="delate me" slot-scope="data">
+            <!-- DELATE BUTTON doesn't works-->
+            <b-button class="item__delate" @click="delateEvent(this.item)">Delate</b-button>
+          </template>
         </b-table>
 
         <b-pagination
@@ -52,10 +58,10 @@
       </div>
     </div>
     <div class="cart__sum col-sm-6 offset-6">
-      <h2>Sous-total hors TVA CHF {{totalHorsTVA}}</h2>
-      <h2>TVA - 7.7% {{tva}}</h2>
+      <h2>Sous-total hors TVA CHF: {{totalHorsTVA.toFixed(2)}}</h2>
+      <h2>TVA - 7.7%: {{tvaTotal.toFixed(2)}}</h2>
       <hr>
-      <h3>TOTAL {{total}}</h3>
+      <h3>TOTAL: {{totalSum.toFixed(2)}}</h3>
     </div>
     <b-button class="cart__submit" type="submit" variant>Order Validate</b-button>
   </div>
