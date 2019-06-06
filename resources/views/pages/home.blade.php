@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<modal-popup></modal-popup>
-<login-form></login-form>
+<navbar-section></navbar-section>
+<product-list></product-list>
+
+
 @endsection
+

@@ -2046,6 +2046,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("modal mounted");
+  },
+  methods: {
+    showModal: function showModal() {
+      this.$refs['my-modal'].show();
+    },
+    hideModal: function hideModal() {
+      this.$refs['my-modal'].hide();
+    },
+    toggleModal: function toggleModal() {
+      // We pass the ID of the button that we want to return focus to
+      // when the modal has hidden
+      this.$refs['my-modal'].toggle('#toggle-btn');
+    }
   }
 });
 
@@ -2061,7 +2074,27 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    console.log("navbar mounted + modals");
+  },
+  methods: {
+    showModal: function showModal() {
+      this.$refs['login-modal'].show();
+    },
+    hideModal: function hideModal() {
+      this.$refs['login-modal'].hide();
+    },
+    toggleModalLogin: function toggleModalLogin() {
+      // We pass the ID of the button that we want to return focus to
+      // when the modal has hidden
+      this.$refs['login-modal'].toggle('#toggle-btn');
+    },
+    toggleModalCart: function toggleModalCart() {
+      // We pass the ID of the button that we want to return focus to
+      // when the modal has hidden
+      this.$refs['cart-modal'].toggle('#toggle-btn');
+    }
+  }
 });
 
 /***/ }),
@@ -34196,7 +34229,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form[data-v-0110baa8] {\r\n    width: 30%;\n}\n.form__content[data-v-0110baa8] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}", ""]);
+exports.push([module.i, ".form[data-v-0110baa8] {\r\n    width: 100%;\n}\n.form__content[data-v-0110baa8] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}", ""]);
 
 // exports
 
@@ -34215,7 +34248,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".modal-mask {\r\n    position: fixed;\r\n    z-index: 9998;\r\n    top: 0;\r\n    left: 10%;\r\n    width: 90%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    display: table;\r\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\r\n    display: table-cell;\r\n    vertical-align: middle;\n}\n.modal-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0px auto;\r\n    padding: 20px 30px;\r\n    background-color: #fff;\r\n    border-radius: 2px;\r\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\r\n    transition: all .3s ease;\r\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\r\n    margin-top: 0;\r\n    color: #5b022e;\r\n    font-family: Khand;\n}\n.modal-body {\r\n    margin: 20px 0;\n}\n.modal-default-button {\r\n    float: none;\r\n    color: #5b022e;\r\n    border-radius: 25px;\r\n    margin: 10px;\n}\r\n\r\n\r\n/*\r\n   * The following styles are auto-applied to elements with\r\n   * transition=\"modal\" when their visibility is toggled\r\n   * by Vue.js.\r\n   *\r\n   * You can easily play with the modal transition by editing\r\n   * these styles.\r\n   */\n.modal-enter {\r\n    opacity: 0;\n}\n.modal-leave-active {\r\n    opacity: 0;\n}\n.modal-enter .modal-container,\r\n.modal-leave-active .modal-container {\r\n    -webkit-transform: scale(1.0);\r\n    transform: scale(1.0);\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -67251,26 +67284,49 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
+  return _c(
+    "div",
+    [
       _c(
-        "script",
-        { attrs: { type: "text/x-template", id: "modal-template" } },
+        "b-modal",
+        {
+          ref: "my-modal",
+          attrs: { "hide-footer": "", title: "Using Component Methods" }
+        },
         [
-          _vm._v(
-            '\n  <transition name="modal">\n    <div class="modal-mask">\n      <div class="modal-wrapper">\n        <div class="modal-container">\n          <button class="btn modal-default-button" @click="$emit(\'close\')">\n            <i class="fas fa-angle-right fa-2x"></i>\n          </button>\n          <div class="modal-header">\n            <slot name="header">\n              default header\n            </slot>\n          </div>\n\n          <div class="modal-body">\n            <slot name="body">\n              default body\n            </slot>\n          </div>\n\n          <div class="modal-footer">\n            <slot name="footer">\n              default footer\n            </slot>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>\n  '
+          _c("div", { staticClass: "d-block text-center" }, [
+            _c("h3", [_vm._v("MODAL TITLE")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-button",
+            {
+              staticClass: "mt-3",
+              attrs: { variant: "outline-danger", block: "" },
+              on: { click: _vm.hideModal }
+            },
+            [_vm._v("Close Me")]
           )
-        ]
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-button",
+        { attrs: { id: "show-btn" }, on: { click: _vm.showModal } },
+        [_vm._v("Open Modal")]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-button",
+        { attrs: { id: "toggle-btn" }, on: { click: _vm.toggleModal } },
+        [_vm._v("Toggle Modal")]
       )
-    ])
-  }
-]
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -67336,7 +67392,10 @@ var render = function() {
                 { staticClass: "ml-auto" },
                 [
                   _c("b-nav-item", { attrs: { href: "#Cart" } }, [
-                    _c("i", { staticClass: "fas fa-shopping-cart nav-icon" })
+                    _c("i", {
+                      staticClass: "fas fa-shopping-cart nav-icon",
+                      on: { click: _vm.toggleModalCart }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("b-nav-item", { attrs: { href: "#Find" } }, [
@@ -67344,13 +67403,62 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("b-nav-item", { attrs: { href: "#User" } }, [
-                    _c("i", { staticClass: "fas fa-user nav-icon" })
+                    _c("i", {
+                      staticClass: "fas fa-user nav-icon",
+                      on: { click: _vm.toggleModalLogin }
+                    })
                   ])
                 ],
                 1
               )
             ],
             1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-modal",
+        {
+          ref: "login-modal",
+          attrs: { "hide-footer": "", title: "Login Modal" }
+        },
+        [
+          _c("div", { staticClass: "modal__body" }, [_c("login-form")], 1),
+          _vm._v(" "),
+          _c(
+            "b-button",
+            {
+              staticClass: "mt-3",
+              attrs: { variant: "outline-default", block: "" },
+              on: { click: _vm.hideModal }
+            },
+            [_vm._v("Close Me")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-modal",
+        {
+          ref: "cart-modal",
+          attrs: { "hide-footer": "", title: "Cart Modal" }
+        },
+        [
+          _c("div", { staticClass: "modal__body" }, [
+            _c("h2", [_vm._v("HERE CART")])
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-button",
+            {
+              staticClass: "mt-3",
+              attrs: { variant: "outline-default", block: "" },
+              on: { click: _vm.hideModal }
+            },
+            [_vm._v("Close Me")]
           )
         ],
         1
@@ -80343,7 +80451,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************************************!*\
   !*** ./resources/js/components/login/Login.js?vue&type=script&lang=js& ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80357,15 +80465,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./resources/js/components/login/Login.vue ***!
   \*************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Login_vue_vue_type_template_id_0110baa8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=0110baa8&scoped=true& */ "./resources/js/components/login/Login.vue?vue&type=template&id=0110baa8&scoped=true&");
 /* harmony import */ var _Login_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.js?vue&type=script&lang=js& */ "./resources/js/components/login/Login.js?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Login_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Login_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _Login_css_vue_type_style_index_0_id_0110baa8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login.css?vue&type=style&index=0&id=0110baa8&scoped=true&lang=css& */ "./resources/js/components/login/Login.css?vue&type=style&index=0&id=0110baa8&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Login_css_vue_type_style_index_0_id_0110baa8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login.css?vue&type=style&index=0&id=0110baa8&scoped=true&lang=css& */ "./resources/js/components/login/Login.css?vue&type=style&index=0&id=0110baa8&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 

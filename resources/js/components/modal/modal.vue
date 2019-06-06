@@ -1,35 +1,14 @@
 <template>
   <div>
-    <script type="text/x-template" id="modal-template">
-    <transition name="modal">
-      <div class="modal-mask">
-        <div class="modal-wrapper">
-          <div class="modal-container">
-            <button class="btn modal-default-button" @click="$emit('close')">
-              <i class="fas fa-angle-right fa-2x"></i>
-            </button>
-            <div class="modal-header">
-              <slot name="header">
-                default header
-              </slot>
-            </div>
-
-            <div class="modal-body">
-              <slot name="body">
-                default body
-              </slot>
-            </div>
-
-            <div class="modal-footer">
-              <slot name="footer">
-                default footer
-              </slot>
-            </div>
-          </div>
-        </div>
+    <b-modal ref="my-modal" hide-footer title="Using Component Methods">
+      <div class="d-block text-center">
+        <h3>MODAL TITLE</h3>
       </div>
-    </transition>
-    </script>
+      <b-button class="mt-3" variant="outline-danger" block @click="hideModal">Close Me</b-button>
+    </b-modal>
+
+    <b-button id="show-btn" @click="showModal">Open Modal</b-button>
+    <b-button id="toggle-btn" @click="toggleModal">Toggle Modal</b-button>
   </div>
 </template>
 <script src="./Modal.js">
@@ -47,7 +26,7 @@
     </p>
     <h3 slot="header">Login ? Cart ? It's your choiche Adri</h3>
   </modal>
-*/ 
+*/
 </script>
 <style src="./Modal.css"></style>
 
