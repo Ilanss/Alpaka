@@ -19,18 +19,18 @@
           striped
           hover
         >
-          <!-- A virtual column -->
-          <template slot="index" slot-scope="data">{{ data.index + 1 }}</template>
+          <template slot="image" slot-scope="props">
+            <img
+              alt
+              width="50"
+              height="50"
+              src="https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80"
+            >
+          </template>
 
-          <!-- A custom formatted column -->
-          <template slot="name" slot-scope="data">{{ data.value.first }} {{ data.value.last }}</template>
-
-          <!-- A virtual composite column -->
-          <template
-            slot="nameage"
-            slot-scope="data"
-          >{{ data.item.name.first }} is {{ data.item.age }} years old</template>
+ 
         </b-table>
+
         <b-pagination
           v-model="currentPage"
           :total-rows="rows"

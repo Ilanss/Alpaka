@@ -5,34 +5,53 @@ export default {
     data() {
         return {
             username: 'Elia Gazzard',
-            date: '05.06.2019',
-            hour: '15.56',
+            date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
+            hour: new Date().getHours() + ':' + new Date().getMinutes(),
             perPage: 3,
             currentPage: 1,
             promo: "",
+            totalHorsTVA: "",
+            tva: "7.7",
+            total: "",
             fields: [
-                // A virtual column that doesn't exist in items
+                //A regular column
                 'image',
                 // A column that needs custom formatting
-                { key: 'Name', label: 'Item name' },
+                { key: 'name', label: 'Item name' },
                 // A regular column
-                'Quantity',
+                'quantity',
                 // A regular column
-                'Desription',
-                // A virtual column made up from two fields
-                { key: 'ItemTotal', label: 'Item total' }
+                'prix',
+                // A regular column
+                'description',
+                //Item total prix method
+                {
+                    key: 'itemTotal',
+                    label: 'Item total',
+                    formatter: (value, key, item) => {
+                        var number = item.quantity * item.prix;
+                        return number.toFixed(2);
+                    }
+                }
             ],
+            //Wine structure --> put here Wine data .json
             items: [
-                { name: { first: 'John', last: 'Doe' }, sex: 'Male', age: 42 },
-                { name: { first: 'Jane', last: 'Doe' }, sex: 'Female', age: 36 },
-                { name: { first: 'Rubin', last: 'Kincade' }, sex: 'Male', age: 73 },
-                { name: { first: 'Shirley', last: 'Partridge' }, sex: 'Female', age: 62 }
+                { name: "Wine 1", quantity: "1", prix: "10.00", description: "Wine description", image: "" },
+                { name: "Wine 2", quantity: "2", prix: "10.00", description: "Wine description", image: "" },
+                { name: "Wine 3", quantity: "1", prix: "20.00", description: "Wine description", image: "" },
+                { name: "Wine 4", quantity: "2", prix: "20.00", description: "Wine description", image: "" }
             ],
         }
     },
     computed: {
         rows() {
             return this.items.length
+        },
+        totalHorsTVA: function() {
+
+            var total = this.items.reduce(function(a, c) { return a + Number((c.quantity * c.prix) || 0) }, 0)
+            return total;
+            //return console.log("teo test totale");
         }
     },
     methods: {
