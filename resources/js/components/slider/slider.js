@@ -1,5 +1,5 @@
 export default {
     mounted() {
-      console.log("slider-section Component mounted.");
+        console.log("Slider-section Component mounted.");
     }
-  };
+};
