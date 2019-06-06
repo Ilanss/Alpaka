@@ -1,7 +1,7 @@
-{{--@extends('template')--}}
+@extends('layouts.app')
+@section('content')
 
-{{--@section('content')--}}
-    @if (auth()->check())
+   @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -12,103 +12,19 @@
                     </ul>
                 </div><br/>
             @endif
-            <form method="post" action="{{ route('products.store') }}" enctype="multipart/form-data">
-                <div class="form-group">
-                    @csrf
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" name="name"/>
-                </div>
-                <div class="form-group">
-                    <label for="image">Image:</label>
-                    <input type="file" name="image" id="image">
-                </div>
-                <div class="form-group">
-                    <label for="brand">Brand :</label>
-                    <input type="text" class="form-control" name="brand"/>
-                </div>
-                <div class="form-group">
-                    <label for="winery">Winery :</label>
-                    <select name="winery_id" id="winery_id">
-                        @foreach($wineries as $winery)
-                            <option value="{{$winery->id}}">{{$winery->name}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="category">Category :</label>
-                    <select name="category_id" id="">
-                        @foreach($categories as $category)
-                            <option value="{{$category->id}}">{{$category->name}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="country">Country :</label>
-                    <select name="country_id" id="">
-                        @foreach($countries as $country)
-                            <option value="{{$country->id}}">{{$country->name}}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="price_wine">Wine price :</label>
-                    <input type="number" class="form-control" name="price_wine"/>
-                </div>
-                <div class="form-group">
-                    <label for="origin">Origin :</label>
-                    <input type="text" class="form-control" name="origin"/>
-                </div>
-                <div class="form-group">
-                    <label for="size">Size :</label>
-                    <input type="text" class="form-control" name="size"/>
-                </div>
-                <div class="form-group">
-                    <label for="varietal">Varietal :</label>
-                    <input type="text" class="form-control" name="varietal"/>
-                </div>
-                <div class="form-group">
-                    <label for="good_year">Good Year :</label>
-                    <input type="checkbox" class="form-control" name="good_year" value="1"/>
-                </div>
-                <div class="form-group">
-                    <label for="date_production">Date production :</label>
-                    <input type="date" class="form-control" name="date_production"/>
-                </div>
-                <div class="form-group">
-                    <label for="serv_temp">Serving temperature :</label>
-                    <input type="number" class="form-control" name="serv_temp"/>
-                </div>
-                <div class="form-group">
-                    <label for="description">Description :</label>
-                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="stock_status">Stock status :</label>
-                    <input type="checkbox" class="form-control" name="stock_status" value="1" checked/>
-                </div>
-                <div class="form-group">
-                    <label for="conditioning">Conditioning :</label>
-                    <input type="text" class="form-control" name="conditioning"/>
-                </div>
-                <div class="form-group">
-                    <label for="ranking">Ranking :</label>
-                    <input type="number" class="form-control" name="ranking"/>
-                </div>
-                <div class="form-group">
-                    <label for="alcohol_level">Alcohol level :</label>
-                    <input type="number" class="form-control" name="alcohol_level"/>
-                </div>
-                <div class="form-group">
-                    <label for="delivery_delay_from">Delivery delay from:</label>
-                    <input type="number" class="form-control" name="delivery_delay_from"/>
-                    <label for="delivery_delay_to">to :</label>
-                    <input type="number" class="form-control" name="delivery_delay_to"/>
-                </div>
-                <button type="submit" class="btn btn-primary">Create Wine</button>
-            </form>
+            <navbar-section></navbar-section>
+            <create-section 
+            v-bind:countries="{{$countries}}"
+             v-bind:wineries="{{$wineries}}"
+             v-bind:categories="{{$categories}}"
+             v-bind:size="{{$size}}"
+             v-bind:varietal="{{$varietal}}"
+             v-bind:conditioning="{{$conditioning}}">
+             </create-section>
         @else
             <h2>Accès refusé</h2>
         @endif
-    @endif
-{{--@endsection
---}}
+        @else
+            <h2>Accès refusé</h2>
+        @endif
+        @endsection

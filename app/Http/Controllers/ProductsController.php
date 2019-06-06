@@ -43,12 +43,12 @@ class ProductsController extends Controller
     public function search(Request $name) {
         $name = $name->input('search');
         $products = Wine::where('name', 'like', "%".$name."%")->get();
-        return view('products.index', compact('products'));
+        return view('pages.products', compact('products'));
     }
 
     public function promotions() {
         $products = Wine::join('promotions', 'wines.id', '=', 'promotions.wine_id')->get();
-        return view('products.index', compact('products'));
+        return view('pages.products', compact('products'));
 
     }
 
@@ -87,16 +87,17 @@ class ProductsController extends Controller
 
         ]);
 
-        dd($request);
-
         $name = str_slug($request->input('name')).'_'.time();
         $folder = public_path('images/products');
-        $filePath = $name.'.'.$request->image->getClientOriginalExtension();
-        $this->uploadOne($request->image, $folder, 'public', $name);
-
-        $request->image->move(public_path('images/products'), $filePath);
 
         $products = [];
+
+        if($request->image) {
+            $filePath = $name . '.' . $request->image->getClientOriginalExtension();
+            $this->uploadOne($request->image, $folder, 'public', $name);
+            $request->image->move(public_path('images/products'), $filePath);
+            $products['image'] = $filePath;
+        }
 
         $products['name'] = $request->input('name');
         $products['brand'] = $request->input('brand');
@@ -117,7 +118,6 @@ class ProductsController extends Controller
         $products['alcohol_level'] = $request->input('alcohol_level');
         $products['slug'] = str_slug($request->input('name'));
         $products['delivery_delay'] = $request->input('delivery_delay_from')." à ".$request->input('delivery_delay_to');
-        $products['image'] = $filePath;
 
 
         Wine::create($products);

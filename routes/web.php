@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/products', 'ProductsController@store')->name('products.store');
 
 Route::get('/about', function () {
     return view('pages.about');
