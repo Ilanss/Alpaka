@@ -2149,7 +2149,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    console.log("Navbar-vue Component mounted.");
+  }
 });
 
 /***/ }),
@@ -34488,10 +34490,10 @@ exports.push([module.i, ".modal-mask {\r\n    position: fixed;\r\n    z-index: 9
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
 
 // module
-exports.push([module.i, ".navbar[data-v-d3be5158] {\r\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\r\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\r\n{\r\n background-color: red;\r\n color:white;\r\n border-radius: 50%;\r\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\r\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: \"Montserrat\" !important;\n}\n.navbar-brand[data-v-d3be5158] {\r\n  color: red !important;\r\n  font-family: 'Arial';\n}", ""]);
+exports.push([module.i, "body[data-v-d3be5158] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\r\n    color: #5B022E;\n}\nb-navbar[data-v-d3be5158] {\r\n    background-color: #5b022e;\r\n    color: #FFFFFF;\n}\n#app > main > div:nth-child(2) > nav > a[data-v-d3be5158] {\r\n    font-family: 'Khand', sans-serif;\r\n    font-size: 2.5rem;\r\n    color: #FFFFFF;\r\n    margin: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -68781,59 +68783,71 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "b-navbar",
+    { attrs: { toggleable: "lg", type: "danger", variant: "danger" } },
     [
+      _c("b-navbar-brand", { attrs: { href: "#" } }, [_vm._v("Gazzar")]),
+      _vm._v(" "),
+      _c("b-navbar-toggle", { attrs: { target: "nav-collapse" } }),
+      _vm._v(" "),
       _c(
-        "b-navbar",
-        {
-          staticClass: "navbar navbar-fixed-top",
-          attrs: { toggleable: "lg", type: "dark", variant: "info", fixed: "" }
-        },
+        "b-collapse",
+        { attrs: { id: "nav-collapse", "is-nav": "" } },
         [
-          _c("b-navbar-brand", { attrs: { href: "" } }, [_vm._v("Gazzard")]),
+          _c(
+            "b-navbar-nav",
+            [
+              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Accueil")]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Catalogue")]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Blog")]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("À propos")]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Contact")])
+            ],
+            1
+          ),
           _vm._v(" "),
           _c(
-            "b-collapse",
-            { attrs: { id: "nav-collapse", "is-nav": "" } },
+            "b-navbar-nav",
+            { staticClass: "ml-auto" },
             [
               _c(
-                "b-navbar-nav",
-                { staticClass: "ml-auto" },
+                "b-nav-form",
                 [
-                  _c("b-nav-item", { attrs: { href: "home" } }, [
-                    _vm._v("Accueil")
-                  ]),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-user" })]
+                  ),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "products" } }, [
-                    _vm._v("Catalogue")
-                  ]),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                  ),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "blog" } }, [
-                    _vm._v("Blog")
-                  ]),
+                  _c("b-form-input", {
+                    staticClass: "mr-sm-2",
+                    attrs: { size: "sm", placeholder: "Rechercher" }
+                  }),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "about" } }, [
-                    _vm._v("À propos")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-navbar-nav",
-                { staticClass: "ml-auto" },
-                [
-                  _c("b-nav-item", { attrs: { href: "#Cart" } }, [
-                    _c("i", { staticClass: "fas fa-shopping-cart nav-icon" })
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#Find" } }, [
-                    _c("i", { staticClass: "fas fa-search nav-icon" })
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#User" } }, [
-                    _c("i", { staticClass: "fas fa-user nav-icon" })
-                  ])
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-search" })]
+                  )
                 ],
                 1
               )
@@ -83657,8 +83671,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

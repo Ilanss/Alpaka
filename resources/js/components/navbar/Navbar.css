@@ -1,26 +1,22 @@
-.navbar {
-    background-color: white !important;
-}
-.navbar-collapse {
-    align-items: center !important;
-}
-.nav-icon
-{
- background-color: red;
- color:white;
- border-radius: 50%;
- padding:10px;
+@import url('https://fonts.googleapis.com/css?family=Khand&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: #5B022E;
 }
 
+b-navbar {
+    background-color: #5b022e;
+    color: #FFFFFF;
+}
 
-.bg-info {
-  background-color: white !important;
-}
-.nav-link {
-  color: red !important;
-  font-family: "Montserrat" !important;
-}
-.navbar-brand {
-  color: red !important;
-  font-family: 'Arial';
+#app > main > div:nth-child(2) > nav > a {
+    font-family: 'Khand', sans-serif;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 10px;
 }
