@@ -1,6 +1,3 @@
-@extends('template')
-
-@section('content')
     <h1>Tous les vins</h1>
 
     <form method="get" action="{{ route('products.search') }}">
@@ -16,4 +13,3 @@
         <img src="{{ url("/images/products") }}/{{$product->image}}" />
 
     @endforeach
-@endsection

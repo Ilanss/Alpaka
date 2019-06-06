@@ -1,6 +1,3 @@
-{{--@extends('template')--}}
-
-{{--@section('content')--}}
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
@@ -110,5 +107,3 @@
             <h2>Accès refusé</h2>
         @endif
     @endif
-{{--@endsection
---}}

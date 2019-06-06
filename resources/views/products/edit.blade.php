@@ -1,6 +1,3 @@
-@extends('template')
-
-@section('content')
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
@@ -54,7 +51,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price_wine">Wine price :</label>
-                    <input type="text" class="form-control" name="price_wine" value="{{$product->price_wine}}"/>
+                    <input type="number" class="form-control" name="price_wine" value="{{$product->price_wine}}"/>
                 </div>
                 <div class="form-group">
                     <label for="origin">Origin :</label>
@@ -70,7 +67,7 @@
                 </div>
                 <div class="form-group">
                     <label for="good_year">Good Year :</label>
-                    <input type="text" class="form-control" name="good_year" value="{{$product->good_year}}"/>
+                    <input type="checkbox" class="form-control" name="good_year" value="{{$product->good_year}}"/>
                 </div>
                 <div class="form-group">
                     <label for="date_production">Date production :</label>
@@ -115,4 +112,3 @@
             <h2>Accès refusé</h2>
         @endif
     @endif
-@endsection
