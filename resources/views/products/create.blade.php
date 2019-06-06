@@ -106,4 +106,6 @@
         @else
             <h2>Accès refusé</h2>
         @endif
+    @else
+        <h2>Accès refusé</h2>
     @endif
