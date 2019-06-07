@@ -1,4 +1,7 @@
-    @if (auth()->check())
+@extends('layouts.app')
+@section('content')
+
+   @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -9,7 +12,6 @@
                     </ul>
                 </div><br/>
             @endif
-            <navbar-section></navbar-section>
             <create-section 
             v-bind:countries="{{$countries}}"
              v-bind:wineries="{{$wineries}}"
@@ -24,6 +26,4 @@
         @else
             <h2>Accès refusé</h2>
         @endif
-    @else
-        <h2>Accès refusé</h2>
-    @endif
+        @endsection
