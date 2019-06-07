@@ -1,20 +1,21 @@
 <template>
-  <div>
-    <div>
+  <div class="test2">
+    <div class="test">
+      <!-- replace item.image to img-src -->
       <b-card
-        v-on:click="winePreview(item.wineId)"
-        v-bind:title="item.wineName"
-        v-bind:img-src="item.wineImage"
+        v-on:click="winePreview(item.id)"
+        v-bind:title="item.name"
+        v-bind:img-src="'images/products/' + item.image"
         img-alt="Cover"
         img-top
         tag="article"
         style="max-width: 20rem;"
         class="mb-2 text-center"
-        v-bind:id="item.wineId"
+        v-bind:id="item.id"
       >
-        <b-card-text class="text-left"> CHF:{{ item.winePrix }}</b-card-text>
+        <b-card-text class="text-center">{{ item.price_wine }} CHF</b-card-text>
 
-        <b-button v-on:click="wineAdd" v-bind:href="item.wineId" variant="" class="product__add">Ajouter au panier</b-button>
+        <b-button v-on:click="wineAdd" v-bind:href="''+item.id" variant="" class="product__add">Ajouter au panier</b-button>
       </b-card>
     </div>
   </div>

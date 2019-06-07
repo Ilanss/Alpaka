@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    const ADMIN_STATE = 'admin';
+    const CLIENT_STATE = 'client';
+
     use Notifiable;
 
     /**
@@ -16,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'lastname', 'firstname', 'gender', 'birth_date', 'email', 'password',
     ];
 
     /**
@@ -36,4 +39,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function ratings() {
+        return $this->hasMany('App\Rating');
+    }
+
+    // Define role
+    public function isAdmin()
+    {
+        return $this->state === self::ADMIN_STATE;
+    }
 }
+

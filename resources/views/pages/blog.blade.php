@@ -1,4 +1,5 @@
 @extends('layouts.app')
 @section('content')
-<slider-section></slider-section>
+<cover-section></cover-section>
+<blog-section></blog-section>
 @endsection 

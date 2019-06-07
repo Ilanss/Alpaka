@@ -1,38 +1,169 @@
-html, body {
-    height: 100%;
-}
 body {
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.cover__caption__button {
-    display: inline-block;
-    border-radius: 25px;
-    background-color: white;
-    color: red;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    animation-delay: 0.8s;
+.hero {
+    padding-top: 5%;
+    height: 100vh;
+    background-color: #FFFFFF;
 }
-.cover__caption__button:hover {
-    background-color: red;
-    color: white;
-    text-decoration: none;
+
+.logo {
+    text-align: center;
 }
-.cover {
-    height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
- 
-    background-position: center center;
-    position: relative;
-    transform-style: inherit;
-  
-    
-    
-    
- 
+
+.btn:active:focus {
+    background-color: #5B022E;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .btn {
+        background-color: #5B022E;
+        margin: 60px;
+    }
+
+    .arrow {
+        width: 6vmin;
+        height: 6vmin;
+        box-sizing: border-box;
+        position: relative;
+        left: 48.5%;
+        transform: rotate(-225deg);
+    }
+
+    div.arrow::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-width: .8vmin .8vmin 0 0;
+        border-style: solid;
+        border-color: #5B022E;
+        transition: .2s ease;
+        display: block;
+        transform-origin: 100% 0;
+    }
+
+    div.arrow:hover::after {
+        transform: rotate(45deg);
+        border-color: #5F022E;
+        height: 120%;
+    }
+
+    div.arrow:hover::before {
+        border-color: #5F022E;
+        transform: scale(0.8);
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+.in-down {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*Small devices (landscape phones, 320px and up)*/
+@media (max-width: 991px) {
+    .btn {
+        background-color: #5B022E;
+        margin-top: 30px;
+    }
+
+    .arrow {
+        width: 6vmin;
+        height: 6vmin;
+        box-sizing: border-box;
+        position: relative;
+        left: 48.5%;
+        transform: rotate(-225deg);
+    }
+
+    div.arrow::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-width: .8vmin .8vmin 0 0;
+        border-style: solid;
+        border-color: #5B022E;
+        transition: .2s ease;
+        display: block;
+        transform-origin: 100% 0;
+    }
+
+    div.arrow:hover::after {
+        transform: rotate(45deg);
+        border-color: #5F022E;
+        height: 120%;
+    }
+
+    div.arrow:hover::before {
+        border-color: #5F022E;
+        transform: scale(0.8);
+    }
 }

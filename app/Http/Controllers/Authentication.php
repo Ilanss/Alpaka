@@ -8,22 +8,25 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class Login extends Controller
+class Authentication extends Controller
 {
-    public function auth(Request $request)
+    // Show form registration
+    public function form(){
+        return view('users.authentication');
+    }
+
+    public function login(Request $request)
     {
-        print_r($request->input());
+        //print_r($request->input());
 
         $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
-        if(Auth::attempt($data)){
+        if (Auth::attempt($data)) {
             return redirect('/');
-        } else{
-            echo 'Erreur <br/>';
-            dd($data);
-        }
-
-    }
+        } else {
+            $error = "L'email ou le mot de passe sont incorrects";
+            return Redirect::back()->withErrors($error);
+        }    }
 
     public function logout()
     {

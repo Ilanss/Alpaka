@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #1d1d1d;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #5B022E;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+p {
+    line-height: 2.5rem;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    /*********** START MAP ***********/
+    iframe {
+        height: 350px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    #infos {
+        background-color: #5B022E;
+        height: 600px;
+        width: 280px;
+        margin-top: 50px;
+        position: relative;
+        z-index: 2;
+        left: 700px;
+        top: -600px;
+    }
+
+    .dot {
+        height: 80px;
+        width: 80px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        z-index: 3;
+        left: 102px;
+        top: 18px;
+    }
+
+    .fa {
+        color: #5B022E;
+        padding-left: 34px;
+        padding-top: 90px;
+        font-size: 4rem;
+        position: relative;
+        z-index: 4;
+    }
+
+    #infos p {
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 60px;
+    }
+}
+
+/*Small devices (landscape phones, 320px and up)*/
+@media (max-width: 991px) {
+
+    #infos {
+        /*background-color: #5B022E;*/
+    }
+
+    .dot {
+        display: none;
+    }
+
+    .fa {
+        display: none;
+    }
+
+    #infos p {
+        color: #5B022E;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
