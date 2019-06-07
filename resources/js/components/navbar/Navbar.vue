@@ -5,7 +5,7 @@
       <!-- Center aligned nav items -->
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item v-bind:href="this.accueil">Accueil </b-nav-item>
+          <b-nav-item v-bind:href="this.home">Accueil </b-nav-item>
           <b-nav-item v-bind:href="this.catalogue">Catalogue</b-nav-item>
           <b-nav-item v-bind:href="this.blog">Blog</b-nav-item>
           <b-nav-item v-bind:href="this.about">À propos</b-nav-item>

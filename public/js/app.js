@@ -2217,6 +2217,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['home', 'catalogue', 'blog', 'about'],
   mounted: function mounted() {}
 });
 
@@ -69709,7 +69710,7 @@ var render = function() {
                 "b-navbar-nav",
                 { staticClass: "ml-auto" },
                 [
-                  _c("b-nav-item", { attrs: { href: this.accueil } }, [
+                  _c("b-nav-item", { attrs: { href: this.home } }, [
                     _vm._v("Accueil ")
                   ]),
                   _vm._v(" "),

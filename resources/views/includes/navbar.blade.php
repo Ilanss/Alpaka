@@ -1,4 +1,1 @@
-<!--extends('layouts.app')
-section('navbar')
-<navbar-section></navbar-section>
-endsection -->
+<navbar-section catalogue="{{ route('catalogue') }}" home="{{ route('home') }}" blog="{{ route('blog') }}" about="{{ route('about') }}"></navbar-section>
