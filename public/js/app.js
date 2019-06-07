@@ -2096,6 +2096,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['cgv', 'register', 'login', 'about', 'blog'],
   mounted: function mounted() {
     console.log('Footer component mounted.');
   }
@@ -2216,7 +2217,10 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {}
+  props: ['home', 'catalogue', 'blog', 'about'],
+  mounted: function mounted() {
+    console.log("Navbar-vue Component mounted.");
+  }
 });
 
 /***/ }),
@@ -9210,7 +9214,7 @@ var components = {
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/components/index.esm.js ***!
   \****************************************************************/
-/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, componentsPlugin */
+/*! exports provided: componentsPlugin, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19599,7 +19603,7 @@ var NAME = 'BTooltip'; // @vue/component
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/directives/index.esm.js ***!
   \****************************************************************/
-/*! exports provided: VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, directivesPlugin */
+/*! exports provided: directivesPlugin, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21114,7 +21118,7 @@ var removeTooltip = function removeTooltip(el) {
 /*!*************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/index.js ***!
   \*************************************************/
-/*! exports provided: BVConfigPlugin, BVConfig, BootstrapVue, install, setConfig, default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, componentsPlugin, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, directivesPlugin */
+/*! exports provided: BVConfigPlugin, BVConfig, BootstrapVue, install, setConfig, default, componentsPlugin, directivesPlugin, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21131,6 +21135,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVConfigPlugin", function() { return _bv_config__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVConfig", function() { return _bv_config__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "componentsPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["componentsPlugin"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVModalPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["BVModalPlugin"]; });
 
@@ -21382,7 +21388,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BTooltip", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["BTooltip"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "componentsPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["componentsPlugin"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "directivesPlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["directivesPlugin"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBTogglePlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBTogglePlugin"]; });
 
@@ -21403,8 +21409,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBTooltip", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBTooltip"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBPopover", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBPopover"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "directivesPlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["directivesPlugin"]; });
 
 /*!
  * BoostrapVue 2.0.0-rc.22
@@ -34280,6 +34284,44 @@ __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/module
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/_variables.scss":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/_variables.scss ***!
+  \*****************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif !important;\n  font-size: 1rem !important;\n  width: 100% !important;\n  margin: 0 auto !important;\n  line-height: 2.5rem !important;\n}\n.navbar {\n  background-color: #5b022e !important;\n}\n.navbar-brand {\n  color: white !important;\n  font-family: \"Khand\", sans-serif !important;\n  font-size: 2.5rem !important;\n  margin: 10px !important;\n}\n.navbar .navbar-brand:hover,\n.navbar .navbar-brand:focus {\n  color: white !important;\n}\n.navbar .navbar-nav .nav-link {\n  color: white !important;\n  margin: 0 0.2em !important;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover,\n.navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #e8d2ac !important;\n}\n.form-input {\n  border: 1px solid #5b022e !important;\n  background: white !important;\n}\n.btn {\n  color: white !important;\n  background-color: transparent !important;\n  border-color: white !important;\n}\n.btn:focus,\n.btn:hover,\n.btn:active {\n  color: #e8d2ac !important;\n  background-color: transparent !important;\n  border-color: #e8d2ac !important;\n  outline: none !important;\n  box-shadow: none !important;\n}\n.user {\n  margin-right: 10px !important;\n}\n.cart {\n  margin-right: 10px !important;\n}\n.navbar-toggle {\n  border-color: white !important;\n}\n.navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/bootstrap-vue/dist/bootstrap-vue.css":
 /*!*******************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/bootstrap-vue/dist/bootstrap-vue.css ***!
@@ -34349,7 +34391,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".bestSeller[data-v-d0771fd4] {\n    background-color: white;\n    padding: 0px;\n}\n.col-sm-3[data-v-d0771fd4] {\n    padding: 0px 5px !important;\n}\n\n", ""]);
+exports.push([module.i, ".bestSeller[data-v-d0771fd4] {\r\n    background-color: white;\r\n    padding: 0px;\n}\n.col-sm-3[data-v-d0771fd4] {\r\n    padding: 0px 5px !important;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -34368,7 +34410,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".blogShort{ border-bottom:1px solid #ddd;}\n.add{background: #333; padding: 10%; height: 300px;}\na, a:hover {\n    color: #333;\n}\n.nav-sidebar { \n    width: 100%;\n    padding: 8px 0; \n    border-right: 1px solid #ddd;\n}\n.nav-sidebar a {\n    color: #333;\n    transition: all 0.08s linear;\n}\n.nav-sidebar .active a { \n    cursor: default;\n    background-color: #5B022E; \n    color: #fff;\n}\n.nav-sidebar .active a:hover {\n    background-color: #5B022E;\n}\n.nav-sidebar .text-overflow a,\n.nav-sidebar .text-overflow .media-body {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n.btn-blog {\n    color: #ffffff;\n    background-color: #5B022E;\n    border-color: #5B022E;\n    border-radius:0;\n    margin-bottom:10px\n}\n.btn-blog:hover,\n.btn-blog:focus,\n.btn-blog:active,\n.btn-blog.active,\n.open .dropdown-toggle.btn-blog {\n    color: white;\n    background-color:#5B022E;\n    border-color: #5B022E;\n}\nh2{color:#5B022E;}\n.margin10{margin-bottom:10px; margin-right:10px;}", ""]);
+exports.push([module.i, ".blogShort{ border-bottom:1px solid #ddd;}\n.add{background: #333; padding: 10%; height: 300px;}\na, a:hover {\r\n    color: #333;\n}\n.nav-sidebar { \r\n    width: 100%;\r\n    padding: 8px 0; \r\n    border-right: 1px solid #ddd;\n}\n.nav-sidebar a {\r\n    color: #333;\r\n    transition: all 0.08s linear;\n}\n.nav-sidebar .active a { \r\n    cursor: default;\r\n    background-color: #5B022E; \r\n    color: #fff;\n}\n.nav-sidebar .active a:hover {\r\n    background-color: #5B022E;\n}\n.nav-sidebar .text-overflow a,\r\n.nav-sidebar .text-overflow .media-body {\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\n}\n.btn-blog {\r\n    color: #ffffff;\r\n    background-color: #5B022E;\r\n    border-color: #5B022E;\r\n    border-radius:0;\r\n    margin-bottom:10px\n}\n.btn-blog:hover,\r\n.btn-blog:focus,\r\n.btn-blog:active,\r\n.btn-blog.active,\r\n.open .dropdown-toggle.btn-blog {\r\n    color: white;\r\n    background-color:#5B022E;\r\n    border-color: #5B022E;\n}\nh2{color:#5B022E;}\n.margin10{margin-bottom:10px; margin-right:10px;}", ""]);
 
 // exports
 
@@ -34387,7 +34429,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n    color: #5B002E;\n    width: 100%;\n    margin: 0 auto;\n}\nh1 {\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np {\n    line-height: 2.5rem;\n}\nh2 {\n    margin: 0;\n    padding: 0;\n}\n\n/* Carousel */\n#carousel-example {\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\n    background: #FFFFFF;\n    padding: 40px 0;\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\n    padding: 0 0 35px;\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\n    margin: 0 auto;\n    position: static;\n    width: 100%;\n    font-size: 1rem;\n}\nol span {\n    border: 1px solid transparent;\n    cursor: pointer;\n    height: auto;\n    padding: 10px 15px;\n    text-align: center;\n    transition: border 0.3s, color 0.3s;\n    width: auto;\n}\nol .active {\n    background: none;\n    border: 1px solid #5B002E;\n    color: #5B002E;\n    height: auto;\n    padding: 10px 15px;\n    width: auto;\n}\n.item {\n    transition: opacity 1s;\n}\n.img-wrapper {\n    height: 400px;\n    margin: 0 -15px 0 0;\n    overflow: hidden;\n    position: relative;\n}\n.img-wrapper img {\n    left: 50%;\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    width: auto;\n}\n.carousel-caption {\n    background: #E8D2AC;\n    color: #5B002E;\n    height: 400px;\n    margin: 0 0 0 -15px;\n    padding: 30px;\n    position: static;\n    text-align: left;\n    text-shadow: none;\n}\n.carousel-caption h2 {\n    padding: 0 0 20px;\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\n        height: auto;\n}\n.img-wrapper img {\n        -webkit-transform: none;\n        transform: none;\n        position: static;\n        width: 100%;\n}\n.carousel-caption {\n        height: auto;\n}\n}\n", ""]);
+exports.push([module.i, "body {\r\n    font-family: 'Montserrat', sans-serif;\r\n    color: #5B002E;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1 {\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np {\r\n    line-height: 2.5rem;\n}\nh2 {\r\n    margin: 0;\r\n    padding: 0;\n}\r\n\r\n/* Carousel */\n#carousel-example {\r\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\r\n    background: #FFFFFF;\r\n    padding: 40px 0;\r\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\r\n    padding: 0 0 35px;\r\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\r\n    margin: 0 auto;\r\n    position: static;\r\n    width: 100%;\r\n    font-size: 1rem;\n}\nol span {\r\n    border: 1px solid transparent;\r\n    cursor: pointer;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    text-align: center;\r\n    transition: border 0.3s, color 0.3s;\r\n    width: auto;\n}\nol .active {\r\n    background: none;\r\n    border: 1px solid #5B002E;\r\n    color: #5B002E;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    width: auto;\n}\n.item {\r\n    transition: opacity 1s;\n}\n.img-wrapper {\r\n    height: 400px;\r\n    margin: 0 -15px 0 0;\r\n    overflow: hidden;\r\n    position: relative;\n}\n.img-wrapper img {\r\n    left: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    width: auto;\n}\n.carousel-caption {\r\n    background: #E8D2AC;\r\n    color: #5B002E;\r\n    height: 400px;\r\n    margin: 0 0 0 -15px;\r\n    padding: 30px;\r\n    position: static;\r\n    text-align: left;\r\n    text-shadow: none;\n}\n.carousel-caption h2 {\r\n    padding: 0 0 20px;\r\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\r\n        height: auto;\n}\n.img-wrapper img {\r\n        -webkit-transform: none;\r\n        transform: none;\r\n        position: static;\r\n        width: 100%;\n}\n.carousel-caption {\r\n        height: auto;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34406,7 +34448,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-4fb95116] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-4fb95116] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-4fb95116] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-4fb95116] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-4fb95116] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-4fb95116] {\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-4fb95116] {\n        background-color: #D8D4D3;\n        height: 100%;\n        width: 100%;\n}\nform[data-v-4fb95116] {\n        padding-top: 30px;\n}\n#envoyerForm[data-v-4fb95116] {\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-4fb95116] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-4fb95116] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-4fb95116] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-4fb95116] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-4fb95116] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-4fb95116] {\r\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-4fb95116] {\r\n        background-color: #D8D4D3;\r\n        height: 100%;\r\n        width: 100%;\n}\nform[data-v-4fb95116] {\r\n        padding-top: 30px;\n}\n#envoyerForm[data-v-4fb95116] {\r\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\r\n        display: none;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34425,7 +34467,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".image[data-v-3963ba78] {\n    height: 300px;\n    background-position: center;\n    background-size: cover;\n}", ""]);
+exports.push([module.i, ".image[data-v-3963ba78] {\r\n    height: 300px;\r\n    background-position: center;\r\n    background-size: cover;\n}", ""]);
 
 // exports
 
@@ -34444,7 +34486,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".filter__1[data-v-5ae83bd4] {\n    padding: 20px;\n    outline-style: auto;\n    outline-color: red;\n}\n", ""]);
+exports.push([module.i, ".filter__1[data-v-5ae83bd4] {\r\n    padding: 20px;\r\n    outline-style: auto;\r\n    outline-color: red;\n}\r\n", ""]);
 
 // exports
 
@@ -34463,7 +34505,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".filter__2[data-v-3d07e418] {\n    padding: 20px;\n    outline-style: auto;\n    outline-color: red;\n}\n", ""]);
+exports.push([module.i, ".filter__2[data-v-3d07e418] {\r\n    padding: 20px;\r\n    outline-style: auto;\r\n    outline-color: red;\n}\r\n", ""]);
 
 // exports
 
@@ -34482,7 +34524,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-22837618] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n    line-height: 2.5rem;\n}\np[data-v-22837618] {\n    font-size: 1rem;\n}\nfooter[data-v-22837618] {\n    background-color: #5b022e;\n    color: #FFFFFF;\n    padding-top: 60px;\n}\n.mini-footer[data-v-22837618] {\n    padding-top: 20px;\n    padding-bottom: 20px;\n}\n\n/* big footer */\nul[data-v-22837618] {\n    padding: 0;\n    margin: 0\n}\nli[data-v-22837618] {\n    list-style: none\n}\n.footer-widget-title[data-v-22837618] {\n    margin-bottom: 10px;\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\n    max-width: 100%;\n    margin-top: 50px;\n    margin-bottom: 115px;\n}\na[data-v-22837618] {\n    color: #FFFFFF;\n}\na[data-v-22837618]:hover {\n    color: #FFFFFF;\n}\n.mini-footer[data-v-22837618] {\n    background-color: #FFFFFF;\n}\n\n/* Mini footer */\n.socialMedia > a[data-v-22837618] {\n    margin-right: 20px;\n    color: #5b022e;\n}\ninstagram[data-v-22837618] {\n    margin: 0;\n}\n.copyright-text[data-v-22837618] {\n    color: #5b022e;\n    text-align: center;\n}\n#newsletter[data-v-22837618] {\n    color: #5b022e;\n}\n@media (min-width:992px) {\nhr[data-v-22837618] {\n        display: none;\n}\n}\n@media (max-width:991px) {\n.footer-big[data-v-22837618] {\n        padding-bottom: 60px;\n}\n.footer-menu[data-v-22837618] {\n        padding-left: 0\n}\n.footer-widget-title[data-v-22837618] {\n        margin-bottom: 10px;\n        font-size: 1.5rem;\n        padding-top: 20px;\n}\nhr[data-v-22837618] {\n        background-color: white;\n}\nimg[data-v-22837618] {\n        display: none;\n}\n.socialMedia[data-v-22837618] {\n        text-align: center;\n}\ninstagram[data-v-22837618] {\n        margin: 0;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-22837618] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\n}\np[data-v-22837618] {\r\n    font-size: 1rem;\n}\nfooter[data-v-22837618] {\r\n    background-color: #5b022e;\r\n    color: #FFFFFF;\r\n    padding-top: 60px;\n}\n.mini-footer[data-v-22837618] {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\n}\r\n\r\n/* big footer */\nul[data-v-22837618] {\r\n    padding: 0;\r\n    margin: 0\n}\nli[data-v-22837618] {\r\n    list-style: none\n}\n.footer-widget-title[data-v-22837618] {\r\n    margin-bottom: 10px;\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    max-width: 100%;\r\n    margin-top: 50px;\r\n    margin-bottom: 115px;\n}\na[data-v-22837618] {\r\n    color: #FFFFFF;\n}\na[data-v-22837618]:hover {\r\n    color: #FFFFFF;\n}\n.mini-footer[data-v-22837618] {\r\n    background-color: #FFFFFF;\n}\r\n\r\n/* Mini footer */\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\ninstagram[data-v-22837618] {\r\n    margin: 0;\n}\n.copyright-text[data-v-22837618] {\r\n    color: #5b022e;\r\n    text-align: center;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}\n@media (min-width:992px) {\nhr[data-v-22837618] {\r\n        display: none;\n}\n}\n@media (max-width:991px) {\n.footer-big[data-v-22837618] {\r\n        padding-bottom: 60px;\n}\n.footer-menu[data-v-22837618] {\r\n        padding-left: 0\n}\n.footer-widget-title[data-v-22837618] {\r\n        margin-bottom: 10px;\r\n        font-size: 1.5rem;\r\n        padding-top: 20px;\n}\nhr[data-v-22837618] {\r\n        background-color: white;\n}\nimg[data-v-22837618] {\r\n        display: none;\n}\n.socialMedia[data-v-22837618] {\r\n        text-align: center;\n}\ninstagram[data-v-22837618] {\r\n        margin: 0;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34501,7 +34543,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-3da30bd4] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n}\n.hero[data-v-3da30bd4] {\n    padding-top: 5%;\n    height: 100vh;\n    background-color: #FFFFFF;\n}\n.logo[data-v-3da30bd4] {\n    text-align: center;\n}\n.btn[data-v-3da30bd4]:active:focus {\n    background-color: #5B022E;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n.btn[data-v-3da30bd4] {\n        background-color: #5B022E;\n        margin: 60px;\n}\n.arrow[data-v-3da30bd4] {\n        width: 6vmin;\n        height: 6vmin;\n        box-sizing: border-box;\n        position: relative;\n        left: 48.5%;\n        -webkit-transform: rotate(-225deg);\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\n        content: '';\n        width: 100%;\n        height: 100%;\n        border-width: .8vmin .8vmin 0 0;\n        border-style: solid;\n        border-color: #5B022E;\n        transition: .2s ease;\n        display: block;\n        -webkit-transform-origin: 100% 0;\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n        border-color: #5F022E;\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\n        border-color: #5F022E;\n        -webkit-transform: scale(0.8);\n                transform: scale(0.8);\n}\n}\n@-webkit-keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\n        opacity: 0;\n        -webkit-transform: translatey(-10px);\n        transform: translatey(-10px);\n}\nto {\n        opacity: 1;\n        -webkit-transform: translatey(0);\n        transform: translatey(0);\n}\n}\n@keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\n        opacity: 0;\n        -webkit-transform: translatey(-10px);\n        transform: translatey(-10px);\n}\nto {\n        opacity: 1;\n        -webkit-transform: translatey(0);\n        transform: translatey(0);\n}\n}\n.in-down[data-v-3da30bd4] {\n    -webkit-animation-name: fadeInDown-data-v-3da30bd4;\n    animation-name: fadeInDown-data-v-3da30bd4;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    -webkit-animation-duration: 2s;\n    animation-duration: 2s;\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n.btn[data-v-3da30bd4] {\n        background-color: #5B022E;\n        margin-top: 30px;\n}\n.arrow[data-v-3da30bd4] {\n        width: 6vmin;\n        height: 6vmin;\n        box-sizing: border-box;\n        position: relative;\n        left: 48.5%;\n        -webkit-transform: rotate(-225deg);\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\n        content: '';\n        width: 100%;\n        height: 100%;\n        border-width: .8vmin .8vmin 0 0;\n        border-style: solid;\n        border-color: #5B022E;\n        transition: .2s ease;\n        display: block;\n        -webkit-transform-origin: 100% 0;\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n        border-color: #5F022E;\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\n        border-color: #5F022E;\n        -webkit-transform: scale(0.8);\n                transform: scale(0.8);\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-3da30bd4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\n.hero[data-v-3da30bd4] {\r\n    padding-top: 5%;\r\n    height: 100vh;\r\n    background-color: #FFFFFF;\n}\n.logo[data-v-3da30bd4] {\r\n    text-align: center;\n}\n.btn[data-v-3da30bd4]:active:focus {\r\n    background-color: #5B022E;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin: 60px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\n@-webkit-keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n@keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n.in-down[data-v-3da30bd4] {\r\n    -webkit-animation-name: fadeInDown-data-v-3da30bd4;\r\n    animation-name: fadeInDown-data-v-3da30bd4;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n    -webkit-animation-duration: 2s;\r\n    animation-duration: 2s;\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin-top: 30px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34520,7 +34562,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form[data-v-0110baa8] {\n    width: 30%;\n}\n.form__content[data-v-0110baa8] {\n    font-family: 'Montserrat';\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\n    border-radius: 25px;\n    background-color: #5b022e;\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\n    color: white;\n    background-color: #5b022e;\n    padding: 10px;\n    border-radius: 25px;\n}", ""]);
+exports.push([module.i, ".form[data-v-0110baa8] {\r\n    width: 30%;\n}\n.form__content[data-v-0110baa8] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}", ""]);
 
 // exports
 
@@ -34539,7 +34581,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-22b111e4] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-22b111e4] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-22b111e4] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START MAP ***********/\niframe[data-v-22b111e4] {\n        height: 350px;\n        width: 100%;\n        position: relative;\n        z-index: 1;\n}\n#infos[data-v-22b111e4] {\n        background-color: #5B022E;\n        height: 600px;\n        width: 280px;\n        margin-top: 50px;\n        position: relative;\n        z-index: 2;\n        left: 700px;\n        top: -600px;\n}\n.dot[data-v-22b111e4] {\n        height: 80px;\n        width: 80px;\n        background-color: #FFFFFF;\n        border-radius: 50%;\n        display: inline-block;\n        position: relative;\n        z-index: 3;\n        left: 102px;\n        top: 18px;\n}\n.fa[data-v-22b111e4] {\n        color: #5B022E;\n        padding-left: 34px;\n        padding-top: 90px;\n        font-size: 4rem;\n        position: relative;\n        z-index: 4;\n}\n#infos p[data-v-22b111e4] {\n        color: #FFFFFF;\n        text-align: center;\n        padding-top: 60px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#infos[data-v-22b111e4] {\n        /*background-color: #5B022E;*/\n}\n.dot[data-v-22b111e4] {\n        display: none;\n}\n.fa[data-v-22b111e4] {\n        display: none;\n}\n#infos p[data-v-22b111e4] {\n        color: #5B022E;\n        text-align: center;\n        padding-top: 20px;\n        padding-bottom: 20px;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-22b111e4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-22b111e4] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-22b111e4] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START MAP ***********/\niframe[data-v-22b111e4] {\r\n        height: 350px;\r\n        width: 100%;\r\n        position: relative;\r\n        z-index: 1;\n}\n#infos[data-v-22b111e4] {\r\n        background-color: #5B022E;\r\n        height: 600px;\r\n        width: 280px;\r\n        margin-top: 50px;\r\n        position: relative;\r\n        z-index: 2;\r\n        left: 700px;\r\n        top: -600px;\n}\n.dot[data-v-22b111e4] {\r\n        height: 80px;\r\n        width: 80px;\r\n        background-color: #FFFFFF;\r\n        border-radius: 50%;\r\n        display: inline-block;\r\n        position: relative;\r\n        z-index: 3;\r\n        left: 102px;\r\n        top: 18px;\n}\n.fa[data-v-22b111e4] {\r\n        color: #5B022E;\r\n        padding-left: 34px;\r\n        padding-top: 90px;\r\n        font-size: 4rem;\r\n        position: relative;\r\n        z-index: 4;\n}\n#infos p[data-v-22b111e4] {\r\n        color: #FFFFFF;\r\n        text-align: center;\r\n        padding-top: 60px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#infos[data-v-22b111e4] {\r\n        /*background-color: #5B022E;*/\n}\n.dot[data-v-22b111e4] {\r\n        display: none;\n}\n.fa[data-v-22b111e4] {\r\n        display: none;\n}\n#infos p[data-v-22b111e4] {\r\n        color: #5B022E;\r\n        text-align: center;\r\n        padding-top: 20px;\r\n        padding-bottom: 20px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34558,26 +34600,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".modal-mask {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 10%;\n    width: 90%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\n    display: table-cell;\n    vertical-align: middle;\n}\n.modal-container {\n    width: 100%;\n    height: 100%;\n    margin: 0px auto;\n    padding: 20px 30px;\n    background-color: #fff;\n    border-radius: 2px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\n    margin-top: 0;\n    color: #5b022e;\n    font-family: Khand;\n}\n.modal-body {\n    margin: 20px 0;\n}\n.modal-default-button {\n    float: none;\n    color: #5b022e;\n    border-radius: 25px;\n    margin: 10px;\n}\n\n\n/*\n   * The following styles are auto-applied to elements with\n   * transition=\"modal\" when their visibility is toggled\n   * by Vue.js.\n   *\n   * You can easily play with the modal transition by editing\n   * these styles.\n   */\n.modal-enter {\n    opacity: 0;\n}\n.modal-leave-active {\n    opacity: 0;\n}\n.modal-enter .modal-container,\n.modal-leave-active .modal-container {\n    -webkit-transform: scale(1.0);\n    transform: scale(1.0);\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".navbar[data-v-d3be5158] {\n    background-color: white !important;\n}\n.navbar-collapse[data-v-d3be5158] {\n    align-items: center !important;\n}\n.nav-icon[data-v-d3be5158]\n{\n background-color: red;\n color:white;\n border-radius: 50%;\n padding:10px;\n}\n.bg-info[data-v-d3be5158] {\n  background-color: white !important;\n}\n.nav-link[data-v-d3be5158] {\n  color: red !important;\n  font-family: \"Montserrat\" !important;\n}\n.navbar-brand[data-v-d3be5158] {\n  color: red !important;\n  font-family: 'Arial';\n}", ""]);
+exports.push([module.i, ".modal-mask {\r\n    position: fixed;\r\n    z-index: 9998;\r\n    top: 0;\r\n    left: 10%;\r\n    width: 90%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    display: table;\r\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\r\n    display: table-cell;\r\n    vertical-align: middle;\n}\n.modal-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0px auto;\r\n    padding: 20px 30px;\r\n    background-color: #fff;\r\n    border-radius: 2px;\r\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\r\n    transition: all .3s ease;\r\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\r\n    margin-top: 0;\r\n    color: #5b022e;\r\n    font-family: Khand;\n}\n.modal-body {\r\n    margin: 20px 0;\n}\n.modal-default-button {\r\n    float: none;\r\n    color: #5b022e;\r\n    border-radius: 25px;\r\n    margin: 10px;\n}\r\n\r\n\r\n/*\r\n   * The following styles are auto-applied to elements with\r\n   * transition=\"modal\" when their visibility is toggled\r\n   * by Vue.js.\r\n   *\r\n   * You can easily play with the modal transition by editing\r\n   * these styles.\r\n   */\n.modal-enter {\r\n    opacity: 0;\n}\n.modal-leave-active {\r\n    opacity: 0;\n}\n.modal-enter .modal-container,\r\n.modal-leave-active .modal-container {\r\n    -webkit-transform: scale(1.0);\r\n    transform: scale(1.0);\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\n}", ""]);
 
 // exports
 
@@ -34596,7 +34619,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".order__by[data-v-9b7b0f30] {\n    background-color: white;\n    padding: 10px;\n}\n.fas[data-v-9b7b0f30] {\n    color: black;\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30]{\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\n    color: red;\n}", ""]);
+exports.push([module.i, ".order__by[data-v-9b7b0f30] {\r\n    background-color: white;\r\n    padding: 10px;\n}\n.fas[data-v-9b7b0f30] {\r\n    color: black;\r\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30]{\r\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\r\n    color: red;\n}", ""]);
 
 // exports
 
@@ -34615,7 +34638,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".product__add[data-v-14afb6d4]{\n    border-radius: 25px;\n    background-color: #5b022e !important;\n}\n\n", ""]);
+exports.push([module.i, ".product__add[data-v-14afb6d4]{\r\n    border-radius: 25px;\r\n    background-color: #5b022e !important;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -34653,7 +34676,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-6ca3d374] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n    line-height: 2.5rem;\n    color: #5B022E;\n}\np[data-v-6ca3d374] {\n    font-size: 1rem;\n}\n#promo[data-v-6ca3d374] {\n    background-color: #E8D2AC;\n    color: #FFFFFF;\n}\n.promo-title[data-v-6ca3d374] {\n    color: #5B022E;\n    margin-bottom: 10px;\n    font-size: 1.5rem;\n    text-align: center;\n}\n.btn[data-v-6ca3d374],\n.btn[data-v-6ca3d374]:hover,\n.btn[data-v-6ca3d374]:active {\n    color: #FFFFFF;\n    background-color: #5B022E;\n    border: 1px solid #5B022E;\n    margin: 20px;\n}\n.promo-text[data-v-6ca3d374] {\n    color: #5B022E;\n    text-align: center;\n}\n#newsletter[data-v-6ca3d374] {\n    color: #5b022e;\n}\n@media (min-width:992px) {\n#promo[data-v-6ca3d374] {\n        padding-top: 5%;\n        padding-bottom: 5%;\n}\n}\n@media (max-width:991px) {\n#promo[data-v-6ca3d374] {\n        padding-top: 20%;\n        padding-bottom: 20%;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-6ca3d374] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\r\n    color: #5B022E;\n}\np[data-v-6ca3d374] {\r\n    font-size: 1rem;\n}\n#promo[data-v-6ca3d374] {\r\n    background-color: #E8D2AC;\r\n    color: #FFFFFF;\n}\n.promo-title[data-v-6ca3d374] {\r\n    color: #5B022E;\r\n    margin-bottom: 10px;\r\n    font-size: 1.5rem;\r\n    text-align: center;\n}\n.btn[data-v-6ca3d374],\r\n.btn[data-v-6ca3d374]:hover,\r\n.btn[data-v-6ca3d374]:active {\r\n    color: #FFFFFF;\r\n    background-color: #5B022E;\r\n    border: 1px solid #5B022E;\r\n    margin: 20px;\n}\n.promo-text[data-v-6ca3d374] {\r\n    color: #5B022E;\r\n    text-align: center;\n}\n#newsletter[data-v-6ca3d374] {\r\n    color: #5b022e;\n}\n@media (min-width:992px) {\n#promo[data-v-6ca3d374] {\r\n        padding-top: 5%;\r\n        padding-bottom: 5%;\n}\n}\n@media (max-width:991px) {\n#promo[data-v-6ca3d374] {\r\n        padding-top: 20%;\r\n        padding-bottom: 20%;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34672,7 +34695,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form[data-v-02993a54] {\n    width: 30%;\n}\n.form__content[data-v-02993a54] {\n    font-family: 'Montserrat';\n    text-align: center !important;\n}\n.form__submit[data-v-02993a54] {\n    border-radius: 25px;\n    background-color: #5b022e;\n    margin: 15px;\n}\n.fab[data-v-02993a54] {\n    color: white;\n    background-color: #5b022e;\n    padding: 10px;\n    border-radius: 25px;\n}\n.b-form-input[data-v-02993a54] {\n    text-align: center !important;\n}", ""]);
+exports.push([module.i, ".form[data-v-02993a54] {\r\n    width: 30%;\n}\n.form__content[data-v-02993a54] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-02993a54] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-02993a54] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}\n.b-form-input[data-v-02993a54] {\r\n    text-align: center !important;\n}", ""]);
 
 // exports
 
@@ -34710,7 +34733,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-6a04ae80] {\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-6a04ae80] {\n    color: #5B022E;\n    font-family: \"Montserrat\", sans-serif !important ;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-6a04ae80] {\n    font-family: \"Montserrat\", sans-serif !important ;\n    font-size: 1rem;\n    color: #1d1d1d;\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START ABOUT US ***********/\n#aboutUs[data-v-6a04ae80] {\n        padding-bottom: 100px;\n}\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-6a04ae80] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-6a04ae80] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-6a04ae80] {\n        background-color: #5B022E;\n}\nimg[data-v-6a04ae80] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-6a04ae80] {\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-6a04ae80] {\r\n    color: #5B022E;\r\n    font-family: \"Montserrat\", sans-serif !important ;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-6a04ae80] {\r\n    font-family: \"Montserrat\", sans-serif !important ;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START ABOUT US ***********/\n#aboutUs[data-v-6a04ae80] {\r\n        padding-bottom: 100px;\n}\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-6a04ae80] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-6a04ae80] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-6a04ae80] {\r\n        background-color: #5B022E;\n}\nimg[data-v-6a04ae80] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -66164,6 +66187,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/admin_create/Create.css?vue&type=style&index=0&id=44c311b8&scoped=true&lang=css&":
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/admin_create/Create.css?vue&type=style&index=0&id=44c311b8&scoped=true&lang=css& ***!
@@ -66533,36 +66586,6 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Modal.css?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/modal/Modal.css?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -68187,7 +68210,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.    \n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.    \r\n                         "
               )
             ])
           ]),
@@ -68217,7 +68240,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.\n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.\r\n                         "
               )
             ])
           ]),
@@ -68247,7 +68270,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.\n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.\r\n                         "
               )
             ])
           ]),
@@ -69108,132 +69131,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", [
-      _c("footer", { staticClass: "footer-area footer--light" }, [
-        _c("div", { staticClass: "footer-big" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Boutique")
+  return _c("section", [
+    _c("footer", { staticClass: "footer-area footer--light" }, [
+      _c("div", { staticClass: "footer-big" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Boutique")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.cgv } }, [_vm._v("CGV")])
                     ]),
                     _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("CGV")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Connextez-vous")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Inscrivez-vous")
-                        ])
+                    _c("li", [
+                      _c("a", { attrs: { href: this.login } }, [
+                        _vm._v("Connectez-vous")
                       ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Gazzar")
                     ]),
                     _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("À propos")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Blog")])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu no-padding" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Aide")
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Service d'aide")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Droits d'auteur")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Réseaux sociaux")
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])
+                    _c("li", [
+                      _c("a", { attrs: { href: this.register } }, [
+                        _vm._v("Inscrivez-vous")
                       ])
                     ])
                   ])
@@ -69241,56 +69170,180 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12 text-center" }, [
-                _c("img", {
-                  attrs: {
-                    src: "images/logo-horizontal-fond-clair.png",
-                    alt: "Logo Gazzar"
-                  }
-                })
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Gazzar")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about } }, [
+                        _vm._v("À propos")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about } }, [_vm._v("Blog")])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu no-padding" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Aide")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about + "#contactUs" } }, [
+                        _vm._v("Contact")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(5)
+          ]),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(7)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Service d'aide")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Droits d'auteur")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+      _c("div", { staticClass: "footer-widget" }, [
+        _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+          _c("h4", { staticClass: "footer-widget-title" }, [
+            _vm._v("Réseaux sociaux")
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])]),
+            _vm._v(" "),
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])]),
+            _vm._v(" "),
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 text-center" }, [
+        _c("img", {
+          attrs: {
+            src: "images/logo-horizontal-fond-clair.png",
+            alt: "Logo Gazzar"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mini-footer" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "copyright-text" }, [
+              _c("p", [
+                _vm._v("Copyright "),
+                _c("i", { staticClass: "far fa-copyright" }),
+                _vm._v(" Alpaka 2019\n                        ")
               ])
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mini-footer" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "copyright-text" }, [
-                  _c("p", [
-                    _vm._v("Copyright "),
-                    _c("i", { staticClass: "far fa-copyright" }),
-                    _vm._v(" Alpaka 2019\n                        ")
-                  ])
-                ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "copyright-text" }, [
+              _c("i", { staticClass: "far fa-envelope" }),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "#", id: "newsletter" } }, [
+                _vm._v("Inscription à la newsletter")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "col socialMedia" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-facebook-f" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "copyright-text" }, [
-                  _c("i", { staticClass: "far fa-envelope" }),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#", id: "newsletter" } }, [
-                    _vm._v("Inscription à la newsletter")
-                  ])
-                ])
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-twitter" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "col socialMedia" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-facebook-f" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram instagram" })
-                  ])
-                ])
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-instagram instagram" })
               ])
             ])
           ])
@@ -69643,10 +69696,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158& ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69664,11 +69717,21 @@ var render = function() {
       _c(
         "b-navbar",
         {
-          staticClass: "navbar navbar-fixed-top",
-          attrs: { toggleable: "lg", type: "dark", variant: "info", fixed: "" }
+          staticClass: "navbar",
+          attrs: { toggleable: "lg", type: "danger", variant: "danger" }
         },
         [
-          _c("b-navbar-brand", { attrs: { href: "" } }, [_vm._v("Gazzard")]),
+          _c(
+            "b-navbar-brand",
+            { staticClass: "navbar-brand", attrs: { href: "#" } },
+            [_vm._v("Gazzar")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-navbar-toggle",
+            { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
+            [_c("span", { staticClass: "navbar-toggler-icon" })]
+          ),
           _vm._v(" "),
           _c(
             "b-collapse",
@@ -69676,23 +69739,29 @@ var render = function() {
             [
               _c(
                 "b-navbar-nav",
-                { staticClass: "ml-auto" },
+                { staticClass: "navbar-nav" },
                 [
-                  _c("b-nav-item", { attrs: { href: "home" } }, [
-                    _vm._v("Accueil")
+                  _c("b-nav-item", { attrs: { href: this.home } }, [
+                    _vm._v("Accueil ")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "products" } }, [
+                  _c("b-nav-item", { attrs: { href: this.catalogue } }, [
                     _vm._v("Catalogue")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "blog" } }, [
+                  _c("b-nav-item", { attrs: { href: this.blog } }, [
                     _vm._v("Blog")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "about" } }, [
+                  _c("b-nav-item", { attrs: { href: this.about } }, [
                     _vm._v("À propos")
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "b-nav-item",
+                    { attrs: { href: this.about + "#contactUs" } },
+                    [_vm._v("Contact")]
+                  )
                 ],
                 1
               ),
@@ -69701,17 +69770,43 @@ var render = function() {
                 "b-navbar-nav",
                 { staticClass: "ml-auto" },
                 [
-                  _c("b-nav-item", { attrs: { href: "#Cart" } }, [
-                    _c("i", { staticClass: "fas fa-shopping-cart nav-icon" })
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#Find" } }, [
-                    _c("i", { staticClass: "fas fa-search nav-icon" })
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "#User" } }, [
-                    _c("i", { staticClass: "fas fa-user nav-icon" })
-                  ])
+                  _c(
+                    "b-nav-form",
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn user",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-user" })]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn cart",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                      ),
+                      _vm._v(" "),
+                      _c("b-form-input", {
+                        staticClass: "mr-sm-2 form-input",
+                        attrs: { size: "sm", placeholder: "Rechercher" }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-search" })]
+                      )
+                    ],
+                    1
+                  )
                 ],
                 1
               )
@@ -69941,11 +70036,7 @@ var staticRenderFns = [
                   "a",
                   {
                     staticClass: "btn btn-outline-secondary",
-<<<<<<< HEAD
-                    attrs: { href: "promotions" }
-=======
                     attrs: { href: "products/promotions" }
->>>>>>> backend_admin
                   },
                   [_vm._v("Voir les promotions")]
                 )
@@ -82672,10 +82763,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
 /* harmony import */ var vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue2-smooth-scroll */ "./node_modules/vue2-smooth-scroll/dist/vue-smooth-scroll.min.js");
 /* harmony import */ var vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
-/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _sass_variables_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/_variables.scss */ "./resources/sass/_variables.scss");
+/* harmony import */ var _sass_variables_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_variables_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
+/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -82685,7 +82778,9 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue2_smooth_scroll__WEBPACK_IMPOR
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
- //appel de tous les composants
+
+ //window.route = require('./route');
+//appel de tous les composants
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_require__(/*! ./components/hero/Hero.vue */ "./resources/js/components/hero/Hero.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);
@@ -83912,22 +84007,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!************************************************************************************************************!*\
-  !*** ./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js& ***!
@@ -83942,6 +84021,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "./resources/js/components/navbar/Navbar.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/navbar/Navbar.vue ***!
@@ -83951,9 +84046,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=d3be5158&scoped=true& */ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&");
+/* harmony import */ var _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=d3be5158& */ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&");
 /* harmony import */ var _Navbar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.js?vue&type=script&lang=js& */ "./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -83965,11 +84060,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Navbar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "d3be5158",
+  null,
   null
   
 )
@@ -83981,19 +84076,19 @@ component.options.__file = "resources/js/components/navbar/Navbar.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158& ***!
+  \**********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=template&id=d3be5158&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=template&id=d3be5158& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -84608,6 +84703,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/_variables.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/_variables.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/lib/loader.js??ref--7-3!./_variables.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/_variables.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -84626,13 +84751,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/sass/app.scss */"./resources/sass/app.scss");
->>>>>>> backend_admin
+__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

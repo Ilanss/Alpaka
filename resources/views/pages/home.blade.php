@@ -6,7 +6,7 @@
 <signup-form></signup-form>
 -->
 <hero-section></hero-section>
-<navbar-section></navbar-section>
+<navbar-section catalogue="{{ route('products.index') }}" home="{{ route('home') }}" blog="{{ route('blog') }}" about="{{ route('about') }}"></navbar-section>
 <slider-section></slider-section>
 <promo-section></promo-section>
 <product-card></product-card>

@@ -14,15 +14,15 @@ Route::post('/products', 'ProductsController@store')->name('products.store');
 
 Route::get('/about', function () {
     return view('pages.about');
-});
+})->name('about');
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
 
 Route::get('/home', function () {
     return view('pages.home');
-});
+})->name('home');
 
 // Registration
 Route::get('/registration', 'Registration@form');
@@ -30,7 +30,7 @@ Route::post('/registration/store', 'Registration@store');
 
 Route::get('/blog', function () {
     return view('pages.blog');
-});
+})->name('blog');
 
 Route::get('/admin', function () {
     return view('pages.admin');
@@ -44,7 +44,7 @@ Route::get('/auth/logout', 'Authentication@logout');
 
 Route::get('/cgv', function () {
     return view('pages.cgv');
-});
+})->name('cgv');
 // Update user
 Route::get('/auth/modify', 'UpdateUser@form');
 Route::get('/auth/update', 'UpdateUser@update');

@@ -18,13 +18,13 @@
                                         <a href="#">Retour</a>
                                     </li>
                                     <li>
-                                        <a href="#">CGV</a>
+                                        <a v-bind:href="this.cgv">CGV</a>
                                     </li>
                                     <li>
-                                        <a href="#">Connextez-vous</a>
+                                        <a v-bind:href="this.login">Connectez-vous</a>
                                     </li>
                                     <li>
-                                        <a href="#">Inscrivez-vous</a>
+                                        <a v-bind:href="this.register">Inscrivez-vous</a>
                                     </li>
                                 </ul>
                             </div>
@@ -41,13 +41,13 @@
                                 <hr>
                                 <ul>
                                     <li>
-                                        <a href="#">À propos</a>
+                                        <a v-bind:href="this.about">À propos</a>
                                     </li>
                                     <li>
                                         <a href="#">Emplois</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a v-bind:href="this.about">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,7 +70,7 @@
                                         <a href="#">Droits d'auteur</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a v-bind:href="this.about+'#contactUs'">Contact</a>
                                     </li>
                                 </ul>
                             </div>

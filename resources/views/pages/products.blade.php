@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<navbar-section></navbar-section>
+<!--<navbar-section></navbar-section>-->
 <div class="container">
 
 <div class="row">
@@ -17,7 +17,6 @@
         <div class="row">
         <order-list class="col-sm-12 offset-sm-2"></order-list>
         <product-list v-bind:products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
-
         </div>
         <!-- /.row -->
 

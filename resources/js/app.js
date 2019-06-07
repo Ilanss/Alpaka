@@ -6,8 +6,11 @@ Vue.use(vueSmoothScroll)
 
 Vue.use(BootstrapVue)
 window.Vue = require('vue');
+import '../sass/_variables.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+//window.route = require('./route');
 
 
 //appel de tous les composants
@@ -22,7 +25,9 @@ Vue.component('filter-list-1', require('./components/filterProducts_1/FilterProd
 Vue.component('filter-list-2', require('./components/filterProducts_2/FilterProducts_2.vue').default);
 Vue.component('best-sellers', require('./components/bestSellers/bestSellers.vue').default);
 Vue.component('modal-popup', require('./components/modal/Modal.vue').default);
-Vue.component('modal', { template: '#modal-template' })
+Vue.component('modal', {
+    template: '#modal-template'
+})
 Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
