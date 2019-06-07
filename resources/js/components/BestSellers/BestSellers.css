@@ -1,8 +1,23 @@
-.bestSeller {
-    background-color: white;
-    padding: 0px;
-}
-.col-sm-3 {
-    padding: 0px 5px !important;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2.5rem;
 }
 
+h1 {
+    color: #5B022E;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.end {
+    margin-top: 20px;
+}
+
+.col-sm-3 {
+    padding: 0px 5px;
+}

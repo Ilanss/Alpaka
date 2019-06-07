@@ -1886,26 +1886,6 @@ __webpack_require__.r(__webpack_exports__);
         wineName: "Best seller 4",
         wineImage: "https://picsum.photos/600/300/?image=25",
         winePrix: "20.50"
-      }, {
-        wineId: "#06",
-        wineName: "Best seller 5",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#07",
-        wineName: "Best seller 6",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }, {
-        wineId: "#08",
-        wineName: "Best seller 7",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#09",
-        wineName: "Best seller 8",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
       }]
     };
   }
@@ -9145,7 +9125,7 @@ var components = {
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/components/index.esm.js ***!
   \****************************************************************/
-/*! exports provided: componentsPlugin, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
+/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, componentsPlugin */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19534,7 +19514,7 @@ var NAME = 'BTooltip'; // @vue/component
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/directives/index.esm.js ***!
   \****************************************************************/
-/*! exports provided: directivesPlugin, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
+/*! exports provided: VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, directivesPlugin */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21049,7 +21029,7 @@ var removeTooltip = function removeTooltip(el) {
 /*!*************************************************!*\
   !*** ./node_modules/bootstrap-vue/esm/index.js ***!
   \*************************************************/
-/*! exports provided: BVConfigPlugin, BVConfig, BootstrapVue, install, setConfig, default, componentsPlugin, directivesPlugin, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
+/*! exports provided: BVConfigPlugin, BVConfig, BootstrapVue, install, setConfig, default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, componentsPlugin, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, directivesPlugin */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21066,8 +21046,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVConfigPlugin", function() { return _bv_config__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVConfig", function() { return _bv_config__WEBPACK_IMPORTED_MODULE_4__["default"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "componentsPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["componentsPlugin"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BVModalPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["BVModalPlugin"]; });
 
@@ -21319,7 +21297,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BTooltip", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["BTooltip"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "directivesPlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["directivesPlugin"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "componentsPlugin", function() { return _components_index_esm__WEBPACK_IMPORTED_MODULE_2__["componentsPlugin"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBTogglePlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBTogglePlugin"]; });
 
@@ -21340,6 +21318,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBTooltip", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBTooltip"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VBPopover", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["VBPopover"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "directivesPlugin", function() { return _directives_index_esm__WEBPACK_IMPORTED_MODULE_3__["directivesPlugin"]; });
 
 /*!
  * BoostrapVue 2.0.0-rc.22
@@ -34303,7 +34283,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".bestSeller[data-v-d0771fd4] {\r\n    background-color: white;\r\n    padding: 0px;\n}\n.col-sm-3[data-v-d0771fd4] {\r\n    padding: 0px 5px !important;\n}\r\n\r\n", ""]);
+exports.push([module.i, "body[data-v-d0771fd4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\n}\nh1[data-v-d0771fd4] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\r\n    padding-bottom: 35px;\n}\n.end[data-v-d0771fd4] {\r\n    margin-top: 20px;\n}\n.col-sm-3[data-v-d0771fd4] {\r\n    padding: 0px 5px;\n}\r\n", ""]);
 
 // exports
 
@@ -34550,7 +34530,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".product__add[data-v-14afb6d4]{\r\n    border-radius: 25px;\r\n    background-color: #5b022e !important;\n}\r\n\r\n", ""]);
+exports.push([module.i, ".product__add[data-v-14afb6d4] {\r\n    background-color: #5b022e !important;\n}\n.product__add[data-v-14afb6d4]:hover {\r\n    color: white !important;\r\n    text-decoration: underline;\n}\r\n", ""]);
 
 // exports
 
@@ -67314,22 +67294,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "bestSeller" }, [
-      _c("h1", [_vm._v("Best sellers")]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row no-gutters" },
-        _vm._l(_vm.bestseller, function(product) {
-          return _c("product-card", {
-            key: product.wineId,
-            staticClass: "col-sm-3",
-            attrs: { item: product }
-          })
-        }),
-        1
-      )
+  return _c("section", { attrs: { id: "bestseller" } }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "bestSeller" }, [
+        _c("h1", [_vm._v("Meilleures ventes")]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row no-gutters" },
+          _vm._l(_vm.bestseller, function(product) {
+            return _c("product-card", {
+              key: product.wineId,
+              staticClass: "col-sm-3",
+              attrs: { item: product }
+            })
+          }),
+          1
+        ),
+        _vm._v(" "),
+        _c("hr", { staticClass: "end" })
+      ])
     ])
   ])
 }
@@ -69044,9 +69028,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "test2" }, [
     _c(
       "div",
+      { staticClass: "test" },
       [
         _c(
           "b-card",
@@ -69054,8 +69039,8 @@ var render = function() {
             staticClass: "mb-2 text-center",
             staticStyle: { "max-width": "20rem" },
             attrs: {
-              title: _vm.item.name,
-              "img-src": _vm.item.image,
+              title: _vm.item.wineName,
+              "img-src": _vm.item.wineImage,
               "img-alt": "Cover",
               "img-top": "",
               tag: "article",
@@ -69063,13 +69048,13 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.winePreview(_vm.item.id)
+                return _vm.winePreview(_vm.item.wineId)
               }
             }
           },
           [
-            _c("b-card-text", { staticClass: "text-left" }, [
-              _vm._v(" CHF:" + _vm._s(_vm.item.price_wine))
+            _c("b-card-text", { staticClass: "text-center" }, [
+              _vm._v(_vm._s(_vm.item.winePrix) + " CHF")
             ]),
             _vm._v(" "),
             _c(
@@ -83803,8 +83788,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
