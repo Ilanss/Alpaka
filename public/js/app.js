@@ -2217,7 +2217,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about'],
+  props: ['home', 'catalogue', 'blog', 'about', 'login'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   }
@@ -34308,9 +34308,17 @@ exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/lib/loader.js):\n\n@import '~@/sass/_variables.scss';\n       ^\n      Can't find stylesheet to import.\n  ╷\n1 │ @import '~@/sass/_variables.scss';\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 1:9  root stylesheet\n      in /Users/ilans/Documents/htdocs/Alpaka/resources/js/components/navbar/Navbar.scss (line 1, column 9)");
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif !important;\n  font-size: 1rem !important;\n  width: 100% !important;\n  margin: 0 auto !important;\n  line-height: 2.5rem !important;\n}\n.navbar {\n  background-color: #5b022e !important;\n}\n.navbar-brand {\n  color: white !important;\n  font-family: \"Khand\", sans-serif !important;\n  font-size: 2.5rem !important;\n  margin: 10px !important;\n}\n.navbar .navbar-brand:hover,\n.navbar .navbar-brand:focus {\n  color: white !important;\n}\n.navbar .navbar-nav .nav-link {\n  color: white !important;\n  margin: 0 0.2em !important;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover,\n.navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #e8d2ac !important;\n}\n.form-input {\n  border: 1px solid #5b022e !important;\n  background: white !important;\n}\n.btn {\n  color: white !important;\n  background-color: transparent !important;\n  border-color: white !important;\n}\n.btn:focus,\n.btn:hover,\n.btn:active {\n  color: #e8d2ac !important;\n  background-color: transparent !important;\n  border-color: #e8d2ac !important;\n  outline: none !important;\n  box-shadow: none !important;\n}\n.user {\n  margin-right: 10px !important;\n}\n.cart {\n  margin-right: 10px !important;\n}\n.navbar-toggle {\n  border-color: white !important;\n}\n.navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n}", ""]);
+
+// exports
+
 
 /***/ }),
 
@@ -69699,8 +69707,120 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "b-navbar",
+    {
+      staticClass: "navbar",
+      attrs: { toggleable: "lg", type: "danger", variant: "danger" }
+    },
+    [
+      _c(
+        "b-navbar-brand",
+        { staticClass: "navbar-brand", attrs: { href: "#" } },
+        [_vm._v("Gazzar")]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-navbar-toggle",
+        { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
+        [_c("span", { staticClass: "navbar-toggler-icon" })]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-collapse",
+        { attrs: { id: "nav-collapse", "is-nav": "" } },
+        [
+          _c(
+            "b-navbar-nav",
+            { staticClass: "navbar-nav" },
+            [
+              _c("b-nav-item", { attrs: { href: this.home } }, [
+                _vm._v("Accueil ")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.catalogue } }, [
+                _vm._v("Catalogue")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.blog } }, [
+                _vm._v("Blog")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.about } }, [
+                _vm._v("À propos")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.about + "#contactUs" } }, [
+                _vm._v("Contact")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "b-navbar-nav",
+            { staticClass: "ml-auto" },
+            [
+              _c(
+                "b-nav-form",
+                [
+                  _c(
+                    "form",
+                    { attrs: { action: this.login } },
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn user",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-user" })]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0 btn cart",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                  ),
+                  _vm._v(" "),
+                  _c("b-form-input", {
+                    staticClass: "mr-sm-2 form-input",
+                    attrs: { size: "sm", placeholder: "Rechercher" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0 btn",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-search" })]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -82658,8 +82778,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_M
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
- //window.route = require('./route');
-//appel de tous les composants
+ //appel de tous les composants
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_require__(/*! ./components/hero/Hero.vue */ "./resources/js/components/hero/Hero.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);
