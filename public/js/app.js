@@ -2197,7 +2197,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about'],
+  props: ['home', 'catalogue', 'blog', 'about', 'login'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   }
@@ -69696,66 +69696,65 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "b-navbar",
+    {
+      staticClass: "navbar",
+      attrs: { toggleable: "lg", type: "danger", variant: "danger" }
+    },
     [
       _c(
-        "b-navbar",
-        {
-          staticClass: "navbar",
-          attrs: { toggleable: "lg", type: "danger", variant: "danger" }
-        },
+        "b-navbar-brand",
+        { staticClass: "navbar-brand", attrs: { href: "#" } },
+        [_vm._v("Gazzar")]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-navbar-toggle",
+        { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
+        [_c("span", { staticClass: "navbar-toggler-icon" })]
+      ),
+      _vm._v(" "),
+      _c(
+        "b-collapse",
+        { attrs: { id: "nav-collapse", "is-nav": "" } },
         [
           _c(
-            "b-navbar-brand",
-            { staticClass: "navbar-brand", attrs: { href: "#" } },
-            [_vm._v("Gazzar")]
+            "b-navbar-nav",
+            { staticClass: "navbar-nav" },
+            [
+              _c("b-nav-item", { attrs: { href: this.home } }, [
+                _vm._v("Accueil ")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.catalogue } }, [
+                _vm._v("Catalogue")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.blog } }, [
+                _vm._v("Blog")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.about } }, [
+                _vm._v("À propos")
+              ]),
+              _vm._v(" "),
+              _c("b-nav-item", { attrs: { href: this.about + "#contactUs" } }, [
+                _vm._v("Contact")
+              ])
+            ],
+            1
           ),
           _vm._v(" "),
           _c(
-            "b-navbar-toggle",
-            { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
-            [_c("span", { staticClass: "navbar-toggler-icon" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "b-collapse",
-            { attrs: { id: "nav-collapse", "is-nav": "" } },
+            "b-navbar-nav",
+            { staticClass: "ml-auto" },
             [
               _c(
-                "b-navbar-nav",
-                { staticClass: "navbar-nav" },
-                [
-                  _c("b-nav-item", { attrs: { href: this.home } }, [
-                    _vm._v("Accueil ")
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: this.catalogue } }, [
-                    _vm._v("Catalogue")
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: this.blog } }, [
-                    _vm._v("Blog")
-                  ]),
-                  _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: this.about } }, [
-                    _vm._v("À propos")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "b-nav-item",
-                    { attrs: { href: this.about + "#contactUs" } },
-                    [_vm._v("Contact")]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "b-navbar-nav",
-                { staticClass: "ml-auto" },
+                "b-nav-form",
                 [
                   _c(
-                    "b-nav-form",
+                    "form",
+                    { attrs: { action: this.login } },
                     [
                       _c(
                         "b-button",
@@ -69764,32 +69763,32 @@ var render = function() {
                           attrs: { size: "sm", type: "submit" }
                         },
                         [_c("i", { staticClass: "fas fa-user" })]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "b-button",
-                        {
-                          staticClass: "my-2 my-sm-0 btn cart",
-                          attrs: { size: "sm", type: "submit" }
-                        },
-                        [_c("i", { staticClass: "fas fa-shopping-cart" })]
-                      ),
-                      _vm._v(" "),
-                      _c("b-form-input", {
-                        staticClass: "mr-sm-2 form-input",
-                        attrs: { size: "sm", placeholder: "Rechercher" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "b-button",
-                        {
-                          staticClass: "my-2 my-sm-0 btn",
-                          attrs: { size: "sm", type: "submit" }
-                        },
-                        [_c("i", { staticClass: "fas fa-search" })]
                       )
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0 btn cart",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                  ),
+                  _vm._v(" "),
+                  _c("b-form-input", {
+                    staticClass: "mr-sm-2 form-input",
+                    attrs: { size: "sm", placeholder: "Rechercher" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0 btn",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-search" })]
                   )
                 ],
                 1
@@ -82764,8 +82763,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_M
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
- //window.route = require('./route');
-//appel de tous les composants
+ //appel de tous les composants
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_require__(/*! ./components/hero/Hero.vue */ "./resources/js/components/hero/Hero.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);
