@@ -9,6 +9,7 @@
 <navbar-section catalogue="{{ route('products.index') }}" home="{{ route('home') }}" blog="{{ route('blog') }}" about="{{ route('about') }}"></navbar-section>
 <slider-section></slider-section>
 <promo-section></promo-section>
+<best-sellers></best-sellers>
 <product-card></product-card>
 <brand-section></brand-section>
 
