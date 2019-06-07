@@ -1,6 +1,3 @@
-@extends('template')
-
-@section('content')
     @if (auth()->check())
         <div class="col-md-6 offset-md-4">
             <form method="GET" action="{{URL::to('/auth/logout')}}">
@@ -44,4 +41,3 @@
             </div>
         </div>
     @endif
-@endsection

@@ -1,7 +1,4 @@
-@extends('layouts.app')
-@section('content')
-
-   @if (auth()->check())
+    @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -27,4 +24,6 @@
         @else
             <h2>Accès refusé</h2>
         @endif
-        @endsection
+    @else
+        <h2>Accès refusé</h2>
+    @endif

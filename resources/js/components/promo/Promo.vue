@@ -10,7 +10,7 @@
                             <p 
                                 class="promo-text">Découvrez sans attendre tous nos vins qui sont actuellement en promotion
                             </p>
-                            <a class="btn btn-outline-secondary" href="promotions">Voir les promotions</a>
+                            <a class="btn btn-outline-secondary" href="products/promotions">Voir les promotions</a>
                         </div>
                     </div>
                 </div>
