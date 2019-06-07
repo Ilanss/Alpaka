@@ -2096,6 +2096,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['cgv', 'register', 'login', 'about', 'blog'],
   mounted: function mounted() {
     console.log('Footer component mounted.');
   }
@@ -34330,7 +34331,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-44c311b8] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-44c311b8] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-44c311b8] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-44c311b8] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-44c311b8] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-44c311b8] {\r\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-44c311b8] {\r\n        background-color: #D8D4D3;\r\n        height: 100%;\r\n        width: 100%;\n}\nform[data-v-44c311b8] {\r\n        padding-top: 30px;\n}\n#envoyerForm[data-v-44c311b8] {\r\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\r\n        display: none;\n}\n}\r\n", ""]);
+exports.push([module.i, "body[data-v-44c311b8] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-44c311b8] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-44c311b8] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-44c311b8] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-44c311b8] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-44c311b8] {\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-44c311b8] {\n        background-color: #D8D4D3;\n        height: 100%;\n        width: 100%;\n}\nform[data-v-44c311b8] {\n        padding-top: 30px;\n}\n#envoyerForm[data-v-44c311b8] {\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\n        display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -34691,7 +34692,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".carousel-inner img[data-v-16ea8a34] {\r\n    width: 100%;\n}\r\n", ""]);
+exports.push([module.i, ".carousel-inner img[data-v-16ea8a34] {\n    width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -69108,132 +69109,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("section", [
-      _c("footer", { staticClass: "footer-area footer--light" }, [
-        _c("div", { staticClass: "footer-big" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Boutique")
+  return _c("section", [
+    _c("footer", { staticClass: "footer-area footer--light" }, [
+      _c("div", { staticClass: "footer-big" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Boutique")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.cgv } }, [_vm._v("CGV")])
                     ]),
                     _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("CGV")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Connextez-vous")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Inscrivez-vous")
-                        ])
+                    _c("li", [
+                      _c("a", { attrs: { href: this.login } }, [
+                        _vm._v("Connectez-vous")
                       ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Gazzar")
                     ]),
                     _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("À propos")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Blog")])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu no-padding" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Aide")
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Service d'aide")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [
-                          _vm._v("Droits d'auteur")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Contact")])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-3 col-sm-3" }, [
-                _c("div", { staticClass: "footer-widget" }, [
-                  _c("div", { staticClass: "footer-menu footer-menu--1" }, [
-                    _c("h4", { staticClass: "footer-widget-title" }, [
-                      _vm._v("Réseaux sociaux")
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("ul", [
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])
+                    _c("li", [
+                      _c("a", { attrs: { href: this.register } }, [
+                        _vm._v("Inscrivez-vous")
                       ])
                     ])
                   ])
@@ -69241,56 +69148,180 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12 text-center" }, [
-                _c("img", {
-                  attrs: {
-                    src: "images/logo-horizontal-fond-clair.png",
-                    alt: "Logo Gazzar"
-                  }
-                })
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Gazzar")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about } }, [
+                        _vm._v("À propos")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about } }, [_vm._v("Blog")])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+              _c("div", { staticClass: "footer-widget" }, [
+                _c("div", { staticClass: "footer-menu no-padding" }, [
+                  _c("h4", { staticClass: "footer-widget-title" }, [
+                    _vm._v("Aide")
+                  ]),
+                  _vm._v(" "),
+                  _c("hr"),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _vm._m(3),
+                    _vm._v(" "),
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: this.about + "#contactUs" } }, [
+                        _vm._v("Contact")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(5)
+          ]),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(7)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Livraison")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Retour")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Emplois")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Service d'aide")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Droits d'auteur")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-3 col-sm-3" }, [
+      _c("div", { staticClass: "footer-widget" }, [
+        _c("div", { staticClass: "footer-menu footer-menu--1" }, [
+          _c("h4", { staticClass: "footer-widget-title" }, [
+            _vm._v("Réseaux sociaux")
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Facebook")])]),
+            _vm._v(" "),
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Twitter")])]),
+            _vm._v(" "),
+            _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 text-center" }, [
+        _c("img", {
+          attrs: {
+            src: "images/logo-horizontal-fond-clair.png",
+            alt: "Logo Gazzar"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mini-footer" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "copyright-text" }, [
+              _c("p", [
+                _vm._v("Copyright "),
+                _c("i", { staticClass: "far fa-copyright" }),
+                _vm._v(" Alpaka 2019\n                        ")
               ])
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "mini-footer" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "copyright-text" }, [
-                  _c("p", [
-                    _vm._v("Copyright "),
-                    _c("i", { staticClass: "far fa-copyright" }),
-                    _vm._v(" Alpaka 2019\n                        ")
-                  ])
-                ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "copyright-text" }, [
+              _c("i", { staticClass: "far fa-envelope" }),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "#", id: "newsletter" } }, [
+                _vm._v("Inscription à la newsletter")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "col socialMedia" }, [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-facebook-f" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "copyright-text" }, [
-                  _c("i", { staticClass: "far fa-envelope" }),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#", id: "newsletter" } }, [
-                    _vm._v("Inscription à la newsletter")
-                  ])
-                ])
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-twitter" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col-md-4" }, [
-                _c("div", { staticClass: "col socialMedia" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-facebook-f" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram instagram" })
-                  ])
-                ])
+              _c("a", { attrs: { href: "#" } }, [
+                _c("i", { staticClass: "fab fa-instagram instagram" })
               ])
             ])
           ])
@@ -69678,19 +69709,19 @@ var render = function() {
                 "b-navbar-nav",
                 { staticClass: "ml-auto" },
                 [
-                  _c("b-nav-item", { attrs: { href: "home" } }, [
-                    _vm._v("Accueil")
+                  _c("b-nav-item", { attrs: { href: this.accueil } }, [
+                    _vm._v("Accueil ")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "products" } }, [
+                  _c("b-nav-item", { attrs: { href: this.catalogue } }, [
                     _vm._v("Catalogue")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "blog" } }, [
+                  _c("b-nav-item", { attrs: { href: this.blog } }, [
                     _vm._v("Blog")
                   ]),
                   _vm._v(" "),
-                  _c("b-nav-item", { attrs: { href: "about" } }, [
+                  _c("b-nav-item", { attrs: { href: this.about } }, [
                     _vm._v("À propos")
                   ])
                 ],
@@ -69941,11 +69972,7 @@ var staticRenderFns = [
                   "a",
                   {
                     staticClass: "btn btn-outline-secondary",
-<<<<<<< HEAD
-                    attrs: { href: "promotions" }
-=======
                     attrs: { href: "products/promotions" }
->>>>>>> backend_admin
                   },
                   [_vm._v("Voir les promotions")]
                 )
@@ -82685,7 +82712,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue2_smooth_scroll__WEBPACK_IMPOR
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
- //appel de tous les composants
+ //window.route = require('./route');
+//appel de tous les composants
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_require__(/*! ./components/hero/Hero.vue */ "./resources/js/components/hero/Hero.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);
@@ -84626,13 +84654,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
-=======
 __webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/sass/app.scss */"./resources/sass/app.scss");
->>>>>>> backend_admin
 
 
 /***/ })

@@ -9,6 +9,8 @@ window.Vue = require('vue');
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+//window.route = require('./route');
+
 
 //appel de tous les composants
 Vue.component('hero-section', require('./components/hero/Hero.vue').default);
