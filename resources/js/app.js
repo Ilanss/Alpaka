@@ -23,6 +23,7 @@ Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 Vue.component('cart-list', require('./components/cart/Cart.vue').default);
 Vue.component('product-info', require('./components/productInfo/ProductInfo.vue').default);
+Vue.component('user-info', require('./components/userInfo/UserInfo.vue').default);
 
 
 new Vue({

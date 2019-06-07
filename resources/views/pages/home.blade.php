@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-<product-info></product-info>
+<user-info></user-info>
 @endsection
