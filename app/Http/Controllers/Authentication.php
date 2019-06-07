@@ -17,17 +17,16 @@ class Authentication extends Controller
 
     public function login(Request $request)
     {
-        print_r($request->input());
+        //print_r($request->input());
 
         $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
         if (Auth::attempt($data)) {
             return redirect('/');
         } else {
-            echo 'Erreur <br/>';
-            dd($data);
-        }
-    }
+            $error = "L'email ou le mot de passe sont incorrects";
+            return Redirect::back()->withErrors($error);
+        }    }
 
     public function logout()
     {
