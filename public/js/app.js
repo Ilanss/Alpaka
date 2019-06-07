@@ -68941,7 +68941,7 @@ var render = function() {
             staticStyle: { "max-width": "20rem" },
             attrs: {
               title: _vm.item.name,
-              "img-src": _vm.item.image,
+              "img-src": "images/products/" + _vm.item.image,
               "img-alt": "Cover",
               "img-top": "",
               tag: "article",
