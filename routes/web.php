@@ -25,7 +25,7 @@ Route::get('/home', function () {
 })->name('home');
 
 // Registration
-Route::get('/registration', 'Registration@form');
+Route::get('/registration', 'Registration@form')->name('registration');
 Route::post('/registration/store', 'Registration@store');
 
 Route::get('/blog', function () {
@@ -36,7 +36,7 @@ Route::get('/admin', function () {
     return view('pages.admin');
 });
 // Authentication
-Route::get('/auth', 'authentication@form');
+Route::get('/auth', 'authentication@form')->name('auth');
 Route::get('/auth/login', 'Authentication@login');
 
 // Logout

@@ -1,1 +1,1 @@
-<footer-section cgv="{{ route('cgv') }}" register="{{ route('register') }}" login="{{ route('login') }}" about="{{ route('about') }}" blog="{{ route('blog') }}"></footer-section>
+<footer-section cgv="{{ route('cgv') }}" register="{{ route('registration') }}" login="{{ route('auth') }}" about="{{ route('about') }}" blog="{{ route('blog') }}"></footer-section>

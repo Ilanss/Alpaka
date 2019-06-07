@@ -10,7 +10,7 @@
                 </div><br/>
             @endif
             <navbar-section></navbar-section>
-            <create-section 
+            <create-section
             v-bind:countries="{{$countries}}"
              v-bind:wineries="{{$wineries}}"
              v-bind:categories="{{$categories}}"
