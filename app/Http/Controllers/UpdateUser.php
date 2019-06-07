@@ -30,9 +30,6 @@ class UpdateUser extends Controller
             'password' => 'required|max:255'
         ]);
 
-//        print_r($request->input());
-//        dd($validatedData);
-
         $user = auth()->user();
 
         $user->username = $request->input('username');

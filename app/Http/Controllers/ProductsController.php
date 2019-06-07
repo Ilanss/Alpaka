@@ -26,7 +26,6 @@ class ProductsController extends Controller
 
     public function view($slug) {
         $product = Wine::where('slug', $slug)->firstOrFail();
-        //return $product;
         return view('products.view', compact('product'));
     }
 
@@ -35,18 +34,21 @@ class ProductsController extends Controller
         $categories = Category::all();
         $wineries = Winery::all();
         $product = Wine::findOrFail($id);
-        return view('products.edit', compact('product', 'countries', 'categories', 'wineries'));
+        $size = Wine::distinct('size')->pluck('size');
+        $varietal = Wine::distinct('varietal')->pluck('varietal');
+        $conditioning = Wine::distinct('conditioning')->pluck('conditioning');
+        return view('products.edit', compact('product', 'countries', 'categories', 'wineries', 'size', 'varietal', 'conditioning'));
     }
 
     public function search(Request $name) {
         $name = $name->input('search');
         $products = Wine::where('name', 'like', "%".$name."%")->get();
-        return view('products.index', compact('products'));
+        return view('pages.products', compact('products'));
     }
 
     public function promotions() {
         $products = Wine::join('promotions', 'wines.id', '=', 'promotions.wine_id')->get();
-        return view('products.index', compact('products'));
+        return view('pages.products', compact('products'));
 
     }
 
@@ -54,12 +56,15 @@ class ProductsController extends Controller
         $countries = Country::all();
         $categories = Category::all();
         $wineries = Winery::all();
-        return view('products.create', compact('countries', 'categories', 'wineries'));
+        $size = Wine::distinct('size')->pluck('size');
+        $varietal = Wine::distinct('varietal')->pluck('varietal');
+        $conditioning = Wine::distinct('conditioning')->pluck('conditioning');
+        return view('products.create', compact('countries', 'categories', 'wineries', 'size', 'varietal', 'conditioning'));
     }
 
     public function store(Request $request) {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'name' => 'required|max:45',
             'brand' => 'required|max:45',
             'winery_id' => 'required|numeric',
@@ -69,26 +74,30 @@ class ProductsController extends Controller
             'origin' => 'required|max:45',
             'size' => 'required|max:45',
             'varietal' => 'required|max:45',
-            'good_year' => 'required|boolean',
+            'good_year' => 'boolean',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
             'description' => 'required|max:255',
-            'stock_status' => 'required|boolean',
+            'stock_status' => 'boolean',
             'conditioning' => 'required|max:255',
-            'ranking' => 'numeric',
-            'alcohol_level' => 'required|numeric',
-            'delivery_delay' => 'required|max:10',
+            'ranking' => 'numeric|between:1,5',
+            'alcohol_level' => 'required|numeric|between:0,50',
+            'delivery_delay_from' => 'required|numeric|between:0,50|lte:delivery_delay_to',
+            'delivery_delay_to' => 'required|numeric|between:1,50',
 
         ]);
 
         $name = str_slug($request->input('name')).'_'.time();
         $folder = public_path('images/products');
-        $filePath = $name.'.'.$request->image->getClientOriginalExtension();
-        $this->uploadOne($request->image, $folder, 'public', $name);
-
-        $request->image->move(public_path('images/products'), $filePath);
 
         $products = [];
+
+        if($request->image) {
+            $filePath = $name . '.' . $request->image->getClientOriginalExtension();
+            $this->uploadOne($request->image, $folder, 'public', $name);
+            $request->image->move(public_path('images/products'), $filePath);
+            $products['image'] = $filePath;
+        }
 
         $products['name'] = $request->input('name');
         $products['brand'] = $request->input('brand');
@@ -99,18 +108,19 @@ class ProductsController extends Controller
         $products['origin'] = $request->input('origin');
         $products['size'] = $request->input('size');
         $products['varietal'] = $request->input('varietal');
-        $products['good_year'] = $request->input('good_year');
+        $products['good_year'] = ($request->input('good_year')) ? 1 : 0;
         $products['date_production'] = $request->input('date_production');
         $products['serv_temp'] = $request->input('serv_temp');
         $products['description'] = $request->input('description');
-        $products['stock_status'] = $request->input('stock_status');
+        $products['stock_status'] = ($request->input('stock_status')) ? 1 : 0;
         $products['conditioning'] = $request->input('conditioning');
         $products['ranking'] = $request->input('ranking');
         $products['alcohol_level'] = $request->input('alcohol_level');
         $products['slug'] = str_slug($request->input('name'));
-        $products['delivery_delay'] = $request->input('delivery_delay');
-        $products['image'] = $filePath;
+        $products['delivery_delay'] = $request->input('delivery_delay_from')." à ".$request->input('delivery_delay_to');
 
+        dd($products);
+        return;
 
         Wine::create($products);
 
@@ -119,6 +129,7 @@ class ProductsController extends Controller
 
     public function update(Request $request, $id) {
         $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'name' => 'required|max:45',
             'brand' => 'required|max:45',
             'winery_id' => 'required|numeric',
@@ -129,15 +140,15 @@ class ProductsController extends Controller
             'size' => 'required|max:45',
             'varietal' => 'required|max:45',
             'good_year' => 'required|boolean',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
             'description' => 'required|max:255',
             'stock_status' => 'required|boolean',
             'conditioning' => 'required|max:255',
-            'ranking' => 'numeric',
-            'alcohol_level' => 'required|numeric',
-            'delivery_delay' => 'required|max:10',
+            'ranking' => 'numeric|between:1,5',
+            'alcohol_level' => 'required|numeric|between:0,50',
+            'delivery_delay_from' => 'required|numeric|between:0,50|lte:delivery_delay_to',
+            'delivery_delay_to' => 'required|numeric|between:1,50',
         ]);
 
         $products = [];
@@ -165,16 +176,16 @@ class ProductsController extends Controller
         $products['origin'] = $request->input('origin');
         $products['size'] = $request->input('size');
         $products['varietal'] = $request->input('varietal');
-        $products['good_year'] = $request->input('good_year');
+        $products['good_year'] = ($request->input('good_year')) ? 1 : 0;
         $products['date_production'] = $request->input('date_production');
         $products['serv_temp'] = $request->input('serv_temp');
         $products['description'] = $request->input('description');
-        $products['stock_status'] = $request->input('stock_status');
+        $products['stock_status'] = ($request->input('stock_status')) ? 1 : 0;
         $products['conditioning'] = $request->input('conditioning');
         $products['ranking'] = $request->input('ranking');
         $products['alcohol_level'] = $request->input('alcohol_level');
         $products['slug'] = str_slug($request->input('name'));
-        $products['delivery_delay'] = $request->input('delivery_delay');
+        $products['delivery_delay'] = $request->input('delivery_delay_from')." à ".$request->input('delivery_delay_to');
 
         Wine::where('id', $id)->first()->update($products);
 

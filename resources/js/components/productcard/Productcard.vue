@@ -5,7 +5,7 @@
       <b-card
         v-on:click="winePreview(item.id)"
         v-bind:title="item.name"
-        v-bind:img-src="item.image"
+        v-bind:img-src="'images/products/'+item.image"
         img-alt="Cover"
         img-top
         tag="article"
