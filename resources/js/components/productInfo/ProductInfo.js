@@ -4,6 +4,8 @@ export default {
     },
     data() {
         return {
+            wineId: "1",
+            userId: "1",
             image: "https://images.unsplash.com/photo-1549873916-b1bb7dc758c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
             name: "Vin de test",
             delivery_delay: "3 à 4",
@@ -43,5 +45,23 @@ export default {
 
         },
 
+    },
+    methods: {
+        onSubmit(evt) {
+            evt.preventDefault()
+            var data = {
+                    wineId: this.wineId,
+                    userId: this.userId,
+                    quantity: this.form.quantity,
+                }
+                /*data.push(this.wineId);
+                data.push(this.userId);
+                data.push(this.form.quantity); */
+                //alert(console.log(data))
+            alert(JSON.stringify(data))
+                /*---
+                    mettre ici le return pour envoyer les données au DB
+                ---*/
+        },
     },
 }

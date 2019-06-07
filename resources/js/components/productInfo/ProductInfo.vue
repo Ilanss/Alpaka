@@ -61,23 +61,26 @@
             </div>
           </div>
           <div class="productInfo__quantity">
-            <b-form-input
-              type="number"
-              step="1"
-              min="1"
-              max="1000000"
-              placeholder="Choisir la quantité"
-              v-model="form.quantity"
-              :state="validation_quantity"
-              required
-            ></b-form-input>
+            <b-form @submit="onSubmit">
+              <b-form-input
+                type="number"
+                step="1"
+                min="1"
+                max="1000000"
+                placeholder="Choisir la quantité"
+                v-model="form.quantity"
+                :state="validation_quantity"
+                required
+              ></b-form-input>
+              <b-button class="producInfo__submit" type="submit">Ajouter au Panier</b-button>
+            </b-form>
             <b-form-invalid-feedback
               :state="validation_quantity"
             >La quantité doit être positive et differente de 0</b-form-invalid-feedback>
             <b-form-valid-feedback :state="validation_quantity">C'est bien!</b-form-valid-feedback>
             <p>{{conditioning}}</p>
           </div>
-          <b-button class="producInfo__submit" type="submit">Ajouter au Panier</b-button>
+
           <div class="productInfo__stockYes" v-if="stock_status == 1">
             <i class="fas fa-check"></i>
             <p>Disponible</p>

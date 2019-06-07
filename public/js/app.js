@@ -2219,6 +2219,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
+      wineId: "1",
+      userId: "1",
       image: "https://images.unsplash.com/photo-1549873916-b1bb7dc758c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
       name: "Vin de test",
       delivery_delay: "3 à 4",
@@ -2269,6 +2271,25 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         return this.form.quantity > "0";
       }
+    }
+  },
+  methods: {
+    onSubmit: function onSubmit(evt) {
+      evt.preventDefault();
+      var data = {
+        wineId: this.wineId,
+        userId: this.userId,
+        quantity: this.form.quantity
+        /*data.push(this.wineId);
+        data.push(this.userId);
+        data.push(this.form.quantity); */
+        //alert(console.log(data))
+
+      };
+      alert(JSON.stringify(data));
+      /*---
+          mettre ici le return pour envoyer les données au DB
+      ---*/
     }
   }
 });
@@ -68062,189 +68083,191 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _c(
-              "b-col",
-              { attrs: { cols: "8" } },
-              [
-                _c("div", { staticClass: "productInfo__title" }, [
-                  _c("h1", [_vm._v(_vm._s(_vm.name))]),
-                  _vm._v(" "),
-                  _c("h3", [_vm._v(_vm._s(_vm.brand))])
+            _c("b-col", { attrs: { cols: "8" } }, [
+              _c("div", { staticClass: "productInfo__title" }, [
+                _c("h1", [_vm._v(_vm._s(_vm.name))]),
+                _vm._v(" "),
+                _c("h3", [_vm._v(_vm._s(_vm.brand))])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "productInfo__price" }, [
+                _c("h2", [_vm._v("CHF " + _vm._s(_vm.price_wine))]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Livraison dans les " +
+                      _vm._s(_vm.delivery_delay) +
+                      " jours"
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "productInfo__price" }, [
-                  _c("h2", [_vm._v("CHF " + _vm._s(_vm.price_wine))]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "Livraison dans les " +
-                        _vm._s(_vm.delivery_delay) +
-                        " jours"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("CHF 12 offerts dès CHF 250")])
-                ]),
+                _c("p", [_vm._v("CHF 12 offerts dès CHF 250")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "productInfo__review" }, [
+                _c("p", [_vm._v("Reviews d'autres utilisateurs")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "productInfo__review" }, [
-                  _c("p", [_vm._v("Reviews d'autres utilisateurs")]),
-                  _vm._v(" "),
-                  _vm.user_ranking == 0
-                    ? _c("div", { staticClass: "review__0" }, [
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.user_ranking == 1
-                    ? _c("div", { staticClass: "review__2" }, [
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.user_ranking == 2
-                    ? _c("div", { staticClass: "review__2" }, [
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.user_ranking == 3
-                    ? _c("div", { staticClass: "review__3" }, [
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.user_ranking == 4
-                    ? _c("div", { staticClass: "review__4" }, [
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star" })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.user_ranking == 5
-                    ? _c("div", { staticClass: "review__5" }, [
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                        _vm._v(" "),
-                        _c("i", { staticClass: "fas fa-star fa-star-active" })
-                      ])
-                    : _vm._e()
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "productInfo__quantity" },
-                  [
-                    _c("b-form-input", {
-                      attrs: {
-                        type: "number",
-                        step: "1",
-                        min: "1",
-                        max: "1000000",
-                        placeholder: "Choisir la quantité",
-                        state: _vm.validation_quantity,
-                        required: ""
-                      },
-                      model: {
-                        value: _vm.form.quantity,
-                        callback: function($$v) {
-                          _vm.$set(_vm.form, "quantity", $$v)
-                        },
-                        expression: "form.quantity"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-invalid-feedback",
-                      { attrs: { state: _vm.validation_quantity } },
-                      [
-                        _vm._v(
-                          "La quantité doit être positive et differente de 0"
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "b-form-valid-feedback",
-                      { attrs: { state: _vm.validation_quantity } },
-                      [_vm._v("C'est bien!")]
-                    ),
-                    _vm._v(" "),
-                    _c("p", [_vm._v(_vm._s(_vm.conditioning))])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    staticClass: "producInfo__submit",
-                    attrs: { type: "submit" }
-                  },
-                  [_vm._v("Ajouter au Panier")]
-                ),
-                _vm._v(" "),
-                _vm.stock_status == 1
-                  ? _c("div", { staticClass: "productInfo__stockYes" }, [
-                      _c("i", { staticClass: "fas fa-check" }),
+                _vm.user_ranking == 0
+                  ? _c("div", { staticClass: "review__0" }, [
+                      _c("i", { staticClass: "fas fa-star" }),
                       _vm._v(" "),
-                      _c("p", [_vm._v("Disponible")])
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" })
                     ])
                   : _vm._e(),
                 _vm._v(" "),
-                _vm.stock_status == 0
-                  ? _c("div", { staticClass: "productInfo__stockNo" }, [
-                      _c("i", { staticClass: "fas fa-times" }),
+                _vm.user_ranking == 1
+                  ? _c("div", { staticClass: "review__2" }, [
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
                       _vm._v(" "),
-                      _c("p", [_vm._v("Pas Disponible")])
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" })
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.user_ranking == 2
+                  ? _c("div", { staticClass: "review__2" }, [
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" })
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.user_ranking == 3
+                  ? _c("div", { staticClass: "review__3" }, [
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" })
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.user_ranking == 4
+                  ? _c("div", { staticClass: "review__4" }, [
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star" })
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.user_ranking == 5
+                  ? _c("div", { staticClass: "review__5" }, [
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm._v(" "),
+                      _c("i", { staticClass: "fas fa-star fa-star-active" })
                     ])
                   : _vm._e()
-              ],
-              1
-            )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "productInfo__quantity" },
+                [
+                  _c(
+                    "b-form",
+                    { on: { submit: _vm.onSubmit } },
+                    [
+                      _c("b-form-input", {
+                        attrs: {
+                          type: "number",
+                          step: "1",
+                          min: "1",
+                          max: "1000000",
+                          placeholder: "Choisir la quantité",
+                          state: _vm.validation_quantity,
+                          required: ""
+                        },
+                        model: {
+                          value: _vm.form.quantity,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "quantity", $$v)
+                          },
+                          expression: "form.quantity"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "producInfo__submit",
+                          attrs: { type: "submit" }
+                        },
+                        [_vm._v("Ajouter au Panier")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-invalid-feedback",
+                    { attrs: { state: _vm.validation_quantity } },
+                    [
+                      _vm._v(
+                        "La quantité doit être positive et differente de 0"
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-valid-feedback",
+                    { attrs: { state: _vm.validation_quantity } },
+                    [_vm._v("C'est bien!")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.conditioning))])
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm.stock_status == 1
+                ? _c("div", { staticClass: "productInfo__stockYes" }, [
+                    _c("i", { staticClass: "fas fa-check" }),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("Disponible")])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.stock_status == 0
+                ? _c("div", { staticClass: "productInfo__stockNo" }, [
+                    _c("i", { staticClass: "fas fa-times" }),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("Pas Disponible")])
+                  ])
+                : _vm._e()
+            ])
           ],
           1
         ),
