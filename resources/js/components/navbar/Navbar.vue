@@ -1,9 +1,7 @@
 <template>
-<div>
   <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar">
     <b-navbar-brand href="#" class="navbar-brand">Gazzar</b-navbar-brand>
       <!-- Center aligned nav items -->
-
     <b-navbar-toggle target="nav-collapse" class="navbar-toggle">
         <span class="navbar-toggler-icon"></span>
     </b-navbar-toggle>
@@ -20,8 +18,9 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
-            <b-button size="sm" class="my-2 my-sm-0 btn user" type="submit"><i class="fas fa-user"></i></b-button>
-        
+            <form v-bind:action="this.login">
+                <b-button size="sm" class="my-2 my-sm-0 btn user" type="submit"><i class="fas fa-user"></i></b-button>
+            </form>
             <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i class="fas fa-shopping-cart"></i></b-button>
             
             <b-form-input size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
@@ -31,7 +30,6 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-</div>
 </template>
 <script src="./Navbar.js"></script>
 <style lang="scss" src="./Navbar.scss"></style>
