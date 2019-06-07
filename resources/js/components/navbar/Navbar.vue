@@ -3,25 +3,18 @@
   <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar">
     <b-navbar-brand href="#" class="navbar-brand">Gazzar</b-navbar-brand>
       <!-- Center aligned nav items -->
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item v-bind:href="this.home">Accueil </b-nav-item>
-          <b-nav-item v-bind:href="this.catalogue">Catalogue</b-nav-item>
-          <b-nav-item v-bind:href="this.blog">Blog</b-nav-item>
-          <b-nav-item v-bind:href="this.about">À propos</b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
+
     <b-navbar-toggle target="nav-collapse" class="navbar-toggle">
         <span class="navbar-toggler-icon"></span>
     </b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="navbar-nav">
-        <b-nav-item href="#" class="nav-link">Accueil</b-nav-item>
-        <b-nav-item href="#" class="nav-link">Catalogue</b-nav-item>
-        <b-nav-item href="#" class="nav-link">Blog</b-nav-item>
-        <b-nav-item href="#" class="nav-link">À propos</b-nav-item>
-        <b-nav-item href="#" class="nav-link">Contact</b-nav-item>
+          <b-nav-item v-bind:href="this.home">Accueil </b-nav-item>
+          <b-nav-item v-bind:href="this.catalogue">Catalogue</b-nav-item>
+          <b-nav-item v-bind:href="this.blog">Blog</b-nav-item>
+          <b-nav-item v-bind:href="this.about">À propos</b-nav-item>
+          <b-nav-item v-bind:href="this.about+'#contactUs'">Contact</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
