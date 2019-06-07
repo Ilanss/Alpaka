@@ -1,4 +1,5 @@
 <template>
+<div>
   <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar">
     <b-navbar-brand href="#" class="navbar-brand">Gazzar</b-navbar-brand>
       <!-- Center aligned nav items -->
@@ -9,7 +10,7 @@
           <b-nav-item v-bind:href="this.blog">Blog</b-nav-item>
           <b-nav-item v-bind:href="this.about">À propos</b-nav-item>
         </b-navbar-nav>
-
+      </b-collapse>
     <b-navbar-toggle target="nav-collapse" class="navbar-toggle">
         <span class="navbar-toggler-icon"></span>
     </b-navbar-toggle>
@@ -37,6 +38,7 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
+</div>
 </template>
 <script src="./Navbar.js"></script>
 <style lang="scss" src="./Navbar.scss"></style>
