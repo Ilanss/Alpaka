@@ -17,11 +17,11 @@ Route::get('/about', function () {
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
 
 Route::get('/home', function () {
     return view('pages.home');
-});
+})->name('home');
 
 // Registration
 Route::get('/registration', 'Registration@form');

@@ -26,7 +26,11 @@
 
 <body>
     <div id="app">
-        <!-- include('includes.navbar')
+    @if(Route::current()->getName() == 'home')
+    @else
+    @include('includes.navbar')
+@endif  
+        <!--
       include('includes.secondary-navbar') -->
         <main>
             @yield('content')

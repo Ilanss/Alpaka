@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<navbar-section></navbar-section>
+<!--<navbar-section></navbar-section>-->
 <div class="container">
 
 <div class="row">
