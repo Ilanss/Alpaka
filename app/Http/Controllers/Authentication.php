@@ -8,9 +8,14 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class Login extends Controller
+class Authentication extends Controller
 {
-    public function auth(Request $request)
+    // Show form registration
+    public function form(){
+        return view('users.authentication');
+    }
+
+    public function login(Request $request)
     {
         print_r($request->input());
 

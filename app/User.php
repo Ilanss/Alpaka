@@ -8,6 +8,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    const ADMIN_STATE = 'admin';
+    const CLIENT_STATE = 'client';
+
     use Notifiable;
 
     /**
@@ -39,6 +42,12 @@ class User extends Authenticatable
 
     public function ratings() {
         return $this->hasMany('App\Rating');
+    }
+
+    // Define role
+    public function isAdmin()
+    {
+        return $this->state === self::ADMIN_STATE;
     }
 }
 

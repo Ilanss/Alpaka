@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Wine extends Model
 {
-    protected $fillable = ['name', 'brand', 'price_wine', 'winery_id', 'category_id', 'country_id', 'origin', 'size', 'varietal', 'good_year', 'date_production', 'serv_temp', 'description', 'stock_status', 'conditioning', 'ranking', 'alcohol_level', 'slug', 'delivery_delay'];
+    protected $fillable = ['name', 'brand', 'price_wine', 'winery_id', 'category_id', 'country_id', 'origin', 'size', 'varietal', 'good_year', 'date_production', 'serv_temp', 'description', 'stock_status', 'conditioning', 'ranking', 'alcohol_level', 'slug', 'delivery_delay', 'image'];
 
     public function winery() {
         return $this->belongsTo('App\Winery');
