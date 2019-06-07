@@ -18,6 +18,11 @@ class ProductsController extends Controller
         $products = Wine::all();
         return view('pages.products',compact('products'));
     }
+
+    public function home() {
+        $products = Wine::inRandomOrder()->take(4)->get();
+        return view('pages.home',compact('products'));
+    }
    /*public function index() {
         $products = Wine::all();
         return view('pages.products')->with('products', $products);

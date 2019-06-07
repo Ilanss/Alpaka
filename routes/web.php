@@ -16,13 +16,9 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', 'ProductsController@home')->name('home');
 
-Route::get('/home', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/home', 'ProductsController@home')->name('home');
 
 // Registration
 Route::get('/registration', 'Registration@form')->name('registration');
