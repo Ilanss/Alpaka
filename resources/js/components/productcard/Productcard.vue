@@ -3,9 +3,9 @@
     <div class="test">
       <!-- replace item.image to img-src -->
       <b-card
-        v-on:click="winePreview(item.wineId)"
-        v-bind:title="item.wineName"
-        v-bind:img-src="item.wineImage"
+        v-on:click="winePreview(item.id)"
+        v-bind:title="item.name"
+        v-bind:img-src="'images/products/' + item.image"
         img-alt="Cover"
         img-top
         tag="article"
@@ -13,7 +13,7 @@
         class="mb-2 text-center"
         v-bind:id="item.id"
       >
-        <b-card-text class="text-center">{{ item.winePrix }} CHF</b-card-text>
+        <b-card-text class="text-center">{{ item.price_wine }} CHF</b-card-text>
 
         <b-button v-on:click="wineAdd" v-bind:href="''+item.id" variant="" class="product__add">Ajouter au panier</b-button>
       </b-card>
