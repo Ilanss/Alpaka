@@ -98,6 +98,9 @@ class ProductsController extends Controller
             $request->image->move(public_path('images/products'), $filePath);
             $products['image'] = $filePath;
         }
+        else {
+            $products['image'] = 'wine-placeholder.png';
+        }
 
         $products['name'] = $request->input('name');
         $products['brand'] = $request->input('brand');
@@ -164,7 +167,7 @@ class ProductsController extends Controller
             $products['image'] = $filePath;
 
             $link = Wine::where('id', $id)->first()->value('image');
-            unlink(public_path('images/products/'.$link));
+            ($link == 'wine-placeholder.png') ? : unlink(public_path('images/products/'.$link));
         }
 
         $products['name'] = $request->input('name');
