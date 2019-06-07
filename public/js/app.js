@@ -1928,33 +1928,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['bestseller'],
   mounted: function mounted() {
     console.log("bestseller mounted");
-  },
-  data: function data() {
-    return {
-      bestseller: [{
-        wineId: "#01",
-        wineName: "Best seller 1",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#02",
-        wineName: "Best seller 2",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }, {
-        wineId: "#03",
-        wineName: "Best seller 3",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "15.50"
-      }, {
-        wineId: "#04",
-        wineName: "Best seller 4",
-        wineImage: "https://picsum.photos/600/300/?image=25",
-        winePrix: "20.50"
-      }]
-    };
   }
 });
 
@@ -69897,8 +69873,8 @@ var render = function() {
             staticClass: "mb-2 text-center",
             staticStyle: { "max-width": "20rem" },
             attrs: {
-              title: _vm.item.wineName,
-              "img-src": _vm.item.wineImage,
+              title: _vm.item.name,
+              "img-src": "images/products/" + _vm.item.image,
               "img-alt": "Cover",
               "img-top": "",
               tag: "article",
@@ -69906,13 +69882,13 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.winePreview(_vm.item.wineId)
+                return _vm.winePreview(_vm.item.id)
               }
             }
           },
           [
             _c("b-card-text", { staticClass: "text-center" }, [
-              _vm._v(_vm._s(_vm.item.winePrix) + " CHF")
+              _vm._v(_vm._s(_vm.item.price_wine) + " CHF")
             ]),
             _vm._v(" "),
             _c(
