@@ -2,7 +2,17 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
+                <div class="col-md-4 user-list">
+                        <ul class="list-group list-group-flush">
+                            <a href="modify" class="list-group-item list-group-item-action active">Mon compte</a>
+                              <a href="commands" class="list-group-item list-group-item-action">Mes commandes</a>
+                              <a href="review" class="list-group-item list-group-item-action">Mes évalutations</a>
+                              <a href="userData" class="list-group-item list-group-item-action">Mes données d'utilisateur</a>
+                              <a href="adress" class="list-group-item list-group-item-action">Mes adress</a>
+                              <a href="logout" class="list-group-item list-group-item-action">Déconexion</a>
+                          </ul>
+                    </div>
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('Modifier mes informations') }}</div>

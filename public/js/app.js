@@ -34308,9 +34308,17 @@ exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/lib/loader.js):\n\n@import '~@/sass/_variables.scss';\n       ^\n      Can't find stylesheet to import.\n  ╷\n1 │ @import '~@/sass/_variables.scss';\n  │         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  stdin 1:9  root stylesheet\n      in /Users/ilans/Documents/htdocs/Alpaka/resources/js/components/navbar/Navbar.scss (line 1, column 9)");
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif !important;\n  font-size: 1rem !important;\n  width: 100% !important;\n  margin: 0 auto !important;\n  line-height: 2.5rem !important;\n}\n.navbar {\n  background-color: #5b022e !important;\n}\n.navbar-brand {\n  color: white !important;\n  font-family: \"Khand\", sans-serif !important;\n  font-size: 2.5rem !important;\n  margin: 10px !important;\n}\n.navbar .navbar-brand:hover,\n.navbar .navbar-brand:focus {\n  color: white !important;\n}\n.navbar .navbar-nav .nav-link {\n  color: white !important;\n  margin: 0 0.2em !important;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover,\n.navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #e8d2ac !important;\n}\n.form-input {\n  border: 1px solid #5b022e !important;\n  background: white !important;\n}\n.btn {\n  color: white !important;\n  background-color: transparent !important;\n  border-color: white !important;\n}\n.btn:focus,\n.btn:hover,\n.btn:active {\n  color: #e8d2ac !important;\n  background-color: transparent !important;\n  border-color: #e8d2ac !important;\n  outline: none !important;\n  box-shadow: none !important;\n}\n.user {\n  margin-right: 10px !important;\n}\n.cart {\n  margin-right: 10px !important;\n}\n.navbar-toggle {\n  border-color: white !important;\n}\n.navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n}", ""]);
+
+// exports
+
 
 /***/ }),
 
@@ -34364,7 +34372,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-44c311b8] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-44c311b8] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-44c311b8] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-44c311b8] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-44c311b8] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-44c311b8] {\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-44c311b8] {\n        background-color: #D8D4D3;\n        height: 100%;\n        width: 100%;\n}\nform[data-v-44c311b8] {\n        padding-top: 30px;\n}\n#envoyerForm[data-v-44c311b8] {\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-44c311b8] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-44c311b8] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-44c311b8] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-44c311b8] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-44c311b8] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-44c311b8] {\r\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-44c311b8] {\r\n        background-color: #D8D4D3;\r\n        height: 100%;\r\n        width: 100%;\n}\nform[data-v-44c311b8] {\r\n        padding-top: 30px;\n}\n#envoyerForm[data-v-44c311b8] {\r\n        background-color: #5B022E;\n}\nimg[data-v-44c311b8] {\r\n        display: none;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34383,7 +34391,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".bestSeller[data-v-d0771fd4] {\n    background-color: white;\n    padding: 0px;\n}\n.col-sm-3[data-v-d0771fd4] {\n    padding: 0px 5px !important;\n}\n\n", ""]);
+exports.push([module.i, ".bestSeller[data-v-d0771fd4] {\r\n    background-color: white;\r\n    padding: 0px;\n}\n.col-sm-3[data-v-d0771fd4] {\r\n    padding: 0px 5px !important;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -34402,7 +34410,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".blogShort{ border-bottom:1px solid #ddd;}\n.add{background: #333; padding: 10%; height: 300px;}\na, a:hover {\n    color: #333;\n}\n.nav-sidebar { \n    width: 100%;\n    padding: 8px 0; \n    border-right: 1px solid #ddd;\n}\n.nav-sidebar a {\n    color: #333;\n    transition: all 0.08s linear;\n}\n.nav-sidebar .active a { \n    cursor: default;\n    background-color: #5B022E; \n    color: #fff;\n}\n.nav-sidebar .active a:hover {\n    background-color: #5B022E;\n}\n.nav-sidebar .text-overflow a,\n.nav-sidebar .text-overflow .media-body {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n.btn-blog {\n    color: #ffffff;\n    background-color: #5B022E;\n    border-color: #5B022E;\n    border-radius:0;\n    margin-bottom:10px\n}\n.btn-blog:hover,\n.btn-blog:focus,\n.btn-blog:active,\n.btn-blog.active,\n.open .dropdown-toggle.btn-blog {\n    color: white;\n    background-color:#5B022E;\n    border-color: #5B022E;\n}\nh2{color:#5B022E;}\n.margin10{margin-bottom:10px; margin-right:10px;}", ""]);
+exports.push([module.i, ".blogShort{ border-bottom:1px solid #ddd;}\n.add{background: #333; padding: 10%; height: 300px;}\na, a:hover {\r\n    color: #333;\n}\n.nav-sidebar { \r\n    width: 100%;\r\n    padding: 8px 0; \r\n    border-right: 1px solid #ddd;\n}\n.nav-sidebar a {\r\n    color: #333;\r\n    transition: all 0.08s linear;\n}\n.nav-sidebar .active a { \r\n    cursor: default;\r\n    background-color: #5B022E; \r\n    color: #fff;\n}\n.nav-sidebar .active a:hover {\r\n    background-color: #5B022E;\n}\n.nav-sidebar .text-overflow a,\r\n.nav-sidebar .text-overflow .media-body {\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\n}\n.btn-blog {\r\n    color: #ffffff;\r\n    background-color: #5B022E;\r\n    border-color: #5B022E;\r\n    border-radius:0;\r\n    margin-bottom:10px\n}\n.btn-blog:hover,\r\n.btn-blog:focus,\r\n.btn-blog:active,\r\n.btn-blog.active,\r\n.open .dropdown-toggle.btn-blog {\r\n    color: white;\r\n    background-color:#5B022E;\r\n    border-color: #5B022E;\n}\nh2{color:#5B022E;}\n.margin10{margin-bottom:10px; margin-right:10px;}", ""]);
 
 // exports
 
@@ -34421,7 +34429,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n    color: #5B002E;\n    width: 100%;\n    margin: 0 auto;\n}\nh1 {\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np {\n    line-height: 2.5rem;\n}\nh2 {\n    margin: 0;\n    padding: 0;\n}\n\n/* Carousel */\n#carousel-example {\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\n    background: #FFFFFF;\n    padding: 40px 0;\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\n    padding: 0 0 35px;\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\n    margin: 0 auto;\n    position: static;\n    width: 100%;\n    font-size: 1rem;\n}\nol span {\n    border: 1px solid transparent;\n    cursor: pointer;\n    height: auto;\n    padding: 10px 15px;\n    text-align: center;\n    transition: border 0.3s, color 0.3s;\n    width: auto;\n}\nol .active {\n    background: none;\n    border: 1px solid #5B002E;\n    color: #5B002E;\n    height: auto;\n    padding: 10px 15px;\n    width: auto;\n}\n.item {\n    transition: opacity 1s;\n}\n.img-wrapper {\n    height: 400px;\n    margin: 0 -15px 0 0;\n    overflow: hidden;\n    position: relative;\n}\n.img-wrapper img {\n    left: 50%;\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n    width: auto;\n}\n.carousel-caption {\n    background: #E8D2AC;\n    color: #5B002E;\n    height: 400px;\n    margin: 0 0 0 -15px;\n    padding: 30px;\n    position: static;\n    text-align: left;\n    text-shadow: none;\n}\n.carousel-caption h2 {\n    padding: 0 0 20px;\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\n        height: auto;\n}\n.img-wrapper img {\n        -webkit-transform: none;\n        transform: none;\n        position: static;\n        width: 100%;\n}\n.carousel-caption {\n        height: auto;\n}\n}\n", ""]);
+exports.push([module.i, "body {\r\n    font-family: 'Montserrat', sans-serif;\r\n    color: #5B002E;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1 {\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np {\r\n    line-height: 2.5rem;\n}\nh2 {\r\n    margin: 0;\r\n    padding: 0;\n}\r\n\r\n/* Carousel */\n#carousel-example {\r\n    padding-bottom: 100px;\n}\n#carousel-example .carousel-wrapper {\r\n    background: #FFFFFF;\r\n    padding: 40px 0;\r\n    text-transform: uppercase;\n}\n.carousel-wrapper h1 {\r\n    padding: 0 0 35px;\r\n    text-align: center;\n}\n#carousel-example .carousel-wrapper ol {\r\n    margin: 0 auto;\r\n    position: static;\r\n    width: 100%;\r\n    font-size: 1rem;\n}\nol span {\r\n    border: 1px solid transparent;\r\n    cursor: pointer;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    text-align: center;\r\n    transition: border 0.3s, color 0.3s;\r\n    width: auto;\n}\nol .active {\r\n    background: none;\r\n    border: 1px solid #5B002E;\r\n    color: #5B002E;\r\n    height: auto;\r\n    padding: 10px 15px;\r\n    width: auto;\n}\n.item {\r\n    transition: opacity 1s;\n}\n.img-wrapper {\r\n    height: 400px;\r\n    margin: 0 -15px 0 0;\r\n    overflow: hidden;\r\n    position: relative;\n}\n.img-wrapper img {\r\n    left: 50%;\r\n    position: absolute;\r\n    top: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    transform: translate(-50%, -50%);\r\n    width: auto;\n}\n.carousel-caption {\r\n    background: #E8D2AC;\r\n    color: #5B002E;\r\n    height: 400px;\r\n    margin: 0 0 0 -15px;\r\n    padding: 30px;\r\n    position: static;\r\n    text-align: left;\r\n    text-shadow: none;\n}\n.carousel-caption h2 {\r\n    padding: 0 0 20px;\r\n    text-transform: uppercase;\n}\n@media (max-width: 991px) {\n.img-wrapper {\r\n        height: auto;\n}\n.img-wrapper img {\r\n        -webkit-transform: none;\r\n        transform: none;\r\n        position: static;\r\n        width: 100%;\n}\n.carousel-caption {\r\n        height: auto;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34440,7 +34448,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-4fb95116] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-4fb95116] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-4fb95116] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-4fb95116] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-4fb95116] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-4fb95116] {\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-4fb95116] {\n        background-color: #D8D4D3;\n        height: 100%;\n        width: 100%;\n}\nform[data-v-4fb95116] {\n        padding-top: 30px;\n}\n#envoyerForm[data-v-4fb95116] {\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\n        display: none;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-4fb95116] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-4fb95116] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-4fb95116] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-4fb95116] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-4fb95116] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-4fb95116] {\r\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#contactUs[data-v-4fb95116] {\r\n        background-color: #D8D4D3;\r\n        height: 100%;\r\n        width: 100%;\n}\nform[data-v-4fb95116] {\r\n        padding-top: 30px;\n}\n#envoyerForm[data-v-4fb95116] {\r\n        background-color: #5B022E;\n}\nimg[data-v-4fb95116] {\r\n        display: none;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34459,7 +34467,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".image[data-v-3963ba78] {\n    height: 300px;\n    background-position: center;\n    background-size: cover;\n}", ""]);
+exports.push([module.i, ".image[data-v-3963ba78] {\r\n    height: 300px;\r\n    background-position: center;\r\n    background-size: cover;\n}", ""]);
 
 // exports
 
@@ -34478,7 +34486,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".filter__1[data-v-5ae83bd4] {\n    padding: 20px;\n    outline-style: auto;\n    outline-color: red;\n}\n", ""]);
+exports.push([module.i, ".filter__1[data-v-5ae83bd4] {\r\n    padding: 20px;\r\n    outline-style: auto;\r\n    outline-color: red;\n}\r\n", ""]);
 
 // exports
 
@@ -34497,7 +34505,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".filter__2[data-v-3d07e418] {\n    padding: 20px;\n    outline-style: auto;\n    outline-color: red;\n}\n", ""]);
+exports.push([module.i, ".filter__2[data-v-3d07e418] {\r\n    padding: 20px;\r\n    outline-style: auto;\r\n    outline-color: red;\n}\r\n", ""]);
 
 // exports
 
@@ -34516,7 +34524,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-22837618] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n    line-height: 2.5rem;\n}\np[data-v-22837618] {\n    font-size: 1rem;\n}\nfooter[data-v-22837618] {\n    background-color: #5b022e;\n    color: #FFFFFF;\n    padding-top: 60px;\n}\n.mini-footer[data-v-22837618] {\n    padding-top: 20px;\n    padding-bottom: 20px;\n}\n\n/* big footer */\nul[data-v-22837618] {\n    padding: 0;\n    margin: 0\n}\nli[data-v-22837618] {\n    list-style: none\n}\n.footer-widget-title[data-v-22837618] {\n    margin-bottom: 10px;\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\n    max-width: 100%;\n    margin-top: 50px;\n    margin-bottom: 115px;\n}\na[data-v-22837618] {\n    color: #FFFFFF;\n}\na[data-v-22837618]:hover {\n    color: #FFFFFF;\n}\n.mini-footer[data-v-22837618] {\n    background-color: #FFFFFF;\n}\n\n/* Mini footer */\n.socialMedia > a[data-v-22837618] {\n    margin-right: 20px;\n    color: #5b022e;\n}\ninstagram[data-v-22837618] {\n    margin: 0;\n}\n.copyright-text[data-v-22837618] {\n    color: #5b022e;\n    text-align: center;\n}\n#newsletter[data-v-22837618] {\n    color: #5b022e;\n}\n@media (min-width:992px) {\nhr[data-v-22837618] {\n        display: none;\n}\n}\n@media (max-width:991px) {\n.footer-big[data-v-22837618] {\n        padding-bottom: 60px;\n}\n.footer-menu[data-v-22837618] {\n        padding-left: 0\n}\n.footer-widget-title[data-v-22837618] {\n        margin-bottom: 10px;\n        font-size: 1.5rem;\n        padding-top: 20px;\n}\nhr[data-v-22837618] {\n        background-color: white;\n}\nimg[data-v-22837618] {\n        display: none;\n}\n.socialMedia[data-v-22837618] {\n        text-align: center;\n}\ninstagram[data-v-22837618] {\n        margin: 0;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-22837618] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\n}\np[data-v-22837618] {\r\n    font-size: 1rem;\n}\nfooter[data-v-22837618] {\r\n    background-color: #5b022e;\r\n    color: #FFFFFF;\r\n    padding-top: 60px;\n}\n.mini-footer[data-v-22837618] {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\n}\r\n\r\n/* big footer */\nul[data-v-22837618] {\r\n    padding: 0;\r\n    margin: 0\n}\nli[data-v-22837618] {\r\n    list-style: none\n}\n.footer-widget-title[data-v-22837618] {\r\n    margin-bottom: 10px;\r\n    font-size: 1.5rem;\n}\nimg[data-v-22837618] {\r\n    max-width: 100%;\r\n    margin-top: 50px;\r\n    margin-bottom: 115px;\n}\na[data-v-22837618] {\r\n    color: #FFFFFF;\n}\na[data-v-22837618]:hover {\r\n    color: #FFFFFF;\n}\n.mini-footer[data-v-22837618] {\r\n    background-color: #FFFFFF;\n}\r\n\r\n/* Mini footer */\n.socialMedia > a[data-v-22837618] {\r\n    margin-right: 20px;\r\n    color: #5b022e;\n}\ninstagram[data-v-22837618] {\r\n    margin: 0;\n}\n.copyright-text[data-v-22837618] {\r\n    color: #5b022e;\r\n    text-align: center;\n}\n#newsletter[data-v-22837618] {\r\n    color: #5b022e;\n}\n@media (min-width:992px) {\nhr[data-v-22837618] {\r\n        display: none;\n}\n}\n@media (max-width:991px) {\n.footer-big[data-v-22837618] {\r\n        padding-bottom: 60px;\n}\n.footer-menu[data-v-22837618] {\r\n        padding-left: 0\n}\n.footer-widget-title[data-v-22837618] {\r\n        margin-bottom: 10px;\r\n        font-size: 1.5rem;\r\n        padding-top: 20px;\n}\nhr[data-v-22837618] {\r\n        background-color: white;\n}\nimg[data-v-22837618] {\r\n        display: none;\n}\n.socialMedia[data-v-22837618] {\r\n        text-align: center;\n}\ninstagram[data-v-22837618] {\r\n        margin: 0;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34535,7 +34543,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-3da30bd4] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n}\n.hero[data-v-3da30bd4] {\n    padding-top: 5%;\n    height: 100vh;\n    background-color: #FFFFFF;\n}\n.logo[data-v-3da30bd4] {\n    text-align: center;\n}\n.btn[data-v-3da30bd4]:active:focus {\n    background-color: #5B022E;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n.btn[data-v-3da30bd4] {\n        background-color: #5B022E;\n        margin: 60px;\n}\n.arrow[data-v-3da30bd4] {\n        width: 6vmin;\n        height: 6vmin;\n        box-sizing: border-box;\n        position: relative;\n        left: 48.5%;\n        -webkit-transform: rotate(-225deg);\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\n        content: '';\n        width: 100%;\n        height: 100%;\n        border-width: .8vmin .8vmin 0 0;\n        border-style: solid;\n        border-color: #5B022E;\n        transition: .2s ease;\n        display: block;\n        -webkit-transform-origin: 100% 0;\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n        border-color: #5F022E;\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\n        border-color: #5F022E;\n        -webkit-transform: scale(0.8);\n                transform: scale(0.8);\n}\n}\n@-webkit-keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\n        opacity: 0;\n        -webkit-transform: translatey(-10px);\n        transform: translatey(-10px);\n}\nto {\n        opacity: 1;\n        -webkit-transform: translatey(0);\n        transform: translatey(0);\n}\n}\n@keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\n        opacity: 0;\n        -webkit-transform: translatey(-10px);\n        transform: translatey(-10px);\n}\nto {\n        opacity: 1;\n        -webkit-transform: translatey(0);\n        transform: translatey(0);\n}\n}\n.in-down[data-v-3da30bd4] {\n    -webkit-animation-name: fadeInDown-data-v-3da30bd4;\n    animation-name: fadeInDown-data-v-3da30bd4;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    -webkit-animation-duration: 2s;\n    animation-duration: 2s;\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n.btn[data-v-3da30bd4] {\n        background-color: #5B022E;\n        margin-top: 30px;\n}\n.arrow[data-v-3da30bd4] {\n        width: 6vmin;\n        height: 6vmin;\n        box-sizing: border-box;\n        position: relative;\n        left: 48.5%;\n        -webkit-transform: rotate(-225deg);\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\n        content: '';\n        width: 100%;\n        height: 100%;\n        border-width: .8vmin .8vmin 0 0;\n        border-style: solid;\n        border-color: #5B022E;\n        transition: .2s ease;\n        display: block;\n        -webkit-transform-origin: 100% 0;\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\n        -webkit-transform: rotate(45deg);\n                transform: rotate(45deg);\n        border-color: #5F022E;\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\n        border-color: #5F022E;\n        -webkit-transform: scale(0.8);\n                transform: scale(0.8);\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-3da30bd4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\n.hero[data-v-3da30bd4] {\r\n    padding-top: 5%;\r\n    height: 100vh;\r\n    background-color: #FFFFFF;\n}\n.logo[data-v-3da30bd4] {\r\n    text-align: center;\n}\n.btn[data-v-3da30bd4]:active:focus {\r\n    background-color: #5B022E;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin: 60px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\n@-webkit-keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n@keyframes fadeInDown-data-v-3da30bd4 {\nfrom {\r\n        opacity: 0;\r\n        -webkit-transform: translatey(-10px);\r\n        transform: translatey(-10px);\n}\nto {\r\n        opacity: 1;\r\n        -webkit-transform: translatey(0);\r\n        transform: translatey(0);\n}\n}\n.in-down[data-v-3da30bd4] {\r\n    -webkit-animation-name: fadeInDown-data-v-3da30bd4;\r\n    animation-name: fadeInDown-data-v-3da30bd4;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n    -webkit-animation-duration: 2s;\r\n    animation-duration: 2s;\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n.btn[data-v-3da30bd4] {\r\n        background-color: #5B022E;\r\n        margin-top: 30px;\n}\n.arrow[data-v-3da30bd4] {\r\n        width: 6vmin;\r\n        height: 6vmin;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        left: 48.5%;\r\n        -webkit-transform: rotate(-225deg);\r\n                transform: rotate(-225deg);\n}\ndiv.arrow[data-v-3da30bd4]::before {\r\n        content: '';\r\n        width: 100%;\r\n        height: 100%;\r\n        border-width: .8vmin .8vmin 0 0;\r\n        border-style: solid;\r\n        border-color: #5B022E;\r\n        transition: .2s ease;\r\n        display: block;\r\n        -webkit-transform-origin: 100% 0;\r\n                transform-origin: 100% 0;\n}\ndiv.arrow[data-v-3da30bd4]:hover::after {\r\n        -webkit-transform: rotate(45deg);\r\n                transform: rotate(45deg);\r\n        border-color: #5F022E;\r\n        height: 120%;\n}\ndiv.arrow[data-v-3da30bd4]:hover::before {\r\n        border-color: #5F022E;\r\n        -webkit-transform: scale(0.8);\r\n                transform: scale(0.8);\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34554,7 +34562,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form[data-v-0110baa8] {\n    width: 30%;\n}\n.form__content[data-v-0110baa8] {\n    font-family: 'Montserrat';\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\n    border-radius: 25px;\n    background-color: #5b022e;\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\n    color: white;\n    background-color: #5b022e;\n    padding: 10px;\n    border-radius: 25px;\n}", ""]);
+exports.push([module.i, ".form[data-v-0110baa8] {\r\n    width: 30%;\n}\n.form__content[data-v-0110baa8] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-0110baa8] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-0110baa8] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}", ""]);
 
 // exports
 
@@ -34573,7 +34581,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-22b111e4] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    color: #1d1d1d;\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-22b111e4] {\n    color: #5B022E;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-22b111e4] {\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START MAP ***********/\niframe[data-v-22b111e4] {\n        height: 350px;\n        width: 100%;\n        position: relative;\n        z-index: 1;\n}\n#infos[data-v-22b111e4] {\n        background-color: #5B022E;\n        height: 600px;\n        width: 280px;\n        margin-top: 50px;\n        position: relative;\n        z-index: 2;\n        left: 700px;\n        top: -600px;\n}\n.dot[data-v-22b111e4] {\n        height: 80px;\n        width: 80px;\n        background-color: #FFFFFF;\n        border-radius: 50%;\n        display: inline-block;\n        position: relative;\n        z-index: 3;\n        left: 102px;\n        top: 18px;\n}\n.fa[data-v-22b111e4] {\n        color: #5B022E;\n        padding-left: 34px;\n        padding-top: 90px;\n        font-size: 4rem;\n        position: relative;\n        z-index: 4;\n}\n#infos p[data-v-22b111e4] {\n        color: #FFFFFF;\n        text-align: center;\n        padding-top: 60px;\n}\n}\n\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#infos[data-v-22b111e4] {\n        /*background-color: #5B022E;*/\n}\n.dot[data-v-22b111e4] {\n        display: none;\n}\n.fa[data-v-22b111e4] {\n        display: none;\n}\n#infos p[data-v-22b111e4] {\n        color: #5B022E;\n        text-align: center;\n        padding-top: 20px;\n        padding-bottom: 20px;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-22b111e4] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-22b111e4] {\r\n    color: #5B022E;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-22b111e4] {\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START MAP ***********/\niframe[data-v-22b111e4] {\r\n        height: 350px;\r\n        width: 100%;\r\n        position: relative;\r\n        z-index: 1;\n}\n#infos[data-v-22b111e4] {\r\n        background-color: #5B022E;\r\n        height: 600px;\r\n        width: 280px;\r\n        margin-top: 50px;\r\n        position: relative;\r\n        z-index: 2;\r\n        left: 700px;\r\n        top: -600px;\n}\n.dot[data-v-22b111e4] {\r\n        height: 80px;\r\n        width: 80px;\r\n        background-color: #FFFFFF;\r\n        border-radius: 50%;\r\n        display: inline-block;\r\n        position: relative;\r\n        z-index: 3;\r\n        left: 102px;\r\n        top: 18px;\n}\n.fa[data-v-22b111e4] {\r\n        color: #5B022E;\r\n        padding-left: 34px;\r\n        padding-top: 90px;\r\n        font-size: 4rem;\r\n        position: relative;\r\n        z-index: 4;\n}\n#infos p[data-v-22b111e4] {\r\n        color: #FFFFFF;\r\n        text-align: center;\r\n        padding-top: 60px;\n}\n}\r\n\r\n/*Small devices (landscape phones, 320px and up)*/\n@media (max-width: 991px) {\n#infos[data-v-22b111e4] {\r\n        /*background-color: #5B022E;*/\n}\n.dot[data-v-22b111e4] {\r\n        display: none;\n}\n.fa[data-v-22b111e4] {\r\n        display: none;\n}\n#infos p[data-v-22b111e4] {\r\n        color: #5B022E;\r\n        text-align: center;\r\n        padding-top: 20px;\r\n        padding-bottom: 20px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34592,7 +34600,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".modal-mask {\n    position: fixed;\n    z-index: 9998;\n    top: 0;\n    left: 10%;\n    width: 90%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, .5);\n    display: table;\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\n    display: table-cell;\n    vertical-align: middle;\n}\n.modal-container {\n    width: 100%;\n    height: 100%;\n    margin: 0px auto;\n    padding: 20px 30px;\n    background-color: #fff;\n    border-radius: 2px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\n    transition: all .3s ease;\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\n    margin-top: 0;\n    color: #5b022e;\n    font-family: Khand;\n}\n.modal-body {\n    margin: 20px 0;\n}\n.modal-default-button {\n    float: none;\n    color: #5b022e;\n    border-radius: 25px;\n    margin: 10px;\n}\n\n\n/*\n   * The following styles are auto-applied to elements with\n   * transition=\"modal\" when their visibility is toggled\n   * by Vue.js.\n   *\n   * You can easily play with the modal transition by editing\n   * these styles.\n   */\n.modal-enter {\n    opacity: 0;\n}\n.modal-leave-active {\n    opacity: 0;\n}\n.modal-enter .modal-container,\n.modal-leave-active .modal-container {\n    -webkit-transform: scale(1.0);\n    transform: scale(1.0);\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n}", ""]);
+exports.push([module.i, ".modal-mask {\r\n    position: fixed;\r\n    z-index: 9998;\r\n    top: 0;\r\n    left: 10%;\r\n    width: 90%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    display: table;\r\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\r\n    display: table-cell;\r\n    vertical-align: middle;\n}\n.modal-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0px auto;\r\n    padding: 20px 30px;\r\n    background-color: #fff;\r\n    border-radius: 2px;\r\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\r\n    transition: all .3s ease;\r\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\r\n    margin-top: 0;\r\n    color: #5b022e;\r\n    font-family: Khand;\n}\n.modal-body {\r\n    margin: 20px 0;\n}\n.modal-default-button {\r\n    float: none;\r\n    color: #5b022e;\r\n    border-radius: 25px;\r\n    margin: 10px;\n}\r\n\r\n\r\n/*\r\n   * The following styles are auto-applied to elements with\r\n   * transition=\"modal\" when their visibility is toggled\r\n   * by Vue.js.\r\n   *\r\n   * You can easily play with the modal transition by editing\r\n   * these styles.\r\n   */\n.modal-enter {\r\n    opacity: 0;\n}\n.modal-leave-active {\r\n    opacity: 0;\n}\n.modal-enter .modal-container,\r\n.modal-leave-active .modal-container {\r\n    -webkit-transform: scale(1.0);\r\n    transform: scale(1.0);\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\n}", ""]);
 
 // exports
 
@@ -34611,7 +34619,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".order__by[data-v-9b7b0f30] {\n    background-color: white;\n    padding: 10px;\n}\n.fas[data-v-9b7b0f30] {\n    color: black;\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30]{\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\n    color: red;\n}", ""]);
+exports.push([module.i, ".order__by[data-v-9b7b0f30] {\r\n    background-color: white;\r\n    padding: 10px;\n}\n.fas[data-v-9b7b0f30] {\r\n    color: black;\r\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30]{\r\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\r\n    color: red;\n}", ""]);
 
 // exports
 
@@ -34630,7 +34638,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".product__add[data-v-14afb6d4]{\n    border-radius: 25px;\n    background-color: #5b022e !important;\n}\n\n", ""]);
+exports.push([module.i, ".product__add[data-v-14afb6d4]{\r\n    border-radius: 25px;\r\n    background-color: #5b022e !important;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -34668,7 +34676,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-6ca3d374] {\n    font-family: 'Montserrat', sans-serif;\n    font-size: 1rem;\n    width: 100%;\n    margin: 0 auto;\n    line-height: 2.5rem;\n    color: #5B022E;\n}\np[data-v-6ca3d374] {\n    font-size: 1rem;\n}\n#promo[data-v-6ca3d374] {\n    background-color: #E8D2AC;\n    color: #FFFFFF;\n}\n.promo-title[data-v-6ca3d374] {\n    color: #5B022E;\n    margin-bottom: 10px;\n    font-size: 1.5rem;\n    text-align: center;\n}\n.btn[data-v-6ca3d374],\n.btn[data-v-6ca3d374]:hover,\n.btn[data-v-6ca3d374]:active {\n    color: #FFFFFF;\n    background-color: #5B022E;\n    border: 1px solid #5B022E;\n    margin: 20px;\n}\n.promo-text[data-v-6ca3d374] {\n    color: #5B022E;\n    text-align: center;\n}\n#newsletter[data-v-6ca3d374] {\n    color: #5b022e;\n}\n@media (min-width:992px) {\n#promo[data-v-6ca3d374] {\n        padding-top: 5%;\n        padding-bottom: 5%;\n}\n}\n@media (max-width:991px) {\n#promo[data-v-6ca3d374] {\n        padding-top: 20%;\n        padding-bottom: 20%;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-6ca3d374] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\r\n    color: #5B022E;\n}\np[data-v-6ca3d374] {\r\n    font-size: 1rem;\n}\n#promo[data-v-6ca3d374] {\r\n    background-color: #E8D2AC;\r\n    color: #FFFFFF;\n}\n.promo-title[data-v-6ca3d374] {\r\n    color: #5B022E;\r\n    margin-bottom: 10px;\r\n    font-size: 1.5rem;\r\n    text-align: center;\n}\n.btn[data-v-6ca3d374],\r\n.btn[data-v-6ca3d374]:hover,\r\n.btn[data-v-6ca3d374]:active {\r\n    color: #FFFFFF;\r\n    background-color: #5B022E;\r\n    border: 1px solid #5B022E;\r\n    margin: 20px;\n}\n.promo-text[data-v-6ca3d374] {\r\n    color: #5B022E;\r\n    text-align: center;\n}\n#newsletter[data-v-6ca3d374] {\r\n    color: #5b022e;\n}\n@media (min-width:992px) {\n#promo[data-v-6ca3d374] {\r\n        padding-top: 5%;\r\n        padding-bottom: 5%;\n}\n}\n@media (max-width:991px) {\n#promo[data-v-6ca3d374] {\r\n        padding-top: 20%;\r\n        padding-bottom: 20%;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -34687,7 +34695,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".form[data-v-02993a54] {\n    width: 30%;\n}\n.form__content[data-v-02993a54] {\n    font-family: 'Montserrat';\n    text-align: center !important;\n}\n.form__submit[data-v-02993a54] {\n    border-radius: 25px;\n    background-color: #5b022e;\n    margin: 15px;\n}\n.fab[data-v-02993a54] {\n    color: white;\n    background-color: #5b022e;\n    padding: 10px;\n    border-radius: 25px;\n}\n.b-form-input[data-v-02993a54] {\n    text-align: center !important;\n}", ""]);
+exports.push([module.i, ".form[data-v-02993a54] {\r\n    width: 30%;\n}\n.form__content[data-v-02993a54] {\r\n    font-family: 'Montserrat';\r\n    text-align: center !important;\n}\n.form__submit[data-v-02993a54] {\r\n    border-radius: 25px;\r\n    background-color: #5b022e;\r\n    margin: 15px;\n}\n.fab[data-v-02993a54] {\r\n    color: white;\r\n    background-color: #5b022e;\r\n    padding: 10px;\r\n    border-radius: 25px;\n}\n.b-form-input[data-v-02993a54] {\r\n    text-align: center !important;\n}", ""]);
 
 // exports
 
@@ -34706,7 +34714,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".carousel-inner img[data-v-16ea8a34] {\n    width: 100%;\n}\n", ""]);
+exports.push([module.i, ".carousel-inner img[data-v-16ea8a34] {\r\n    width: 100%;\n}\r\n", ""]);
 
 // exports
 
@@ -34725,7 +34733,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "body[data-v-6a04ae80] {\n    width: 100%;\n    margin: 0 auto;\n}\nh1[data-v-6a04ae80] {\n    color: #5B022E;\n    font-family: \"Montserrat\", sans-serif !important ;\n    font-weight: bold;\n    font-size: 2rem;\n    padding-top: 50px;\n}\np[data-v-6a04ae80] {\n    font-family: \"Montserrat\", sans-serif !important ;\n    font-size: 1rem;\n    color: #1d1d1d;\n    line-height: 2.5rem;\n}\n\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\n\n    /*********** START ABOUT US ***********/\n#aboutUs[data-v-6a04ae80] {\n        padding-bottom: 100px;\n}\n\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-6a04ae80] {\n        background-color: #D8D4D3;\n        height: 500px;\n        width: 100%;\n}\nform[data-v-6a04ae80] {\n        padding-top: 30px;\n        position: relative;\n        z-index: 2;\n}\n#envoyerForm[data-v-6a04ae80] {\n        background-color: #5B022E;\n}\nimg[data-v-6a04ae80] {\n        position: relative;\n        z-index: 1;\n        height: 40em;\n        -webkit-transform: rotate(-15deg);\n                transform: rotate(-15deg);\n        left: 700px;\n        top: -500px;\n}\n}\n", ""]);
+exports.push([module.i, "body[data-v-6a04ae80] {\r\n    width: 100%;\r\n    margin: 0 auto;\n}\nh1[data-v-6a04ae80] {\r\n    color: #5B022E;\r\n    font-family: \"Montserrat\", sans-serif !important ;\r\n    font-weight: bold;\r\n    font-size: 2rem;\r\n    padding-top: 50px;\n}\np[data-v-6a04ae80] {\r\n    font-family: \"Montserrat\", sans-serif !important ;\r\n    font-size: 1rem;\r\n    color: #1d1d1d;\r\n    line-height: 2.5rem;\n}\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\r\n\r\n    /*********** START ABOUT US ***********/\n#aboutUs[data-v-6a04ae80] {\r\n        padding-bottom: 100px;\n}\r\n\r\n    /*********** START CONTACT US ***********/\n#contactUs[data-v-6a04ae80] {\r\n        background-color: #D8D4D3;\r\n        height: 500px;\r\n        width: 100%;\n}\nform[data-v-6a04ae80] {\r\n        padding-top: 30px;\r\n        position: relative;\r\n        z-index: 2;\n}\n#envoyerForm[data-v-6a04ae80] {\r\n        background-color: #5B022E;\n}\nimg[data-v-6a04ae80] {\r\n        position: relative;\r\n        z-index: 1;\r\n        height: 40em;\r\n        -webkit-transform: rotate(-15deg);\r\n                transform: rotate(-15deg);\r\n        left: 700px;\r\n        top: -500px;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -68202,7 +68210,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.    \n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.    \r\n                         "
               )
             ])
           ]),
@@ -68232,7 +68240,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.\n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.\r\n                         "
               )
             ])
           ]),
@@ -68262,7 +68270,7 @@ var staticRenderFns = [
           _c("article", [
             _c("p", [
               _vm._v(
-                "\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\n                         Lorem Ipsum.\n                         "
+                "\r\n                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\r\n                         ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only \r\n                         five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release\r\n                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of\r\n                         Lorem Ipsum.\r\n                         "
               )
             ])
           ]),
@@ -69699,8 +69707,159 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "b-navbar",
+        {
+          staticClass: "navbar",
+          attrs: { toggleable: "lg", type: "danger", variant: "danger" }
+        },
+        [
+          _c(
+            "b-navbar-brand",
+            { staticClass: "navbar-brand", attrs: { href: "#" } },
+            [_vm._v("Gazzar")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-collapse",
+            { attrs: { id: "nav-collapse", "is-nav": "" } },
+            [
+              _c(
+                "b-navbar-nav",
+                { staticClass: "ml-auto" },
+                [
+                  _c("b-nav-item", { attrs: { href: this.home } }, [
+                    _vm._v("Accueil ")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: this.catalogue } }, [
+                    _vm._v("Catalogue")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: this.blog } }, [
+                    _vm._v("Blog")
+                  ]),
+                  _vm._v(" "),
+                  _c("b-nav-item", { attrs: { href: this.about } }, [
+                    _vm._v("À propos")
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "b-navbar-toggle",
+            { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
+            [_c("span", { staticClass: "navbar-toggler-icon" })]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-collapse",
+            { attrs: { id: "nav-collapse", "is-nav": "" } },
+            [
+              _c(
+                "b-navbar-nav",
+                { staticClass: "navbar-nav" },
+                [
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "nav-link", attrs: { href: "#" } },
+                    [_vm._v("Accueil")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "nav-link", attrs: { href: "#" } },
+                    [_vm._v("Catalogue")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "nav-link", attrs: { href: "#" } },
+                    [_vm._v("Blog")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "nav-link", attrs: { href: "#" } },
+                    [_vm._v("À propos")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "nav-link", attrs: { href: "#" } },
+                    [_vm._v("Contact")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-navbar-nav",
+                { staticClass: "ml-auto" },
+                [
+                  _c(
+                    "b-nav-form",
+                    [
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn user",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-user" })]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn cart",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                      ),
+                      _vm._v(" "),
+                      _c("b-form-input", {
+                        staticClass: "mr-sm-2 form-input",
+                        attrs: { size: "sm", placeholder: "Rechercher" }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0 btn",
+                          attrs: { size: "sm", type: "submit" }
+                        },
+                        [_c("i", { staticClass: "fas fa-search" })]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
 var staticRenderFns = []
+render._withStripped = true
 
 
 
@@ -84630,8 +84789,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/ilans/Documents/htdocs/Alpaka/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\teoco\Documents\HEIG-VD\PROJET_ART\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\teoco\Documents\HEIG-VD\PROJET_ART\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
