@@ -1,0 +1,74 @@
+@import '~@/sass/_variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Khand&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    line-height: 2.5rem !important;
+}
+
+.navbar {
+    background-color: $gPrimary !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-family: 'Khand', sans-serif !important;
+    font-size: 2.5rem !important;
+    margin: 10px !important;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: white !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 0.2em !important;
+}
+
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: $gBeige !important;
+}
+
+.form-input {
+    border: 1px solid $gPrimary !important;
+    background: white !important;
+}
+
+.btn {
+    color: white !important;
+    background-color: transparent !important;
+    border-color: white !important;
+}
+
+.btn:focus,
+.btn:hover,
+.btn:active {
+    color: $gBeige !important;
+    background-color: transparent !important;
+    border-color: $gBeige !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.user {
+    margin-right: 10px !important;
+}
+
+.cart {
+    margin-right: 10px !important;
+}
+
+
+.navbar-toggle {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

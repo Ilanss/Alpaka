@@ -34215,6 +34215,44 @@ __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/module
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/_variables.scss":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/sass/_variables.scss ***!
+  \*****************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"KhandBold\";\n  src: url(\"/fonts/Khand/Khand-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandLight\";\n  src: url(\"/fonts/Khand/Khand-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandMedium\";\n  src: url(\"/fonts/Khand/Khand-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandRegular\";\n  src: url(\"/fonts/Khand/Khand-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"KhandSemiBold\";\n  src: url(\"/fonts/Khand/Khand-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlack\";\n  src: url(\"/fonts/Montserrat/Montserrat-Black.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBlackItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BlackItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-Bold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-BoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExraBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLight.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratExtraLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ExtraLightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-Italic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLight\";\n  src: url(\"/fonts/Montserrat/Montserrat-Light.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratLightItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-LightItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMedium\";\n  src: url(\"/fonts/Montserrat/Montserrat-Medium.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratMediumItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-MediumItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratRegular\";\n  src: url(\"/fonts/Montserrat/Montserrat-Regular.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBold\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBold.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratSemiBoldItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-SemiBoldItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThin\";\n  src: url(\"/fonts/Montserrat/Montserrat-Thin.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\n@font-face {\n  font-family: \"MontserratThinItalic\";\n  src: url(\"/fonts/Montserrat/Montserrat-ThinItalic.tff\");\n  font-style: normal;\n  font-weight: normal;\n}\nbody {\n  font-family: \"Montserrat\", sans-serif !important;\n  font-size: 1rem !important;\n  width: 100% !important;\n  margin: 0 auto !important;\n  line-height: 2.5rem !important;\n}\n.navbar {\n  background-color: #5b022e !important;\n}\n.navbar-brand {\n  color: white !important;\n  font-family: \"Khand\", sans-serif !important;\n  font-size: 2.5rem !important;\n  margin: 10px !important;\n}\n.navbar .navbar-brand:hover,\n.navbar .navbar-brand:focus {\n  color: white !important;\n}\n.navbar .navbar-nav .nav-link {\n  color: white !important;\n  margin: 0 0.2em !important;\n}\n.navbar .navbar-nav .nav-link:not(.disabled):hover,\n.navbar .navbar-nav .nav-link:not(.disabled):focus {\n  color: #e8d2ac !important;\n}\n.form-input {\n  border: 1px solid #5b022e !important;\n  background: white !important;\n}\n.btn {\n  color: white !important;\n  background-color: transparent !important;\n  border-color: white !important;\n}\n.btn:focus,\n.btn:hover,\n.btn:active {\n  color: #e8d2ac !important;\n  background-color: transparent !important;\n  border-color: #e8d2ac !important;\n  outline: none !important;\n  box-shadow: none !important;\n}\n.user {\n  margin-right: 10px !important;\n}\n.cart {\n  margin-right: 10px !important;\n}\n.navbar-toggle {\n  border-color: white !important;\n}\n.navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/bootstrap-vue/dist/bootstrap-vue.css":
 /*!*******************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/bootstrap-vue/dist/bootstrap-vue.css ***!
@@ -34475,25 +34513,6 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, ".modal-mask {\r\n    position: fixed;\r\n    z-index: 9998;\r\n    top: 0;\r\n    left: 10%;\r\n    width: 90%;\r\n    height: 100%;\r\n    background-color: rgba(0, 0, 0, .5);\r\n    display: table;\r\n    transition: opacity .1s ease;\n}\n.modal-wrapper {\r\n    display: table-cell;\r\n    vertical-align: middle;\n}\n.modal-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0px auto;\r\n    padding: 20px 30px;\r\n    background-color: #fff;\r\n    border-radius: 2px;\r\n    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);\r\n    transition: all .3s ease;\r\n    font-family: Montserrat, Arial, sans-serif;\n}\n.modal-header h3 {\r\n    margin-top: 0;\r\n    color: #5b022e;\r\n    font-family: Khand;\n}\n.modal-body {\r\n    margin: 20px 0;\n}\n.modal-default-button {\r\n    float: none;\r\n    color: #5b022e;\r\n    border-radius: 25px;\r\n    margin: 10px;\n}\r\n\r\n\r\n/*\r\n   * The following styles are auto-applied to elements with\r\n   * transition=\"modal\" when their visibility is toggled\r\n   * by Vue.js.\r\n   *\r\n   * You can easily play with the modal transition by editing\r\n   * these styles.\r\n   */\n.modal-enter {\r\n    opacity: 0;\n}\n.modal-leave-active {\r\n    opacity: 0;\n}\n.modal-enter .modal-container,\r\n.modal-leave-active .modal-container {\r\n    -webkit-transform: scale(1.0);\r\n    transform: scale(1.0);\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand&display=swap);", ""]);
-
-// module
-exports.push([module.i, "body[data-v-d3be5158] {\r\n    font-family: 'Montserrat', sans-serif;\r\n    font-size: 1rem;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n    line-height: 2.5rem;\r\n    color: #5B022E;\n}\nb-navbar[data-v-d3be5158] {\r\n    background-color: #5b022e;\r\n    color: #FFFFFF;\n}\n#app > main > div:nth-child(2) > nav > a[data-v-d3be5158] {\r\n    font-family: 'Khand', sans-serif;\r\n    font-size: 2.5rem;\r\n    color: #FFFFFF;\r\n    margin: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -66061,6 +66080,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/lib/loader.js??ref--7-3!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/bestSellers/BestSellers.css?vue&type=style&index=0&id=d0771fd4&scoped=true&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/bestSellers/BestSellers.css?vue&type=style&index=0&id=d0771fd4&scoped=true&lang=css& ***!
@@ -66400,36 +66449,6 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Modal.css?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/modal/Modal.css?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -68767,10 +68786,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158& ***!
+  \****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -68784,11 +68803,22 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "b-navbar",
-    { attrs: { toggleable: "lg", type: "danger", variant: "danger" } },
+    {
+      staticClass: "navbar",
+      attrs: { toggleable: "lg", type: "danger", variant: "danger" }
+    },
     [
-      _c("b-navbar-brand", { attrs: { href: "#" } }, [_vm._v("Gazzar")]),
+      _c(
+        "b-navbar-brand",
+        { staticClass: "navbar-brand", attrs: { href: "#" } },
+        [_vm._v("Gazzar")]
+      ),
       _vm._v(" "),
-      _c("b-navbar-toggle", { attrs: { target: "nav-collapse" } }),
+      _c(
+        "b-navbar-toggle",
+        { staticClass: "navbar-toggle", attrs: { target: "nav-collapse" } },
+        [_c("span", { staticClass: "navbar-toggler-icon" })]
+      ),
       _vm._v(" "),
       _c(
         "b-collapse",
@@ -68796,16 +68826,37 @@ var render = function() {
         [
           _c(
             "b-navbar-nav",
+            { staticClass: "navbar-nav" },
             [
-              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Accueil")]),
+              _c(
+                "b-nav-item",
+                { staticClass: "nav-link", attrs: { href: "#" } },
+                [_vm._v("Accueil")]
+              ),
               _vm._v(" "),
-              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Catalogue")]),
+              _c(
+                "b-nav-item",
+                { staticClass: "nav-link", attrs: { href: "#" } },
+                [_vm._v("Catalogue")]
+              ),
               _vm._v(" "),
-              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Blog")]),
+              _c(
+                "b-nav-item",
+                { staticClass: "nav-link", attrs: { href: "#" } },
+                [_vm._v("Blog")]
+              ),
               _vm._v(" "),
-              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("À propos")]),
+              _c(
+                "b-nav-item",
+                { staticClass: "nav-link", attrs: { href: "#" } },
+                [_vm._v("À propos")]
+              ),
               _vm._v(" "),
-              _c("b-nav-item", { attrs: { href: "#" } }, [_vm._v("Contact")])
+              _c(
+                "b-nav-item",
+                { staticClass: "nav-link", attrs: { href: "#" } },
+                [_vm._v("Contact")]
+              )
             ],
             1
           ),
@@ -68820,7 +68871,7 @@ var render = function() {
                   _c(
                     "b-button",
                     {
-                      staticClass: "my-2 my-sm-0",
+                      staticClass: "my-2 my-sm-0 btn user",
                       attrs: { size: "sm", type: "submit" }
                     },
                     [_c("i", { staticClass: "fas fa-user" })]
@@ -68829,21 +68880,21 @@ var render = function() {
                   _c(
                     "b-button",
                     {
-                      staticClass: "my-2 my-sm-0",
+                      staticClass: "my-2 my-sm-0 btn cart",
                       attrs: { size: "sm", type: "submit" }
                     },
                     [_c("i", { staticClass: "fas fa-shopping-cart" })]
                   ),
                   _vm._v(" "),
                   _c("b-form-input", {
-                    staticClass: "mr-sm-2",
+                    staticClass: "mr-sm-2 form-input",
                     attrs: { size: "sm", placeholder: "Rechercher" }
                   }),
                   _vm._v(" "),
                   _c(
                     "b-button",
                     {
-                      staticClass: "my-2 my-sm-0",
+                      staticClass: "my-2 my-sm-0 btn",
                       attrs: { size: "sm", type: "submit" }
                     },
                     [_c("i", { staticClass: "fas fa-search" })]
@@ -81823,10 +81874,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
 /* harmony import */ var vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue2-smooth-scroll */ "./node_modules/vue2-smooth-scroll/dist/vue-smooth-scroll.min.js");
 /* harmony import */ var vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
-/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _sass_variables_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/_variables.scss */ "./resources/sass/_variables.scss");
+/* harmony import */ var _sass_variables_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_variables_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
+/* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -81835,6 +81888,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue2_smooth_scroll__WEBPACK_IMPORTED_MODULE_2___default.a);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+
 
  //appel de tous les composants
 
@@ -82975,22 +83029,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&":
-/*!************************************************************************************************************!*\
-  !*** ./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& ***!
-  \************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
   !*** ./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js& ***!
@@ -83005,6 +83043,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss& ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--7-2!../../../../node_modules/sass-loader/lib/loader.js??ref--7-3!./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_sass_loader_lib_loader_js_ref_7_3_Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "./resources/js/components/navbar/Navbar.vue":
 /*!***************************************************!*\
   !*** ./resources/js/components/navbar/Navbar.vue ***!
@@ -83014,9 +83068,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=d3be5158&scoped=true& */ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&");
+/* harmony import */ var _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar.vue?vue&type=template&id=d3be5158& */ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&");
 /* harmony import */ var _Navbar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar.js?vue&type=script&lang=js& */ "./resources/js/components/navbar/Navbar.js?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Navbar_css_vue_type_style_index_0_id_d3be5158_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css& */ "./resources/js/components/navbar/Navbar.css?vue&type=style&index=0&id=d3be5158&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Navbar_scss_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar.scss?vue&type=style&index=0&lang=scss& */ "./resources/js/components/navbar/Navbar.scss?vue&type=style&index=0&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -83028,11 +83082,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Navbar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "d3be5158",
+  null,
   null
   
 )
@@ -83044,19 +83098,19 @@ component.options.__file = "resources/js/components/navbar/Navbar.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158& ***!
+  \**********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=template&id=d3be5158&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Navbar.vue?vue&type=template&id=d3be5158& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/navbar/Navbar.vue?vue&type=template&id=d3be5158&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_d3be5158___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -83650,6 +83704,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Story_vue_vue_type_template_id_6a04ae80_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+
+/***/ }),
+
+/***/ "./resources/sass/_variables.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/_variables.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/lib/loader.js??ref--7-3!./_variables.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./resources/sass/_variables.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

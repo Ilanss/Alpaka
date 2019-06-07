@@ -2,7 +2,8 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'MontserratRegular', sans-serif;
+$font-family-sans-serif: 'MontserratRegular',
+sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -33,30 +34,35 @@ $gBlack: #1d1d1d;
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'KhandLight';
     src: url('/fonts/Khand/Khand-Light.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'KhandMedium';
     src: url('/fonts/Khand/Khand-Medium.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'KhandRegular';
     src: url('/fonts/Khand/Khand-Regular.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'KhandSemiBold';
     src: url('/fonts/Khand/Khand-SemiBold.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 //***************MONTSERRAT****************
 @font-face {
     font-family: 'MontserratBlack';
@@ -64,102 +70,119 @@ $gBlack: #1d1d1d;
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratBlackItalic';
     src: url('/fonts/Montserrat/Montserrat-BlackItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratBold';
     src: url('/fonts/Montserrat/Montserrat-Bold.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratBoldItalic';
     src: url('/fonts/Montserrat/Montserrat-BoldItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratExtraBold';
     src: url('/fonts/Montserrat/Montserrat-ExtraBold.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratExtraBoldItalic';
     src: url('/fonts/Montserrat/Montserrat-ExraBoldItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratExtraLight';
     src: url('/fonts/Montserrat/Montserrat-ExtraLight.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratExtraLightItalic';
     src: url('/fonts/Montserrat/Montserrat-ExtraLightItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratItalic';
     src: url('/fonts/Montserrat/Montserrat-Italic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratLight';
     src: url('/fonts/Montserrat/Montserrat-Light.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratLightItalic';
     src: url('/fonts/Montserrat/Montserrat-LightItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratMedium';
     src: url('/fonts/Montserrat/Montserrat-Medium.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratMediumItalic';
     src: url('/fonts/Montserrat/Montserrat-MediumItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratRegular';
     src: url('/fonts/Montserrat/Montserrat-Regular.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratSemiBold';
     src: url('/fonts/Montserrat/Montserrat-SemiBold.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratSemiBoldItalic';
     src: url('/fonts/Montserrat/Montserrat-SemiBoldItalic.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratThin';
     src: url('/fonts/Montserrat/Montserrat-Thin.tff');
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
     font-family: 'MontserratThinItalic';
     src: url('/fonts/Montserrat/Montserrat-ThinItalic.tff');
