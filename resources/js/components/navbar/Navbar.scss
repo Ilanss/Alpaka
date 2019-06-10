@@ -20,8 +20,7 @@ body {
     margin: 10px !important;
 }
 
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
+.navbar .navbar-brand:hover {
     color: white !important;
 }
 
@@ -31,8 +30,10 @@ body {
 }
 
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
-.navbar .navbar-nav .nav-link:not(.disabled):focus {
+.navbar .navbar-nav .nav-link:not(.disabled):focus,
+.navbar .navbar-nav .nav-link:not(.disabled):active {
     color: $gBeige !important;
+    text-decoration: underline !important;
 }
 
 .form-input {

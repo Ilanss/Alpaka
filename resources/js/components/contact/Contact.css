@@ -17,6 +17,14 @@ p {
     line-height: 2.5rem;
 }
 
+.btn {
+    background-color: #5B022E !important;
+}
+
+.btn:hover {
+    text-decoration: underline !important;
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
@@ -25,6 +33,7 @@ p {
         background-color: #D8D4D3;
         height: 500px;
         width: 100%;
+        margin-top: 60px;
     }
 
     form {
