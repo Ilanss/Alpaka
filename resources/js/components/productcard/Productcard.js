@@ -7,8 +7,8 @@ export default {
         }
     },
     methods: {
-        winePreview: function(id){
-            console.log("winePreview"+ id);
+        winePreview: function(slug){
+            window.location.href = "product/"+slug;
         },
         wineAdd: function(event){
             console.log("added in cart");

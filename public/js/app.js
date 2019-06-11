@@ -2391,8 +2391,8 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   methods: {
-    winePreview: function winePreview(id) {
-      console.log("winePreview" + id);
+    winePreview: function winePreview(slug) {
+      window.location.href = "product/" + slug;
     },
     wineAdd: function wineAdd(event) {
       console.log("added in cart");
@@ -70833,7 +70833,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.winePreview(_vm.item.id)
+                return _vm.winePreview(_vm.item.slug)
               }
             }
           },
