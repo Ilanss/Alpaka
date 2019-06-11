@@ -1,18 +1,23 @@
 @extends('layouts.app')
 @section('content')
-
-<div class="container testClass">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Inscription') }}</div>
-                <div class="card-body">
-                    <div class="flex-center position-ref full-height">
-                        <div class="top-right links">
-                            <form method="GET" action="{{URL::to('/auth/login')}}">
-                                @csrf
-                                <div class="form-group row">
-                                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Adresse email') }}</label>
+@if (auth()->check())
+    <p>Vous êtes authentifié</p>
+    <a href="/public/auth/modify" type="button" class="btn-page">Mettre à jour son profil</a>
+    <a href="{{URL::to('/auth/logout')}}" type="button" class="btn-page">Logout</a>
+@else
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Inscription') }}</div>
+                    <div class="card-body">
+                        <div class="flex-center position-ref full-height">
+                            <div class="top-right links">
+                                <form method="GET" action="{{URL::to('/auth/login')}}">
+                                    @csrf
+                                    <div class="form-group row">
+                                        <label for="email"
+                                               class="col-md-4 col-form-label text-md-right">{{ __('Adresse email') }}</label>
 
                                     <div class="col-md-6">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -37,12 +42,22 @@
                                         </span>
                                         @enderror
                                     </div>
+<<<<<<< HEAD
                                 </div>
                                 <div class="form-group row mb-0">
                                     <div class="col-md-6 offset-md-4">
                                         <button type="submit" class="btn-page">
                                             {{ __('Authentication') }}
                                         </button>
+=======
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-6 offset-md-4">
+                                            <button type="submit" class="btn-page">
+                                                {{ __('Authentication') }}
+                                            </button>
+                                            <a href="{{ route('registration') }}" type="button" class="btn-page">Inscription</a>
+                                        </div>
+>>>>>>> frontend
                                     </div>
                                 </div>
                             </form>
@@ -53,7 +68,14 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
         </div>
     </div>
 </div>
 @endsection
+=======
+            </div>
+            </div>
+            @endif
+            @endsection
+>>>>>>> frontend

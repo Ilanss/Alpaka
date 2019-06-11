@@ -2275,12 +2275,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about', 'login'],
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
+  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   }
-});
+}, "mounted", function mounted() {
+  this.commit('setAuthUser', window.auth_user);
+}));
 
 /***/ }),
 
@@ -2391,8 +2395,8 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   methods: {
-    winePreview: function winePreview(id) {
-      console.log("winePreview" + id);
+    winePreview: function winePreview(slug) {
+      window.location.href = "product/" + slug;
     },
     wineAdd: function wineAdd(event) {
       console.log("added in cart");
@@ -68549,6 +68553,7 @@ var staticRenderFns = [
               _c(
                 "span",
                 {
+                  staticClass: "active",
                   attrs: {
                     "data-target": "#carousel-example",
                     "data-slide-to": "0"
@@ -68560,7 +68565,6 @@ var staticRenderFns = [
               _c(
                 "span",
                 {
-                  staticClass: "active",
                   attrs: {
                     "data-target": "#carousel-example",
                     "data-slide-to": "1"
@@ -69963,6 +69967,15 @@ var render = function() {
                 [_vm._v("Login")]
               ),
               _vm._v(" "),
+              _c(
+                "b-button",
+                {
+                  attrs: { href: "/registration" },
+                  on: { click: _vm.registration }
+                },
+                [_vm._v("S'inscrire")]
+              ),
+              _vm._v(" "),
               _c("p", [
                 _vm._v("\n      Login with\n      "),
                 _c("a", { attrs: { href: "#loginFacebook" } }, [
@@ -70833,7 +70846,7 @@ var render = function() {
             },
             on: {
               click: function($event) {
-                return _vm.winePreview(_vm.item.id)
+                return _vm.winePreview(_vm.item.slug)
               }
             }
           },
@@ -85837,8 +85850,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\CloudStation\HEIG-VD\08-ProjArt\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
