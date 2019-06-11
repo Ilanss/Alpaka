@@ -109,12 +109,57 @@
           <!-- Commentaires -->
           <b-button v-b-toggle.collapse-2>Commentaires</b-button>
           <b-collapse id="collapse-2" class="mt-2">
-            <b-card v-for="rating in product.ratings" v-bind:key="rating.id">
+            <b-card v-for="rating in ratings" v-bind:key="rating.id">
+              <div class="productInfo__review">
+            <p>Notes du vin :</p>
+            <div class="review__0" v-if="rating.rate == 0">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="review__2" v-if="rating.rate == 1">
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="review__2" v-if="rating.rate == 2">
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="review__3" v-if="rating.rate == 3">
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="review__4" v-if="rating.rate == 4">
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="review__5" v-if="rating.rate == 5">
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+              <i class="fas fa-star fa-star-active"></i>
+            </div>
+          </div>
               <b-card-text class="comment__text">{{rating.comment}}</b-card-text>
               <hr>
               <b-card-text
                 class="comment__date"
-              >Ècrit le: {{rating.created_at}} par: {{rating.user.username}}</b-card-text>
+              >Ècrit le: {{rating.created_at}} par: {{rating.username}}</b-card-text>
             </b-card>
           </b-collapse>
         </div>
