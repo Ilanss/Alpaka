@@ -37,7 +37,8 @@ class ProductsController extends Controller
         $winery = Winery::where('id', $product->winery_id)->firstOrFail();
         $ratings = Rating::join('users', 'user_id', '=', 'users.id')->where('wine_id', $product->id)->get();
         $promotions = Promotion::where('wine_id', $product->id)->get();
-        return view('pages.product', compact('product', 'country', 'category', 'winery', 'ratings', 'promotions'));
+        $products = Wine::inRandomOrder()->take(4)->get();
+        return view('pages.product', compact('product', 'country', 'category', 'winery', 'ratings', 'promotions', 'products'));
     }
 
     public function edit($id) {
