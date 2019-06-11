@@ -31,7 +31,10 @@ class ProductsController extends Controller
 
     public function view($slug) {
         $product = Wine::where('slug', $slug)->firstOrFail();
-        return view('products.view', compact('product'));
+        $country = Country::where('id', $product->country_id)->get();
+        $category = Category::where('id', $product->category_id)->get();
+        $winery = Winery::where('id', $product->winery_id)->get();
+        return view('products.view', compact('product', 'country', 'category', 'winery'));
     }
 
     public function edit($id) {
