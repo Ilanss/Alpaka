@@ -37,6 +37,7 @@
       </b-form-group>
 
       <b-button class="form__submit" type="submit" variant>Login</b-button>
+      <b-button v-on:click="registration" v-bind:href="'/registration'" >S'inscrire</b-button>
 
       <p>
         Login with

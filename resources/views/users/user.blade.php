@@ -1,15 +1,15 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-    <p>Vous êtes authentifié</p>
-    <a href="/public/auth/modify" type="button" class="btn-page">Mettre à jour son profil</a>
-    <a href="{{URL::to('/auth/logout')}}" type="button" class="btn-page">Logout</a>
+    
+   
 @else
+
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Inscription') }}</div>
+                    <div class="card-header">{{ __('Authentification') }}</div>
                     <div class="card-body">
                         <div class="flex-center position-ref full-height">
                             <div class="top-right links">
@@ -52,9 +52,8 @@
                                     <div class="form-group row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit" class="btn-page">
-                                                {{ __('Authentication') }}
+                                                {{ __('Authentification') }}
                                             </button>
-                                            <a href="{{ route('registration') }}" type="button" class="btn-page">Inscription</a>
                                         </div>
                                     </div>
                                 </form>
@@ -68,5 +67,9 @@
             </div>
             </div>
             </div>
-            @endif
-            @endsection
+            
+
+    
+            
+        @endif
+        @endsection

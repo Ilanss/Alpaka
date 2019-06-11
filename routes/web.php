@@ -46,8 +46,8 @@ Route::get('/product', function () {
     return view('pages.product');
 })->name('product');
 // Update user
-Route::get('/auth/modify', 'UpdateUser@form');
-Route::get('/auth/update', 'UpdateUser@update');
+Route::get('/auth/modify', 'UpdateUser@form')->name('auth.modify');
+Route::get('/auth/update', 'UpdateUser@update')->name('auth.modify');
 
 // Products
 Route::get('/product/create', 'ProductsController@create');

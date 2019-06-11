@@ -47,7 +47,7 @@ class UpdateUser extends Controller
         // Verify
         if ($years < 18) {
             $error = "Certaines conditions ne sont pas respectées (doit être majeur)";
-            return Redirect::back()->withErrors($error);
+            return back()->withErrors($error);
         } else {
             $user->save($validatedData);
 

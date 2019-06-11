@@ -2275,12 +2275,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about', 'login'],
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
+  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   }
-});
+}, "mounted", function mounted() {
+  this.commit('setAuthUser', window.auth_user);
+}));
 
 /***/ }),
 
@@ -68549,6 +68553,7 @@ var staticRenderFns = [
               _c(
                 "span",
                 {
+                  staticClass: "active",
                   attrs: {
                     "data-target": "#carousel-example",
                     "data-slide-to": "0"
@@ -68560,7 +68565,6 @@ var staticRenderFns = [
               _c(
                 "span",
                 {
-                  staticClass: "active",
                   attrs: {
                     "data-target": "#carousel-example",
                     "data-slide-to": "1"
@@ -69961,6 +69965,15 @@ var render = function() {
                   attrs: { type: "submit", variant: "" }
                 },
                 [_vm._v("Login")]
+              ),
+              _vm._v(" "),
+              _c(
+                "b-button",
+                {
+                  attrs: { href: "/registration" },
+                  on: { click: _vm.registration }
+                },
+                [_vm._v("S'inscrire")]
               ),
               _vm._v(" "),
               _c("p", [

@@ -12,7 +12,10 @@ class Authentication extends Controller
 {
     // Show form registration
     public function form(){
-        return view('users.authentication');
+        
+        return view('users.authentication',[
+            'auth_user' => Auth::user()
+        ]);
     }
 
     public function login(Request $request)
@@ -25,7 +28,7 @@ class Authentication extends Controller
             return redirect('/');
         } else {
             $error = "L'email ou le mot de passe sont incorrects";
-            return Redirect::back()->withErrors($error);
+            return back()->withErrors($error);
         }    }
 
     public function logout()
