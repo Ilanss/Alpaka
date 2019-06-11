@@ -41,6 +41,10 @@ Route::get('/auth/logout', 'Authentication@logout');
 Route::get('/cgv', function () {
     return view('pages.cgv');
 })->name('cgv');
+
+Route::get('/product', function () {
+    return view('pages.product');
+})->name('product');
 // Update user
 Route::get('/auth/modify', 'UpdateUser@form');
 Route::get('/auth/update', 'UpdateUser@update');

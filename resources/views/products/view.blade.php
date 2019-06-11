@@ -1,3 +1,4 @@
+    
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             <p><a href="{{ URL::route('products.index') }}">Retour</a></p>
