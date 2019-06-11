@@ -2329,7 +2329,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['product'],
+  props: ['product', 'country'],
   mounted: function mounted() {
     console.log("ProductInfo mounted");
   },
@@ -70557,11 +70557,16 @@ var render = function() {
                       _c("b-list-group-item", [
                         _vm._v(
                           "Temperature de service: " +
-                            _vm._s(_vm.product.serv_temp)
+                            _vm._s(_vm.product.serv_temp) +
+                            _vm._s(_vm.country)
                         )
                       ]),
                       _vm._v(" "),
-                      _c("b-list-group-item", [_vm._v("Pays d'origine: ")]),
+                      _c("b-list-group-item", [
+                        _vm._v(
+                          "Pays d'origine: " + _vm._s(_vm.country.name) + " "
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("b-list-group-item", [
                         _vm._v("Région: " + _vm._s(_vm.product.origin))

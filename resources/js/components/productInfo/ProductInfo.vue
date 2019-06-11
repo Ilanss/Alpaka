@@ -98,8 +98,8 @@
             <!-- Fiche Technique -->
             <b-list-group>
               <b-list-group-item>Couleur: </b-list-group-item>
-              <b-list-group-item>Temperature de service: {{product.serv_temp}}</b-list-group-item>
-              <b-list-group-item >Pays d'origine: </b-list-group-item>
+              <b-list-group-item>Temperature de service: {{product.serv_temp}}{{country}}</b-list-group-item>
+              <b-list-group-item >Pays d'origine: {{country.name}} </b-list-group-item>
               <b-list-group-item>Région: {{product.origin}}</b-list-group-item>
               <b-list-group-item>Millesimé: {{product.good_year}} - {{product.date_production}}</b-list-group-item>
               <b-list-group-item>Note: {{product.ranking}}</b-list-group-item>
