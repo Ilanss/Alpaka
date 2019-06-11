@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar">
+  <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar sticky-top">
     <b-navbar-brand href="#" class="navbar-brand">Gazzar</b-navbar-brand>
       <!-- Center aligned nav items -->
     <b-navbar-toggle target="nav-collapse" class="navbar-toggle">
