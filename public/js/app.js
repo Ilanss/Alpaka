@@ -86,6 +86,7 @@
 /************************************************************************/
 /******/ ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -83543,11 +83544,14 @@ module.exports = function(module) {
 
 /***/ }),
 
+=======
+>>>>>>> ff91f5482ec84d43242e7b7b10e32ead6ddd211b
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /*! no exports provided */
+<<<<<<< HEAD
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85697,8 +85701,11 @@ options.insertInto = undefined;
 var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
+=======
+/***/ (function(module, exports) {
+>>>>>>> ff91f5482ec84d43242e7b7b10e32ead6ddd211b
 
-if(false) {}
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\resources\\js\\app.js: Unexpected token (31:0)\n\n\u001b[0m \u001b[90m 29 | \u001b[39m\u001b[33mVue\u001b[39m\u001b[33m.\u001b[39mcomponent(\u001b[32m'login-form'\u001b[39m\u001b[33m,\u001b[39m require(\u001b[32m'./components/login/Login.vue'\u001b[39m)\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 | \u001b[39m\u001b[33mVue\u001b[39m\u001b[33m.\u001b[39mcomponent(\u001b[32m'signup-form'\u001b[39m\u001b[33m,\u001b[39m require(\u001b[32m'./components/signUp/SignUp.vue'\u001b[39m)\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 | \u001b[39m\u001b[33mVue\u001b[39m\u001b[33m.\u001b[39mcomponent(\u001b[32m'cart-list'\u001b[39m\u001b[33m,\u001b[39m require(\u001b[32m'./components/cart/Cart.vue'\u001b[39m)\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 | \u001b[39m\u001b[33mVue\u001b[39m\u001b[33m.\u001b[39mcomponent(\u001b[32m'product-info'\u001b[39m\u001b[33m,\u001b[39m require(\u001b[32m'./components/productInfo/ProductInfo.vue'\u001b[39m)\u001b[33m.\u001b[39m\u001b[36mdefault\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 | \u001b[39m\u001b[0m\n    at Parser.raise (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:6344:17)\n    at Parser.unexpected (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:7659:16)\n    at Parser.parseExprAtom (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8828:20)\n    at Parser.parseExprSubscripts (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8413:23)\n    at Parser.parseMaybeUnary (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8393:21)\n    at Parser.parseExprOps (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8280:23)\n    at Parser.parseMaybeConditional (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8253:23)\n    at Parser.parseMaybeAssign (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8200:21)\n    at Parser.parseExpression (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:8148:23)\n    at Parser.parseStatementContent (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:9917:23)\n    at Parser.parseStatement (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:9788:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:10364:25)\n    at Parser.parseBlockBody (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:10351:10)\n    at Parser.parseTopLevel (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:9717:10)\n    at Parser.parse (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:11233:17)\n    at parse (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\parser\\lib\\index.js:11269:38)\n    at parser (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:170:34)\n    at normalizeFile (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\core\\lib\\transformation\\normalize-file.js:138:11)\n    at runSync (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\core\\lib\\transformation\\index.js:44:43)\n    at runAsync (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\core\\lib\\transformation\\index.js:35:14)\n    at process.nextTick (C:\\Users\\adrie\\OneDrive\\Bureau\\Alpaka\\node_modules\\@babel\\core\\lib\\transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
 
 /***/ }),
 
