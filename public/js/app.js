@@ -70345,27 +70345,44 @@ var render = function() {
                 _c("h3", [_vm._v(_vm._s(_vm.product.brand))])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "productInfo__price" }, [
-                _c("h2", [_vm._v("CHF " + _vm._s(_vm.product.price_wine))]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Livraison dans les " +
-                      _vm._s(_vm.product.delivery_delay) +
-                      " jours"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [_vm._v("CHF 12 offerts dès CHF 250")])
-              ]),
+              _c(
+                "div",
+                { staticClass: "productInfo__price" },
+                [
+                  _c("h2", [
+                    _vm._v(
+                      "CHF " +
+                        _vm._s(_vm.product.price_wine) +
+                        _vm._s(_vm.product.id)
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "Livraison dans les " +
+                        _vm._s(_vm.product.delivery_delay) +
+                        " jours"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _vm._l(_vm.promotions, function(promotion) {
+                    return _c("p", { key: promotion.id }, [
+                      _vm._v(
+                        _vm._s(promotion.discount) +
+                          " CHF de rabais jusqu'au " +
+                          _vm._s(promotion.date_end)
+                      )
+                    ])
+                  })
+                ],
+                2
+              ),
               _vm._v(" "),
               _c("div", { staticClass: "productInfo__review" }, [
                 _c("p", [_vm._v("Notes du vin :")]),
                 _vm._v(" "),
                 _vm.product.ranking == 0
                   ? _c("div", { staticClass: "review__0" }, [
-                      _c("i", { staticClass: "fas fa-star" }),
-                      _vm._v(" "),
                       _c("i", { staticClass: "fas fa-star" }),
                       _vm._v(" "),
                       _c("i", { staticClass: "fas fa-star" }),
