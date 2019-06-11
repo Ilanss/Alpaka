@@ -70145,7 +70145,7 @@ var render = function() {
   return _c(
     "b-navbar",
     {
-      staticClass: "navbar",
+      staticClass: "navbar sticky-top",
       attrs: { toggleable: "lg", type: "danger", variant: "danger" }
     },
     [
