@@ -31,7 +31,7 @@ class ProductsController extends Controller
 
     public function view($slug) {
         $product = Wine::where('slug', $slug)->firstOrFail();
-        return view('products.view', compact('product'));
+        return view('pages.product', compact('product'));
     }
 
     public function edit($id) {

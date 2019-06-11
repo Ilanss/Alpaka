@@ -6,7 +6,7 @@
 <div class="row">
 
       <div class="col-lg-12">
-        <product-info class="colsm-12"></product-info>
+        <product-info v-bind:product="{{$product}}" class="colsm-12"></product-info>
       </div>
       <!-- /.col-lg-9 -->
 
