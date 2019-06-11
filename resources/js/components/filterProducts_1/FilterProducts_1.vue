@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>TOUS NOS VINS</h1>
+    <h1>NOS VINS</h1>
     <div class="filter__1">
     <b-list-group class="filter__1__country">
       <b-list-group-item href="#it">Italie</b-list-group-item>
@@ -13,7 +13,7 @@
     <b-list-group class="filter__1__selections">
       <b-list-group-item href="#bio">Vins Bio</b-list-group-item>
       <b-list-group-item href="#legend">Vins de légende</b-list-group-item>
-      <b-list-group-item href="#coeur">Coupe de coeur</b-list-group-item>
+      <b-list-group-item href="#coeur">Coup de coeur</b-list-group-item>
       <b-list-group-item href="#esSelection">Selection espagnole</b-list-group-item>
       <b-list-group-item href="#mySelection">MySelection</b-list-group-item>
     </b-list-group>

@@ -10,7 +10,7 @@
 
         <div id="infos">
             <span class="dot"></span>
-            <i class="fa fa-map-marker"></i>
+            <i class="fa fa-map-marker-alt"></i>
             <p>
                 Elie Gazzar S.A.
                 <br>

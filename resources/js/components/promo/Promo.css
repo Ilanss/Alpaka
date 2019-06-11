@@ -12,8 +12,8 @@ p {
 }
 
 #promo {
-    background-color: #E8D2AC;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #E8D2AC;
 }
 
 .promo-title {
@@ -26,10 +26,15 @@ p {
 .btn,
 .btn:hover,
 .btn:active {
-    color: #FFFFFF;
-    background-color: #5B022E;
+    color: #FFFFFF !important;
+    background-color: #5B022E !important;
     border: 1px solid #5B022E;
     margin: 20px;
+}
+
+.btn:hover {
+    color: #E8D2AC !important;
+    text-decoration: underline !important;
 }
 
 .promo-text {
