@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Rating;
 use App\Wine;
 use App\Winery;
 use App\Country;
@@ -34,7 +35,9 @@ class ProductsController extends Controller
         $country = Country::where('id', $product->country_id)->firstOrFail();
         $category = Category::where('id', $product->category_id)->firstOrFail();
         $winery = Winery::where('id', $product->winery_id)->firstOrFail();
-        return view('pages.product', compact('product', 'country', 'category', 'winery'));
+        $ratings = Rating::where('wine_id', $product->id)->get();
+        $promotions = Promotion::where('wine_id', $product->id)->get();
+        return view('pages.product', compact('product', 'country', 'category', 'winery', 'ratings', 'promotions'));
     }
 
     public function edit($id) {
