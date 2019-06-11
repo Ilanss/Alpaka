@@ -2329,7 +2329,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['product', 'country'],
+  props: ['product', 'country', 'winery', 'category'],
   mounted: function mounted() {
     console.log("ProductInfo mounted");
   },
@@ -70360,7 +70360,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "productInfo__review" }, [
-                _c("p", [_vm._v("Reviews d'autres utilisateurs")]),
+                _c("p", [_vm._v("Notes du vin :")]),
                 _vm._v(" "),
                 _vm.product.ranking == 0
                   ? _c("div", { staticClass: "review__0" }, [
@@ -70496,30 +70496,36 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "b-form-valid-feedback",
-                    { attrs: { state: _vm.validation_quantity } },
-                    [_vm._v("C'est bien!")]
-                  ),
+                  _c("b-form-valid-feedback", {
+                    attrs: { state: _vm.validation_quantity }
+                  }),
                   _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(_vm.product.conditioning))])
+                  _c("p", [
+                    _vm._v(
+                      "Carton de " +
+                        _vm._s(_vm.product.conditioning) +
+                        " bouteille(s)"
+                    )
+                  ])
                 ],
                 1
               ),
               _vm._v(" "),
               _vm.product.stock_status == 1
                 ? _c("div", { staticClass: "productInfo__stockYes" }, [
-                    _c("i", { staticClass: "fas fa-check" }),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("Disponible")])
+                    _c("p", [
+                      _c("i", { staticClass: "fas fa-check" }),
+                      _vm._v(" Le vin est disponible")
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               _vm.product.stock_status == 0
                 ? _c("div", { staticClass: "productInfo__stockNo" }, [
-                    _c("i", { staticClass: "fas fa-times" }),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("Pas Disponible")])
+                    _c("p", [
+                      _c("i", { staticClass: "fas fa-times" }),
+                      _vm._v(" Le vin n'est plus disponible")
+                    ])
                   ])
                 : _vm._e()
             ])
@@ -70552,13 +70558,15 @@ var render = function() {
                   _c(
                     "b-list-group",
                     [
-                      _c("b-list-group-item", [_vm._v("Couleur: ")]),
+                      _c("b-list-group-item", [
+                        _vm._v("Categorie vin: " + _vm._s(_vm.category.name))
+                      ]),
                       _vm._v(" "),
                       _c("b-list-group-item", [
                         _vm._v(
                           "Temperature de service: " +
                             _vm._s(_vm.product.serv_temp) +
-                            _vm._s(_vm.country)
+                            "°"
                         )
                       ]),
                       _vm._v(" "),
@@ -70572,14 +70580,14 @@ var render = function() {
                         _vm._v("Région: " + _vm._s(_vm.product.origin))
                       ]),
                       _vm._v(" "),
-                      _c("b-list-group-item", [
-                        _vm._v(
-                          "Millesimé: " +
-                            _vm._s(_vm.product.good_year) +
-                            " - " +
-                            _vm._s(_vm.product.date_production)
-                        )
-                      ]),
+                      _vm.product.good_year == 1
+                        ? _c("b-list-group-item", [
+                            _vm._v(
+                              "Millesimé: " +
+                                _vm._s(_vm.product.date_production)
+                            )
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
                       _c("b-list-group-item", [
                         _vm._v("Note: " + _vm._s(_vm.product.ranking))

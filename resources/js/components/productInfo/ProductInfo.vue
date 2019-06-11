@@ -16,7 +16,7 @@
             <p>CHF 12 offerts dès CHF 250</p>
           </div>
           <div class="productInfo__review">
-            <p>Reviews d'autres utilisateurs</p>
+            <p>Notes du vin :</p>
             <div class="review__0" v-if="product.ranking == 0">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -77,17 +77,17 @@
             <b-form-invalid-feedback
               :state="validation_quantity"
             >La quantité doit être positive et differente de 0</b-form-invalid-feedback>
-            <b-form-valid-feedback :state="validation_quantity">C'est bien!</b-form-valid-feedback>
-            <p>{{product.conditioning}}</p>
+            <b-form-valid-feedback :state="validation_quantity"></b-form-valid-feedback>
+            <p>Carton de {{product.conditioning}} bouteille(s)</p>
           </div>
 
           <div class="productInfo__stockYes" v-if="product.stock_status == 1">
-            <i class="fas fa-check"></i>
-            <p>Disponible</p>
+            
+            <p><i class="fas fa-check"></i> Le vin est disponible</p>
           </div>
           <div class="productInfo__stockNo" v-if="product.stock_status == 0">
-            <i class="fas fa-times"></i>
-            <p>Pas Disponible</p>
+            
+            <p><i class="fas fa-times"></i> Le vin n'est plus disponible</p>
           </div>
         </b-col>
       </b-row>
@@ -97,11 +97,11 @@
           <b-collapse id="collapse-1" class="mt-2">
             <!-- Fiche Technique -->
             <b-list-group>
-              <b-list-group-item>Couleur: </b-list-group-item>
-              <b-list-group-item>Temperature de service: {{product.serv_temp}}{{country}}</b-list-group-item>
+              <b-list-group-item>Categorie vin: {{category.name}}</b-list-group-item>
+              <b-list-group-item>Temperature de service: {{product.serv_temp}}°</b-list-group-item>
               <b-list-group-item >Pays d'origine: {{country.name}} </b-list-group-item>
               <b-list-group-item>Région: {{product.origin}}</b-list-group-item>
-              <b-list-group-item>Millesimé: {{product.good_year}} - {{product.date_production}}</b-list-group-item>
+              <b-list-group-item v-if="product.good_year == 1">Millesimé: {{product.date_production}}</b-list-group-item>
               <b-list-group-item>Note: {{product.ranking}}</b-list-group-item>
               <b-list-group-item>Degré d'alcool: {{product.alcohol_level}}</b-list-group-item>
             </b-list-group>

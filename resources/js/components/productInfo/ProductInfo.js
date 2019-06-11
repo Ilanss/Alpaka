@@ -1,5 +1,5 @@
 export default {
-    props: ['product','country'],
+    props: ['product','country', 'winery', 'category'],
 
     mounted() {
         console.log("ProductInfo mounted");
