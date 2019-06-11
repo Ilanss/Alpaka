@@ -35,7 +35,7 @@ class ProductsController extends Controller
         $country = Country::where('id', $product->country_id)->firstOrFail();
         $category = Category::where('id', $product->category_id)->firstOrFail();
         $winery = Winery::where('id', $product->winery_id)->firstOrFail();
-        $ratings = Rating::where('wine_id', $product->id)->get();
+        $ratings = Rating::join('users', 'user_id', '=', 'users.id')->where('wine_id', $product->id)->get();
         $promotions = Promotion::where('wine_id', $product->id)->get();
         return view('pages.product', compact('product', 'country', 'category', 'winery', 'ratings', 'promotions'));
     }
