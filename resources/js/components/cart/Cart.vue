@@ -37,12 +37,7 @@
           </template>
         </b-table>
 
-        <b-pagination
-          v-model="currentPage"
-          :total-rows="rows"
-          :per-page="perPage"
-          aria-controls="my-table"
-        ></b-pagination>
+        
       </div>
     </div>
     <div class="cart__promo">

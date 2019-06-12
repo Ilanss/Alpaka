@@ -1985,7 +1985,6 @@ __webpack_require__.r(__webpack_exports__);
       username: 'Elia Gazzard',
       date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
       hour: new Date().getHours() + ':' + new Date().getMinutes(),
-      perPage: 3,
       currentPage: 1,
       promo: "",
       tva: "7.7",
@@ -68778,21 +68777,6 @@ var render = function() {
                   }
                 }
               ])
-            }),
-            _vm._v(" "),
-            _c("b-pagination", {
-              attrs: {
-                "total-rows": _vm.rows,
-                "per-page": _vm.perPage,
-                "aria-controls": "my-table"
-              },
-              model: {
-                value: _vm.currentPage,
-                callback: function($$v) {
-                  _vm.currentPage = $$v
-                },
-                expression: "currentPage"
-              }
             })
           ],
           1

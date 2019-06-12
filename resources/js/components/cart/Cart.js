@@ -7,7 +7,7 @@ export default {
             username: 'Elia Gazzard',
             date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
             hour: new Date().getHours() + ':' + new Date().getMinutes(),
-            perPage: 3,
+            
             currentPage: 1,
             promo: "",
             tva: "7.7",
