@@ -10,7 +10,7 @@
       </div>
       
       <!-- /.col-lg-9 -->
-      <best-sellers v-bind:bestseller="{{$products}}"></best-sellers>
+      <best-sellers v-bind:bestseller="{{$products}}" ></best-sellers>
 <product-card></product-card>
     </div>
 </div>

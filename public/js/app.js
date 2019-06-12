@@ -2155,7 +2155,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['cgv', 'register', 'login', 'about', 'blog'],
+  props: ['cgv', 'register', 'login', 'about', 'blog', 'baseUrl'],
   mounted: function mounted() {
     console.log('Footer component mounted.');
   }
@@ -2276,7 +2276,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify'],
+  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify', 'search'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   },
@@ -2293,15 +2293,10 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       console.log("hello", this.fields);
-      var formData = new FormData();
-      var config = {
-        headers: {
-          'content-type': 'multipart/form-data'
-        }
-      };
-      console.log("hello", this.fields);
       this.errors = {};
-      axios.post('/public/products', formData, config).then(function (response) {
+      axios.get('/public/products/search', {
+        params: this.fields
+      }).then(function (response) {
         alert('Message sent!');
       })["catch"](function (error) {
         if (error.response.status === 422) {
@@ -69671,11 +69666,20 @@ var render = function() {
             _vm._m(5)
           ]),
           _vm._v(" "),
-          _vm._m(6)
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12 text-center" }, [
+              _c("img", {
+                attrs: {
+                  src: this.baseUrl + "/images/logo-horizontal-fond-clair.png",
+                  alt: "Logo Gazzar"
+                }
+              })
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
-      _vm._m(7)
+      _vm._m(6)
     ])
   ])
 }
@@ -69735,21 +69739,6 @@ var staticRenderFns = [
             _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Instagram")])])
           ])
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12 text-center" }, [
-        _c("img", {
-          attrs: {
-            src: "images/logo-horizontal-fond-clair.png",
-            alt: "Logo Gazzar"
-          }
-        })
       ])
     ])
   },
@@ -70223,24 +70212,25 @@ var render = function() {
             { staticClass: "ml-auto" },
             [
               _c(
-                "b-nav-form",
+                "form",
+                { attrs: { action: this.login } },
                 [
                   _c(
-                    "form",
-                    { attrs: { action: this.login } },
-                    [
-                      _c(
-                        "b-button",
-                        {
-                          staticClass: "my-2 my-sm-0 btn user",
-                          attrs: { size: "sm", type: "submit" }
-                        },
-                        [_c("i", { staticClass: "fas fa-user" })]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
+                    "b-button",
+                    {
+                      staticClass: "my-2 my-sm-0 btn user",
+                      attrs: { size: "sm", type: "submit" }
+                    },
+                    [_c("i", { staticClass: "fas fa-user" })]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-nav-form",
+                { attrs: { method: "get", action: this.search } },
+                [
                   _c(
                     "b-button",
                     {
@@ -70255,15 +70245,8 @@ var render = function() {
                     attrs: {
                       type: "text",
                       name: "search",
-                      method: "post",
                       size: "sm",
                       placeholder: "Rechercher"
-                    },
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.submit($event)
-                      }
                     },
                     model: {
                       value: _vm.fields.search,

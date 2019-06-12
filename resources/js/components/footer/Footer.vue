@@ -106,7 +106,7 @@
                 <!-- end /.row -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <img src="images/logo-horizontal-fond-clair.png" alt="Logo Gazzar">
+                        <img v-bind:src="this.baseUrl+'/images/logo-horizontal-fond-clair.png'" alt="Logo Gazzar">
                     </div>
                 </div>
             </div>

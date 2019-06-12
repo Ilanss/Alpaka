@@ -15,16 +15,16 @@
           <b-nav-item v-bind:href="this.about+'#contactUs'">Contact</b-nav-item>
       </b-navbar-nav>
 
-      <!-- Right aligned nav items -->
+      <!-- Right aligned nav items  @submit.prevent="submit"-->
       <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-            <form v-bind:action="this.login">
+        <form v-bind:action="this.login">
                 <b-button size="sm" class="my-2 my-sm-0 btn user" type="submit"><i class="fas fa-user"></i></b-button>
             </form>
+        <b-nav-form method="get" v-bind:action="this.search">
+            
             <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i class="fas fa-shopping-cart"></i></b-button>
             
-            <b-form-input v-model="fields.search" type="text" name="search" method="post" @submit.prevent="submit"  size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
-            
+            <b-form-input v-model="fields.search" type="text" name="search"    size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0 btn" type="submit"><i class="fas fa-search"></i></b-button>
         </b-nav-form>
       </b-navbar-nav>
