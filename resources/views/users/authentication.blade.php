@@ -2,7 +2,7 @@
 @section('content')
 @if (auth()->check())
     <p>Vous êtes authentifié</p>
-    <a href="/public/auth/modify" type="button" class="btn-page">Mettre à jour son profil</a>
+    <a href="{{URL::to('/auth/modify')}}" type="button" class="btn-page">Mettre à jour son profil</a>
     <a href="{{URL::to('/auth/logout')}}" type="button" class="btn-page">Logout</a>
 @else
 <div class="container">
