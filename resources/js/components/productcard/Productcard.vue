@@ -14,7 +14,7 @@
         v-bind:id="item.id"
       >
         <b-card-text class="text-center">{{ item.price_wine }} CHF</b-card-text>
-        <b-button v-on:click="wineAdd" v-bind:href="''+item.id" variant="" class="product__add">Ajouter au panier</b-button>
+        <b-button v-on:click="wineAdd" v-bind:href="'cart/'" variant="" class="product__add">Ajouter au panier</b-button>
       </b-card>
     </div>
   </div>

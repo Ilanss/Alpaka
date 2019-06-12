@@ -2391,7 +2391,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
+  props: ['cart'],
   mounted: function mounted() {
     console.log("Productcard componenet mounted");
   },
@@ -2405,9 +2408,8 @@ __webpack_require__.r(__webpack_exports__);
     wineAdd: function wineAdd(event) {
       console.log("added in cart");
     }
-  },
-  props: ['item']
-});
+  }
+}, "props", ['item']));
 
 /***/ }),
 
@@ -70869,7 +70871,7 @@ var render = function() {
               "b-button",
               {
                 staticClass: "product__add",
-                attrs: { href: "" + _vm.item.id, variant: "" },
+                attrs: { href: "cart/", variant: "" },
                 on: { click: _vm.wineAdd }
               },
               [_vm._v("Ajouter au panier")]

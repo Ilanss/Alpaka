@@ -1,4 +1,5 @@
 export default {
+    props: ['cart'],
     mounted() {
         console.log("Productcard componenet mounted")
     },
