@@ -154,11 +154,11 @@ class ProductsController extends Controller
             'origin' => 'required|max:45',
             'size' => 'required|max:45',
             'varietal' => 'required|max:45',
-            'good_year' => 'required|boolean',
+            'good_year' => 'boolean',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
             'description' => 'required|max:255',
-            'stock_status' => 'required|boolean',
+            'stock_status' => 'boolean',
             'conditioning' => 'required|max:255',
             'ranking' => 'numeric|between:1,5',
             'alcohol_level' => 'required|numeric|between:0,50',
@@ -214,7 +214,7 @@ class ProductsController extends Controller
         unlink(public_path('images/products/'.$link));
 
         $product->promotions()->delete();
-        //$product->ratings()->delete();
+        $product->ratings()->delete();
         //$product->users()->delete();
         $product->foods()->delete();
 

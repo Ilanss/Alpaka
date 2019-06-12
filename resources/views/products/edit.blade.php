@@ -104,9 +104,11 @@
                 </div>
                 <div class="form-group">
                     <label for="delivery_delay">Delivery delay :</label>
-                    <input type="text" class="form-control" name="delivery_delay" value="{{$product->delivery_delay}}"/>
+                    <input type="text" class="form-control" name="delivery_delay_from" value="{{$product->delivery_delay_from}}"/>
+                    <input type="text" class="form-control" name="delivery_delay_to" value="{{$product->delivery_delay_to}}"/>
+                    
                 </div>
-                <button type="submit" class="btn btn-primary">Create Wine</button>
+                <button type="submit" class="btn btn-primary">Update Wine</button>
             </form>
         @else
             <h2>Accès refusé</h2>
