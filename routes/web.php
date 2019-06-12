@@ -32,7 +32,7 @@ Route::get('/admin', function () {
     return view('pages.admin');
 });
 // Authentication
-Route::get('/auth', 'authentication@form')->name('auth');
+Route::get('/auth', 'Authentication@form')->name('auth');
 Route::get('/auth/login', 'Authentication@login');
 
 // Logout
