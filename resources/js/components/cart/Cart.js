@@ -33,8 +33,8 @@ export default {
                         return number.toFixed(2);
                     }
                 },
-                //delate button
-                'delate me'
+                //delete button
+                'delete'
             ],
             //Wine structure --> put here Wine data .json
             items: [

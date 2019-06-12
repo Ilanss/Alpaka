@@ -1,7 +1,7 @@
 <template>
   <div class="cart">
     <div class="cart__userInfo">
-      <h3 class="cart__username">{{username}}</h3>
+      <h3 >Votre panier d'achats</h3>
       <p class="cart__info">{{date}} - {{hour}}</p>
       <hr>
     </div>
@@ -31,9 +31,9 @@
             >
           </template> 
 
-          <template slot="delate me" slot-scope="data">
-            <!-- DELATE BUTTON doesn't works-->
-            <b-button class="item__delate" @click="delateEvent(this.item)">Delate</b-button>
+          <template slot="delete" slot-scope="data">
+            <!-- delete BUTTON doesn't works-->
+            <b-button class="item__delete" @click="deleteEvent(this.item)">delete</b-button>
           </template>
         </b-table>
 
