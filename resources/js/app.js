@@ -10,6 +10,8 @@ import '../sass/_variables.scss'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import JsonStorage from "./LocalStorage.js"; //import localstorage 4 cart
+
 
 //appel de tous les composants
 Vue.component('hero-section', require('./components/hero/Hero.vue').default);
