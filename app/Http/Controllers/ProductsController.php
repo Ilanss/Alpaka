@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Rating;
 use App\Wine;
 use App\Winery;
 use App\Country;
@@ -18,6 +19,11 @@ class ProductsController extends Controller
         $products = Wine::all();
         return view('pages.products',compact('products'));
     }
+
+    public function home() {
+        $products = Wine::inRandomOrder()->take(4)->get();
+        return view('pages.home',compact('products'));
+    }
    /*public function index() {
         $products = Wine::all();
         return view('pages.products')->with('products', $products);
@@ -26,7 +32,13 @@ class ProductsController extends Controller
 
     public function view($slug) {
         $product = Wine::where('slug', $slug)->firstOrFail();
-        return view('products.view', compact('product'));
+        $country = Country::where('id', $product->country_id)->firstOrFail();
+        $category = Category::where('id', $product->category_id)->firstOrFail();
+        $winery = Winery::where('id', $product->winery_id)->firstOrFail();
+        $ratings = Rating::join('users', 'user_id', '=', 'users.id')->where('wine_id', $product->id)->get();
+        $promotions = Promotion::where('wine_id', $product->id)->get();
+        $products = Wine::inRandomOrder()->take(4)->get();
+        return view('pages.product', compact('product', 'country', 'category', 'winery', 'ratings', 'promotions', 'products'));
     }
 
     public function edit($id) {

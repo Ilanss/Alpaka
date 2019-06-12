@@ -6,7 +6,7 @@
             <h1>Nos valeurs</h1>
             <ol class="carousel-indicators">
                 <span data-target="#carousel-example" data-slide-to="0" class="active">Engagement</span>
-                <span data-target="#carousel-example" data-slide-to="1">Confiance</span>
+                <span data-target="#carousel-example" data-slide-to="1" >Confiance</span>
                 <span data-target="#carousel-example" data-slide-to="2">Ambition</span>
             </ol>
         </div>

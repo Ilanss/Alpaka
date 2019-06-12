@@ -47,7 +47,8 @@ a {
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #E8D2AC;
+    text-decoration: underline;
 }
 
 .mini-footer {

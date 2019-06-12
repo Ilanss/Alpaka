@@ -16,13 +16,9 @@ Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', 'ProductsController@home')->name('home');
 
-Route::get('/home', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/home', 'ProductsController@home')->name('home');
 
 // Registration
 Route::get('/registration', 'Registration@form')->name('registration');
@@ -45,9 +41,13 @@ Route::get('/auth/logout', 'Authentication@logout');
 Route::get('/cgv', function () {
     return view('pages.cgv');
 })->name('cgv');
+
+Route::get('/product', function () {
+    return view('pages.product');
+})->name('product');
 // Update user
-Route::get('/auth/modify', 'UpdateUser@form');
-Route::get('/auth/update', 'UpdateUser@update');
+Route::get('/auth/modify', 'UpdateUser@form')->name('auth.modify');
+Route::get('/auth/update', 'UpdateUser@update')->name('auth.modify');
 
 // Products
 Route::get('/product/create', 'ProductsController@create');
