@@ -70390,13 +70390,7 @@ var render = function() {
                 "div",
                 { staticClass: "productInfo__price" },
                 [
-                  _c("h2", [
-                    _vm._v(
-                      "CHF " +
-                        _vm._s(_vm.product.price_wine) +
-                        _vm._s(_vm.product.id)
-                    )
-                  ]),
+                  _c("h2", [_vm._v("CHF " + _vm._s(_vm.product.price_wine))]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(

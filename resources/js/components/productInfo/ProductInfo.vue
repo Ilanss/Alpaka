@@ -11,7 +11,7 @@
             <h3>{{product.brand}}</h3>
           </div>
           <div class="productInfo__price">
-            <h2>CHF {{product.price_wine}}{{product.id}}</h2>
+            <h2>CHF {{product.price_wine}}</h2>
             <p>Livraison dans les {{product.delivery_delay}} jours</p>
             <p v-for="promotion in promotions" v-bind:key="promotion.id">{{promotion.discount}} CHF de rabais jusqu'au {{promotion.date_end}}</p>
           </div>
