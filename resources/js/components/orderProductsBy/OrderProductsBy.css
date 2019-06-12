@@ -4,12 +4,14 @@
 }
 
 .fas {
-    color: black;
+    color: #1D1D1D;
     padding-left: 20px;
 }
-.fa-th{
+
+.fa-th {
     padding-left: 0px !important;
 }
+
 .fas:hover {
-    color: red;
+    color: #5B022E;
 }

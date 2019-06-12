@@ -18,13 +18,13 @@
                                         <a href="#">Retour</a>
                                     </li>
                                     <li>
-                                        <a href="#">CGV</a>
+                                        <a v-bind:href="this.cgv">CGV</a>
                                     </li>
                                     <li>
-                                        <a href="#">Connextez-vous</a>
+                                        <a v-bind:href="this.login">Connectez-vous</a>
                                     </li>
                                     <li>
-                                        <a href="#">Inscrivez-vous</a>
+                                        <a v-bind:href="this.register">Inscrivez-vous</a>
                                     </li>
                                 </ul>
                             </div>
@@ -41,13 +41,13 @@
                                 <hr>
                                 <ul>
                                     <li>
-                                        <a href="#">À propos</a>
+                                        <a v-bind:href="this.about">À propos</a>
                                     </li>
                                     <li>
                                         <a href="#">Emplois</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a v-bind:href="this.about">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,7 +70,7 @@
                                         <a href="#">Droits d'auteur</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a v-bind:href="this.about+'#contactUs'">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -106,7 +106,7 @@
                 <!-- end /.row -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <img src="images/logo-horizontal-fond-clair.png" alt="Logo Gazzar">
+                        <img v-bind:src="this.baseUrl+'/images/logo-horizontal-fond-clair.png'" alt="Logo Gazzar">
                     </div>
                 </div>
             </div>
@@ -131,9 +131,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="col socialMedia">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram instagram"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram instagram"></i></a>
                         </div>
                     </div>
                 </div>

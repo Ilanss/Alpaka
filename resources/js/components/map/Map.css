@@ -70,10 +70,6 @@ p {
 /*Small devices (landscape phones, 320px and up)*/
 @media (max-width: 991px) {
 
-    #infos {
-        /*background-color: #5B022E;*/
-    }
-
     .dot {
         display: none;
     }

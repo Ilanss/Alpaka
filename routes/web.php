@@ -10,32 +10,29 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('/products', 'ProductsController@store')->name('products.store');
 
 Route::get('/about', function () {
     return view('pages.about');
-});
+})->name('about');
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/', 'ProductsController@home')->name('home');
 
-Route::get('/home', function () {
-    return view('pages.home');
-})->name('home');
+Route::get('/home', 'ProductsController@home')->name('home');
 
 // Registration
-Route::get('/registration', 'Registration@form');
+Route::get('/registration', 'Registration@form')->name('registration');
 Route::post('/registration/store', 'Registration@store');
 
 Route::get('/blog', function () {
     return view('pages.blog');
-});
+})->name('blog');
 
 Route::get('/admin', function () {
     return view('pages.admin');
 });
 // Authentication
-Route::get('/auth', 'authentication@form');
+Route::get('/auth', 'Authentication@form')->name('auth');
 Route::get('/auth/login', 'Authentication@login');
 
 // Logout
@@ -43,10 +40,18 @@ Route::get('/auth/logout', 'Authentication@logout');
 
 Route::get('/cgv', function () {
     return view('pages.cgv');
-});
+})->name('cgv');
+
+Route::get('/cart', function () {
+    return view('pages.cart');
+})->name('cart');
+
+Route::get('/product', function () {
+    return view('pages.product');
+})->name('product');
 // Update user
-Route::get('/auth/modify', 'UpdateUser@form');
-Route::get('/auth/update', 'UpdateUser@update');
+Route::get('/auth/modify', 'UpdateUser@form')->name('auth.modify');
+Route::get('/auth/update', 'UpdateUser@update')->name('auth.modify');
 
 // Products
 Route::get('/product/create', 'ProductsController@create');

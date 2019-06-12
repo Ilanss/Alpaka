@@ -19,6 +19,15 @@ body {
     background-color: #5B022E;
 }
 
+.btn{
+
+    background-color: #5b022e !important;
+}
+.btn:hover{
+    text-decoration: underline !important;
+    background-color: #5b022e !important;
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     .btn {

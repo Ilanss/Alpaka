@@ -1,5 +1,8 @@
-.product__add{
-    border-radius: 25px;
+.product__add {
     background-color: #5b022e !important;
 }
 
+.product__add:hover {
+    color: white !important;
+    text-decoration: underline;
+}

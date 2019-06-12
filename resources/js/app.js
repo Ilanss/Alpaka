@@ -28,7 +28,8 @@ Vue.component('modal', {
 })
 Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
-
+Vue.component('cart-list', require('./components/cart/Cart.vue').default);
+Vue.component('product-info', require('./components/productInfo/ProductInfo.vue').default);
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
 Vue.component('contact-section', require('./components/contact/Contact.vue').default);
 Vue.component('story-section', require('./components/story/Story.vue').default);
@@ -36,10 +37,11 @@ Vue.component('brand-section', require('./components/brand/Brand.vue').default);
 Vue.component('map-section', require('./components/map/Map.vue').default);
 Vue.component('blog-section', require('./components/blog/Blog.vue').default);
 Vue.component('promo-section', require('./components/promo/Promo.vue').default);
+Vue.component('create-section', require('./components/admin_create/Create.vue').default);
 
 new Vue({
     el: '#app',
     data: {
-        showModal: false
+        showModal: false,
     }
 });

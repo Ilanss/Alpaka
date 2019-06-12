@@ -30,9 +30,6 @@ class UpdateUser extends Controller
             'password' => 'required|max:255'
         ]);
 
-//        print_r($request->input());
-//        dd($validatedData);
-
         $user = auth()->user();
 
         $user->username = $request->input('username');
@@ -50,7 +47,7 @@ class UpdateUser extends Controller
         // Verify
         if ($years < 18) {
             $error = "Certaines conditions ne sont pas respectées (doit être majeur)";
-            return Redirect::back()->withErrors($error);
+            return back()->withErrors($error);
         } else {
             $user->save($validatedData);
 

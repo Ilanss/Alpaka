@@ -12,22 +12,24 @@ class Authentication extends Controller
 {
     // Show form registration
     public function form(){
-        return view('users.authentication');
+        
+        return view('users.authentication',[
+            'auth_user' => Auth::user()
+        ]);
     }
 
     public function login(Request $request)
     {
-        print_r($request->input());
+        //print_r($request->input());
 
         $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
         if (Auth::attempt($data)) {
             return redirect('/');
         } else {
-            echo 'Erreur <br/>';
-            dd($data);
-        }
-    }
+            $error = "L'email ou le mot de passe sont incorrects";
+            return back()->withErrors($error);
+        }    }
 
     public function logout()
     {

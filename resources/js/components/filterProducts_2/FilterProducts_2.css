@@ -1,5 +1,36 @@
+body {
+    color: #1D1D1D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
 .filter__2 {
     padding: 20px;
     outline-style: auto;
-    outline-color: red;
+    outline-color: #5B022E;
+    margin-bottom: 50px;
+}
+
+input:checked {
+    color: green !important;
+}
+
+.p-0 {
+    background-color: #5B022E;
+    color: white;
+}
+
+.p-0:hover {
+    text-decoration: underline;
 }

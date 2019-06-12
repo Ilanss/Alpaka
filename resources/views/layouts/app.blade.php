@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Gazzar') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -22,14 +22,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
+    <!-- style css -->
+    <style>
+        main {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+    </style>
+
 </head>
 
 <body>
     <div id="app">
-    @if(Route::current()->getName() == 'home')
-    @else
-    @include('includes.navbar')
-@endif  
+        @if(Route::current()->getName() == 'home')
+        @else
+        @include('includes.navbar')
+        @endif
         <!--
       include('includes.secondary-navbar') -->
         <main>

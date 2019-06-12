@@ -1,1 +1,1 @@
-<navbar-section></navbar-section>
+<navbar-section catalogue="{{ route('products.index') }}" home="{{ route('home') }}" blog="{{ route('blog') }}" about="{{ route('about') }}" cart="{{ route('cart') }}" login="{{ route('auth') }}" modify="{{ route('auth.modify') }}" register="{{ route('registration') }}" search="{{ route('products.search') }}" ></navbar-section>

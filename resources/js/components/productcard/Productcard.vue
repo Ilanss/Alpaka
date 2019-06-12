@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <div>
+  <div class="test2">
+    <div class="test">
       <!-- replace item.image to img-src -->
       <b-card
-        v-on:click="winePreview(item.id)"
+        v-on:click="winePreview(item.slug)"
         v-bind:title="item.name"
-        v-bind:img-src="item.image"
+        v-bind:img-src="'images/products/' + item.image"
         img-alt="Cover"
         img-top
         tag="article"
@@ -13,9 +13,8 @@
         class="mb-2 text-center"
         v-bind:id="item.id"
       >
-        <b-card-text class="text-left"> CHF:{{ item.price_wine }}</b-card-text>
-
-        <b-button v-on:click="wineAdd" v-bind:href="''+item.id" variant="" class="product__add">Ajouter au panier</b-button>
+        <b-card-text class="text-center">{{ item.price_wine }} CHF</b-card-text>
+        <b-button v-on:click="wineAdd" v-bind:href="'cart/'" variant="" class="product__add">Ajouter au panier</b-button>
       </b-card>
     </div>
   </div>

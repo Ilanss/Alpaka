@@ -1,14 +1,29 @@
 export default {
     data() {
-      return {
-        selected: null,
-        options: [
-          { value: null, text: 'OrderBy' },
-          { value: '1', text: 'Prix 0-9' },
-          { value: '2', text: 'Prix 9-0' },
-          { value: '3', text: 'Disponibility' },
-          { value: '4', text: 'Year'}
+        return {
+            selected: null,
+            options: [
+                {
+                    value: null,
+                    text: 'Trier par'
+                },
+                {
+                    value: '1',
+                    text: 'Prix croissant'
+                },
+                {
+                    value: '2',
+                    text: 'Prix décroissant'
+                },
+                {
+                    value: '3',
+                    text: 'Nom'
+                },
+                {
+                    value: '4',
+                    text: 'Année'
+                }
         ]
-      }
+        }
     }
-  }
+}

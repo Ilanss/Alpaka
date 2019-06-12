@@ -54,9 +54,9 @@ ol span {
 }
 
 ol .active {
-    background: none;
+    background: #5B002E;
     border: 1px solid #5B002E;
-    color: #5B002E;
+    color: #FFFFFF;
     height: auto;
     padding: 10px 15px;
     width: auto;

@@ -1,6 +1,3 @@
-@extends('template')
-
-@section('content')
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
@@ -12,7 +9,7 @@
                     </ul>
                 </div><br/>
             @endif
-            <form method="post" action="{{ route('products.update', $product->id) }}">
+            <form method="post" action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data">
                 <div class="form-group">
                     @csrf
                     @method('PATCH')
@@ -54,7 +51,7 @@
                 </div>
                 <div class="form-group">
                     <label for="price_wine">Wine price :</label>
-                    <input type="text" class="form-control" name="price_wine" value="{{$product->price_wine}}"/>
+                    <input type="number" class="form-control" name="price_wine" value="{{$product->price_wine}}"/>
                 </div>
                 <div class="form-group">
                     <label for="origin">Origin :</label>
@@ -70,7 +67,7 @@
                 </div>
                 <div class="form-group">
                     <label for="good_year">Good Year :</label>
-                    <input type="text" class="form-control" name="good_year" value="{{$product->good_year}}"/>
+                    <input type="checkbox" class="form-control" name="good_year" value="{{$product->good_year}}"/>
                 </div>
                 <div class="form-group">
                     <label for="date_production">Date production :</label>
@@ -107,12 +104,13 @@
                 </div>
                 <div class="form-group">
                     <label for="delivery_delay">Delivery delay :</label>
-                    <input type="text" class="form-control" name="delivery_delay" value="{{$product->delivery_delay}}"/>
+                    <input type="text" class="form-control" name="delivery_delay_from" value="{{$product->delivery_delay_from}}"/>
+                    <input type="text" class="form-control" name="delivery_delay_to" value="{{$product->delivery_delay_to}}"/>
+                    
                 </div>
-                <button type="submit" class="btn btn-primary">Create Wine</button>
+                <button type="submit" class="btn btn-primary">Update Wine</button>
             </form>
         @else
             <h2>Accès refusé</h2>
         @endif
     @endif
-@endsection

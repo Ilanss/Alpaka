@@ -43,8 +43,6 @@ class Registration extends Controller
         $user->birth_date = $request->input('birth_date');
         $user->email = $request->input('email');
         $user->password = Hash::make($request->input('password'));
-        $createDate = Carbon::now();
-        $user->created_at = date("Y-m-d", strtotime($createDate));
         $user->state = User::CLIENT_STATE;
 
         // Age
@@ -54,7 +52,7 @@ class Registration extends Controller
         // Verify
         if($years < 18){
             $error = "Certaines conditions ne sont pas respectées (doit être majeur)";
-            return Redirect::back()->withErrors($error);
+            return back()->withErrors($error);
         }
         else{
             $user->save($validatedData);

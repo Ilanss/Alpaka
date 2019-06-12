@@ -6,28 +6,27 @@
         <h2>Couleur</h2>
         <b-form-checkbox
           id="checkbox-1"
-         
-          name="Mousseaux"
+          name="Mousseux"
           value="accepted"
           unchecked-value="not_accepted"
-        >Mousseaux</b-form-checkbox>
+        >Mousseux</b-form-checkbox>
+        
         <b-form-checkbox
           id="checkbox-2"
-          
           name="Rouge"
           value="accepted"
           unchecked-value="not_accepted"
         >Rouge</b-form-checkbox>
+        
         <b-form-checkbox
           id="checkbox-3"
-          
           name="Blanc"
           value="accepted"
           unchecked-value="not_accepted"
         >Blanc</b-form-checkbox>
+        
         <b-form-checkbox
           id="checkbox-4"
-          
           name="Rosé"
           value="accepted"
           unchecked-value="not_accepted"
@@ -70,7 +69,7 @@
 
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-0" role="tab">
-            <b-button block href="#" v-b-toggle.accordion-3 variant="">Millesimé</b-button>
+            <b-button block href="#" v-b-toggle.accordion-3 variant="">Millesime</b-button>
           </b-card-header>
           <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
             <b-card-body>
