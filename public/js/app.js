@@ -2347,6 +2347,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LocalStorage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../LocalStorage.js */ "./resources/js/LocalStorage.js");
+ //import localstorage 4 cart
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['product', 'country', 'winery', 'category', 'promotions', 'ratings'],
   mounted: function mounted() {
@@ -2374,19 +2377,18 @@ __webpack_require__.r(__webpack_exports__);
     onSubmit: function onSubmit(evt) {
       evt.preventDefault();
       var data = {
-        wineId: this.wineId,
-        userId: this.userId,
-        quantity: this.form.quantity
-        /*data.push(this.wineId);
-        data.push(this.userId);
-        data.push(this.form.quantity); */
-        //alert(console.log(data))
-
+        id_wine: this.product.id,
+        price_wine: this.product.price_wine,
+        quantity: this.form.quantity,
+        product_image: this.product_image
       };
-      alert(JSON.stringify(data));
-      /*---
-          mettre ici le return pour envoyer les données au DB
-      ---*/
+      alert(JSON.stringify(data)); //add in localstorage -- doesn't work
+
+      var cart = new _LocalStorage_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
+        name: "cart",
+        eventName: "cart-change"
+      });
+      cart.addItem(data);
     }
   }
 });
@@ -2410,12 +2412,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     console.log("Productcard componenet mounted");
   },
   data: function data() {
-    return {
-      Cart: new JsonStorage({
-        name: "cart",
-        eventName: "cart-change"
-      })
-    };
+    return {};
   },
   methods: {
     winePreview: function winePreview(slug) {
@@ -2423,7 +2420,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     wineAdd: function wineAdd(event) {
       console.log("added in cart");
-      Cart.addItem(event);
     }
   }
 }, "props", ['item']));
@@ -71608,10 +71604,14 @@ var render = function() {
               "b-button",
               {
                 staticClass: "product__add",
-                attrs: { href: "cart/", variant: "" },
-                on: { click: _vm.wineAdd }
+                attrs: { variant: "" },
+                on: {
+                  click: function($event) {
+                    return _vm.winePreview(_vm.item.slug)
+                  }
+                }
               },
-              [_vm._v("Ajouter au panier")]
+              [_vm._v("Voir les info")]
             )
           ],
           1
@@ -84942,7 +84942,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
 /* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _LocalStorage_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./LocalStorage.js */ "./resources/js/LocalStorage.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -84953,9 +84952,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_M
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 
-
- //import localstorage 4 cart
-//appel de tous les composants
+ //appel de tous les composants
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('hero-section', __webpack_require__(/*! ./components/hero/Hero.vue */ "./resources/js/components/hero/Hero.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-section', __webpack_require__(/*! ./components/navbar/Navbar.vue */ "./resources/js/components/navbar/Navbar.vue")["default"]);

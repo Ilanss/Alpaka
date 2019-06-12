@@ -4,12 +4,7 @@ export default {
         console.log("Productcard componenet mounted")
     },
     data() {
-        return {
-            Cart: new JsonStorage({
-                name: "cart",
-                eventName: "cart-change"
-            }),
-        }
+        return {}
     },
     methods: {
         winePreview: function(slug) {
@@ -17,7 +12,6 @@ export default {
         },
         wineAdd: function(event) {
             console.log("added in cart");
-            Cart.addItem(event);
         }
     },
     props: ['item']
