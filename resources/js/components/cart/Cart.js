@@ -1,14 +1,16 @@
 export default {
     mounted() {
         console.log("cart mounted");
+        if (localStorage) {}
     },
     data() {
         return {
             username: 'Elia Gazzard',
             date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
             hour: new Date().getHours() + ':' + new Date().getMinutes(),
-            
+
             currentPage: 1,
+            perPage: 3,
             promo: "",
             tva: "7.7",
             image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",

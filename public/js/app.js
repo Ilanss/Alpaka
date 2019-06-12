@@ -1991,6 +1991,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("cart mounted");
+
+    if (localStorage) {}
   },
   data: function data() {
     return {
@@ -1998,6 +2000,7 @@ __webpack_require__.r(__webpack_exports__);
       date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
       hour: new Date().getHours() + ':' + new Date().getMinutes(),
       currentPage: 1,
+      perPage: 3,
       promo: "",
       tva: "7.7",
       image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
@@ -2376,8 +2379,8 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onSubmit: function onSubmit(evt) {
       evt.preventDefault();
+      var id_wine = this.product.id;
       var data = {
-        id_wine: this.product.id,
         price_wine: this.product.price_wine,
         quantity: this.form.quantity,
         product_image: this.product_image
@@ -2388,7 +2391,10 @@ __webpack_require__.r(__webpack_exports__);
         name: "cart",
         eventName: "cart-change"
       });
-      cart.addItem(data);
+      cart.addItem({
+        id_wine: id_wine,
+        data: data
+      });
     }
   }
 });
@@ -84824,11 +84830,8 @@ function () {
   }, {
     key: "addItem",
     value: function addItem(val) {
-      var key = this._genKey();
-
-      while (this.storageKeys.has(key)) {
-        key = this._genKey();
-      }
+      //let key = this._genKey();
+      var key = val.id_wine; //while (this.storageKeys.has(key)) key = this._genKey();
 
       this.setItem(key, val);
       return key;

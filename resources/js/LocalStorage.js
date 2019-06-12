@@ -167,8 +167,9 @@ export default class {
      * @param {*} val the value you want to give the key you are creating/updating.
      */
     addItem(val) {
-        let key = this._genKey();
-        while (this.storageKeys.has(key)) key = this._genKey();
+        //let key = this._genKey();
+        let key = val.id_wine
+            //while (this.storageKeys.has(key)) key = this._genKey();
         this.setItem(key, val);
         return key;
     }
