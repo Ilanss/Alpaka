@@ -20,9 +20,10 @@
         <form v-bind:action="this.login">
                 <b-button size="sm" class="my-2 my-sm-0 btn user" type="submit"><i class="fas fa-user"></i></b-button>
             </form>
-        <b-nav-form method="get" v-bind:action="this.search">
-            
+            <form v-bind:action="this.cart">
             <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i class="fas fa-shopping-cart"></i></b-button>
+            </form>
+        <b-nav-form method="get" v-bind:action="this.search">
             
             <b-form-input v-model="fields.search" type="text" name="search"    size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0 btn" type="submit"><i class="fas fa-search"></i></b-button>

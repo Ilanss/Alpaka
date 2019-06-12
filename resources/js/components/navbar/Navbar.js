@@ -1,5 +1,5 @@
 export default {
-    props: ['home', 'catalogue', 'blog', 'about', 'login','modify','search'],
+    props: ['home', 'catalogue', 'blog', 'about', 'login','modify','search','cart','baseUrl'],
     mounted() {
         console.log("Navbar-vue Component mounted.");
     },
@@ -11,23 +11,5 @@ export default {
             success: false,
             loaded: true,
         }
-    },methods: {
-             
-        submit() {
-            console.log("hello", this.fields)
-            
-            this.errors = {};
-            axios.get('/public/products/search', {
-                params : this.fields
-            }
-            ).then(response => {
-                alert('Message sent!');
-            }).catch(error => {
-                if (error.response.status === 422) {
-                    this.errors = error.response.data.errors || {};
-                }
-            });
-        },
-    },
-
+    }
 };

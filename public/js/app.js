@@ -2276,7 +2276,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify', 'search'],
+  props: ['home', 'catalogue', 'blog', 'about', 'login', 'modify', 'search', 'cart', 'baseUrl'],
   mounted: function mounted() {
     console.log("Navbar-vue Component mounted.");
   },
@@ -2287,23 +2287,6 @@ __webpack_require__.r(__webpack_exports__);
       success: false,
       loaded: true
     };
-  },
-  methods: {
-    submit: function submit() {
-      var _this = this;
-
-      console.log("hello", this.fields);
-      this.errors = {};
-      axios.get('/public/products/search', {
-        params: this.fields
-      }).then(function (response) {
-        alert('Message sent!');
-      })["catch"](function (error) {
-        if (error.response.status === 422) {
-          _this.errors = error.response.data.errors || {};
-        }
-      });
-    }
   }
 });
 
@@ -69045,15 +69028,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", [
-      _c("div", { staticClass: "cover image" }, [
-        _c("div", {
-          staticClass: "image",
-          staticStyle: {
-            "background-image":
-              "url('https://images.unsplash.com/photo-1508471608746-b7f6b8a5b0b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')"
-          }
-        })
-      ])
+      _c("div", {
+        staticClass: "cover image",
+        staticStyle: {
+          "background-image":
+            "url('https://images.unsplash.com/photo-1508471608746-b7f6b8a5b0b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')"
+        }
+      })
     ])
   }
 ]
@@ -70228,8 +70209,8 @@ var render = function() {
               ),
               _vm._v(" "),
               _c(
-                "b-nav-form",
-                { attrs: { method: "get", action: this.search } },
+                "form",
+                { attrs: { action: this.cart } },
                 [
                   _c(
                     "b-button",
@@ -70238,8 +70219,15 @@ var render = function() {
                       attrs: { size: "sm", type: "submit" }
                     },
                     [_c("i", { staticClass: "fas fa-shopping-cart" })]
-                  ),
-                  _vm._v(" "),
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "b-nav-form",
+                { attrs: { method: "get", action: this.search } },
+                [
                   _c("b-form-input", {
                     staticClass: "mr-sm-2 form-input",
                     attrs: {

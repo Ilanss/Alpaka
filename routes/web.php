@@ -42,6 +42,10 @@ Route::get('/cgv', function () {
     return view('pages.cgv');
 })->name('cgv');
 
+Route::get('/cart', function () {
+    return view('pages.cart');
+})->name('cart');
+
 Route::get('/product', function () {
     return view('pages.product');
 })->name('product');
