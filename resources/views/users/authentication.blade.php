@@ -42,14 +42,6 @@
                                         </span>
                                         @enderror
                                     </div>
-<<<<<<< HEAD
-                                </div>
-                                <div class="form-group row mb-0">
-                                    <div class="col-md-6 offset-md-4">
-                                        <button type="submit" class="btn-page">
-                                            {{ __('Authentication') }}
-                                        </button>
-=======
                                     <div class="form-group row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit" class="btn-page">
@@ -57,7 +49,6 @@
                                             </button>
                                             <a href="{{ route('registration') }}" type="button" class="btn-page">Inscription</a>
                                         </div>
->>>>>>> frontend
                                     </div>
                                 </div>
                             </form>
@@ -68,14 +59,7 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-    </div>
-</div>
-@endsection
-=======
             </div>
             </div>
             @endif
             @endsection
->>>>>>> frontend

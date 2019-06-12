@@ -23,7 +23,7 @@
             </form>
             <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i class="fas fa-shopping-cart"></i></b-button>
             
-            <b-form-input size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
+            <b-form-input v-model="fields.search" type="text" name="search" method="post" @submit.prevent="submit"  size="sm" class="mr-sm-2 form-input" placeholder="Rechercher"></b-form-input>
             
             <b-button size="sm" class="my-2 my-sm-0 btn" type="submit"><i class="fas fa-search"></i></b-button>
         </b-nav-form>
