@@ -1999,13 +1999,17 @@ __webpack_require__.r(__webpack_exports__);
       promo: "",
       tva: "7.7",
       image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
-      fields: ['id', //A regular column
+      fields: [//'id',
+      //A regular column
       'image', // A column that needs custom formatting
       {
         key: 'name',
         label: 'Nom'
       }, // A regular column
-      'quantité', // A regular column
+      {
+        key: 'quantity',
+        label: 'Quantité'
+      }, // A regular column
       'prix', // A regular column
       'description', //Item total prix method
       {
@@ -34620,7 +34624,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".cart__promo[data-v-61043394] {\r\n    width: 40%;\n}\n.btn[data-v-61043394] {\r\n    background-color: #5b022e !important;\n}\n.btn[data-v-61043394]:hover {\r\n    text-decoration: underline !important;\n}\r\n\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\ndiv.cart[data-v-61043394] {\r\n        margin-left: 80px !important;\r\n        margin-right: 80px !important;\n}\n}\n.cart[data-v-61043394] {\r\n    margin-top: 30px !important;\n}", ""]);
+exports.push([module.i, ".cart__promo[data-v-61043394] {\r\n    width: 40%;\n}\n.btn[data-v-61043394] {\r\n    background-color: #5b022e !important;\n}\n.btn[data-v-61043394]:hover {\r\n    text-decoration: underline !important;\n}\r\n\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\ndiv.cart[data-v-61043394] {\r\n        margin-left: 80px !important;\r\n        margin-right: 80px !important;\n}\n}\n.cart[data-v-61043394] {\r\n    margin-top: 30px !important;\r\n    margin-bottom: 30px !important;\n}", ""]);
 
 // exports
 

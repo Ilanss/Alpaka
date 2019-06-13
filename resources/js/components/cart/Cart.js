@@ -11,13 +11,13 @@ export default {
             tva: "7.7",
             image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
             fields: [
-                'id',
+                //'id',
                 //A regular column
                 'image',
                 // A column that needs custom formatting
                 { key: 'name', label: 'Nom' },
                 // A regular column
-                'quantité',
+                {key:'quantity', label:'Quantité'},
                 // A regular column
                 'prix',
                 // A regular column
