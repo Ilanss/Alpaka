@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('content')
-
+    @if(session()->has('success'))
+        <div class="alert alert-success">
+            {{ session()->get('success') }}
+        </div>
+    @endif
 <!--<modal-popup></modal-popup>
 <login-form></login-form>
 <signup-form></signup-form>

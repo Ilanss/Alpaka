@@ -25,7 +25,7 @@ class Authentication extends Controller
         $data = ['email' => $request->input('email'), 'password' => $request->input('password')];
 
         if (Auth::attempt($data)) {
-            return redirect('/');
+            return redirect('/')->with('success', 'Bonjour!');
         } else {
             $error = "L'email ou le mot de passe sont incorrects";
             return back()->withErrors($error);
@@ -35,7 +35,7 @@ class Authentication extends Controller
     {
         Auth::logout();
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Au revoir');
     }
 
 }
