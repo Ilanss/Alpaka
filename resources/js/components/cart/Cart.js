@@ -11,13 +11,13 @@ export default {
             tva: "7.7",
             image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
             fields: [
-                'index',
+                'id',
                 //A regular column
                 'image',
                 // A column that needs custom formatting
-                { key: 'name', label: 'Item name' },
+                { key: 'name', label: 'Nom' },
                 // A regular column
-                'quantity',
+                'quantité',
                 // A regular column
                 'prix',
                 // A regular column
@@ -25,14 +25,14 @@ export default {
                 //Item total prix method
                 {
                     key: 'itemTotal',
-                    label: 'Item total',
+                    label: 'Total',
                     formatter: (value, key, item) => {
                         var number = item.quantity * item.prix;
                         return number.toFixed(2);
                     }
                 },
                 //delete button
-                'delete'
+                { key: 'delete', label: 'Supprimer' }
             ],
             //Wine structure --> put here Wine data .json
             items: [
