@@ -1,8 +1,4 @@
 export default {
-    mounted() {
-        console.log("cart mounted");
-        if (localStorage) {}
-    },
     data() {
         return {
             username: 'Elia Gazzard',
@@ -10,7 +6,7 @@ export default {
             hour: new Date().getHours() + ':' + new Date().getMinutes(),
 
             currentPage: 1,
-            perPage: 3,
+            perPage: 300,
             promo: "",
             tva: "7.7",
             image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
@@ -40,13 +36,25 @@ export default {
             ],
             //Wine structure --> put here Wine data .json
             items: [
-                { id: "1", name: "Wine 1", quantity: "1", prix: "10.00", description: "Wine description", image: "" },
-                { id: "2", name: "Wine 2", quantity: "2", prix: "10.00", description: "Wine description", image: "" },
-                { id: "3", name: "Wine 3", quantity: "1", prix: "20.00", description: "Wine description", image: "" },
-                { id: "4", name: "Wine 4", quantity: "2", prix: "20.00", description: "Wine description", image: "" }
+                //{ "id": 1, "name": "Château Ausone - 2016", "prix": 850, "quantity": "1" },
+                /* { id: "1", name: "Wine 1", quantity: "1", prix: "10.00", description: "Wine description", image: "" },
+                 { id: "2", name: "Wine 2", quantity: "2", prix: "10.00", description: "Wine description", image: "" },
+                 { id: "3", name: "Wine 3", quantity: "1", prix: "20.00", description: "Wine description", image: "" },
+                 { id: "4", name: "Wine 4", quantity: "2", prix: "20.00", description: "Wine description", image: "" } */
             ],
         }
     },
+    created() {
+
+    },
+    mounted() {
+        console.log("cart mounted");
+        Vue.set(this.items, 0, JSON.parse(localStorage.getItem('1')));
+        //this.items[0] = localStorage.getItem('1');
+
+        console.log(this.items);
+    },
+
     computed: {
         rows() {
             return this.items.length
@@ -69,7 +77,9 @@ export default {
             evt.preventDefault()
             alert(JSON.stringify(this.form))
         },
-        delateEvent(item) {},
+        delateEvent(item) {
+
+        },
     }
 
 }

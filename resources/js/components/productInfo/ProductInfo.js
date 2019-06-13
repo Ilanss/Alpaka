@@ -29,10 +29,10 @@ export default {
     methods: {
         onSubmit(evt) {
             evt.preventDefault()
-            var id_wine = this.product.id
             var data = {
-
-                price_wine: this.product.price_wine,
+                id: this.product.id,
+                name: this.product.name,
+                prix: this.product.price_wine,
                 quantity: this.form.quantity,
                 product_image: this.product_image
             }
@@ -42,7 +42,8 @@ export default {
                 name: "cart",
                 eventName: "cart-change"
             });
-            cart.addItem({ id_wine, data });
+            //cart.addItem({ data });
+            localStorage.setItem(data.id, JSON.stringify(data));
         },
     },
 }

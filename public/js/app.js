@@ -1989,18 +1989,13 @@ $('.carousel').carousel({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log("cart mounted");
-
-    if (localStorage) {}
-  },
   data: function data() {
     return {
       username: 'Elia Gazzard',
       date: new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDay(),
       hour: new Date().getHours() + ':' + new Date().getMinutes(),
       currentPage: 1,
-      perPage: 3,
+      perPage: 300,
       promo: "",
       tva: "7.7",
       image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
@@ -2023,36 +2018,21 @@ __webpack_require__.r(__webpack_exports__);
       }, //delete button
       'delete'],
       //Wine structure --> put here Wine data .json
-      items: [{
-        id: "1",
-        name: "Wine 1",
-        quantity: "1",
-        prix: "10.00",
-        description: "Wine description",
-        image: ""
-      }, {
-        id: "2",
-        name: "Wine 2",
-        quantity: "2",
-        prix: "10.00",
-        description: "Wine description",
-        image: ""
-      }, {
-        id: "3",
-        name: "Wine 3",
-        quantity: "1",
-        prix: "20.00",
-        description: "Wine description",
-        image: ""
-      }, {
-        id: "4",
-        name: "Wine 4",
-        quantity: "2",
-        prix: "20.00",
-        description: "Wine description",
-        image: ""
-      }]
+      items: [//{ "id": 1, "name": "Château Ausone - 2016", "prix": 850, "quantity": "1" },
+
+        /* { id: "1", name: "Wine 1", quantity: "1", prix: "10.00", description: "Wine description", image: "" },
+         { id: "2", name: "Wine 2", quantity: "2", prix: "10.00", description: "Wine description", image: "" },
+         { id: "3", name: "Wine 3", quantity: "1", prix: "20.00", description: "Wine description", image: "" },
+         { id: "4", name: "Wine 4", quantity: "2", prix: "20.00", description: "Wine description", image: "" } */
+      ]
     };
+  },
+  created: function created() {},
+  mounted: function mounted() {
+    console.log("cart mounted");
+    Vue.set(this.items, 0, JSON.parse(localStorage.getItem('1'))); //this.items[0] = localStorage.getItem('1');
+
+    console.log(this.items);
   },
   computed: {
     rows: function rows() {
@@ -2379,9 +2359,10 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onSubmit: function onSubmit(evt) {
       evt.preventDefault();
-      var id_wine = this.product.id;
       var data = {
-        price_wine: this.product.price_wine,
+        id: this.product.id,
+        name: this.product.name,
+        prix: this.product.price_wine,
         quantity: this.form.quantity,
         product_image: this.product_image
       };
@@ -2390,11 +2371,9 @@ __webpack_require__.r(__webpack_exports__);
       var cart = new _LocalStorage_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
         name: "cart",
         eventName: "cart-change"
-      });
-      cart.addItem({
-        id_wine: id_wine,
-        data: data
-      });
+      }); //cart.addItem({ data });
+
+      localStorage.setItem(data.id, JSON.stringify(data));
     }
   }
 });
@@ -84831,7 +84810,7 @@ function () {
     key: "addItem",
     value: function addItem(val) {
       //let key = this._genKey();
-      var key = val.id_wine; //while (this.storageKeys.has(key)) key = this._genKey();
+      var key = val.data.id; //while (this.storageKeys.has(key)) key = this._genKey();
 
       this.setItem(key, val);
       return key;

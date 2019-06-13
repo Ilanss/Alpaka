@@ -168,7 +168,7 @@ export default class {
      */
     addItem(val) {
         //let key = this._genKey();
-        let key = val.id_wine
+        let key = val.data.id
             //while (this.storageKeys.has(key)) key = this._genKey();
         this.setItem(key, val);
         return key;
