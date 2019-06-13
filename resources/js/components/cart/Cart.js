@@ -49,10 +49,9 @@ export default {
     },
     mounted() {
         console.log("cart mounted");
-        Vue.set(this.items, 0, JSON.parse(localStorage.getItem('1')));
-        //this.items[0] = localStorage.getItem('1');
+        //add products in cart
+        Vue.set(this.items, 0, JSON.parse(localStorage.getItem('cart')));
 
-        console.log(this.items);
     },
 
     computed: {
@@ -77,9 +76,13 @@ export default {
             evt.preventDefault()
             alert(JSON.stringify(this.form))
         },
-        delateEvent(item) {
-
+        delateEvent(id) {
+            this.items.splice(id, 1);
+            this.saveCats();
         },
+        saveCats() {
+            localStorage.setItem('cart', this.items);
+        }
     }
 
 }

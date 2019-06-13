@@ -34,16 +34,26 @@ export default {
                 name: this.product.name,
                 prix: this.product.price_wine,
                 quantity: this.form.quantity,
-                product_image: this.product_image
+                description: this.product.description.slice(0, 150),
+                image: this.product_image
             }
             alert(JSON.stringify(data))
                 //add in localstorage -- doesn't work
-            const cart = new JsonStorage({
-                name: "cart",
-                eventName: "cart-change"
-            });
-            //cart.addItem({ data });
-            localStorage.setItem(data.id, JSON.stringify(data));
+                /*const cart = new JsonStorage({
+                    name: "cart",
+                    eventName: "cart-change"
+                }); */
+                //cart.addItem({ data });
+                //localStorage.setItem(data.id, JSON.stringify(data));
+
+            var cart = [];
+            var isNull = JSON.parse(localStorage.getItem("cart"));
+            if (isNull === null) {
+                console.log("vuoto")
+                localStorage.setItem("cart", JSON.stringify(data));
+
+            }
+            cart.push(JSON.stringify(data));
         },
     },
 }

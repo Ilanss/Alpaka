@@ -33,7 +33,7 @@
 
           <template slot="delete" slot-scope="data">
             <!-- delete BUTTON doesn't works-->
-            <b-button class="item__delete" @click="deleteEvent(this.item)">delete</b-button>
+            <b-button class="item__delete" @click="delateEvent(id)">delete</b-button>
           </template>
         </b-table>
 

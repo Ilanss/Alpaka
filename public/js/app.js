@@ -2029,10 +2029,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {},
   mounted: function mounted() {
-    console.log("cart mounted");
-    Vue.set(this.items, 0, JSON.parse(localStorage.getItem('1'))); //this.items[0] = localStorage.getItem('1');
+    console.log("cart mounted"); //add products in cart
 
-    console.log(this.items);
+    Vue.set(this.items, 0, JSON.parse(localStorage.getItem('cart')));
   },
   computed: {
     rows: function rows() {
@@ -2058,7 +2057,13 @@ __webpack_require__.r(__webpack_exports__);
       evt.preventDefault();
       alert(JSON.stringify(this.form));
     },
-    delateEvent: function delateEvent(item) {}
+    delateEvent: function delateEvent(id) {
+      this.items.splice(id, 1);
+      this.saveCats();
+    },
+    saveCats: function saveCats() {
+      localStorage.setItem('cart', this.items);
+    }
   }
 });
 
@@ -2364,16 +2369,27 @@ __webpack_require__.r(__webpack_exports__);
         name: this.product.name,
         prix: this.product.price_wine,
         quantity: this.form.quantity,
-        product_image: this.product_image
+        description: this.product.description.slice(0, 150),
+        image: this.product_image
       };
       alert(JSON.stringify(data)); //add in localstorage -- doesn't work
 
-      var cart = new _LocalStorage_js__WEBPACK_IMPORTED_MODULE_0__["default"]({
-        name: "cart",
-        eventName: "cart-change"
-      }); //cart.addItem({ data });
+      /*const cart = new JsonStorage({
+          name: "cart",
+          eventName: "cart-change"
+      }); */
+      //cart.addItem({ data });
+      //localStorage.setItem(data.id, JSON.stringify(data));
 
-      localStorage.setItem(data.id, JSON.stringify(data));
+      var cart = [];
+      var isNull = JSON.parse(localStorage.getItem("cart"));
+
+      if (isNull === null) {
+        console.log("vuoto");
+        localStorage.setItem("cart", JSON.stringify(data));
+      }
+
+      cart.push(JSON.stringify(data));
     }
   }
 });
@@ -69501,7 +69517,7 @@ var render = function() {
                           staticClass: "item__delete",
                           on: {
                             click: function($event) {
-                              return _vm.deleteEvent(this.item)
+                              return _vm.delateEvent(_vm.id)
                             }
                           }
                         },
@@ -71275,7 +71291,7 @@ var render = function() {
                 ? _c("div", { staticClass: "productInfo__stockYes" }, [
                     _c("p", [
                       _c("i", { staticClass: "fas fa-check" }),
-                      _vm._v(" Le vin est disponible")
+                      _vm._v(" Le vin est disponible\n          ")
                     ])
                   ])
                 : _vm._e(),
@@ -71284,7 +71300,7 @@ var render = function() {
                 ? _c("div", { staticClass: "productInfo__stockNo" }, [
                     _c("p", [
                       _c("i", { staticClass: "fas fa-times" }),
-                      _vm._v(" Le vin n'est plus disponible")
+                      _vm._v(" Le vin n'est plus disponible\n          ")
                     ])
                   ])
                 : _vm._e()
@@ -71331,9 +71347,7 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("b-list-group-item", [
-                        _vm._v(
-                          "Pays d'origine: " + _vm._s(_vm.country.name) + " "
-                        )
+                        _vm._v("Pays d'origine: " + _vm._s(_vm.country.name))
                       ]),
                       _vm._v(" "),
                       _c("b-list-group-item", [
@@ -71356,6 +71370,12 @@ var render = function() {
                       _c("b-list-group-item", [
                         _vm._v(
                           "Degré d'alcool: " + _vm._s(_vm.product.alcohol_level)
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("b-list-group-item", [
+                        _vm._v(
+                          "Déscritpion:  " + _vm._s(_vm.product.description)
                         )
                       ])
                     ],
