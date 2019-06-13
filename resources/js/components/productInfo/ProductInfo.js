@@ -1,5 +1,7 @@
+import JsonStorage from "../../LocalStorage.js"; //import localstorage 4 cart
+
 export default {
-    props: ['product','country', 'winery', 'category', 'promotions','ratings'],
+    props: ['product', 'country', 'winery', 'category', 'promotions', 'ratings'],
 
     mounted() {
         console.log("ProductInfo mounted");
@@ -8,8 +10,7 @@ export default {
         return {
             form: {
                 quantity: "1",
-            }
-
+            },
         }
     },
     computed: {
@@ -28,19 +29,20 @@ export default {
     methods: {
         onSubmit(evt) {
             evt.preventDefault()
+            var id_wine = this.product.id
             var data = {
-                    wineId: this.wineId,
-                    userId: this.userId,
-                    quantity: this.form.quantity,
-                }
-                /*data.push(this.wineId);
-                data.push(this.userId);
-                data.push(this.form.quantity); */
-                //alert(console.log(data))
+
+                price_wine: this.product.price_wine,
+                quantity: this.form.quantity,
+                product_image: this.product_image
+            }
             alert(JSON.stringify(data))
-                /*---
-                    mettre ici le return pour envoyer les données au DB
-                ---*/
+                //add in localstorage -- doesn't work
+            const cart = new JsonStorage({
+                name: "cart",
+                eventName: "cart-change"
+            });
+            cart.addItem({ id_wine, data });
         },
     },
 }

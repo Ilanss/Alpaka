@@ -1,18 +1,18 @@
 export default {
+    props: ['cart'],
     mounted() {
         console.log("Productcard componenet mounted")
     },
     data() {
-        return {
-        }
+        return {}
     },
     methods: {
-        winePreview: function(slug){
-            window.location.href = "product/"+slug;
+        winePreview: function(slug) {
+            window.location.href = "product/" + slug;
         },
-        wineAdd: function(event){
+        wineAdd: function(event) {
             console.log("added in cart");
         }
     },
-    props: [ 'item']
-  };
+    props: ['item']
+};

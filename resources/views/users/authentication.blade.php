@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
 @if (auth()->check())
-    <p>Vous êtes authentifié</p>
+@if(auth()->user()->isAdmin())
+<h2>Vous êtes authentifié en compte admin</h2>
+<a href="{{URL::to('/product/create')}}" type="button" class="btn-page">Ajouter un produit</a>
+@else
+<h2>Vous êtes authentifié</h2>
+@endif
+    
     <a href="{{URL::to('/auth/modify')}}" type="button" class="btn-page">Mettre à jour son profil</a>
     <a href="{{URL::to('/auth/logout')}}" type="button" class="btn-page">Logout</a>
 @else

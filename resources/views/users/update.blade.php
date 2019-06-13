@@ -109,11 +109,20 @@
                             </div>
                         </div>
 
+<<<<<<< HEAD
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn-page btn-primary">
+                                        {{ __('Mettre à jour') }}
+                                    </button>
+                                </div>
+=======
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn-page">
                                     {{ __('Mettre à jour') }}
                                 </button>
+>>>>>>> 6b55e33a0217b53837986557034c42bb4bba54d4
                             </div>
                         </div>
                     </form>

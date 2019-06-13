@@ -110,6 +110,9 @@ class ProductsController extends Controller
             $request->image->move(public_path('images/products'), $filePath);
             $products['image'] = $filePath;
         }
+        else {
+            $products['image'] = 'wine-placeholder.png';
+        }
 
         $products['name'] = $request->input('name');
         $products['brand'] = $request->input('brand');
@@ -151,11 +154,11 @@ class ProductsController extends Controller
             'origin' => 'required|max:45',
             'size' => 'required|max:45',
             'varietal' => 'required|max:45',
-            'good_year' => 'required|boolean',
+            'good_year' => 'boolean',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
             'description' => 'required|max:255',
-            'stock_status' => 'required|boolean',
+            'stock_status' => 'boolean',
             'conditioning' => 'required|max:255',
             'ranking' => 'numeric|between:1,5',
             'alcohol_level' => 'required|numeric|between:0,50',
@@ -176,7 +179,7 @@ class ProductsController extends Controller
             $products['image'] = $filePath;
 
             $link = Wine::where('id', $id)->first()->value('image');
-            unlink(public_path('images/products/'.$link));
+            ($link == 'wine-placeholder.png') ? : unlink(public_path('images/products/'.$link));
         }
 
         $products['name'] = $request->input('name');
@@ -211,7 +214,7 @@ class ProductsController extends Controller
         unlink(public_path('images/products/'.$link));
 
         $product->promotions()->delete();
-        //$product->ratings()->delete();
+        $product->ratings()->delete();
         //$product->users()->delete();
         $product->foods()->delete();
 

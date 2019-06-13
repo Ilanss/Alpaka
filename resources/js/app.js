@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
+
+
 //appel de tous les composants
 Vue.component('hero-section', require('./components/hero/Hero.vue').default);
 Vue.component('navbar-section', require('./components/navbar/Navbar.vue').default);
@@ -30,7 +32,6 @@ Vue.component('login-form', require('./components/login/Login.vue').default);
 Vue.component('signup-form', require('./components/signUp/SignUp.vue').default);
 Vue.component('cart-list', require('./components/cart/Cart.vue').default);
 Vue.component('product-info', require('./components/productInfo/ProductInfo.vue').default);
-
 Vue.component('cover-section', require('./components/cover/Cover.vue').default);
 Vue.component('contact-section', require('./components/contact/Contact.vue').default);
 Vue.component('story-section', require('./components/story/Story.vue').default);

@@ -7,11 +7,23 @@
 
       <div class="col-lg-12">
         <product-info v-bind:product="{{$product}}" v-bind:country="{{$country}}" v-bind:winery="{{$winery}}" v-bind:category="{{$category}}" v-bind:promotions="{{$promotions}}" v-bind:ratings="{{$ratings}}" class="colsm-12"></product-info>
+        @if(auth()->user()->isAdmin())
+<a class="btn-page" type="submit" href="{{ URL::route('products.edit', $product->id) }}">Modifier le produit</a>
+            <form action="{{ route('products.destroy', $product->id)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <a class="btn-page" type="submit">Delete</a>
+            </form>
+
+@else
+
+@endif
       </div>
       
       <!-- /.col-lg-9 -->
-      <best-sellers v-bind:bestseller="{{$products}}"></best-sellers>
+      <best-sellers v-bind:bestseller="{{$products}}" ></best-sellers>
 <product-card></product-card>
+
     </div>
 </div>
 
