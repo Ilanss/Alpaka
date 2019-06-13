@@ -2,7 +2,6 @@
 -- Mon Jun  3 15:01:27 2019
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
--- Fichier de la team Alpaka pour importation SQL pour MYSQL PINGOUIN
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -150,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `alpaka`.`wines` (
   `conditioning` VARCHAR(45) NOT NULL COMMENT '1,carton de 6,carton de 12...',
   `ranking` INT NULL,
   `alcohol_level` FLOAT NOT NULL,
-  `image` VARCHAR(60) NOT NULL,
+  `image` VARCHAR(60) NULL,
   `slug` VARCHAR(45) NOT NULL,
   `delivery_delay` VARCHAR(10) NOT NULL,
   `updated_at` DATE NULL,
