@@ -11,7 +11,7 @@ export default {
             tva: "7.7",
             image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
             fields: [
-                'id',
+                'index',
                 //A regular column
                 'image',
                 // A column that needs custom formatting
@@ -50,8 +50,12 @@ export default {
     mounted() {
         console.log("cart mounted");
         //add products in cart
-        Vue.set(this.items, 0, JSON.parse(localStorage.getItem('cart')));
-
+        var cart = JSON.parse(localStorage.getItem('cart'));
+        let i = 0;
+        while (i < cart.length) {
+            Vue.set(this.items, i, cart[i]);
+            i++;
+        }
     },
 
     computed: {

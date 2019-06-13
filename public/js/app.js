@@ -1999,7 +1999,7 @@ __webpack_require__.r(__webpack_exports__);
       promo: "",
       tva: "7.7",
       image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
-      fields: ['id', //A regular column
+      fields: ['index', //A regular column
       'image', // A column that needs custom formatting
       {
         key: 'name',
@@ -2031,7 +2031,13 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     console.log("cart mounted"); //add products in cart
 
-    Vue.set(this.items, 0, JSON.parse(localStorage.getItem('cart')));
+    var cart = JSON.parse(localStorage.getItem('cart'));
+    var i = 0;
+
+    while (i < cart.length) {
+      Vue.set(this.items, i, cart[i]);
+      i++;
+    }
   },
   computed: {
     rows: function rows() {
@@ -2365,31 +2371,26 @@ __webpack_require__.r(__webpack_exports__);
     onSubmit: function onSubmit(evt) {
       evt.preventDefault();
       var data = {
-        id: this.product.id,
+        wine_id: this.product.id,
         name: this.product.name,
         prix: this.product.price_wine,
         quantity: this.form.quantity,
         description: this.product.description.slice(0, 150),
-        image: this.product_image
+        image: this.product_image //alert(JSON.stringify(data))
+        //add in localstorage -- doesn't work
+
+        /*const cart = new JsonStorage({
+            name: "cart",
+            eventName: "cart-change"
+        }); */
+        //cart.addItem({ data });
+        //localStorage.setItem(data.id, JSON.stringify(data));
+
       };
-      alert(JSON.stringify(data)); //add in localstorage -- doesn't work
-
-      /*const cart = new JsonStorage({
-          name: "cart",
-          eventName: "cart-change"
-      }); */
-      //cart.addItem({ data });
-      //localStorage.setItem(data.id, JSON.stringify(data));
-
       var cart = [];
-      var isNull = JSON.parse(localStorage.getItem("cart") || "[]");
-
-      if (isNull === null) {
-        console.log("vuoto");
-        localStorage["cart"] = JSON.stringify(data);
-      }
-
-      localStorage["cart"] = JSON.stringify(data);
+      cart = JSON.parse(localStorage.getItem("cart") || "[]");
+      cart.push(data);
+      localStorage["cart"] = JSON.stringify(cart);
     }
   }
 });
@@ -69480,6 +69481,7 @@ var render = function() {
                 "per-page": _vm.perPage,
                 "current-page": _vm.currentPage,
                 items: _vm.items,
+                "primary-key": "index",
                 responsive: "",
                 flex: "",
                 striped: "",
@@ -69517,7 +69519,7 @@ var render = function() {
                           staticClass: "item__delete",
                           on: {
                             click: function($event) {
-                              return _vm.delateEvent(_vm.id)
+                              return _vm.delateEvent(_vm.items.id)
                             }
                           }
                         },

@@ -30,14 +30,14 @@ export default {
         onSubmit(evt) {
             evt.preventDefault()
             var data = {
-                id: this.product.id,
-                name: this.product.name,
-                prix: this.product.price_wine,
-                quantity: this.form.quantity,
-                description: this.product.description.slice(0, 150),
-                image: this.product_image
-            }
-            alert(JSON.stringify(data))
+                    wine_id: this.product.id,
+                    name: this.product.name,
+                    prix: this.product.price_wine,
+                    quantity: this.form.quantity,
+                    description: this.product.description.slice(0, 150),
+                    image: this.product_image
+                }
+                //alert(JSON.stringify(data))
                 //add in localstorage -- doesn't work
                 /*const cart = new JsonStorage({
                     name: "cart",
@@ -45,15 +45,10 @@ export default {
                 }); */
                 //cart.addItem({ data });
                 //localStorage.setItem(data.id, JSON.stringify(data));
-
             var cart = [];
-            var isNull = JSON.parse(localStorage.getItem("cart") || "[]");
-            if (isNull === null) {
-                console.log("vuoto")
-                localStorage["cart"] = JSON.stringify(data);
-
-            }
-            localStorage["cart"] = (JSON.stringify(data));
+            cart = JSON.parse(localStorage.getItem("cart") || "[]");
+            cart.push(data);
+            localStorage["cart"] = (JSON.stringify(cart));
         },
     },
 }

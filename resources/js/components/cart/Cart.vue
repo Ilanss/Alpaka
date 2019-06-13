@@ -14,6 +14,7 @@
           :per-page="perPage"
           :current-page="currentPage"
           :items="items"
+          primary-key = "index"
           responsive
           flex
           striped
@@ -33,7 +34,7 @@
 
           <template slot="delete" slot-scope="data">
             <!-- delete BUTTON doesn't works-->
-            <b-button class="item__delete" @click="delateEvent(id)">delete</b-button>
+            <b-button class="item__delete" @click="delateEvent(items.id)">delete</b-button>
           </template>
         </b-table>
 
