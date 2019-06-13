@@ -13,7 +13,7 @@
             <form action="{{ route('products.destroy', $product->id)}}" method="post">
                 @csrf
                 @method('DELETE')
-                <a class="btn-page" type="submit">Delete</a>
+                <button  class="btn-page" type="submit">Delete</button >
             </form>
 
 @else
