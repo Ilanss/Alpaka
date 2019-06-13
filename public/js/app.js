@@ -70532,7 +70532,11 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("a", { attrs: { href: "https://www.instagram.com/" } }, [
                 _c("i", { staticClass: "fab fa-instagram instagram" })
-              ])
+              ]),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "#FR" } }, [_vm._v("FR")]),
+              _c("a", { attrs: { href: "#DE" } }, [_vm._v("DE")]),
+              _c("a", { attrs: { href: "#EN" } }, [_vm._v("EN")])
             ])
           ])
         ])

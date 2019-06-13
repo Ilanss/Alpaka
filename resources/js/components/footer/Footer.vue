@@ -134,7 +134,9 @@
                             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.instagram.com/"><i class="fab fa-instagram instagram"></i></a>
+                        <a href="#FR">FR</a><a href="#DE">DE</a><a href="#EN">EN</a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
