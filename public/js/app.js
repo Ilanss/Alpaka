@@ -2389,10 +2389,13 @@ __webpack_require__.r(__webpack_exports__);
         //localStorage.setItem(data.id, JSON.stringify(data));
 
       };
-      var cart = [];
-      cart = JSON.parse(localStorage.getItem("cart") || "[]");
-      cart.push(data);
-      localStorage["cart"] = JSON.stringify(cart);
+
+      if (this.product.stock_status == 1) {
+        var cart = [];
+        cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        cart.push(data);
+        localStorage["cart"] = JSON.stringify(cart);
+      } else {}
     },
     countDownChanged: function countDownChanged(dismissCountDown) {
       this.dismissCountDown = dismissCountDown;
@@ -71129,6 +71132,8 @@ var render = function() {
                 "div",
                 { staticClass: "productInfo__price" },
                 [
+                  _c("hr"),
+                  _vm._v(" "),
                   _c("h2", [_vm._v("CHF " + _vm._s(_vm.product.price_wine))]),
                   _vm._v(" "),
                   _c("p", [
@@ -71152,91 +71157,136 @@ var render = function() {
                 2
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "productInfo__review" }, [
-                _c("p", [_vm._v("Notes du vin :")]),
-                _vm._v(" "),
-                _vm.product.ranking == 0
-                  ? _c("div", { staticClass: "review__0" }, [
-                      _c("i", { staticClass: "fas fa-star" }),
+              _c(
+                "div",
+                { staticClass: "productInfo__review" },
+                [
+                  _c(
+                    "b-row",
+                    [
+                      _c("b-col", { attrs: { cols: "3" } }, [
+                        _c("p", { staticClass: "info_text" }, [
+                          _vm._v("Notes du vin :")
+                        ])
+                      ]),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm.product.ranking == 0
+                        ? _c("div", { staticClass: "rew review__0" }, [
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" })
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm.product.ranking == 1
+                        ? _c("div", { staticClass: "rew review__2" }, [
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" })
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" })
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.product.ranking == 1
-                  ? _c("div", { staticClass: "review__2" }, [
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
+                      _vm.product.ranking == 2
+                        ? _c("div", { staticClass: "rew review__2" }, [
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" })
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm.product.ranking == 3
+                        ? _c("div", { staticClass: "rew review__3" }, [
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" })
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
+                      _vm.product.ranking == 4
+                        ? _c("div", { staticClass: "rew review__4" }, [
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", { staticClass: "fas fa-star" })
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" })
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.product.ranking == 2
-                  ? _c("div", { staticClass: "review__2" }, [
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" })
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.product.ranking == 3
-                  ? _c("div", { staticClass: "review__3" }, [
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" })
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.product.ranking == 4
-                  ? _c("div", { staticClass: "review__4" }, [
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star" })
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.product.ranking == 5
-                  ? _c("div", { staticClass: "review__5" }, [
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" }),
-                      _vm._v(" "),
-                      _c("i", { staticClass: "fas fa-star fa-star-active" })
-                    ])
-                  : _vm._e()
-              ]),
+                      _vm.product.ranking == 5
+                        ? _c("div", { staticClass: "rew review__5" }, [
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            }),
+                            _vm._v(" "),
+                            _c("i", {
+                              staticClass: "fas fa-star fa-star-active"
+                            })
+                          ])
+                        : _vm._e()
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
               _vm._v(" "),
               _c(
                 "div",
@@ -71265,22 +71315,43 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _c(
-                        "b-alert",
-                        {
-                          attrs: {
-                            show: _vm.dismissCountDown,
-                            variant: "success"
-                          },
-                          on: {
-                            dismissed: function($event) {
-                              _vm.dismissCountDown = 0
+                      _vm.product.stock_status == 1
+                        ? _c(
+                            "b-alert",
+                            {
+                              attrs: {
+                                show: _vm.dismissCountDown,
+                                variant: "success"
+                              },
+                              on: {
+                                dismissed: function($event) {
+                                  _vm.dismissCountDown = 0
+                                },
+                                "dismiss-count-down": _vm.countDownChanged
+                              }
                             },
-                            "dismiss-count-down": _vm.countDownChanged
-                          }
-                        },
-                        [_vm._v("Vin ajouté au panier")]
-                      ),
+                            [_vm._v("Vin ajouté au panier")]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.product.stock_status == 0
+                        ? _c(
+                            "b-alert",
+                            {
+                              attrs: {
+                                show: _vm.dismissCountDown,
+                                variant: "warning"
+                              },
+                              on: {
+                                dismissed: function($event) {
+                                  _vm.dismissCountDown = 0
+                                },
+                                "dismiss-count-down": _vm.countDownChanged
+                              }
+                            },
+                            [_vm._v("Ce vin est pas disponible, désolé")]
+                          )
+                        : _vm._e(),
                       _vm._v(" "),
                       _c(
                         "b-button",

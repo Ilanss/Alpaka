@@ -47,10 +47,13 @@ export default {
                 }); */
                 //cart.addItem({ data });
                 //localStorage.setItem(data.id, JSON.stringify(data));
-            var cart = [];
-            cart = JSON.parse(localStorage.getItem("cart") || "[]");
-            cart.push(data);
-            localStorage["cart"] = (JSON.stringify(cart));
+            if (this.product.stock_status == 1) {
+                var cart = [];
+                cart = JSON.parse(localStorage.getItem("cart") || "[]");
+                cart.push(data);
+                localStorage["cart"] = (JSON.stringify(cart));
+            } else {}
+
         },
         countDownChanged(dismissCountDown) {
             this.dismissCountDown = dismissCountDown

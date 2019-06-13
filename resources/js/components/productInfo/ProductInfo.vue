@@ -15,6 +15,7 @@
             <h3>{{product.brand}}</h3>
           </div>
           <div class="productInfo__price">
+            <hr></hr>
             <h2>CHF {{product.price_wine}}</h2>
             <p>Livraison dans les {{product.delivery_delay}} jours</p>
             <p
@@ -23,48 +24,52 @@
             >{{promotion.discount}} CHF de rabais jusqu'au {{promotion.date_end}}</p>
           </div>
           <div class="productInfo__review">
-            <p>Notes du vin :</p>
-            <div class="review__0" v-if="product.ranking == 0">
+            <b-row>
+              <b-col cols="3">
+            <p class="info_text">Notes du vin :</p>
+            </b-col>
+            <div class="rew review__0" v-if="product.ranking == 0">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="review__2" v-if="product.ranking == 1">
+            <div class="rew review__2" v-if="product.ranking == 1">
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="review__2" v-if="product.ranking == 2">
+            <div class="rew review__2" v-if="product.ranking == 2">
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="review__3" v-if="product.ranking == 3">
+            <div class="rew review__3" v-if="product.ranking == 3">
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="review__4" v-if="product.ranking == 4">
+            <div class="rew review__4" v-if="product.ranking == 4">
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="review__5" v-if="product.ranking == 5">
+            <div class="rew review__5" v-if="product.ranking == 5">
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
               <i class="fas fa-star fa-star-active"></i>
             </div>
+            </b-row>
           </div>
           <div class="productInfo__quantity">
             <b-form @submit="onSubmit">
@@ -83,7 +88,15 @@
                 variant="success"
                 @dismissed="dismissCountDown=0"
                 @dismiss-count-down="countDownChanged"
+                v-if="product.stock_status == 1"
               >Vin ajouté au panier</b-alert>
+              <b-alert
+                :show="dismissCountDown"
+                variant="warning"
+                @dismissed="dismissCountDown=0"
+                @dismiss-count-down="countDownChanged"
+                v-if="product.stock_status == 0"
+              >Ce vin est pas disponible, désolé</b-alert>
               <b-button class="producInfo__submit" type="submit" @click="showAlert">Ajouter au Panier</b-button>
             </b-form>
             <b-form-invalid-feedback
