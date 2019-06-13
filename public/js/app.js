@@ -34810,7 +34810,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".order__by[data-v-9b7b0f30] {\r\n    background-color: white;\r\n    padding: 10px;\n}\n.fas[data-v-9b7b0f30] {\r\n    color: #1D1D1D;\r\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30] {\r\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\r\n    color: #5B022E;\n}\r\n", ""]);
+exports.push([module.i, ".order__by[data-v-9b7b0f30] {\r\n    background-color: white;\r\n    padding: 10px;\r\n    margin-top: 40px !important;\n}\n.fas[data-v-9b7b0f30] {\r\n    color: #1D1D1D;\r\n    padding-left: 20px;\n}\n.fa-th[data-v-9b7b0f30] {\r\n    padding-left: 0px !important;\n}\n.fas[data-v-9b7b0f30]:hover {\r\n    color: #5B022E;\n}\n.selected[data-v-9b7b0f30] {\r\n    color: #5B022E;\n}", ""]);
 
 // exports
 
@@ -71053,7 +71053,7 @@ var render = function() {
       { staticClass: "order__by__icons col-sm-8" },
       [
         _c("b-link", { attrs: { href: "#square" } }, [
-          _c("i", { staticClass: "fas fa-th fa-2x" })
+          _c("i", { staticClass: "fas fa-th fa-2x selected" })
         ]),
         _vm._v(" "),
         _c("b-link", { attrs: { href: "#list" } }, [
