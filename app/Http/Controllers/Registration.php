@@ -59,7 +59,7 @@ class Registration extends Controller
 
             Auth::login($user, true);
 
-            return redirect('/');
+            return redirect('/')->with('success', 'Vous êtes bien inscrit et connecté!');
         }
     }
 }
