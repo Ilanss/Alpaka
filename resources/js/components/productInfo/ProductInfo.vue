@@ -78,7 +78,13 @@
                 :state="validation_quantity"
                 required
               ></b-form-input>
-              <b-button class="producInfo__submit" type="submit">Ajouter au Panier</b-button>
+              <b-alert
+                :show="dismissCountDown"
+                variant="success"
+                @dismissed="dismissCountDown=0"
+                @dismiss-count-down="countDownChanged"
+              >Vin ajouté au panier</b-alert>
+              <b-button class="producInfo__submit" type="submit" @click="showAlert">Ajouter au Panier</b-button>
             </b-form>
             <b-form-invalid-feedback
               :state="validation_quantity"

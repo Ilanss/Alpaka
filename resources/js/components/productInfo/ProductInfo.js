@@ -11,6 +11,8 @@ export default {
             form: {
                 quantity: "1",
             },
+            dismissSecs: 3,
+            dismissCountDown: 0
         }
     },
     computed: {
@@ -49,6 +51,12 @@ export default {
             cart = JSON.parse(localStorage.getItem("cart") || "[]");
             cart.push(data);
             localStorage["cart"] = (JSON.stringify(cart));
+        },
+        countDownChanged(dismissCountDown) {
+            this.dismissCountDown = dismissCountDown
+        },
+        showAlert() {
+            this.dismissCountDown = this.dismissSecs
         },
     },
 }

@@ -2353,7 +2353,9 @@ __webpack_require__.r(__webpack_exports__);
     return {
       form: {
         quantity: "1"
-      }
+      },
+      dismissSecs: 3,
+      dismissCountDown: 0
     };
   },
   computed: {
@@ -2391,6 +2393,12 @@ __webpack_require__.r(__webpack_exports__);
       cart = JSON.parse(localStorage.getItem("cart") || "[]");
       cart.push(data);
       localStorage["cart"] = JSON.stringify(cart);
+    },
+    countDownChanged: function countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert: function showAlert() {
+      this.dismissCountDown = this.dismissSecs;
     }
   }
 });
@@ -70956,7 +70964,12 @@ var render = function() {
                       staticClass: "my-2 my-sm-0 btn cart",
                       attrs: { size: "sm", type: "submit" }
                     },
-                    [_c("i", { staticClass: "fas fa-shopping-cart" })]
+                    [
+                      _c("i", {
+                        staticClass: "fas fa-shopping-cart",
+                        attrs: { "data-count": "3" }
+                      })
+                    ]
                   )
                 ],
                 1
@@ -71253,10 +71266,28 @@ var render = function() {
                       }),
                       _vm._v(" "),
                       _c(
+                        "b-alert",
+                        {
+                          attrs: {
+                            show: _vm.dismissCountDown,
+                            variant: "success"
+                          },
+                          on: {
+                            dismissed: function($event) {
+                              _vm.dismissCountDown = 0
+                            },
+                            "dismiss-count-down": _vm.countDownChanged
+                          }
+                        },
+                        [_vm._v("Vin ajouté au panier")]
+                      ),
+                      _vm._v(" "),
+                      _c(
                         "b-button",
                         {
                           staticClass: "producInfo__submit",
-                          attrs: { type: "submit" }
+                          attrs: { type: "submit" },
+                          on: { click: _vm.showAlert }
                         },
                         [_vm._v("Ajouter au Panier")]
                       )
