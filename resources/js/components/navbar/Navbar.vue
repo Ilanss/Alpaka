@@ -21,7 +21,7 @@
                 <b-button size="sm" class="my-2 my-sm-0 btn user" type="submit"><i class="fas fa-user"></i></b-button>
             </form>
             <form v-bind:action="this.cart">
-            <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i class="fas fa-shopping-cart"></i></b-button>
+            <b-button size="sm" class="my-2 my-sm-0 btn cart" type="submit"><i data-count="3" class="fas fa-shopping-cart"></i></b-button>
             </form>
         <b-nav-form method="get" v-bind:action="this.search">
             

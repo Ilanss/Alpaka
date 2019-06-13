@@ -1,5 +1,7 @@
+import JsonStorage from "../../LocalStorage.js"; //import localstorage 4 cart
+
 export default {
-    props: ['product','country', 'winery', 'category', 'promotions','ratings'],
+    props: ['product', 'country', 'winery', 'category', 'promotions', 'ratings'],
 
     mounted() {
         console.log("ProductInfo mounted");
@@ -8,8 +10,9 @@ export default {
         return {
             form: {
                 quantity: "1",
-            }
-
+            },
+            dismissSecs: 3,
+            dismissCountDown: 0
         }
     },
     computed: {
@@ -29,18 +32,34 @@ export default {
         onSubmit(evt) {
             evt.preventDefault()
             var data = {
-                    wineId: this.wineId,
-                    userId: this.userId,
+                    wine_id: this.product.id,
+                    name: this.product.name,
+                    prix: this.product.price_wine,
                     quantity: this.form.quantity,
+                    description: this.product.description.slice(0, 150),
+                    image: this.product_image
                 }
-                /*data.push(this.wineId);
-                data.push(this.userId);
-                data.push(this.form.quantity); */
-                //alert(console.log(data))
-            alert(JSON.stringify(data))
-                /*---
-                    mettre ici le return pour envoyer les données au DB
-                ---*/
+                //alert(JSON.stringify(data))
+                //add in localstorage -- doesn't work
+                /*const cart = new JsonStorage({
+                    name: "cart",
+                    eventName: "cart-change"
+                }); */
+                //cart.addItem({ data });
+                //localStorage.setItem(data.id, JSON.stringify(data));
+            if (this.product.stock_status == 1) {
+                var cart = [];
+                cart = JSON.parse(localStorage.getItem("cart") || "[]");
+                cart.push(data);
+                localStorage["cart"] = (JSON.stringify(cart));
+            } else {}
+
+        },
+        countDownChanged(dismissCountDown) {
+            this.dismissCountDown = dismissCountDown
+        },
+        showAlert() {
+            this.dismissCountDown = this.dismissSecs
         },
     },
 }
