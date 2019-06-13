@@ -7,6 +7,7 @@
 
       <div class="col-lg-12">
         <product-info v-bind:product="{{$product}}" v-bind:country="{{$country}}" v-bind:winery="{{$winery}}" v-bind:category="{{$category}}" v-bind:promotions="{{$promotions}}" v-bind:ratings="{{$ratings}}" class="colsm-12"></product-info>
+        @if (auth()->check())
         @if(auth()->user()->isAdmin())
 <a class="btn-page" type="submit" href="{{ URL::route('products.edit', $product->id) }}">Modifier le produit</a>
             <form action="{{ route('products.destroy', $product->id)}}" method="post">
@@ -17,6 +18,7 @@
 
 @else
 
+@endif
 @endif
       </div>
       

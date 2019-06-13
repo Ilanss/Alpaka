@@ -2,12 +2,16 @@
 -- Mon Jun  3 15:01:27 2019
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
--- Fichier de la team Alpaka pour importation SQL pour MYSQL PINGOUIN
+-- Fichier de la team Alpaka pour importation SQL pour MYSQL en local
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
+-- -----------------------------------------------------
+-- Schema alpaka
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `alpaka` ;
 
 -- -----------------------------------------------------
 -- Schema alpaka
@@ -18,7 +22,7 @@ USE `alpaka` ;
 -- -----------------------------------------------------
 -- Table `alpaka`.`users`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`users` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -43,7 +47,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`countries`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`countries` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`countries` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -59,6 +63,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`npas`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `alpaka`.`npas` ;
+
 CREATE TABLE IF NOT EXISTS `alpaka`.`npas` (
   `npa_id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(55) NOT NULL,
@@ -72,7 +78,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`payments`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`payments` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`payments` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -93,7 +99,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`wineries`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`wineries` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`wineries` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -115,7 +121,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`categories`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`categories` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`categories` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -129,7 +135,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`wines`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`wines` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`wines` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -176,7 +182,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`promotions`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`promotions` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`promotions` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -202,7 +208,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`ratings`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`ratings` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`ratings` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -226,7 +232,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`foods`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`foods` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`foods` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -240,7 +246,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`wines_with_foods`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`wines_with_foods` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`wines_with_foods` (
   `wine_id` INT NOT NULL,
@@ -261,7 +267,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`posts`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`posts` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`posts` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -283,7 +289,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`comments`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`comments` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`comments` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -307,7 +313,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`carts_items`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`carts_items` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`carts_items` (
   `wine_id` INT NOT NULL,
@@ -333,7 +339,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`addresses`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`addresses` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`addresses` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -366,7 +372,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`orders`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`orders` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`orders` (
   `id` INT NOT NULL AUTO_INCREMENT COMMENT 'bill',
@@ -399,7 +405,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `alpaka`.`orders_items`
 -- -----------------------------------------------------
-
+DROP TABLE IF EXISTS `alpaka`.`orders_items` ;
 
 CREATE TABLE IF NOT EXISTS `alpaka`.`orders_items` (
   `order_id` INT NOT NULL,
