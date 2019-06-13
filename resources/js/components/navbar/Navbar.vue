@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="danger" variant="danger" class="navbar sticky-top">
-    <b-navbar-brand href="#" class="navbar-brand">Gazzar</b-navbar-brand>
+    <b-navbar-brand v-bind:href="this.home" class="navbar-brand">Gazzar</b-navbar-brand>
       <!-- Center aligned nav items -->
     <b-navbar-toggle target="nav-collapse" class="navbar-toggle">
         <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="navbar-nav">
-          <b-nav-item v-bind:href="this.home">Accueil </b-nav-item>
+          <b-nav-item v-bind:href="this.home +'#nav-collapse'">Accueil </b-nav-item>
           <b-nav-item v-bind:href="this.catalogue">Catalogue</b-nav-item>
           <b-nav-item v-bind:href="this.blog">Blog</b-nav-item>
           <b-nav-item v-bind:href="this.about">À propos</b-nav-item>
