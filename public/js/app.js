@@ -2382,14 +2382,14 @@ __webpack_require__.r(__webpack_exports__);
       //localStorage.setItem(data.id, JSON.stringify(data));
 
       var cart = [];
-      var isNull = JSON.parse(localStorage.getItem("cart"));
+      var isNull = JSON.parse(localStorage.getItem("cart") || "[]");
 
       if (isNull === null) {
         console.log("vuoto");
-        localStorage.setItem("cart", JSON.stringify(data));
+        localStorage["cart"] = JSON.stringify(data);
       }
 
-      cart.push(JSON.stringify(data));
+      localStorage["cart"] = JSON.stringify(data);
     }
   }
 });
@@ -71375,7 +71375,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("b-list-group-item", [
                         _vm._v(
-                          "Déscritpion:  " + _vm._s(_vm.product.description)
+                          "Déscritpion: " + _vm._s(_vm.product.description)
                         )
                       ])
                     ],

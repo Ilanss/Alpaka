@@ -114,7 +114,7 @@
               >Millesimé: {{product.date_production}}</b-list-group-item>
               <b-list-group-item>Note: {{product.ranking}}</b-list-group-item>
               <b-list-group-item>Degré d'alcool: {{product.alcohol_level}}</b-list-group-item>
-              <b-list-group-item>Déscritpion:  {{product.description}}</b-list-group-item>
+              <b-list-group-item>Déscritpion: {{product.description}}</b-list-group-item>
             </b-list-group>
           </b-collapse>
           <!-- Commentaires -->

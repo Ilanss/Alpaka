@@ -47,13 +47,13 @@ export default {
                 //localStorage.setItem(data.id, JSON.stringify(data));
 
             var cart = [];
-            var isNull = JSON.parse(localStorage.getItem("cart"));
+            var isNull = JSON.parse(localStorage.getItem("cart") || "[]");
             if (isNull === null) {
                 console.log("vuoto")
-                localStorage.setItem("cart", JSON.stringify(data));
+                localStorage["cart"] = JSON.stringify(data);
 
             }
-            cart.push(JSON.stringify(data));
+            localStorage["cart"] = (JSON.stringify(data));
         },
     },
 }
