@@ -19,22 +19,22 @@ body {
     background-color: #5B022E;
 }
 
-.btn{
+.btn {
+    background-color: #5B022E !important;
+}
 
-    background-color: #5b022e !important;
+.btnHero {
+    transition: 0.5s;
 }
-.btn:hover{
-    text-decoration: underline !important;
-    background-color: #5b022e !important;
-}
+
 
 /* Large devices (desktops, 992px and up)*/
+
 @media (min-width: 992px) {
     .btn {
         background-color: #5B022E;
         margin: 60px;
     }
-
     .arrow {
         width: 6vmin;
         height: 6vmin;
@@ -43,7 +43,6 @@ body {
         left: 48.5%;
         transform: rotate(-225deg);
     }
-
     div.arrow::before {
         content: '';
         width: 100%;
@@ -55,13 +54,11 @@ body {
         display: block;
         transform-origin: 100% 0;
     }
-
     div.arrow:hover::after {
         transform: rotate(45deg);
         border-color: #5F022E;
         height: 120%;
     }
-
     div.arrow:hover::before {
         border-color: #5F022E;
         transform: scale(0.8);
@@ -76,7 +73,6 @@ body {
         -o-transform: translatey(-10px);
         transform: translatey(-10px);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translatey(0);
@@ -94,7 +90,6 @@ body {
         -o-transform: translatey(-10px);
         transform: translatey(-10px);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translatey(0);
@@ -112,7 +107,6 @@ body {
         -o-transform: translatey(-10px);
         transform: translatey(-10px);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translatey(0);
@@ -137,13 +131,14 @@ body {
     animation-duration: 2s;
 }
 
+
 /*Small devices (landscape phones, 320px and up)*/
+
 @media (max-width: 991px) {
     .btn {
         background-color: #5B022E;
         margin-top: 30px;
     }
-
     .arrow {
         width: 6vmin;
         height: 6vmin;
@@ -152,7 +147,6 @@ body {
         left: 48.5%;
         transform: rotate(-225deg);
     }
-
     div.arrow::before {
         content: '';
         width: 100%;
@@ -164,13 +158,11 @@ body {
         display: block;
         transform-origin: 100% 0;
     }
-
     div.arrow:hover::after {
         transform: rotate(45deg);
         border-color: #5F022E;
         height: 120%;
     }
-
     div.arrow:hover::before {
         border-color: #5F022E;
         transform: scale(0.8);

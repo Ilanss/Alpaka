@@ -2,8 +2,8 @@
     <section>
         <div class="hero in-down">
             <div class="logo">
-                <img src="images/logo-vertical-fond-clair.png" alt="Logo Gazzar">
-                <p class="btnHero">
+                <img src="images/logo-vertical-fond-clair.png" alt="Logo Gazzar" class="animated fadeInUp">
+                <p class="btnHero animated fadeIn">
                     <a class="btn btn-primary btn-lg" href="#promo" v-smooth-scroll role="button">Découvrez nos vins</a>
                 </p>
             </div>
