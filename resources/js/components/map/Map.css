@@ -16,6 +16,9 @@ h1 {
 p {
     line-height: 2.5rem;
 }
+section{
+max-height: 690px !important;
+}
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {

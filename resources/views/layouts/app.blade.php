@@ -41,9 +41,9 @@
         @endif
         <!--
       include('includes.secondary-navbar') -->
-        <main>
+        
             @yield('content')
-        </main>
+        
         @include('includes.footer')
     </div>
 
