@@ -1,18 +1,25 @@
 .cart__promo {
     width: 40%;
 }
-.btn{
 
+.btn {
     background-color: #5b022e !important;
 }
-.btn:hover{
+
+.btn:hover {
     text-decoration: underline !important;
 }
+
+
 /* Large devices (desktops, 992px and up)*/
+
 @media (min-width: 992px) {
- div.cart{
-    margin-left: 80px !important;
-    margin-right: 80px !important;
- }
-    
+    div.cart {
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
+}
+
+.cart {
+    margin-top: 30px !important;
 }

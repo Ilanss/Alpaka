@@ -1999,24 +1999,27 @@ __webpack_require__.r(__webpack_exports__);
       promo: "",
       tva: "7.7",
       image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=337&q=80",
-      fields: ['index', //A regular column
+      fields: ['id', //A regular column
       'image', // A column that needs custom formatting
       {
         key: 'name',
-        label: 'Item name'
+        label: 'Nom'
       }, // A regular column
-      'quantity', // A regular column
+      'quantité', // A regular column
       'prix', // A regular column
       'description', //Item total prix method
       {
         key: 'itemTotal',
-        label: 'Item total',
+        label: 'Total',
         formatter: function formatter(value, key, item) {
           var number = item.quantity * item.prix;
           return number.toFixed(2);
         }
       }, //delete button
-      'delete'],
+      {
+        key: 'delete',
+        label: 'Supprimer'
+      }],
       //Wine structure --> put here Wine data .json
       items: [//{ "id": 1, "name": "Château Ausone - 2016", "prix": 850, "quantity": "1" },
 
@@ -34617,7 +34620,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".cart__promo[data-v-61043394] {\r\n    width: 40%;\n}\n.btn[data-v-61043394]{\r\n\r\n    background-color: #5b022e !important;\n}\n.btn[data-v-61043394]:hover{\r\n    text-decoration: underline !important;\n}\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\ndiv.cart[data-v-61043394]{\r\n    margin-left: 80px !important;\r\n    margin-right: 80px !important;\n}\n}", ""]);
+exports.push([module.i, ".cart__promo[data-v-61043394] {\r\n    width: 40%;\n}\n.btn[data-v-61043394] {\r\n    background-color: #5b022e !important;\n}\n.btn[data-v-61043394]:hover {\r\n    text-decoration: underline !important;\n}\r\n\r\n\r\n/* Large devices (desktops, 992px and up)*/\n@media (min-width: 992px) {\ndiv.cart[data-v-61043394] {\r\n        margin-left: 80px !important;\r\n        margin-right: 80px !important;\n}\n}\n.cart[data-v-61043394] {\r\n    margin-top: 30px !important;\n}", ""]);
 
 // exports
 
@@ -69534,7 +69537,7 @@ var render = function() {
                             }
                           }
                         },
-                        [_vm._v("delete")]
+                        [_vm._v("Supprimer")]
                       )
                     ]
                   }
@@ -69576,7 +69579,7 @@ var render = function() {
                           attrs: {
                             id: "input-1",
                             type: "",
-                            placeholder: "Enter promo code"
+                            placeholder: "Enter le code du coupon"
                           },
                           model: {
                             value: _vm.promo,
@@ -69593,7 +69596,7 @@ var render = function() {
                             staticClass: "form__submit",
                             attrs: { type: "submit", variant: "" }
                           },
-                          [_vm._v("Validate")]
+                          [_vm._v("Ajouter coupon")]
                         )
                       ],
                       1
@@ -69615,17 +69618,19 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _c("h2", [_vm._v("TVA - 7.7%: " + _vm._s(_vm.tvaTotal.toFixed(2)))]),
+        _c("h2", [
+          _vm._v("TVA - 7.7% CHF: " + _vm._s(_vm.tvaTotal.toFixed(2)))
+        ]),
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
-        _c("h3", [_vm._v("TOTAL: " + _vm._s(_vm.totalSum.toFixed(2)))])
+        _c("h3", [_vm._v("TOTAL CHF: " + _vm._s(_vm.totalSum.toFixed(2)))])
       ]),
       _vm._v(" "),
       _c(
         "b-button",
         { staticClass: "cart__submit", attrs: { type: "submit", variant: "" } },
-        [_vm._v("Order Validate")]
+        [_vm._v("Valider")]
       )
     ],
     1
