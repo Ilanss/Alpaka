@@ -1,3 +1,8 @@
+@extends('layouts.app')
+@section('content')
+<div class="container">
+
+<div class="row">
     @if (auth()->check())
         @if(auth()->user()->isAdmin())
             @if ($errors->any())
@@ -15,8 +20,8 @@
                     @method('PATCH')
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" name="name" value="{{$product->name}}"/>
-                </div>
-                <img src="{{ url("/images/products") }}/{{$product->image}}" />
+                </div> 
+                <img class="img-thumbnail w-50" src="{{ url("/images/products") }}/{{$product->image}}" />
                 <div class="form-group">
                     <label for="image">Image:</label>
                     <input type="file" name="image" id="image" multiple="multiple">
@@ -99,18 +104,16 @@
                     <input type="text" class="form-control" name="alcohol_level" value="{{$product->alcohol_level}}"/>
                 </div>
                 <div class="form-group">
-                    <label for="slug">Slug :</label>
-                    <input type="text" class="form-control" name="slug" value="{{$product->slug}}"/>
-                </div>
-                <div class="form-group">
                     <label for="delivery_delay">Delivery delay :</label>
                     <input type="text" class="form-control" name="delivery_delay_from" value="{{$product->delivery_delay_from}}"/>
                     <input type="text" class="form-control" name="delivery_delay_to" value="{{$product->delivery_delay_to}}"/>
                     
                 </div>
-                <button type="submit" class="btn btn-primary">Update Wine</button>
+                <button type="submit" class="btn-page">Update Wine</button>
             </form>
         @else
             <h2>Accès refusé</h2>
         @endif
     @endif
+    </div>
+    @endsection
