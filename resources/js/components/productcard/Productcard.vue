@@ -24,7 +24,7 @@
         :show="dismissCountDown"
         variant="warning"
         @dismissed="dismissCountDown=0"
-        @dismiss-count-down="countDownChanged"
+        @dismiss-count-down="countDownChanged" 
         v-if="item.stock_status == 0"
       >Ce vin est pas disponible, désolé</b-alert>
     </b-card>
