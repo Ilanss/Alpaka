@@ -17,7 +17,7 @@ export default {
                 // A column that needs custom formatting
                 { key: 'name', label: 'Nom' },
                 // A regular column
-                {key:'quantity', label:'Quantité'},
+                { key: 'quantity', label: 'Quantité' },
                 // A regular column
                 'prix',
                 // A regular column
@@ -82,9 +82,9 @@ export default {
         },
         delateEvent(id) {
             this.items.splice(id, 1);
-            this.saveCats();
+            this.saveCart();
         },
-        saveCats() {
+        saveCart() {
             localStorage.setItem('cart', this.items);
         }
     }

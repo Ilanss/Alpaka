@@ -2077,9 +2077,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     delateEvent: function delateEvent(id) {
       this.items.splice(id, 1);
-      this.saveCats();
+      this.saveCart();
     },
-    saveCats: function saveCats() {
+    saveCart: function saveCart() {
       localStorage.setItem('cart', this.items);
     }
   }
@@ -2390,16 +2390,7 @@ __webpack_require__.r(__webpack_exports__);
         prix: this.product.price_wine,
         quantity: this.form.quantity,
         description: this.product.description.slice(0, 150),
-        image: this.product_image //alert(JSON.stringify(data))
-        //add in localstorage -- doesn't work
-
-        /*const cart = new JsonStorage({
-            name: "cart",
-            eventName: "cart-change"
-        }); */
-        //cart.addItem({ data });
-        //localStorage.setItem(data.id, JSON.stringify(data));
-
+        image: this.product_image
       };
 
       if (this.product.stock_status == 1) {
@@ -2435,7 +2426,11 @@ __webpack_require__.r(__webpack_exports__);
     console.log("Productcard componenent mounted " + this.baseUrl);
   },
   data: function data() {
-    return {};
+    return {
+      dismissSecs: 3,
+      dismissCountDown: 0,
+      quantity: 1
+    };
   },
   methods: {
     getUrl: function getUrl() {
@@ -2445,8 +2440,31 @@ __webpack_require__.r(__webpack_exports__);
       window.location.href = this.baseUrl + "/product/" + slug;
       console.log("Productcard componenent mounted 2 " + this.baseUrl);
     },
-    wineAdd: function wineAdd(event) {
-      console.log("added in cart");
+    wineAdd: function wineAdd() {
+      //evt.preventDefault()
+      var data = {
+        wine_id: this.item.id,
+        name: this.item.name,
+        prix: this.item.price_wine,
+        quantity: this.quantity,
+        description: this.item.description.slice(0, 150),
+        image: this.item.image
+      };
+
+      if (this.item.stock_status == 1) {
+        var cart = [];
+        cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        cart.push(data);
+        localStorage["cart"] = JSON.stringify(cart);
+      } else {}
+
+      this.notshow = 0;
+    },
+    countDownChanged: function countDownChanged(dismissCountDown) {
+      this.dismissCountDown = dismissCountDown;
+    },
+    showAlert: function showAlert() {
+      this.dismissCountDown = this.dismissSecs;
     }
   }
 });
@@ -34840,7 +34858,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".product__add[data-v-14afb6d4] {\r\n    background-color: #5b022e !important;\n}\n.product__add[data-v-14afb6d4]:hover {\r\n    color: white !important;\r\n    text-decoration: underline;\n}\r\n", ""]);
+exports.push([module.i, ".product__add[data-v-14afb6d4] {\r\n    background-color: #5b022e !important;\n}\n.product__add[data-v-14afb6d4]:hover {\r\n    color: white !important;\r\n    text-decoration: underline;\n}\n.card[data-v-14afb6d4] {\r\n    margin: 0px !important;\n}\nbutton[data-v-14afb6d4] {\r\n    margin-bottom: 10px !important;\n}\n.col-8[data-v-14afb6d4] {\r\n    padding-right: 0px !important;\n}\n.col-4[data-v-14afb6d4] {\r\n    margin: 0px !important;\r\n    border: 0px !important;\r\n    padding-left: 0px !important;\n}", ""]);
 
 // exports
 
@@ -71715,55 +71733,125 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "test2" }, [
-    _c(
-      "div",
-      { staticClass: "test" },
-      [
-        _c(
-          "b-card",
-          {
-            staticClass: "mb-2 text-center",
-            staticStyle: { "max-width": "20rem" },
-            attrs: {
-              title: _vm.item.name,
-              "img-src": this.baseUrl + "/images/products/" + _vm.item.image,
-              "img-alt": "Cover",
-              "img-top": "",
-              tag: "article",
-              id: _vm.item.id
-            },
-            on: {
-              click: function($event) {
-                return _vm.winePreview(_vm.item.slug)
-              }
-            }
+  return _c(
+    "div",
+    { staticClass: "test" },
+    [
+      _c(
+        "b-card",
+        {
+          staticClass: "mb-2 text-center",
+          staticStyle: { "max-width": "20rem" },
+          attrs: {
+            title: _vm.item.name,
+            "img-src": this.baseUrl + "/images/products/" + _vm.item.image,
+            "img-alt": "Cover",
+            "img-top": "",
+            tag: "article",
+            id: _vm.item.id
           },
-          [
-            _c("b-card-text", { staticClass: "text-center" }, [
-              _vm._v(_vm._s(_vm.item.price_wine) + " CHF")
-            ]),
-            _vm._v(" "),
-            _c(
-              "b-button",
-              {
-                staticClass: "product__add",
-                attrs: { variant: "" },
-                on: {
-                  click: function($event) {
-                    return _vm.winePreview(_vm.item.slug)
+          on: {
+            click: function($event) {
+              return _vm.winePreview(_vm.item.slug)
+            }
+          }
+        },
+        [
+          _c("b-card-text", { staticClass: "text-center" }, [
+            _vm._v(_vm._s(_vm.item.price_wine) + " CHF")
+          ]),
+          _vm._v(" "),
+          _vm.item.stock_status == 1
+            ? _c(
+                "b-alert",
+                {
+                  attrs: { show: _vm.dismissCountDown, variant: "success" },
+                  on: {
+                    dismissed: function($event) {
+                      _vm.dismissCountDown = 0
+                    },
+                    "dismiss-count-down": _vm.countDownChanged
                   }
+                },
+                [_vm._v("Vin ajouté au panier")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.item.stock_status == 0
+            ? _c(
+                "b-alert",
+                {
+                  attrs: { show: _vm.dismissCountDown, variant: "warning" },
+                  on: {
+                    dismissed: function($event) {
+                      _vm.dismissCountDown = 0
+                    },
+                    "dismiss-count-down": _vm.countDownChanged
+                  }
+                },
+                [_vm._v("Ce vin est pas disponible, désolé")]
+              )
+            : _vm._e()
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "b-row",
+        [
+          _c(
+            "b-col",
+            { attrs: { cols: "8" } },
+            [
+              _c(
+                "b-button",
+                {
+                  staticClass: "product__add",
+                  attrs: { variant: "" },
+                  on: {
+                    click: [
+                      function($event) {
+                        return _vm.wineAdd()
+                      },
+                      _vm.showAlert
+                    ]
+                  }
+                },
+                [_vm._v("Ajouter au panier")]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "b-col",
+            { attrs: { cols: "4" } },
+            [
+              _c("b-form-input", {
+                attrs: {
+                  value: "1",
+                  type: "number",
+                  min: "1",
+                  max: "99",
+                  step: "1"
+                },
+                model: {
+                  value: _vm.quantity,
+                  callback: function($$v) {
+                    _vm.quantity = $$v
+                  },
+                  expression: "quantity"
                 }
-              },
-              [_vm._v("Voir les info")]
-            )
-          ],
-          1
-        )
-      ],
-      1
-    )
-  ])
+              })
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -87240,8 +87328,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\adrie\OneDrive\Bureau\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\teoco\Documents\HEIG-VD\PROJET_ART\Alpaka\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\teoco\Documents\HEIG-VD\PROJET_ART\Alpaka\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
