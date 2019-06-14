@@ -12,7 +12,7 @@
                     </ul>
                 </div><br/>
             @endif
-            <create-section 
+            <create-section base-url="{{URL::to('/')}}"
             v-bind:countries="{{$countries}}"
              v-bind:wineries="{{$wineries}}"
              v-bind:categories="{{$categories}}"

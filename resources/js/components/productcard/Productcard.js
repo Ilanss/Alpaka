@@ -13,7 +13,7 @@ export default {
             console.log("Productcard componenent mounted 2 "+this.baseUrl)
         },
         winePreview: function(slug) {
-            window.location.href = this.baseUrl+"product/" + slug;
+            window.location.href = this.baseUrl+"/product/" + slug;
             console.log("Productcard componenent mounted 2 "+this.baseUrl)
         },
         wineAdd: function(event) {

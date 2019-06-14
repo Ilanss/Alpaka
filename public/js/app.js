@@ -1873,7 +1873,7 @@ module.exports = function isBuffer (obj) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['wineries', 'categories', 'countries'],
+  props: ['wineries', 'categories', 'countries', 'baseUrl'],
   data: function data() {
     return {
       fields: {
@@ -1922,7 +1922,7 @@ __webpack_require__.r(__webpack_exports__);
       };
       console.log("hello", this.fields);
       this.errors = {};
-      axios.post('/public/products', formData, config).then(function (response) {
+      axios.post(this.baseUrl + '/products', formData, config).then(function (response) {
         alert('Produit ajouté');
       })["catch"](function (error) {
         if (error.response.status === 422) {
@@ -2442,7 +2442,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log("Productcard componenent mounted 2 " + this.baseUrl);
     },
     winePreview: function winePreview(slug) {
-      window.location.href = this.baseUrl + "product/" + slug;
+      window.location.href = this.baseUrl + "/product/" + slug;
       console.log("Productcard componenent mounted 2 " + this.baseUrl);
     },
     wineAdd: function wineAdd(event) {

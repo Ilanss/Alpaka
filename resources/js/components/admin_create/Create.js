@@ -1,6 +1,6 @@
 
 export default {
-    props: ['wineries', 'categories', 'countries'],
+    props: ['wineries', 'categories', 'countries','baseUrl'],
     data() {
         return {
             fields: {
@@ -44,7 +44,7 @@ export default {
             };
             console.log("hello", this.fields);
             this.errors = {};
-            axios.post('/public/products', formData, config).then(response => {
+            axios.post(this.baseUrl+'/products', formData, config).then(response => {
                 alert('Produit ajouté');
             }).catch(error => {
                 if (error.response.status === 422) {
