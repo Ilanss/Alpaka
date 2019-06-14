@@ -2432,15 +2432,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['cart', 'baseUrl', 'item'],
   mounted: function mounted() {
-    console.log("Productcard componenent mounted " + this.baseUrl);
+    console.log(this.item.description + "Productcard componenent mounted " + this.baseUrl);
   },
   data: function data() {
     return {};
   },
   methods: {
-    getUrl: function getUrl() {
-      console.log("Productcard componenent mounted 2 " + this.baseUrl);
-    },
     winePreview: function winePreview(slug) {
       window.location.href = this.baseUrl + "/product/" + slug;
       console.log("Productcard componenent mounted 2 " + this.baseUrl);
@@ -68450,7 +68447,9 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "name" } }, [_vm._v("Name:")]),
+                _c("label", { attrs: { for: "name" } }, [
+                  _vm._v("Nom du vin:")
+                ]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -68485,7 +68484,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "brand" } }, [_vm._v("Brand :")]),
+                _c("label", { attrs: { for: "brand" } }, [_vm._v("Marque :")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -68510,163 +68509,167 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "winery" } }, [_vm._v("Winery :")]),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.fields.winery_id,
-                        expression: "fields.winery_id"
+              _c("div", { staticClass: "form-row" }, [
+                _c("div", { staticClass: "form-group col-md-4" }, [
+                  _c("label", { attrs: { for: "winery" } }, [
+                    _vm._v("Vigneron :")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.fields.winery_id,
+                          expression: "fields.winery_id"
+                        }
+                      ],
+                      attrs: { name: "winery_id", id: "winery_id" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.$set(
+                            _vm.fields,
+                            "winery_id",
+                            $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          )
+                        }
                       }
-                    ],
-                    attrs: { name: "winery_id", id: "winery_id" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.$set(
-                          _vm.fields,
-                          "winery_id",
-                          $event.target.multiple
-                            ? $$selectedVal
-                            : $$selectedVal[0]
-                        )
-                      }
-                    }
-                  },
-                  _vm._l(_vm.wineries, function(winery) {
-                    return _c(
-                      "option",
-                      {
-                        key: winery.id,
-                        attrs: { item: winery },
-                        domProps: { value: winery.id }
-                      },
-                      [_vm._v(_vm._s(winery.name))]
-                    )
-                  }),
-                  0
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "category" } }, [
-                  _vm._v("Category :")
+                    },
+                    _vm._l(_vm.wineries, function(winery) {
+                      return _c(
+                        "option",
+                        {
+                          key: winery.id,
+                          attrs: { item: winery },
+                          domProps: { value: winery.id }
+                        },
+                        [_vm._v(_vm._s(winery.name))]
+                      )
+                    }),
+                    0
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.fields.category_id,
-                        expression: "fields.category_id"
+                _c("div", { staticClass: "form-group col-md-2" }, [
+                  _c("label", { attrs: { for: "category" } }, [
+                    _vm._v("Catégorie :")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.fields.category_id,
+                          expression: "fields.category_id"
+                        }
+                      ],
+                      attrs: { name: "category_id", id: "" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.$set(
+                            _vm.fields,
+                            "category_id",
+                            $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          )
+                        }
                       }
-                    ],
-                    attrs: { name: "category_id", id: "" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.$set(
-                          _vm.fields,
-                          "category_id",
-                          $event.target.multiple
-                            ? $$selectedVal
-                            : $$selectedVal[0]
-                        )
-                      }
-                    }
-                  },
-                  _vm._l(_vm.categories, function(category) {
-                    return _c(
-                      "option",
-                      {
-                        key: category.id,
-                        attrs: { item: category },
-                        domProps: { value: category.id }
-                      },
-                      [_vm._v(_vm._s(category.name))]
-                    )
-                  }),
-                  0
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "country" } }, [
-                  _vm._v("Country :")
+                    },
+                    _vm._l(_vm.categories, function(category) {
+                      return _c(
+                        "option",
+                        {
+                          key: category.id,
+                          attrs: { item: category },
+                          domProps: { value: category.id }
+                        },
+                        [_vm._v(_vm._s(category.name))]
+                      )
+                    }),
+                    0
+                  )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.fields.country_id,
-                        expression: "fields.country_id"
+                _c("div", { staticClass: "form-group col-md-4 " }, [
+                  _c("label", { attrs: { for: "country" } }, [
+                    _vm._v("Pays :")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.fields.country_id,
+                          expression: "fields.country_id"
+                        }
+                      ],
+                      attrs: { name: "country_id", id: "" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.$set(
+                            _vm.fields,
+                            "country_id",
+                            $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          )
+                        }
                       }
-                    ],
-                    attrs: { name: "country_id", id: "" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.$set(
-                          _vm.fields,
-                          "country_id",
-                          $event.target.multiple
-                            ? $$selectedVal
-                            : $$selectedVal[0]
-                        )
-                      }
-                    }
-                  },
-                  _vm._l(_vm.countries, function(country) {
-                    return _c(
-                      "option",
-                      {
-                        key: country.id,
-                        attrs: { item: country },
-                        domProps: { value: country.id }
-                      },
-                      [_vm._v(_vm._s(country.name))]
-                    )
-                  }),
-                  0
-                )
+                    },
+                    _vm._l(_vm.countries, function(country) {
+                      return _c(
+                        "option",
+                        {
+                          key: country.id,
+                          attrs: { item: country },
+                          domProps: { value: country.id }
+                        },
+                        [_vm._v(_vm._s(country.name))]
+                      )
+                    }),
+                    0
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "price_wine" } }, [
-                  _vm._v("Wine price :")
+                  _vm._v("Prix du vin :")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -68693,7 +68696,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "origin" } }, [_vm._v("Origin :")]),
+                _c("label", { attrs: { for: "origin" } }, [_vm._v("Région :")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -68719,7 +68722,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "size" } }, [_vm._v("Size :")]),
+                _c("label", { attrs: { for: "size" } }, [_vm._v("Taille :")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -68746,7 +68749,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "varietal" } }, [
-                  _vm._v("Varietal :")
+                  _vm._v("Cépage(s):")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -68772,89 +68775,95 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "good_year" } }, [
-                  _vm._v("Good Year :")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.good_year,
-                      expression: "fields.good_year"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "checkbox", name: "good_year", value: "1" },
-                  domProps: {
-                    checked: Array.isArray(_vm.fields.good_year)
-                      ? _vm._i(_vm.fields.good_year, "1") > -1
-                      : _vm.fields.good_year
-                  },
-                  on: {
-                    change: function($event) {
-                      var $$a = _vm.fields.good_year,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(_vm.fields, "good_year", $$a.concat([$$v]))
+              _c("div", { staticClass: "form-row" }, [
+                _c("div", { staticClass: "form-group col-md-2" }, [
+                  _c("label", { attrs: { for: "good_year" } }, [
+                    _vm._v("Millésime :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.good_year,
+                        expression: "fields.good_year"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "checkbox", name: "good_year", value: "1" },
+                    domProps: {
+                      checked: Array.isArray(_vm.fields.good_year)
+                        ? _vm._i(_vm.fields.good_year, "1") > -1
+                        : _vm.fields.good_year
+                    },
+                    on: {
+                      change: function($event) {
+                        var $$a = _vm.fields.good_year,
+                          $$el = $event.target,
+                          $$c = $$el.checked ? true : false
+                        if (Array.isArray($$a)) {
+                          var $$v = "1",
+                            $$i = _vm._i($$a, $$v)
+                          if ($$el.checked) {
+                            $$i < 0 &&
+                              _vm.$set(
+                                _vm.fields,
+                                "good_year",
+                                $$a.concat([$$v])
+                              )
+                          } else {
+                            $$i > -1 &&
+                              _vm.$set(
+                                _vm.fields,
+                                "good_year",
+                                $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                              )
+                          }
                         } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.fields,
-                              "good_year",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
+                          _vm.$set(_vm.fields, "good_year", $$c)
                         }
-                      } else {
-                        _vm.$set(_vm.fields, "good_year", $$c)
                       }
                     }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "date_production" } }, [
-                  _vm._v("Date production :")
+                  })
                 ]),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.date_production,
-                      expression: "fields.date_production"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "date", name: "date_production" },
-                  domProps: { value: _vm.fields.date_production },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c("div", { staticClass: "form-group col-md-2" }, [
+                  _c("label", { attrs: { for: "date_production" } }, [
+                    _vm._v("Date de production :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.date_production,
+                        expression: "fields.date_production"
                       }
-                      _vm.$set(
-                        _vm.fields,
-                        "date_production",
-                        $event.target.value
-                      )
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "date", name: "date_production" },
+                    domProps: { value: _vm.fields.date_production },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.fields,
+                          "date_production",
+                          $event.target.value
+                        )
+                      }
                     }
-                  }
-                })
+                  })
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "serv_temp" } }, [
-                  _vm._v("Serving temperature :")
+                  _vm._v("Temperature de service :")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -68880,7 +68889,7 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
+              _c("div", { staticClass: "form-group col-md-8" }, [
                 _c("label", { attrs: { for: "description" } }, [
                   _vm._v("Description :")
                 ]),
@@ -68894,10 +68903,11 @@ var render = function() {
                       expression: "fields.description"
                     }
                   ],
+                  staticClass: "form-control",
                   attrs: {
                     name: "description",
                     id: "description",
-                    cols: "30",
+                    cols: "100",
                     rows: "10"
                   },
                   domProps: { value: _vm.fields.description },
@@ -68912,202 +68922,224 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "stock_status" } }, [
-                  _vm._v("Stock status :")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.stock_status,
-                      expression: "fields.stock_status"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "checkbox", name: "stock_status", value: "1" },
-                  domProps: {
-                    checked: Array.isArray(_vm.fields.stock_status)
-                      ? _vm._i(_vm.fields.stock_status, "1") > -1
-                      : _vm.fields.stock_status
-                  },
-                  on: {
-                    change: function($event) {
-                      var $$a = _vm.fields.stock_status,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(
-                              _vm.fields,
-                              "stock_status",
-                              $$a.concat([$$v])
-                            )
-                        } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.fields,
-                              "stock_status",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
+              _c("div", { staticClass: "form-row" }, [
+                _c("div", { staticClass: "form-group col-md-4" }, [
+                  _c("label", { attrs: { for: "conditioning" } }, [
+                    _vm._v("Conditionnement :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.conditioning,
+                        expression: "fields.conditioning"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", name: "conditioning" },
+                    domProps: { value: _vm.fields.conditioning },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
                         }
-                      } else {
-                        _vm.$set(_vm.fields, "stock_status", $$c)
+                        _vm.$set(
+                          _vm.fields,
+                          "conditioning",
+                          $event.target.value
+                        )
                       }
                     }
-                  }
-                })
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-md-4" }, [
+                  _c("label", { attrs: { for: "ranking" } }, [
+                    _vm._v("Notation :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.ranking,
+                        expression: "fields.ranking"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "number", name: "ranking" },
+                    domProps: { value: _vm.fields.ranking },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.fields, "ranking", $event.target.value)
+                      }
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-md-4" }, [
+                  _c("label", { attrs: { for: "alcohol_level" } }, [
+                    _vm._v("Taux d'alcool :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.alcohol_level,
+                        expression: "fields.alcohol_level"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "number", name: "alcohol_level" },
+                    domProps: { value: _vm.fields.alcohol_level },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.fields,
+                          "alcohol_level",
+                          $event.target.value
+                        )
+                      }
+                    }
+                  })
+                ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "conditioning" } }, [
-                  _vm._v("Conditioning :")
+              _c("div", { staticClass: "form-row" }, [
+                _c("div", { staticClass: "form-group col-md-2" }, [
+                  _c("label", { attrs: { for: "stock_status" } }, [
+                    _vm._v("Status du stock :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.stock_status,
+                        expression: "fields.stock_status"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "checkbox",
+                      name: "stock_status",
+                      value: "1"
+                    },
+                    domProps: {
+                      checked: Array.isArray(_vm.fields.stock_status)
+                        ? _vm._i(_vm.fields.stock_status, "1") > -1
+                        : _vm.fields.stock_status
+                    },
+                    on: {
+                      change: function($event) {
+                        var $$a = _vm.fields.stock_status,
+                          $$el = $event.target,
+                          $$c = $$el.checked ? true : false
+                        if (Array.isArray($$a)) {
+                          var $$v = "1",
+                            $$i = _vm._i($$a, $$v)
+                          if ($$el.checked) {
+                            $$i < 0 &&
+                              _vm.$set(
+                                _vm.fields,
+                                "stock_status",
+                                $$a.concat([$$v])
+                              )
+                          } else {
+                            $$i > -1 &&
+                              _vm.$set(
+                                _vm.fields,
+                                "stock_status",
+                                $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                              )
+                          }
+                        } else {
+                          _vm.$set(_vm.fields, "stock_status", $$c)
+                        }
+                      }
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.conditioning,
-                      expression: "fields.conditioning"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "conditioning" },
-                  domProps: { value: _vm.fields.conditioning },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c("label", [_vm._v("Délais de livraison (jours)")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-md-3" }, [
+                  _c("label", { attrs: { for: "delivery_delay_from" } }, [
+                    _vm._v("à partir de:")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.delivery_delay_from,
+                        expression: "fields.delivery_delay_from"
                       }
-                      _vm.$set(_vm.fields, "conditioning", $event.target.value)
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "number", name: "delivery_delay_from" },
+                    domProps: { value: _vm.fields.delivery_delay_from },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.fields,
+                          "delivery_delay_from",
+                          $event.target.value
+                        )
+                      }
                     }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "ranking" } }, [
-                  _vm._v("Ranking :")
+                  })
                 ]),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.ranking,
-                      expression: "fields.ranking"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "number", name: "ranking" },
-                  domProps: { value: _vm.fields.ranking },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _c("div", { staticClass: "form-group col-md-3" }, [
+                  _c("div"),
+                  _vm._v(" "),
+                  _c("label", { attrs: { for: "delivery_delay_to" } }, [
+                    _vm._v("jusqu'à :")
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.fields.delivery_delay_to,
+                        expression: "fields.delivery_delay_to"
                       }
-                      _vm.$set(_vm.fields, "ranking", $event.target.value)
-                    }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "alcohol_level" } }, [
-                  _vm._v("Alcohol level :")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.alcohol_level,
-                      expression: "fields.alcohol_level"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "number", name: "alcohol_level" },
-                  domProps: { value: _vm.fields.alcohol_level },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "number", name: "delivery_delay_to" },
+                    domProps: { value: _vm.fields.delivery_delay_to },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.fields,
+                          "delivery_delay_to",
+                          $event.target.value
+                        )
                       }
-                      _vm.$set(_vm.fields, "alcohol_level", $event.target.value)
                     }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "delivery_delay_from" } }, [
-                  _vm._v("Delivery delay from:")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.delivery_delay_from,
-                      expression: "fields.delivery_delay_from"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "number", name: "delivery_delay_from" },
-                  domProps: { value: _vm.fields.delivery_delay_from },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(
-                        _vm.fields,
-                        "delivery_delay_from",
-                        $event.target.value
-                      )
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("label", { attrs: { for: "delivery_delay_to" } }, [
-                  _vm._v("to :")
-                ]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.fields.delivery_delay_to,
-                      expression: "fields.delivery_delay_to"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "number", name: "delivery_delay_to" },
-                  domProps: { value: _vm.fields.delivery_delay_to },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(
-                        _vm.fields,
-                        "delivery_delay_to",
-                        $event.target.value
-                      )
-                    }
-                  }
-                })
+                  })
+                ])
               ]),
               _vm._v(" "),
               _c(
@@ -71395,7 +71427,7 @@ var render = function() {
                           attrs: { type: "submit" },
                           on: { click: _vm.showAlert }
                         },
-                        [_vm._v("Ajouter au Panier")]
+                        [_vm._v("Ajouter au panier")]
                       )
                     ],
                     1
@@ -71463,7 +71495,7 @@ var render = function() {
                     }
                   ]
                 },
-                [_vm._v("Fiche Technique")]
+                [_vm._v("Fiche technique")]
               ),
               _vm._v(" "),
               _c(
@@ -71715,55 +71747,53 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "test2" }, [
-    _c(
-      "div",
-      { staticClass: "test" },
-      [
-        _c(
-          "b-card",
-          {
-            staticClass: "mb-2 text-center",
-            staticStyle: { "max-width": "20rem" },
-            attrs: {
-              title: _vm.item.name,
-              "img-src": this.baseUrl + "/images/products/" + _vm.item.image,
-              "img-alt": "Cover",
-              "img-top": "",
-              tag: "article",
-              id: _vm.item.id
-            },
-            on: {
-              click: function($event) {
-                return _vm.winePreview(_vm.item.slug)
-              }
-            }
+  return _c(
+    "div",
+    { staticClass: "test" },
+    [
+      _c(
+        "b-card",
+        {
+          staticClass: "mb-2 text-center",
+          staticStyle: { "max-width": "20rem" },
+          attrs: {
+            title: _vm.item.name,
+            "img-src": this.baseUrl + "/images/products/" + _vm.item.image,
+            "img-alt": "Cover",
+            "img-top": "",
+            tag: "article",
+            id: _vm.item.id
           },
-          [
-            _c("b-card-text", { staticClass: "text-center" }, [
-              _vm._v(_vm._s(_vm.item.price_wine) + " CHF")
-            ]),
-            _vm._v(" "),
-            _c(
-              "b-button",
-              {
-                staticClass: "product__add",
-                attrs: { variant: "" },
-                on: {
-                  click: function($event) {
-                    return _vm.winePreview(_vm.item.slug)
-                  }
+          on: {
+            click: function($event) {
+              return _vm.winePreview(_vm.item.slug)
+            }
+          }
+        },
+        [
+          _c("b-card-text", { staticClass: "text-center" }, [
+            _vm._v(_vm._s(_vm.item.price_wine) + " CHF")
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-button",
+            {
+              staticClass: "product__add",
+              attrs: { variant: "" },
+              on: {
+                click: function($event) {
+                  return _vm.winePreview(_vm.item.slug)
                 }
-              },
-              [_vm._v("Voir les info")]
-            )
-          ],
-          1
-        )
-      ],
-      1
-    )
-  ])
+              }
+            },
+            [_vm._v("Voir les info")]
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

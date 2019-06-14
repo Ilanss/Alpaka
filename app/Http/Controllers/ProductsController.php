@@ -159,7 +159,7 @@ class ProductsController extends Controller
             'good_year' => 'boolean',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
-            'description' => 'required|max:255',
+            'description' => 'required|max:65535',
             'stock_status' => 'boolean',
             'conditioning' => 'required|max:255',
             'ranking' => 'numeric|between:1,5',

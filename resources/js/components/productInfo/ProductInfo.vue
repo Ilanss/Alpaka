@@ -97,7 +97,7 @@
                 @dismiss-count-down="countDownChanged"
                 v-if="product.stock_status == 0"
               >Ce vin est pas disponible, désolé</b-alert>
-              <b-button class="producInfo__submit" type="submit" @click="showAlert">Ajouter au Panier</b-button>
+              <b-button class="producInfo__submit" type="submit" @click="showAlert">Ajouter au panier</b-button>
             </b-form>
             <b-form-invalid-feedback
               :state="validation_quantity"
@@ -120,7 +120,7 @@
       </b-row>
       <div class="productInfo__technicData">
         <div>
-          <b-button v-b-toggle.collapse-1>Fiche Technique</b-button>
+          <b-button v-b-toggle.collapse-1>Fiche technique</b-button>
           <b-collapse id="collapse-1" class="mt-2">
             <!-- Fiche Technique -->
             <b-list-group>

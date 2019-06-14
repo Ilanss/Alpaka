@@ -1,5 +1,4 @@
 <template>
-  <div class="test2">
     <div class="test">
       <!-- replace item.image to img-src -->
       <b-card
@@ -16,8 +15,8 @@
         <b-card-text class="text-center">{{ item.price_wine }} CHF</b-card-text>
         <b-button v-on:click="winePreview(item.slug)"  variant="" class="product__add">Voir les info</b-button>
       </b-card>
+      
     </div>
-  </div>
 </template>
 <script src="./Productcard.js"></script>
 <style src="./Productcard.css" scoped></style>
