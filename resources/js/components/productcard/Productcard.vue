@@ -2,7 +2,7 @@
   <div class="test">
     <!-- replace item.image to img-src -->
     <b-card
-      v-on:click="winePreview(item.slug)"
+      v-on:click="winePreview(item.slug)" 
       v-bind:title="item.name"
       v-bind:img-src="this.baseUrl+'/images/products/' + item.image"
       img-alt="Cover"

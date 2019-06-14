@@ -2359,7 +2359,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['product', 'country', 'winery', 'category', 'promotions', 'ratings'],
   mounted: function mounted() {
-    console.log("ProductInfo mounted");
+    console.log("ProductInfo mounted 2");
   },
   data: function data() {
     return {
