@@ -2005,7 +2005,10 @@ __webpack_require__.r(__webpack_exports__);
         key: 'name',
         label: 'Nom'
       }, // A regular column
-      'quantité', // A regular column
+      {
+        key: 'quantity',
+        label: 'Quantité'
+      }, // A regular column
       'prix', // A regular column
       'description', //Item total prix method
       {
@@ -34829,7 +34832,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".product__add[data-v-14afb6d4] {\r\n    background-color: #5b022e !important;\n}\n.product__add[data-v-14afb6d4]:hover {\r\n    color: white !important;\r\n    text-decoration: underline;\n}\r\n", ""]);
+exports.push([module.i, ".product__add[data-v-14afb6d4] {\r\n    background-color: #5b022e !important;\n}\n.product__add[data-v-14afb6d4]:hover {\r\n    color: white !important;\r\n    text-decoration: underline;\n}\n.card-title[data-v-14afb6d4] {\r\n    min-height: 100px !important;\n}", ""]);
 
 // exports
 

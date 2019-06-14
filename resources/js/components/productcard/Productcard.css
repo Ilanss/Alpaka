@@ -6,3 +6,7 @@
     color: white !important;
     text-decoration: underline;
 }
+
+.card-title {
+    min-height: 100px !important;
+}

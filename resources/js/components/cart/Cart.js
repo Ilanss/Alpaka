@@ -17,7 +17,7 @@ export default {
                 // A column that needs custom formatting
                 { key: 'name', label: 'Nom' },
                 // A regular column
-                'quantité',
+                { key: 'quantity', label: 'Quantité' },
                 // A regular column
                 'prix',
                 // A regular column
