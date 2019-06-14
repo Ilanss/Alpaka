@@ -101,13 +101,15 @@ class ProductsController extends Controller
         ]);
 
         $name = str_slug($request->input('name')).'_'.time();
-        $folder = public_path('images/products');
+        $folder = public_path('images\\products');
 
         $products = [];
 
         if($request->image) {
             $filePath = $name . '.' . $request->image->getClientOriginalExtension();
-            $this->uploadOne($request->image, $folder, 'public', $name);
+            //var_dump ($folder);
+            //return;
+            //$this->uploadOne($request->image, $folder, 'public', $name);
             $request->image->move(public_path('images/products'), $filePath);
             $products['image'] = $filePath;
         }
@@ -227,7 +229,7 @@ class ProductsController extends Controller
     {
         $name = !is_null($filename) ? $filename : str_random(25);
 
-        $file = $uploadedFile->storeAs($folder, $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
+        $file = $uploadedFile->storeAs('.', $name.'.'.$uploadedFile->getClientOriginalExtension(), $disk);
 
         return $file;
     }
