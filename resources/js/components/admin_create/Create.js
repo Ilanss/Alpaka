@@ -5,6 +5,7 @@ export default {
         return {
             fields: {
                 stock_status: true,
+                good_year: true,
                 image: ''
             },
             errors: {},
@@ -34,16 +35,17 @@ export default {
 
             
             for (let key in this.fields) {
-                formData.append('image', this.image);
+                
                 formData.set(key, this.fields[key]);
             }
+            if(this.image){formData.append('image', this.image);};
             const config = {
                 headers: { 'content-type': 'multipart/form-data' }
-            }
-            console.log("hello", this.fields)
+            };
+            console.log("hello", this.fields);
             this.errors = {};
             axios.post('/public/products', formData, config).then(response => {
-                alert('Message sent!');
+                alert('Produit ajouté');
             }).catch(error => {
                 if (error.response.status === 422) {
                     this.errors = error.response.data.errors || {};

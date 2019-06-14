@@ -1,5 +1,5 @@
 export default {
-    props : ['bestseller'],
+    props : ['bestseller','baseUrl'],
     mounted() {
         console.log("bestseller mounted");
     }

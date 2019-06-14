@@ -53,7 +53,7 @@
                                             <button type="submit" class="btn-page">
                                                 {{ __('Authentication') }}
                                             </button>
-                                            <a href="{{ route('registration') }}" type="button" class="btn-page">Inscription</a>
+                                            <a href="{{ route('registration') }}" type="button" class="btn btn-primary btn-lg">Inscription</a>
                                         </div>
                                     </div>
                                 </div>

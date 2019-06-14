@@ -75,8 +75,9 @@ class ProductsController extends Controller
     }
 
     public function store(Request $request) {
+        
         $request->validate([
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            //'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'name' => 'required|max:45',
             'brand' => 'required|max:45',
             'winery_id' => 'required|numeric',
@@ -86,11 +87,11 @@ class ProductsController extends Controller
             'origin' => 'required|max:45',
             'size' => 'required|max:45',
             'varietal' => 'required|max:45',
-            'good_year' => 'boolean',
+            //'good_year' => 'boolean',
             'date_production' => 'required|date',
             'serv_temp' => 'required|numeric',
             'description' => 'required|max:255',
-            'stock_status' => 'boolean',
+            //'stock_status' => 'boolean',
             'conditioning' => 'required|max:255',
             'ranking' => 'numeric|between:1,5',
             'alcohol_level' => 'required|numeric|between:0,50',
@@ -134,8 +135,7 @@ class ProductsController extends Controller
         $products['slug'] = str_slug($request->input('name'));
         $products['delivery_delay'] = $request->input('delivery_delay_from')." à ".$request->input('delivery_delay_to');
 
-        dd($products);
-        return;
+        
 
         Wine::create($products);
 

@@ -23,8 +23,7 @@
       </div>
       
       <!-- /.col-lg-9 -->
-      <best-sellers v-bind:bestseller="{{$products}}" ></best-sellers>
-<product-card></product-card>
+      <best-sellers base-url="{{URL::to('/')}}" v-bind:bestseller="{{$products}}" ></best-sellers>
 
     </div>
 </div>

@@ -4,7 +4,7 @@
     <div class="bestSeller">
       <h1>Meilleures ventes</h1>
       <div class="row no-gutters">
-          <product-card class="col-sm-3" v-for="product in bestseller"
+          <product-card v-bind:base-url='baseUrl' class="col-sm-3" v-for="product in bestseller"
             :key="product.wineId" v-bind:item="product"></product-card>
       </div>
       <hr class="end">

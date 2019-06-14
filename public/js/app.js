@@ -1878,6 +1878,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       fields: {
         stock_status: true,
+        good_year: true,
         image: ''
       },
       errors: {},
@@ -1906,10 +1907,14 @@ __webpack_require__.r(__webpack_exports__);
       var formData = new FormData();
 
       for (var key in this.fields) {
-        formData.append('image', this.image);
         formData.set(key, this.fields[key]);
       }
 
+      if (this.image) {
+        formData.append('image', this.image);
+      }
+
+      ;
       var config = {
         headers: {
           'content-type': 'multipart/form-data'
@@ -1918,7 +1923,7 @@ __webpack_require__.r(__webpack_exports__);
       console.log("hello", this.fields);
       this.errors = {};
       axios.post('/public/products', formData, config).then(function (response) {
-        alert('Message sent!');
+        alert('Produit ajouté');
       })["catch"](function (error) {
         if (error.response.status === 422) {
           _this.errors = error.response.data.errors || {};
@@ -1940,7 +1945,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['bestseller'],
+  props: ['bestseller', 'baseUrl'],
   mounted: function mounted() {
     console.log("bestseller mounted");
   }
@@ -2424,25 +2429,27 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-/* harmony default export */ __webpack_exports__["default"] = (_defineProperty({
-  props: ['cart'],
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['cart', 'baseUrl', 'item'],
   mounted: function mounted() {
-    console.log("Productcard componenet mounted");
+    console.log("Productcard componenent mounted " + this.baseUrl);
   },
   data: function data() {
     return {};
   },
   methods: {
+    getUrl: function getUrl() {
+      console.log("Productcard componenent mounted 2 " + this.baseUrl);
+    },
     winePreview: function winePreview(slug) {
-      window.location.href = "product/" + slug;
+      window.location.href = this.baseUrl + "product/" + slug;
+      console.log("Productcard componenent mounted 2 " + this.baseUrl);
     },
     wineAdd: function wineAdd(event) {
       console.log("added in cart");
     }
   }
-}, "props", ['item']));
+});
 
 /***/ }),
 
@@ -2456,10 +2463,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['products'],
+  props: ['products', 'baseUrl'],
   mounted: function mounted() {
     //console.log(this.products)
-    console.log("productlist mounted");
+    console.log("productlist mounted", this.baseUrl);
   }
 });
 
@@ -69149,7 +69156,7 @@ var render = function() {
             return _c("product-card", {
               key: product.wineId,
               staticClass: "col-sm-3",
-              attrs: { item: product }
+              attrs: { "base-url": _vm.baseUrl, item: product }
             })
           }),
           1
@@ -71720,7 +71727,7 @@ var render = function() {
             staticStyle: { "max-width": "20rem" },
             attrs: {
               title: _vm.item.name,
-              "img-src": "images/products/" + _vm.item.image,
+              "img-src": this.baseUrl + "/images/products/" + _vm.item.image,
               "img-alt": "Cover",
               "img-top": "",
               tag: "article",
@@ -71789,7 +71796,7 @@ var render = function() {
           return _c("product-card", {
             key: product.id,
             staticClass: "col-sm-4",
-            attrs: { item: product }
+            attrs: { "base-url": _vm.baseUrl, item: product }
           })
         }),
         1

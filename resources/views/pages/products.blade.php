@@ -22,7 +22,7 @@
 
         <div class="row">
         <order-list class="col-sm-12 offset-sm-2"></order-list>
-        <product-list v-bind:products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
+        <product-list base-url="{{URL::to('/')}}" v-bind:products="{{$products}}" class="col-sm-12 offset-sm-2"></product-list>
         </div>
         <!-- /.row -->
 
